@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.navbar{
+    width: 100%;
+    height: 7vh;
+    position: absolute;
+    z-index: 999;
+    
+}
+
+.logo{
+    background: url(./images/logotransparent.png);
+    width: 5vh;
+    height: 5vh;
+    background-size: cover;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    
+}
+
+.name{
+    position: absolute;
+    height: 8vh;
+    width: AUTO;
+    margin-left: 7vh;
+    text-align: center;
+    float: left;
+    top: 0px;
+    padding: 10px 10PX;
+    font-size: 30px;
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+    font-weight: 800;
+    
+}
+
+.main{
+    width: auto;
+    height: 100vh;
+    position: relative;
+    background: url(./images/IISERBHOPAL.PNG);
+    background-size: cover;
+}
+.list{
+    width: auto;
+    height: 7vh;
+    margin-top: 0px;
+    position: absolute;
+    padding: 20px;
+    left: 55%;
+    font-family:'Poppins',sans-serif;
+
+}
+li{
+    text-decoration: none;
+    float: left;
+    padding-left: 30px;
+    text-align: center;
+    list-style-type: none;
+    font-size: 15px;
+    color: white;
+
+
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.main2{
+    width: auto;
+    height: 100vh;
+    background: white;
+
+}
+a:hover{
+    color: #eee;
+    cursor: pointer;
+    text-shadow: 1px 1px 5px black;
+}
+
+.material-symbols-outlined:hover{
+    animation-name: example;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    cursor: pointer;
+}
+@keyframes example{
+    0% {top: 90%;}
+    50% {top: 89%;}
+    100% {top: 90%;}
+}
