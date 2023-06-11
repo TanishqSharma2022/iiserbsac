@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/eecc9ab967.js" crossorigin="anonymous"></script>
     <style>
         .material-symbols-outlined {
           font-variation-settings:
@@ -32,18 +33,33 @@
     <title>STUDENT ACTIVITY COUNCIL - IISER BHOPAL</title>
 </head>
 <body>
+    <div class="main">
     <div class="navbar">
-        <div class="logo"></div>
-        <div class="name">STUDENT ACTIVITY COUNCIL</div>
+        <div class="content">
+        <div class="name">
+
+        </div>
         <ul class="list">
+            <div class="icon cancel-btn">
+                <i class="fas fa-times"></i>
+            </div>
             <li><a href="#">Home</a></li>
             <li><a href="#">Clubs</a></li>
             <li><a href="#">Members</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a id="aboutus_href" href="#">About Us</a></li>
         </ul>
+        <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        </div>
     </div>
-    <div class="main">
+    
+        <div class="title">
+            <div class="logo"></div>
+            <div class="sac">Student Activity Council</div>
+            <div class="iiserb">IISER BHOPAL</div>
+        </div>
         <span class="material-symbols-outlined">
             <a id="linked">
             expand_more
@@ -51,7 +67,19 @@
         
             </span>
     </div>
-    <div class="main2"></div>
+    <div class="main2">
+        <div class="aboutus">
+            <div class="header">About Us</div>
+            <p class="about_para">Student Activity Council is the apex student body of IISER Bhopal. It is responsible for -
+            
+                Formulating the policies pertaining to all non-academic student affairs
+                Presenting the views of the student community on issues of collective concern through itself, as well as through its representation and say in various other policy and decision making bodies of the institute
+                Taking initiatives to address the pressing problems faced by the students through the institutional framework of IIT Delhi
+            
+
+            </p>
+        </div>
+    </div>
 
 
     <script src="main.js"></script>
