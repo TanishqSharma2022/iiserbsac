@@ -3,6 +3,7 @@
 
 *{
     box-sizing: border-box;
+    font-family: 'Montserrat';
 }
 
 body{
@@ -14,8 +15,7 @@ body{
 
 }
 
-.logo{
-    background: url(./images/removed_bg.png);
+.logo img{
     width: 30vh;
     height: 30vh;
     background-size: cover;
@@ -38,6 +38,15 @@ body{
     color: white;
     font-weight: 800;
     /* display: none; */
+    display: flex;
+    justify-content: space-between;
+}
+.name img{
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
 }
 
 .main{
@@ -48,7 +57,7 @@ body{
     background: linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
-      ), url(./images/iiserb_campus.PNG);
+      ), url(./images/iiserb_campus.png);
     background-size: cover;
 }
 .navbar{
@@ -226,6 +235,104 @@ li a:hover{
 
 
 
+
+@media (min-width: 900px)
+{
+
+.title .sac{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.05em; /* Adjust as needed */
+    animation: 
+      typing 2.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 70% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  
+  .fa-bars{
+    color: white;
+    margin-right: 50px;
+  }
+
+} 
+.main{
+    text-align: center;
+    align-items: center;
+} 
+
+
+.titlebar{
+    width: 100%;
+    box-sizing: border-box;
+    padding-block: 50px;
+    text-align: center;
+}
+
+.mem-title{
+    width: 100%;
+    text-align: center;
+    font-weight: 20;
+    color: white;
+    font-size: 2rem
+}
+.underline{
+    width: 100%;
+    height: 10px;
+    margin-top: -10px;
+    text-align: center;
+}
+
+.members{
+    box-sizing: border-box;
+    width: 80%;
+    height: auto;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    left: 10%
+}
+.row{
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 300px;
+    display: flex;
+    min-width: 80%;
+    justify-content: space-between;   
+}
+.box{
+    width: 33%;
+    height: 100%;
+    /* border: 2px solid red; */
+    padding: 10px;
+    color: white;
+    line-height: 0.51em;
+}
+.box img{
+    height: 200px;
+    background: white;
+    width: 200px;
+    object-fit: cover;
+    filter: drop-shadow(0px 3px 1px #111);
+}
+
+
+
+
 @media only screen and (max-width: 972px){
     .main{overflow: hidden;}
     .icon{
@@ -233,12 +340,24 @@ li a:hover{
         size: 40px;
         color: black;
     }
-    .logo{
-        visibility:hidden;
+    .logo img{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+
+    }
+    .name img{
+        
+        top: 10px;
+        left: 10px;
+        display: block;
+        filter: drop-shadow(0px 3px 1px #ddd);
     }
     
     .title{
-
         position: relative;
         top: 10%;
         left: 0%;
@@ -343,40 +462,14 @@ li a:hover{
     i{
         size: 5rem
     }
+    .row{
+        flex-direction: column;
+        height: 100%
+    }
+    .box{
+        width: 100%;
+    }
 
     
 
 }
-
-@media (min-width: 900px)
-{
-
-.title .sac{
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: 0.15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 0.05em; /* Adjust as needed */
-    animation: 
-      typing 2.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 70% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
-  
-  .fa-bars{
-    color: white;
-    margin-right: 50px;
-  }
-
-}  
