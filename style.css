@@ -57,7 +57,7 @@ body{
     background: linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
-      ), url(./images/iiserb_campus.png);
+      ), url(./images/iiserb.jpeg);
     background-size: cover;
 }
 .navbar{
@@ -173,6 +173,8 @@ li a:active{
 li a:hover{
     border-color: white;
     cursor: pointer;
+    color: rgba(0, 0, 0, 0.5);
+    background: white;
     text-shadow: 0px 3px 5px rgba(88, 78, 78, 0.078);
 }
 .material-symbols-outlined{
@@ -207,24 +209,22 @@ li a:hover{
     top: 35%;
     left: 5%;
     text-align: center;
-
-
 }
+
 .sac{
     font-size: 3.7rem;
     font-family: 'Montserrat', serif;
     position: absolute;
     left: 25%;
     top: 10%;
-
     padding: 10px 0px;
     text-shadow: 0px 5px 10px black;
 }
+
 .iiserb{
     font-size: 2rem;
     position: absolute;
     left: 25%;
-
     font-family:'BEBAS NEUE', cursive;
     top: 35%;
     text-shadow: 0px 5px 10px black;
