@@ -59,7 +59,7 @@ body{
     background: linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
-      ), url(./images/iiserb_weather.jpeg);
+      ), url(./images/iiserb.jpeg);
     background-size: cover;
 }
 .navbar{
@@ -88,9 +88,6 @@ body{
     /* background: red; */
     text-align: center;
     padding-top: 30px;
-
-
-    
 }
 .icon{
     font-size: 20px;
@@ -333,6 +330,82 @@ li a:hover{
     filter: drop-shadow(5px 3px 5px #111);
 }
 
+.container{
+    width: 100%;
+    background: #ddd;
+    height: auto;
+    position: relative;
+    margin-top: -20%;
+    z-index: 999;
+    text-align: center;
+    align-items: center;
+    padding: 5%;
+    padding-top: 0;
+}
+.bar > img, #culture, h1>img{
+    width: 30%;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    object-fit: cover;
+}
+.container > .content-block{
+    width: 80%;
+    height: auto;
+    /* border: 2px solid black; */
+    position: relative;
+    padding: 10px;
+    left: 10%;
+    margin-bottom: 10px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.content-block > .matter{
+    width: 70%;
+    height: auto;
+    word-wrap: break-word;
+
+    padding: 30px;
+    font-size: 1.5rem;
+}
+.content-block > .logo_council{
+    width: 25%;
+
+    /* background: url(./images/imageprofile.jpeg);
+    background-size: cover; */
+    margin: 0;
+    padding: 0;
+}
+.logo_council > img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.fa-brands{
+    font-size: 50px;
+}
+.links{
+    position: relative;
+    top: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+.matter > .head{
+    font-family: 'BEBAS NEUE';
+    font-size: 40px;
+}
+.links > i{
+    transition: all 0.3s ease;
+}
+
+.links > i:hover{
+    transform: scale(1.2);
+}
 
 
 
@@ -434,7 +507,7 @@ li a:hover{
     .navbar .list li{
         box-sizing: border-box;
         margin-top: 50px;
-        padding: 35px;
+        padding-block: 20px;
         text-align: center;
         line-height: 10px;
         top: 10%
@@ -472,7 +545,57 @@ li a:hover{
     .box{
         width: 100%;
     }
+h1 {
+    color: black;
+    font-size: 10px;
+}
+    .content-block{
+        align-items: center;
+       flex-direction: column;
+    }
+    .content-block:nth-child(2n+1){
+        flex-direction: column-reverse;
+    }
 
-    
+    .content-block > .matter{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .logo-council > img{
+        width: 100%;
+        height: auto;
+    }
 
+
+}
+.content-block{
+    z-index: -1;
+    position: relative;
+    top: -100%;
+    /* opacity: 0; */
+    transition: all 0.3s ease-in-out;
+}
+#culture{
+    transition: all 0.7s ;
+    z-index: 99;
+}
+.bar{
+    padding: 50px;
+    /* background: black; */
+}
+h2{
+    line-height: 30px;
+    color: black;
+}
+
+#council{
+    width: 100%;
+    transition: 0.2s all ease;
+}
+#council:hover{
+    transform: scale(1.1);
+}
+a{
+    text-decoration: none;
 }
