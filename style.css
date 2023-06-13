@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@600&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@600&family=Raleway&display=swap');
 
 
 *{
@@ -49,7 +50,7 @@ body{
     display: none;
 }
 
-.main{
+.main, .main4{
     max-width: 100%;
     width: 100%;
     height: 100vh;
@@ -131,7 +132,6 @@ body{
 .main2{
     max-width: 100%;
     width: 100%;
-    
     background: white;
     background-attachment: fixed;
     background-size: cover;
@@ -141,13 +141,13 @@ body{
     width: 100%;
     height: auto;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 50px;
     background: #eee;
     text-align: center;
     align-items: center;
 }
 .header{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: 'Montserrat';
     position: relative;
     top: 15%;
@@ -158,7 +158,7 @@ body{
     font-family:'Poppins';
     width: 90%;
     background: white;
-    padding: 10px;
+    padding: 50px;
     margin: 0;
     position: relative;
     margin-top: 30px;
@@ -276,7 +276,8 @@ li a:hover{
 .titlebar{
     width: 100%;
     box-sizing: border-box;
-    padding-block: 50px;
+    padding-top: 50px;
+    /* background: blue; */
     text-align: center;
 }
 
@@ -296,42 +297,118 @@ li a:hover{
 
 .members{
     box-sizing: border-box;
-    width: 80%;
+    width: 100%;
     height: auto;
     /* border: 2px solid white; */
     display: flex;
+    /* flex-direction: column; */
     flex-wrap: wrap;
-    justify-content: space-between;
-    position: absolute;
-    left: 10%
+    justify-content: space-around;
+    position: relative;
+    /* top: 16%; */
+
+    padding-top: 50px;
+
+
 }
 .row{
     /* border: 2px solid blue; */
     width: 100%;
-    height: 300px;
+    height: 250px;
     display: flex;
     min-width: 80%;
-    justify-content: space-between;  
+    justify-content: space-around;  
+    padding: 0;
+    margin: 0;
      
 }
 .box{
     width: 33%;
     height: 100%;
-    /* border: 2px solid red; */
-    padding: 10px;
+
     color: black;
     line-height: 0.51em;
-   
+    text-align: center;
+    /* background: red; */
+
 }
 .box img{
-    height: 200px;
+    height: 130px;
+    aspect-ratio: 16/9;
     background: white;
-    width: 200px;
-    object-fit: cover;
+    object-fit: contain;
     filter: drop-shadow(5px 3px 5px #111);
     border-radius: 8px;
 }
 
+h1 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  
+}
+
+/* h1 span {
+display: block;
+font-size: 0.5em;
+line-height: 1.3;
+}
+h1 em {
+font-style: normal;
+font-weight: 600;
+} */
+.one h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+  }
+  .one h1:before {
+    width: 28px;
+    height: 5px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    margin-left: -14px;
+    background-color: #b80000;
+  }
+  .one h1:after {
+    width: 100px;
+    height: 1px;
+    display: block;
+    content: "";
+    position: relative;
+    margin-top: 25px;
+    left: 50%;
+    margin-left: -50px;
+    background-color: #b80000;
+  }
+.eight h1 {
+text-align:center;
+
+text-transform:uppercase;
+font-size:26px; letter-spacing:1px;
+
+display: grid;
+grid-template-columns: 1fr auto 1fr;
+grid-template-rows: 16px 0;
+grid-gap: 22px;
+}
+
+.eight h1:after,.eight h1:before {
+content: " ";
+display: block;
+border-bottom: 2px solid #ccc;
+background-color:#f8f8f8;
+}
 .container{
     width: 100%;
     background: #ddd;
@@ -411,10 +488,54 @@ li a:hover{
     transform: scale(1.2);
 }
 
+.council_main{
+    width: 100%;
+    height: 100vh;
+}
 
+
+.members{
+    /* background: red; */
+
+}
+
+.senatemain{
+    height: 150vh;
+}
+.senate > img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.senate h3{
+    font-weight: 50;
+    font-style: italic;
+}
+.senate > img:hover{
+    opacity: 0.5;
+    /* content: url(./images/1.png) */
+}
+@media(hover:hover){
+    .senate > img:hover{
+        opacity: 0.5;
+        /* content: url(./images/1.png) */
+    }
+}
+.senaterow{
+
+    align-items: center;
+
+    margin-bottom: 75px;
+}
+
+.senatemember{
+    /* padding: 100px; */
+}
 
 @media only screen and (max-width: 972px){
-    .main{overflow-x: hidden;}
+    .main{
+        overflow-x: hidden;
+    }
     .icon{
         display: block;
         size: 40px;
@@ -450,7 +571,6 @@ li a:hover{
     .sac{
         position: relative;
         font-size: 3rem;
-
         top: 0;
         left: 0%;
     }
@@ -549,10 +669,8 @@ li a:hover{
     .box{
         width: 100%;
     }
-h1 {
-    color: black;
-    font-size: 10px;
-}
+
+
     .content-block{
         align-items: center;
        flex-direction: column;
@@ -570,7 +688,12 @@ h1 {
         width: 100%;
         height: auto;
     }
-
+    .council_main{
+        height: auto
+    }
+    .box{
+        padding: 10px;
+    }
 
 }
 .main3{
@@ -594,12 +717,13 @@ h1 {
     /* background: black; */
 }
 h2{
-    line-height: 30px;
+    line-height: 25px;
     color: black;
+    font-family: 'Raleway', sans-serif;
 }
 
 #council{
-    width: 100%;
+    /* width: 100%; */
     transition: 0.2s all ease;
 }
 #council:hover{
@@ -639,6 +763,7 @@ a{
   
  
 
+/* FOOTER CSS */
 :root{
 	--footer-background-color:#00020b;
 	--footer-scroll-top-color:#000106;
@@ -818,7 +943,7 @@ a{
 }
 @media screen and (min-width:900px){
 	.brdr-left{
-		border-left:2px dotted #7d7d7d !important;
+		border-left:2px solid #7d7d7d !important;
 	}
 }
 .boards-footer-flex{
@@ -827,9 +952,11 @@ a{
 	flex-wrap: wrap;-webkit-box-pack: justify;
     justify-content: space-between;
 }
-.boards-footer-flex>a{
+.boards-footer-flex > a{
 	margin: 0 4px;
 }
 .boards-footer-flex>a:last-child{
 	margin-right: 0;
 }
+
+
