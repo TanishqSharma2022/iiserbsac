@@ -6,14 +6,14 @@
 //         }, 800);
 //     });
 // });
-// $(document).ready(function(){
-//     $('#council_click').click(function(){
-//         $("html, body").animate({
-//             scrollTop: $(
-//               'html, body').get(0).scrollHeight
-//         }, 800);
-//     });
-// });
+$(document).ready(function(){
+    $('#aboutus_href').click(function(){
+        $("html, body").animate({
+            scrollTop: $(
+              'html, body').get(0).scrollHeight
+        }, 800);
+    });
+});
 
 $(document).ready(function(){
     var scrollLink = $('.scroll');

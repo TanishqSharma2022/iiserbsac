@@ -503,7 +503,7 @@ background-color:#f8f8f8;
     height: 200px;
     object-fit: cover;
     transition: all 0.5s ease-in-out;
-    border-radius: 20px;
+
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     filter: drop-shadow(0px 0px 1px black);
 }
@@ -548,6 +548,7 @@ background-color:#f8f8f8;
     transition: all 0.3s ease-in-out;
 
 }
+.senatelinks i, i:active, i:checked{color: white}
 .senate .fa-brands,.senate .fa-regular{
     padding: 0px;
     font-size: 45px;
