@@ -1,19 +1,38 @@
+// $(document).ready(function(){
+//     $('#linked').click(function(){
+//         $("html, body").animate({
+//             scrollTop: $(
+//               'html, body').get(0).scrollHeight
+//         }, 800);
+//     });
+// });
+// $(document).ready(function(){
+//     $('#council_click').click(function(){
+//         $("html, body").animate({
+//             scrollTop: $(
+//               'html, body').get(0).scrollHeight
+//         }, 800);
+//     });
+// });
+
 $(document).ready(function(){
-    $('#linked').click(function(){
-        $("html, body").animate({
-            scrollTop: $(
-              'html, body').get(0).scrollHeight
-        }, 800);
-    });
+    var scrollLink = $('.scroll');
+    scrollLink.click(function(e){
+        e.preventDefault();
+        $('body, html').animate({
+            scrollTop: $(this.hash).offset().top
+        }, 5000);        
+    })
 });
-$(document).ready(function(){
-    $('#aboutus_href').click(function(){
-        $("html, body").animate({
-            scrollTop: $(
-              'html, body').get(0).scrollHeight
-        }, 800);
-    });
-});
+
+
+
+
+
+
+
+
+
 const menu = document.querySelector(".list");
 const menuBtn = document.querySelector(".menu-btn");
 const cancelBtn = document.querySelector(".cancel-btn");
@@ -28,6 +47,8 @@ cancelBtn.onclick = () => {
     menuBtn.classList.remove("hide");
 
 }
+
+
 
 var scrollTop = $(window).scrollTop() ;
 const body = document.querySelector("body");
