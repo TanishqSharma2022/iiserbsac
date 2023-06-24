@@ -983,11 +983,13 @@ a{
         display: block;
         justify-content: center;
         align-items: center;
+        padding-right: 10px;
+        padding-left: 10px;
 
     }
     .sac{
         position: relative;
-        font-size: 2rem;
+        font-size: 4rem;
         top: 0;
         left: 0%;
     }
@@ -995,7 +997,7 @@ a{
         position: relative;
         top: 10%;
         left: 0%;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     .fa-bars{
         position: relative;
