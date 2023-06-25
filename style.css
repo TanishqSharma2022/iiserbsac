@@ -90,15 +90,21 @@ body{
   backdrop-filter: blur(1rem);
   
     background: hsl(0, 0, 1, 1);
-    box-shadow:0px 0px 20px black;
+    box-shadow:0px 0px 10px black;
+    /* border: 1px solid red; */
 }
 
 .navbar.sticking li a {
     color: #333;
+    border: none;
+
 
 }
 .navbar.sticking li a:hover{
-    color: black;
+    color: #b65a21;
+    background: none;
+    border: none;
+    /* box-shadow: 0px 3px 2px black; */
 } 
 
 .navbar.navup{
@@ -156,7 +162,8 @@ body{
     text-decoration: none;
     padding: 10px;
     color: white;
-    font-weight: 600;
+    font-family: 'Poppins';
+    /* font-weight: 100; */
     border: 1px solid transparent;
     transition: all 0.2s linear;
 }
@@ -203,11 +210,14 @@ li a:active{
 }
 li a:hover{
     text-decoration: none;
-    border-color: white;
+    /* border-color: white; */
     cursor: pointer;
-    color: rgba(0, 0, 0, 0.5);
-    background: white;
-    text-shadow: 0px 3px 5px rgba(88, 78, 78, 0.078);
+    /* color: rgba(0, 0, 0, 0.5); */
+    color: #b05923;
+    /* background: white; */
+    /* text-shadow: 0px 0px 5px rgb(9, 9, 9); */
+    /* -webkit-text-stroke: 0.5px white; */
+    /* -webkit-text-fill-color: #b05923 */
 }
 .material-symbols-outlined{
     -webkit-animation: leadarrow 1.5s infinite;
@@ -245,7 +255,7 @@ li a:hover{
 
 .sac{
     font-size: 3.7rem;
-    font-family: 'Montserrat', serif;
+    font-family: 'montserrat', serif;
     position: absolute;
     left: 27%;
     top: 10%;

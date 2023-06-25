@@ -156,7 +156,7 @@ var my_window = $(window);
 var position = my_window.scrollTop();
     
 my_window.scroll(function () {
-    if(window.scrollY > 0+'px'){
+    if(window.scrollY > 1000+'px'){
     
     if (my_window.scrollTop()  > position) {
         setTimeout(function(){$('.navbar').addClass('navup')}, 2000);
