@@ -39,7 +39,7 @@ $(document).ready(function(){
         $("html, body").animate({
             scrollTop: $(
               'html, body').get(0).scrollHeight
-        }, 800);
+        }, 1800);
     });
 });
 
@@ -93,6 +93,8 @@ var scrollTopAnimated = function (speed) {
 
 
 
+// STICKY NAVIGATION BAR
+
 
 const primaryHeader = document.querySelector('.navbar');
 const scrollWatcher = document.createElement('div');
@@ -105,3 +107,70 @@ const navObserver = new IntersectionObserver((entries) => {
 }, {rootMargin: "200px 0px 0px 0px"});
 
 navObserver.observe(scrollWatcher);
+
+
+
+
+
+
+
+// SCROLLING EFFECTS
+$(document).ready(function () {
+  
+    // Add smooth scrolling to all links
+    $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value
+        // before overriding default behavior
+        if (this.hash !== "") {
+
+            // Prevent default anchor
+            // click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method 
+            // to add smooth page scroll
+            // The optional number (800) specifies
+            // the number of milliseconds it takes
+            // to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 500, function () {
+
+                // Add hash (#) to URL when done 
+                // scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+        } // End if
+    });
+});
+
+
+
+// HIDE NAV BAR after 2 seconds and reappear when scrolling up
+
+var my_window = $(window);
+var position = my_window.scrollTop();
+    
+my_window.scroll(function () {
+    if(window.scrollY > 0+'px'){
+    
+    if (my_window.scrollTop()  > position) {
+        setTimeout(function(){$('.navbar').addClass('navup')}, 2000);
+    }else{
+        $('.navbar').removeClass('navup');
+    }
+    
+    
+    console.log(window.scrollY);
+    position = my_window.scrollTop();}
+});
+
+var navbar = document.querySelector('.navbar');
+navbar.addEventListener('mouseover', function(event){
+    $('.navbar').removeClass('navup');
+    console.log('mouseover');
+});

@@ -6,7 +6,9 @@
     box-sizing: border-box;
     font-family: 'Montserrat';
 }
-
+a{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
@@ -84,18 +86,24 @@ body{
 
 
 .navbar.sticking{
-    background: #333;
+    -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(1rem);
+  
+    background: hsl(0, 0, 1, 1);
     box-shadow:0px 0px 20px black;
 }
 
 .navbar.sticking li a {
-    color: white;
+    color: #333;
 
 }
 .navbar.sticking li a:hover{
     color: black;
 } 
 
+.navbar.navup{
+    transform: translateY(-200px);
+}
 
 
 .navbar .content{
@@ -950,7 +958,7 @@ a{
 @media only screen and (max-width: 972px){
     .main{
         overflow-x: hidden;
-        margin-top: -12vh;
+        margin-top: -10vh;
     }
     .icon{
         display: block;
@@ -968,9 +976,11 @@ a{
 
     }
     .name img{
-        
-        top: 10px;
-        left: 10px;
+        width: 50px;
+        height: 50px;
+        aspect-ratio: 1/1;
+        top: 5px;
+        left: 20px;
         display: block;
         filter: drop-shadow(0px 3px 1px #ddd);
     }
@@ -1001,15 +1011,16 @@ a{
     }
     .fa-bars{
         position: relative;
-        top:0%;
+        top:0;
         left:0;
-        margin-top: 10px;
-        font-size: 30px;
-        transition: all 0.4s ease;
-        padding: 10px;
+        margin-top: -10px;
+        font-size: 25px;
+        transition: all 0.5s ease-in-out;
+        padding: 5px;
         border-radius: 20%;
         border: 2px solid #aaa;
-        color: white;
+        color: #333;
+    
     }
 
     .fa-times{
@@ -1030,7 +1041,7 @@ a{
         box-sizing: border-box;
         padding: 0px;
         margin: 0;
-        height: 12vh;
+        height: 10vh;
         
     }
     .navbar .list{
@@ -1048,26 +1059,30 @@ a{
         float: none;
         text-align: center;
         transition: all 0.5s ease;
-        padding: 0;
+        padding-top: 70px;
+        /* background: lightblue; */
 
     }
     .navbar .list li{
         box-sizing: border-box;
-        margin-top: 50px;
+        margin-top: 5px;
+        /* background: red; */
         padding-block: 20px;
         text-align: center;
         line-height: 10px;
-        top: 10%
+        width: 90%;
+        top: 10%;
+        left: 0%;
 
     }
     .navbar .list.active{
         left: 0;
     }
+
     .navbar .list li a {
         color: black;
         border-style: none;
-        font-size: 30px;
-        background: none;
+        font-size: 20px;
 
     }
     .menu-btn.hide{
