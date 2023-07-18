@@ -174,3 +174,16 @@ navbar.addEventListener('mouseover', function(event){
     $('.navbar').removeClass('navup');
     console.log('mouseover');
 });
+
+function toggle(n){
+    var blur = document.querySelector('#blur');
+    blur.classList.toggle('active');
+    var popup = document.querySelector('.popup');
+    popup.classList.toggle('active');
+
+    switch(n){
+        case 3:
+            
+    }
+
+}
