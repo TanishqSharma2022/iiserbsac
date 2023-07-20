@@ -42,7 +42,7 @@
 
 </head>
 
-<body>
+<body id="home">
     <!-- PRELOADER -->
     <!-- <div class="spinner-wrapper">
         <div class="spinner-grow text-primary" role="status">
@@ -56,16 +56,16 @@
     <div class="navbar">
         <div class="content">
             <div class="name">
-                <img class="desktop" src="./images/iiserbwhite.png" alt="">
+                <a target="_blank" href="https://www.iiserb.ac.in"><img class="desktop" src="./images/iiserbwhite.png" alt=""></a>
                 <img class="mobile" src="./images/removed_bg.png"   class="src">
             </div>
             <ul class="list">
                 <div class="icon cancel-btn">
                     <i class="fas fa-times"></i>
                 </div>
-                <li><a href="#">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a id="council_click scroll" href="#council_main">Councils</a></li>
-                <li><a id="scroll" href="#senate">Members</a></li>
+                <li><a id="scroll" href="#members">Members</a></li>
                 <li><a target="_blank" href="comingsoon.html">Elections</a></li>
 
                 <li><a target="_blank" href="comingsoon.html">Fests</a></li>
@@ -78,6 +78,15 @@
     </div>
     
     <div class="main">
+        <!-- <button class="carousel_left"><</button> -->
+        <!-- <div class="carousel_container">
+        <ul class="carousel">
+        <li class="current-slide"><img src="./images/iiser.jpeg"  alt="" class="carousel_slide "></li>
+        <li><img src="./images/iiserb.jpeg" alt="" class="carousel_slide"></li>
+        <li><img src="./images/iiserb_campus.png" alt="" class="carousel_slide "></li>
+        </ul>
+        </div>
+        <button class="carousel_right">></button> -->
         <div class="title">
             <div class="logo"><img src="./images/removed_bg.png" alt="" class="src"></div>
             <div class="sac">
@@ -97,7 +106,7 @@
 
     <div class="main2">
         <div class="aboutus" >
-            <div class="header">About Us</div>
+            <div class="header"><h1>About Us</h1></div>
             <p class="about_para" >
                 SAC is the student activity council of IISER Bhopal. This is the elected student body, which acts as a
                 bridge between the administration and the students to ensure smooth functioning.</n>
@@ -108,31 +117,42 @@
             </p>
         </div>
     </div>
+    <!-- POPUP FOR COUNCILS -->
+    <div class="popup_council">
+        <button class="popup_close" onclick="council_toggle()"><i class="fa-solid fa-xmark"></i></button>
+        <div class="popup_main">
+            
+            </div>
+        </div>
+    </div>
+    
 
 
+<!-- id=council_main -->
+        <p id="council_main"></p>
 
-    <div style="padding: 50px;" id="council_main" class="council_main">
-        <div class="one">
+    <div style="padding: 50px;" id="blur2" class="council_main">
+        <div class="one" >
             <h1>COUNCILS</h1>
         </div>
         <div class="members">
 
             <div class="row">
                 <div class="box">
-                    <a href="culturalcouncil.html">
+                    <a target="_blank" onclick="council_toggle()">
                         <img id="council" src="./images/cultural_council.png" alt="" class="src">
                         <h2>Cultural Council</h2>
                     </a>
 
                 </div>
                 <div class="box">
-                    <a href="https://sites.google.com/iiserb.ac.in/cnc/cnc">
+                    <a target="_blank" href="https://sites.google.com/iiserb.ac.in/cnc/cnc">
                         <img id="council" src="./images/cnc_logo.png" style="object-fit: cover;" alt="" class="src">
                         <h2>Computer & Networking Council</h2>
                     </a>
                 </div>
                 <div class="box">
-                    <a href="https://sites.google.com/iiserb.ac.in/fineartsandliterarycouncil/home">
+                    <a target="_blank" href="https://sites.google.com/iiserb.ac.in/fineartsandliterarycouncil/home">
                         <img id="council" src="./images/falc.png" alt="" class="src">
                         <h2>Fine Arts & Literary Council</h2>
                     </a>
@@ -189,16 +209,16 @@
 
     <!-- POPUP FOR MEMBERS -->
     <div class="popup">
-        <button class="popup_close" onclick="toggle(3)"><i class="fa-solid fa-xmark"></i></button>
+        <button class="popup_close" onclick="toggle()"><i class="fa-solid fa-xmark"></i></button>
         <div class="popup_main">
             <div class="popup_image">
                 <img src="./images/senate/devangkrishnan.jpeg" alt="" class="popupimage">
-                <h2>Devang V Krishnan</h2>
-                <!-- <h3>President</h3> -->
+                <h2 id="popup_head_name">Devang V Krishnan</h2>
+                <h3 id="popup_head_occp">President</h3>
             </div>
             <div class="popup_content">
                 <h2>About Me</h2>
-                <h3>Analytical, Passionate Data Science and Engineering undergraduate looking for industry challenges with 3+ years of research lab experience; Hands-on experience with Data Analytics, Machine Learning, Database Management, Statistical Inference, Robotics and AI. Experience also includes paper writing, project proposal presentation and team leading. Python(5+ Years), SQL</h3>
+                <h3 id="popup_abtme_content">Analytical, Passionate Data Science and Engineering undergraduate looking for industry challenges with 3+ years of research lab experience; Hands-on experience with Data Analytics, Machine Learning, Database Management, Statistical Inference, Robotics and AI. Experience also includes paper writing, project proposal presentation and team leading. Python(5+ Years), SQL</h3>
                 <div class="links">
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-linkedin"></i>
@@ -208,128 +228,7 @@
             </div>
         </div>
     </div>
-    <!-- <div class="popup">
-        <button class="popup_close" onclick="toggle()"><i class="fa-solid fa-xmark"></i></button>
-        <div class="popup_main">
-            <div class="popup_image">
-                <img src="./images/senate/devangkrishnan.jpeg" alt="" class="popupimage">
-                <h2>Anukaran Singh</h2>
-                <h3>Vice-President</h3>
-            </div>
-            <div class="popup_content">
-                <h2>About Me</h2>
-                <h3>Analytical, Passionate Data Science and Engineering undergraduate looking for industry challenges with 3+ years of research lab experience; Hands-on experience with Data Analytics, Machine Learning, Database Management, Statistical Inference, Robotics and AI. Experience also includes paper writing, project proposal presentation and team leading. Python(5+ Years), SQL</h3>
-                <div class="links">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-regular fa-envelope"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="popup">
-        <button class="popup_close" onclick="toggle()"><i class="fa-solid fa-xmark"></i></button>
-        <div class="popup_main">
-            <div class="popup_image">
-                <img src="./images/senate/devangkrishnan.jpeg" alt="" class="popupimage">
-                <h2>Aparna Vinod</h2>
-                <h3>Cultural Secretary</h3>
-            </div>
-            <div class="popup_content">
-                <h2>About Me</h2>
-                <h3>Analytical, Passionate Data Science and Engineering undergraduate looking for industry challenges with 3+ years of research lab experience; Hands-on experience with Data Analytics, Machine Learning, Database Management, Statistical Inference, Robotics and AI. Experience also includes paper writing, project proposal presentation and team leading. Python(5+ Years), SQL</h3>
-                <div class="links">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-regular fa-envelope"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="popup">
-        <button class="popup_close" onclick="toggle()"><i class="fa-solid fa-xmark"></i></button>
-        <div class="popup_main">
-            <div class="popup_image">
-                <img src="./images/senate/devangkrishnan.jpeg" alt="" class="popupimage">
-                <h2>Muhammed Roshan</h2>
-                <h3>Science Secretary</h3>
-            </div>
-            <div class="popup_content">
-                <h2>About Me</h2>
-                <h3>Analytical, Passionate Data Science and Engineering undergraduate looking for industry challenges with 3+ years of research lab experience; Hands-on experience with Data Analytics, Machine Learning, Database Management, Statistical Inference, Robotics and AI. Experience also includes paper writing, project proposal presentation and team leading. Python(5+ Years), SQL</h3>
-                <div class="links">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-regular fa-envelope"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="popup">
-        <button class="popup_close" onclick="toggle()"><i class="fa-solid fa-xmark"></i></button>
-        <div class="popup_main">
-            <div class="popup_image">
-                <img src="./images/senate/agamdeepsingh.jpeg" alt="" class="popupimage">
-                <h2>Agamdeep Singh</h2>
-                <h3>CNC Secretary</h3>
-            </div>
-            <div class="popup_content">
-                <h2>About Me</h2>
-                <h3>Analytical, Passionate Data Science and Engineering undergraduate looking for industry challenges with 3+ years of research lab experience; Hands-on experience with Data Analytics, Machine Learning, Database Management, Statistical Inference, Robotics and AI. Experience also includes paper writing, project proposal presentation and team leading. Python(5+ Years), SQL</h3>
-                <div class="links">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-regular fa-envelope"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="popup">
-        <button class="popup_close" onclick="toggle()"><i class="fa-solid fa-xmark"></i></button>
-        <div class="popup_main">
-            <div class="popup_image">
-                <img src="./images/senate/devangkrishnan.jpeg" alt="" class="popupimage">
-                <h2>Sohum Ranade</h2>
-                <h3>ESIC Secretary</h3>
-            </div>
-            <div class="popup_content">
-                <h2>About Me</h2>
-                <h3>Analytical, Passionate Data Science and Engineering undergraduate looking for industry challenges with 3+ years of research lab experience; Hands-on experience with Data Analytics, Machine Learning, Database Management, Statistical Inference, Robotics and AI. Experience also includes paper writing, project proposal presentation and team leading. Python(5+ Years), SQL</h3>
-                <div class="links">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-regular fa-envelope"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="popup">
-        <button class="popup_close" onclick="toggle()"><i class="fa-solid fa-xmark"></i></button>
-        <div class="popup_main">
-            <div class="popup_image">
-                <img src="./images/senate/devangkrishnan.jpeg" alt="" class="popupimage">
-                <h2>Himadri Sonowal</h2>
-                <h3>FALC Secretary</h3>
-            </div>
-            <div class="popup_content">
-                <h2>About Me</h2>
-                <h3>Analytical, Passionate Data Science and Engineering undergraduate looking for industry challenges with 3+ years of research lab experience; Hands-on experience with Data Analytics, Machine Learning, Database Management, Statistical Inference, Robotics and AI. Experience also includes paper writing, project proposal presentation and team leading. Python(5+ Years), SQL</h3>
-                <div class="links">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-regular fa-envelope"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
+    
 
 
 
@@ -351,7 +250,7 @@
         
         
         
-        <div class="titlebar">
+        <div class="titlebar" id="members">
             <div class="one">
                 <h1>Senate Members</h1>
             </div>
@@ -361,7 +260,7 @@
             <div class="row senaterow">
                 <div class="box senate">
                     <!-- <div class="image" > -->
-                    <img onclick="toggle()" src="./images/senate/devangkrishnan.jpeg" alt="" class="image src">
+                    <img onclick="toggle(1)" src="./images/senate/devangkrishnan.jpeg" alt="" class="image src">
                     <!-- <div class="links senatelinks"> -->
                         
                         <!-- <a href="https://www.instagram.com/_28devang_krishnan_/?hl=en"><i class="fa-brands fa-instagram"></i></a> -->
@@ -377,7 +276,7 @@
                     <!-- <div class="image"> -->
                         
 
-                    <img onclick="toggle()" src="./images/senate/anukaransingh.jpeg" alt="" class="src image">
+                    <img onclick="toggle(2)" src="./images/senate/anukaransingh.jpeg" alt="" class="src image">
                     <!-- <div class="links senatelinks">
                         <a href="https://www.instagram.com/mayuraa_iiserb/?hl=en"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://in.linkedin.com/in/anukaran-singh-51711a222?trk=people-guest_people_search-card"><i class="fa-brands fa-linkedin" ></i></a>
@@ -390,7 +289,7 @@
                 <div class="box senate">
                     
                     <!-- <div class="image"> -->
-                        <img onclick="toggle()" src="./images/senate/aparnavinod.jpeg" alt="" class="src image">
+                        <img onclick="toggle(3)" src="./images/senate/aparnavinod.jpeg" alt="" class="src image">
                     <!-- <div class="links senatelinks">
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://in.linkedin.com/in/aparna-vinod-bb1573224?trk=people-guest_people_search-card"><i class="fa-brands fa-linkedin" ></i></a>
@@ -403,7 +302,7 @@
 
                     <!-- <div class="image"> -->
                         
-                    <img onclick="toggle()" src="./images/senate/muhammedroshan.jpeg" alt="" class="src image">
+                    <img onclick="toggle(4)" src="./images/senate/muhammedroshan.jpeg" alt="" class="src image">
                     <!-- <div class="links senatelinks">
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/mroshan1/?originalSubdomain=in"><i class="fa-brands fa-linkedin" ></i></a>
@@ -422,7 +321,7 @@
 
                     <!-- <div class="image"> -->
                         
-                    <img onclick="toggle()" src="./images/senate/agamdeepsingh.jpeg" alt="" class="src image">
+                    <img onclick="toggle(5)" src="./images/senate/agamdeepsingh.jpeg" alt="" class="src image">
                     <!-- <div class="links senatelinks">
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/agamdeep-iiser/"><i class="fa-brands fa-linkedin" ></i></a>
@@ -434,7 +333,7 @@
                 <div class="box senate">
                     
                     <!-- <div class="image"> -->
-                        <img onclick="toggle()" src="./images/senate/sohumranade.jpeg" alt="" class="src image">
+                        <img onclick="toggle(6)" src="./images/senate/sohumranade.jpeg" alt="" class="src image">
                     <!-- <div class="links senatelinks">
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/sohum-ranade-22a90916a/"><i class="fa-brands fa-linkedin" ></i></a>
@@ -446,7 +345,7 @@
                 <div class="box senate">
                     
                     <!-- <div class="image"> -->
-                        <img onclick="toggle()" src="./images/senate/himadri.png" alt="" class="src image">
+                        <img onclick="toggle(7)" src="./images/senate/himadri.png" alt="" class="src image">
                     <!-- <div class="links senatelinks">
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href=""><i class="fa-brands fa-linkedin" ></i></a>
@@ -458,7 +357,7 @@
                 <div class="box senate">
                     
                     <!-- <div class="image"> -->
-                        <img onclick="toggle()" src="./images/senate/pranavkrishna.jpeg" alt="" class="src image">
+                        <img onclick="toggle(8)" src="./images/senate/pranavkrishna.jpeg" alt="" class="src image">
                     <!-- <div class="links senatelinks">
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/pranav-krishna-aa7a7922b"><i class="fa-brands fa-linkedin" ></i></a>
@@ -474,7 +373,7 @@
                 <div class="box senate">
 
                     <!-- <div class="image"> -->
-                    <img onclick="toggle()"  src="./images/senate/abhishekpatel.jpeg" alt="" class="src image">
+                    <img onclick="toggle(9)"  src="./images/senate/abhishekpatel.jpeg" alt="" class="src image">
                     <!-- <div class="links senatelinks">
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/abhishekppatel"><i class="fa-brands fa-linkedin" ></i></a>
@@ -592,10 +491,10 @@
             <!--   Footer Bottom start  -->
             <div class="footer-bottom">
                 <span style="color:#dadada;font-size:1.2em;margin-bottom: 7px;display:block;">Designed & Developed by
-                    <a href="https://www.linkedin.com/in/tanishq-sharma-5204bb249" target="_blank"
+                    <a  href="https://www.linkedin.com/in/tanishq-sharma-5204bb249" target="_blank"
                         style="color:#fafafa;text-decoration-color: #dadada;text-decoration: underline;">Tanishq
                         Sharma</a> and
-                    <a href="https://www.linkedin.com/in/shailesh-kachhi-681a041a2" target="_blank"
+                    <a  href="https://www.linkedin.com/in/shailesh-kachhi-681a041a2" target="_blank"
                         style="color:#fafafa;text-decoration-color: #dadada;text-decoration: underline;">Shailesh
                         Kachhi</a></span>
                 <p>Copyright &copy; Student Activity Council, Indian Institute of Science Education and Research

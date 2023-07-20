@@ -175,15 +175,147 @@ navbar.addEventListener('mouseover', function(event){
     console.log('mouseover');
 });
 
+
+
+
+// POPUP FUNCTION FOR COUNCIL
+
+
+
+function council_toggle(){
+    var blur2 = document.querySelector('#blur2');
+    blur2.classList.toggle('active2');
+    var popup_council = document.querySelector('.popup_council');
+    popup_council.classList.toggle('active2');
+    var popupimage = document.querySelector(".popupimage");
+    var name = document.querySelector("#popup_head_name");
+    var position = document.querySelector("#popup_head_occp");
+    var content = document.querySelector("#popup_abtme_content");
+    
+}
+
+
+
+
+
+var carousel = document.querySelector('.carousel');
+var carousel_slide = Array.from(carousel.children);
+const slideWidth = carousel_slide[0].getBoundingClientRect().width;
+console.log(slideWidth);
+
+carousel_slide.forEach((slide, index)=> {
+    console.log(slide.children[0]);
+    slide.children[0].style.left = slideWidth*index + 'px';
+})
+
+// const prevBtn = document.querySelector(".carousel_left");
+// const nextBtn = document.querySelector(".carousel_right");
+
+// var count = 0
+
+// nextBtn.addEventListener('click', e => {
+//     const currentSlide = carousel.querySelector('.current-slide');
+//     const nextSlide = currentSlide.nextElementSibling;
+//     const Amt = nextSlide.children[0].style.left;
+
+
+
+//     carousel.style.transform = 'translateX(-' + Amt + ')';
+//     currentSlide.classList.remove('current-slide');
+//     nextSlide.classList.add('current-slide');
+//     count++;
+//     // console.log(count);
+// })  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// POPUP FUNCTION FOR MEMBERS
+
+
 function toggle(n){
     var blur = document.querySelector('#blur');
     blur.classList.toggle('active');
     var popup = document.querySelector('.popup');
     popup.classList.toggle('active');
-
+    var popupimage = document.querySelector(".popupimage");
+    var name = document.querySelector("#popup_head_name");
+    var position = document.querySelector("#popup_head_occp");
+    var content = document.querySelector("#popup_abtme_content");
     switch(n){
+        case 1:
+            popupimage.src = "./images/senate/devangkrishnan.jpeg";
+            name.innerHTML = "Devang V Krishnan";
+            position.innerHTML = "President";
+            content.innerHTML="Hello I am Devang V Krishnan";
+            break;
+        case 2:
+            popupimage.src = "./images/senate/anukaransingh.jpeg";
+            name.innerHTML = "Anukaran Singh";
+            position.innerHTML = "Vice President";
+            content.innerHTML="Hello I am Anukaran Singh";
+            break;
         case 3:
-            
-    }
+            popupimage.src = "./images/senate/aparnavinod.jpeg";
+            name.innerHTML = "Aparna Vinod";
+            position.innerHTML = "Cultural Secretary";
+            content.innerHTML="Hello I am Aparna Vinod";
+            break;
+        case 4:
+            popupimage.src = "./images/senate/muhammedroshan.jpeg";
+            name.innerHTML = "Muhammed Roshan";
+            position.innerHTML = "Science Secretary";
+            content.innerHTML="Hello I am Muhammed Roshan";
+            break;    
+        case 5:
+            popupimage.src = "./images/senate/agamdeepsingh.jpeg";
+            name.innerHTML = "Agamdeep Singh";
+            position.innerHTML = "CNC Secretary";
+            content.innerHTML="Hello I am Agamdeep Singh. I am the head of CNC club.";
+            break;
+        case 6:
+            popupimage.src = "./images/senate/sohumranade.jpeg";
+            name.innerHTML = "Sohum Ranade";
+            position.innerHTML = "ESIC Secretary";
+            content.innerHTML="Hello I am Sohum Ranade";
+            break;                                    
+        case 7:
+            popupimage.src = "./images/senate/himadri.png";
+            name.innerHTML = "Himadri Sonowal";
+            position.innerHTML = "FALC Secretary";
+            content.innerHTML="Hello I am Himadri Sonowal";
+            break;
+        case 8:
+            popupimage.src = "./images/senate/pranavkrishna.jpeg";
+            name.innerHTML = "Pranav Krishna";
+            position.innerHTML = "Sports Secretary";
+            content.innerHTML="Hello I am Pranav Krishna";
+            break;
+        case 9:
+            popupimage.src = "./images/senate/abhishekpatel.jpeg";
+            name.innerHTML = "Abhishek Patel";
+            position.innerHTML = "SDC Secretary";
+            content.innerHTML="Hello I am Abhishek Patel";
+            break;
+        }
 
 }
