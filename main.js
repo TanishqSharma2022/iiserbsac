@@ -29,9 +29,9 @@ cancelBtn.onclick = () => {
 $(document).ready(function(){
     $('#linked').click(function(){
         $("html, body").animate({
-            scrollTop: $(
-              'html, body').get(0).scrollHeight
-        }, 800);
+            scrollTop: window.innerHeight
+              
+        }, 500);
     });
 });
 $(document).ready(function(){
@@ -182,63 +182,82 @@ navbar.addEventListener('mouseover', function(event){
 
 
 
-function council_toggle(){
-    var blur2 = document.querySelector('#blur2');
-    blur2.classList.toggle('active2');
-    var popup_council = document.querySelector('.popup_council');
-    popup_council.classList.toggle('active2');
-    var popupimage = document.querySelector(".popupimage");
-    var name = document.querySelector("#popup_head_name");
-    var position = document.querySelector("#popup_head_occp");
-    var content = document.querySelector("#popup_abtme_content");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const rightBtn = document.querySelector("#rightBtn");
+const leftBtn = document.querySelector("#leftBtn");
+
+// document.querySelector('.currentSlide').nextElementSibling.style.opacity = 1;
+var track = document.querySelector(".carousel-container");
+// var images = Array.from(track.children);
+var images = track.getElementsByTagName('img');
+
+var numOfImages = images.length + 1;
+
+var rightCount = 1
+var leftCount = 1;
+rightBtn.addEventListener("click",()=>{
+    // const slider = document.querySelector('.slider');
+    const img = document.querySelector("#image");
+    // slider.style.transform = "translateX(-" + width*rightCount + "px)";
+    var currentSlide = document.querySelector(".currentSlide");
+    // console.log(currentSlide.nextElementSibling);
+    const width = currentSlide.getBoundingClientRect().width;
+    leftBtn.style.display = 'block';
+
+
+    // var nextSlide = currentSlide.nextElementSibling;
+    // document.querySelector('.carousel').scrollLeft += width;
+    if(rightCount != numOfImages-1){
+        track.style.transform = 'translateX(-'+width*rightCount+'px)';
+        rightCount++;
+        leftCount--;
+    }
+    console.log(rightCount);
+    if(rightCount == numOfImages-1){
+        rightBtn.style.display = "none";
+    }
+    if(leftCount != 1){
+        leftBtn.style.display = "block";
+    }
     
+
+} )
+if(leftCount == 1){
+    leftBtn.style.display = 'none';
 }
+leftBtn.addEventListener("click",()=>{
+    // const slider = document.querySelector('.slider');
 
+    const img = document.querySelector("#image");
+    const width = img.getBoundingClientRect().width;
+    // document.querySelector('.carousel').scrollLeft -= width;
+    console.log(leftCount);
+    if(leftCount != numOfImages-1){
+        track.style.transform = 'translateX('+width*leftCount+'px)';
+        leftCount++;
+        rightCount--;
+    }
+    if(leftCount == 1){
+        leftBtn.style.display = "none";
+    }
 
-
-
-
-var carousel = document.querySelector('.carousel');
-var carousel_slide = Array.from(carousel.children);
-const slideWidth = carousel_slide[0].getBoundingClientRect().width;
-console.log(slideWidth);
-
-carousel_slide.forEach((slide, index)=> {
-    console.log(slide.children[0]);
-    slide.children[0].style.left = slideWidth*index + 'px';
-})
-
-// const prevBtn = document.querySelector(".carousel_left");
-// const nextBtn = document.querySelector(".carousel_right");
-
-// var count = 0
-
-// nextBtn.addEventListener('click', e => {
-//     const currentSlide = carousel.querySelector('.current-slide');
-//     const nextSlide = currentSlide.nextElementSibling;
-//     const Amt = nextSlide.children[0].style.left;
-
-
-
-//     carousel.style.transform = 'translateX(-' + Amt + ')';
-//     currentSlide.classList.remove('current-slide');
-//     nextSlide.classList.add('current-slide');
-//     count++;
-//     // console.log(count);
-// })  
-
-
-
-
-
-
-
-
-
-
-
-
-
+    if(rightCount != numOfImages-1){
+        rightBtn.style.display = 'block';
+    }
+} );
 
 
 
@@ -319,3 +338,232 @@ function toggle(n){
         }
 
 }
+
+
+
+
+
+
+
+
+
+function council_toggle(n){
+    var blur2 = document.querySelector('#blur2');
+    blur2.classList.toggle('active2');
+    var popup_council = document.querySelector('.popup_council');
+    popup_council.classList.toggle('active2');
+    
+    var logo = document.querySelector(".council_logo");
+    var content = document.querySelector(".pcontent");
+    var boxes = document.querySelectorAll(".square");
+    var insta_handle = document.querySelector("#instahandle");
+    var gmail_handle = document.querySelector("#gmailhandle");
+    var club_head_name = document.querySelector("#club_head_name");
+    var club_head_email = document.querySelector("#club_head_email");
+    var club_head_no = document.querySelector("#club_head_no");
+    var club_head_image = document.querySelector("#club_head_image");
+
+
+
+
+
+
+    switch(n){
+
+        case 1:
+            logo.src = "./images/cultural_council.png";
+            content.innerHTML = "<ul><li>Aim to promote as well as practice different cultural activities like dance, music, drama in the Institute throughout the year.</li><li>Coordinate and arrange participation of institute in the Inter IISER Cultural Meet – IICM. </li><li>Organize regular classes or learning sessions for various cultural aspects on the demand of the clubs or the students.</li>";
+            // CLUB 1
+            boxes[0].querySelector("img").src = "./images/clubs/uttarang.png";
+            boxes[0].querySelector("#club_name").innerHTML = "Uttarang Club";
+            // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+
+            // CLUB 2
+            boxes[1].querySelector("img").src = "./images/clubs/aarambh.png";
+            boxes[1].querySelector("#club_name").innerHTML = "Aarambh Club";
+            // boxes[1].querySelector("#member_name").innerHTML = "Aniket Asthana `20 <br> Vaishnavi Agarwal `19";
+
+            // CLUB 3 
+            boxes[2].querySelector("img").src = "./images/clubs/mayura.png";
+            boxes[2].querySelector("#club_name").innerHTML = "Mayuraa Club";
+            // boxes[2].querySelector("#member_name").innerHTML = "Sayantan Mondal `20";
+
+            // CLUB 4
+            boxes[3].style.display = "flex";
+            boxes[3].querySelector("img").src = "./images/clubs/movie.png";
+            boxes[3].querySelector("#club_name").innerHTML = "Movie Club";
+            // boxes[3].querySelector("#member_name").innerHTML = "Deependra Singh Siniswar `19 <br> Udit Varma `19 <br> Abhinav Purohit `20";
+            
+            boxes[4].style.display = "none";
+            boxes[5].style.display = "none";
+            boxes[6].style.display = "none";
+            boxes[7].style.display = "none";
+
+
+            insta_handle.innerHTML = "@iiserb.cultural"
+            insta_handle.setAttribute("href", "https://www.instagram.com/iiserb.cultural/");
+
+            gmail_handle.innerHTML = "culturalcouncil@iiserb.ac.in";
+            gmail_handle.setAttribute("href", "mailto:culturalcouncil@iiserb.ac.in")
+
+            club_head_email.innerHTML = "aparna20@iiserb.ac.in";
+            club_head_no.innerHTML = "";
+            club_head_name.innerHTML = "Aparna Vinod";
+            club_head_image.src = "./images/senate/aparnavinod.jpeg";
+                
+            
+            break;
+        
+        case 2:
+            logo.src = "./images/cnc_logo.png";
+            content.innerHTML = "<ul><li>Hosts Programming Contests like ArmaCode and Worshops.</li><li>Arrange Gaming Nights for competitive shooter and sports games.</li><li>Arrange Photography competitions and workshops.</li>"
+
+            boxes[0].querySelector("img").src = "./images/clubs/cyberheathens.png";
+            boxes[0].querySelector("#club_name").innerHTML = "CyberHeathens (Programming Club)";
+            // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+
+
+
+            boxes[1].querySelector("img").src = "./images/clubs/gaming.png";
+            boxes[1].querySelector("#club_name").innerHTML = "Resurgnec (Gaming Club)";
+            // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+
+            boxes[2].querySelector("img").src = "./images/clubs/photography.png";
+            boxes[2].querySelector("#club_name").innerHTML = "Photography Club)";
+
+            // boxes[2].querySelector("#club_name").appendChild(document.createTextNode(""));
+            // boxes[2].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+
+            boxes[3].style.display = "none";
+            boxes[4].style.display = "none";
+            boxes[5].style.display = "none";
+            boxes[6].style.display = "none";
+            boxes[7].style.display = "none";
+
+            insta_handle.innerHTML = "@cnc_iiserb"
+            insta_handle.setAttribute("href", "https://www.instagram.com/cnc_iiserb/");
+
+            gmail_handle.innerHTML = "cnc@iiserb.ac.in";
+            gmail_handle.setAttribute("href", "mailto:cnc@iiserb.ac.in");
+
+            club_head_email.innerHTML = "agamdeep20@iiserb.ac.in";
+            club_head_no.innerHTML = "";
+            club_head_name.innerHTML = "Agamdeep Singh";
+            club_head_image.src = "./images/senate/agamdeepsingh.jpeg";
+            
+            break;
+        
+        case 3:
+            logo.src = "./images/falc.png";
+            content.innerHTML = "<ul><li>“Artistic” council of IISER Bhopal</li><li>Conduct annual fest- ARTS AND LETTERS; which has various signature events like Art Street (The cosplay one), Plane crash, Big paper, Face painting, Battle of Fandoms and many many more.</li><li>Organize events throughout the year through various clubs that promote the creative and artistic mindset of students and give a platform to the ones with immense talent</li></ul>";
+
+
+            boxes[0].querySelector("img").src = "./images/clubs/quiz.png";
+            boxes[0].querySelector("#club_name").innerHTML = "IBQC";
+            // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+
+
+
+            boxes[1].querySelector("img").src = "./images/clubs/aalankar.jpg";
+            boxes[1].querySelector("#club_name").innerHTML = "Alankar Club";
+            // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+
+            boxes[2].querySelector("img").src = "./images/clubs/debate.png";
+            boxes[2].querySelector("#club_name").innerHTML = "Debate Club";
+
+            boxes[3].style.display = "flex";
+            boxes[3].querySelector("img").src = "./images/clubs/book.png";
+            boxes[3].querySelector("#club_name").innerHTML = "Book Club";
+            // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+
+
+            boxes[4].style.display = "flex";
+            boxes[4].querySelector("img").src = "./images/clubs/comix.png";
+            boxes[4].querySelector("#club_name").innerHTML = "Comic Club";
+            // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+
+            boxes[5].style.display = "flex";
+            boxes[5].querySelector("img").src = "./images/clubs/aalekhya.png";
+            boxes[5].querySelector("#club_name").innerHTML = "Aalekhya Club";
+
+
+            // boxes[2].querySelector("#club_name").appendChild(document.createTextNode(""));
+            // boxes[2].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+
+            boxes[6].style.display = "flex";
+            boxes[6].querySelector("img").src = "./images/clubs/poetry.jpg";
+            boxes[6].querySelector("#club_name").innerHTML = "Poetry Club";
+
+            boxes[7].style.display = "none";
+
+
+            // contact
+            insta_handle.innerHTML = "@falc_iiserb";
+            insta_handle.setAttribute("href", "https://www.instagram.com/cnc_iiserb/");
+
+            gmail_handle.innerHTML = "falc@iiserb.ac.in";
+            gmail_handle.setAttribute("href", "mailto:falc@iiserb.ac.in");
+
+            club_head_email.innerHTML = "himadri20@iiserb.ac.in";
+            club_head_no.innerHTML = "9365822726";
+            club_head_name.innerHTML = "Himadri Sonowal";
+            club_head_image.src = "./images/senate/himadri.png";
+            break;
+        
+        case 4:
+            logo.src = "./images/science.png";
+            content.innerHTML = "<ul><li>It aims to provide high quality and interdisciplinary research platform to the students.</li><li>The main event it conducts is SINGULARITY, the flagship science fest of IISERB.</li></ul>";
+            
+            
+            boxes[0].querySelector("img").src = "./images/clubs/ibac.png";
+            boxes[0].querySelector("#club_name").innerHTML = "IBAC";
+            // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+
+
+
+            boxes[1].querySelector("img").src = "./images/clubs/eco.png";
+            boxes[1].querySelector("#club_name").innerHTML = "Economics Club";
+            // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+
+            boxes[2].querySelector("img").src = "./images/clubs/ees.png";
+            boxes[2].querySelector("#club_name").innerHTML = "EES Club";
+
+            boxes[3].style.display = "flex";
+            boxes[3].querySelector("img").src = "./images/clubs/bio.png";
+            boxes[3].querySelector("#club_name").innerHTML = "BIO Club";
+            // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+
+
+            boxes[4].style.display = "flex";
+            boxes[4].querySelector("img").src = "./images/clubs/phy.png";
+            boxes[4].querySelector("#club_name").innerHTML = "Physics Club";
+            // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+
+            boxes[5].style.display = "flex";
+            boxes[5].querySelector("img").src = "./images/clubs/maths.png";
+            boxes[5].querySelector("#club_name").innerHTML = "Maths Club";
+
+            boxes[6].style.display = "flex";
+            boxes[6].querySelector("img").src = "./images/clubs/chem.png";
+            boxes[6].querySelector("#club_name").innerHTML = "Chemistry Club";
+
+            boxes[7].style.display = "flex";
+            boxes[7].querySelector("img").src = "./images/clubs/chrysallis.png";
+            boxes[7].querySelector("#club_name").innerHTML = "Chrysallis Magazine";
+
+
+            // contact
+            insta_handle.innerHTML = "@science_council_iiserb";
+            insta_handle.setAttribute("href", "https://www.instagram.com/science_council_iiserb/");
+
+            gmail_handle.innerHTML = "science_council@iiserb.ac.in";
+            gmail_handle.setAttribute("href", "mailto:falc@iiserb.ac.in");
+
+            club_head_email.innerHTML = "himadri20@iiserb.ac.in";
+            club_head_no.innerHTML = "9365822726";
+            club_head_name.innerHTML = "Muhammed Roshan";
+            club_head_image.src = "./images/senate/muhammedroshan.jpeg";
+            break;
+        }
+}
+

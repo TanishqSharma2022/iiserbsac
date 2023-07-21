@@ -36,13 +36,13 @@
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
 
-    <title>STUDENT ACTIVITY COUNCIL - IISER BHOPAL</title>
-    <link rel="icon" type="images/x-icon" href="./images/SAC Logo.png" />
+    <title>SAC | IISER BHOPAL</title>
+    <link rel="icon" type="images/x-icon" href="./images/SAC Logo.svg" />
     
 
 </head>
 
-<body id="home">
+<body >
     <!-- PRELOADER -->
     <!-- <div class="spinner-wrapper">
         <div class="spinner-grow text-primary" role="status">
@@ -53,11 +53,11 @@
     <!-- MAIN CONTENT -->
     
     
-    <div class="navbar">
+    <div  class="navbar">
         <div class="content">
             <div class="name">
-                <a target="_blank" href="https://www.iiserb.ac.in"><img class="desktop" src="./images/iiserbwhite.png" alt=""></a>
-                <img class="mobile" src="./images/removed_bg.png"   class="src">
+                <a target="_blank" href="https://www.iiserb.ac.in"><img loading="lazy" class="desktop" src="./images/iiserbwhite.png" alt=""></a>
+                <img loading="lazy" class="mobile" src="./images/removed_bg.png"   class="src">
             </div>
             <ul class="list">
                 <div class="icon cancel-btn">
@@ -77,18 +77,18 @@
         </div>
     </div>
     
-    <div class="main">
+    <div id="home" class="main">
         <!-- <button class="carousel_left"><</button> -->
         <!-- <div class="carousel_container">
         <ul class="carousel">
-        <li class="current-slide"><img src="./images/iiser.jpeg"  alt="" class="carousel_slide "></li>
-        <li><img src="./images/iiserb.jpeg" alt="" class="carousel_slide"></li>
-        <li><img src="./images/iiserb_campus.png" alt="" class="carousel_slide "></li>
+        <li class="current-slide"><img loading="lazy" src="./images/iiser.jpeg"  alt="" class="carousel_slide "></li>
+        <li><img loading="lazy" src="./images/iiserb.jpeg" alt="" class="carousel_slide"></li>
+        <li><img loading="lazy" src="./images/iiserb_campus.png" alt="" class="carousel_slide "></li>
         </ul>
         </div>
         <button class="carousel_right">></button> -->
         <div class="title">
-            <div class="logo"><img src="./images/removed_bg.png" alt="" class="src"></div>
+            <div class="logo"><img loading="lazy" src="./images/removed_bg.png" alt="" class="src"></div>
             <div class="sac">
                 <h1>Student Activity Council</h1>
                 <p>IISER BHOPAL</p>
@@ -117,15 +117,141 @@
             </p>
         </div>
     </div>
+
+<div class="activities">
+    <div class="activity_header"><h1>Latest Activities</H1></div>
+     
+     <div class="wrapper">
+        <i id="leftBtn" class="fa-solid fa-angle-left"></i>
+     
+        <div class="carousel">
+        <div class="carousel-container">
+            <div class="c first"><h1>MUN</h1></div>
+            <div class="c two"><h1>Singularity</h1></div>
+            <div class="c three"><h1>Enthuzia</h1></div>
+            <div class="c four"><h1></h1></div>
+            <div class="c five"><h1></h1></div>
+
+            <img loading="lazy" class="currentSlide" id="image" src="./activities/IMG_5778.png" id="item-1" alt="1">            
+            <img loading="lazy" src="./activities/IMG_5780.png" id="item-2" alt="2">
+            <img loading="lazy" src="./activities/IMG_5782.png" id="item-3" alt="3">
+            <img loading="lazy" src="./activities/IMG_5790.png" id="item-4" alt="4">
+            <img loading="lazy" src="./activities/IMG_5791.png" id="item-5" alt="5">
+        </div>
+    </div>
+    <i id="rightBtn"  class="fa-solid fa-angle-right"></i>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
     <!-- POPUP FOR COUNCILS -->
     <div class="popup_council">
         <button class="popup_close" onclick="council_toggle()"><i class="fa-solid fa-xmark"></i></button>
-        <div class="popup_main">
-            
+        <!-- <div class="popup_container"> -->
+            <img src="" onclick="council_toggle()" class="council_logo">
+            <!-- <div class="council_logo"></div> -->
+
+            <div class="council_container">
+                <div class="content">
+                    <h2>ABOUT US</h2>
+                    <p class="pcontent">
+                        
+                    </p>
+                    <h2>CLUBS UNDER US</h2>
+                    
+                    <div class="clubs_under">
+                       <div class="square"> <img src="" alt="">
+                        <a id="club_name"></a>
+                        <a id="member_name"></a>
+                        </div>
+                       <div class="square"> <img src="" alt="">
+                        <a id="club_name"></a>
+                        <a id="member_name"></a>
+                        </div>
+                       <div class="square"> <img src="" alt="">
+                        <a id="club_name"></a>
+                        <a id="member_name">
+                        </a>
+                        </div>
+                        <div class="square">
+                            <img src="" alt="">
+                            <a id="club_name"></a>
+                            <a id="member_name"></a>
+                        </div>
+                        <div class="square"> <img src="" alt="">
+                            <a id="club_name"></a>
+                            <a id="member_name"></a>
+                            </div>
+                           <div class="square"> <img src="" alt="">
+                            <a id="club_name"></a>
+                            <a id="member_name"></a>
+                            </div>
+                           <div class="square"> <img src="" alt="">
+                            <a id="club_name"></a>
+                            <a id="member_name">
+                            </a>
+                            </div>
+                            <div class="square">
+                                <img src="" alt="">
+                                <a id="club_name"></a>
+                                <a id="member_name"></a>
+                            </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+                <div class="line"></div>
+                <div class="contact">
+                    <h2>Contact Us</h2>
+                    <div class="contact_box">
+                        <img class="social" src="./images/contacts/png/001-instagram.png" alt="">
+                        <a id="instahandle"></a>
+                    </div>
+                    <div class="contact_box">
+                        <img id="club_head_image" src="" alt="">
+                        <a id="club_head_name" ></a>
+                        <a id="club_head_email" ></a>
+                        <a id="club_head_no" ></a><br>
+                    </div>
+                    <div class="contact_box">
+                        <img class="social"src="./images/contacts/png/005-gmail-1.png" alt="">
+                        <a id="gmailhandle"></a>
+                    </div>
+
+
+                </div>
             </div>
+            <!-- </div> -->
         </div>
     </div>
     
+
+
+<!--  onerror="this.style.display='none'" -->
+
+
+
+
 
 
 <!-- id=council_main -->
@@ -139,54 +265,54 @@
 
             <div class="row">
                 <div class="box">
-                    <a target="_blank" onclick="council_toggle()">
-                        <img id="council" src="./images/cultural_council.png" alt="" class="src">
+                    <a target="_blank" onclick="council_toggle(1)">
+                        <img loading="lazy" id="council" src="./images/cultural_council.png" alt="" class="src">
                         <h2>Cultural Council</h2>
                     </a>
 
                 </div>
                 <div class="box">
-                    <a target="_blank" href="https://sites.google.com/iiserb.ac.in/cnc/cnc">
-                        <img id="council" src="./images/cnc_logo.png" style="object-fit: cover;" alt="" class="src">
+                    <a onclick="council_toggle(2)" target="_blank" >
+                        <img loading="lazy" id="council" src="./images/cnc_logo.png" style="object-fit: cover;" alt="" class="src">
                         <h2>Computer & Networking Council</h2>
                     </a>
                 </div>
                 <div class="box">
-                    <a target="_blank" href="https://sites.google.com/iiserb.ac.in/fineartsandliterarycouncil/home">
-                        <img id="council" src="./images/falc.png" alt="" class="src">
+                    <a onclick="council_toggle(3)" target="_blank">
+                        <img loading="lazy" id="council" src="./images/falc.png" alt="" class="src">
                         <h2>Fine Arts & Literary Council</h2>
                     </a>
                 </div>
                 <div class="box">
-                    <a href="science.html">
-                        <img id="council" src="./images/science.png" alt="" class="src">
+                    <a onclick="council_toggle(4)">
+                        <img loading="lazy" id="council" src="./images/science.png" alt="" class="src">
                         <h2>Science Council</h2>
                     </a>
                 </div>
             </div>
             <div class="row">
                 <div class="box">
-                    <a href="esic.html">
-                        <img id="council" src="./images/esic.png" alt="" class="src">
+                    <a onclick="council_toggle(5)">
+                        <img loading="lazy" id="council" src="./images/esic.png" alt="" class="src">
                         <h2>Environmental and Social Initiative Council</h2>
                     </a>
                 </div>
 
                 <div class="box">
-                    <a href="sports.html">
-                        <img id="council" src="./images/sports.png" alt="" class="src">
+                    <a onclick="council_toggle(6)">
+                        <img loading="lazy" id="council" src="./images/sports.png" alt="" class="src">
                         <h2>Sports Council</h2>
                     </a>
                 </div>
                 <div class="box">
-                    <a href="sdc.html">
-                        <img id="council" src="./images/sdc.png" alt="" class="src">
+                    <a onclick="council_toggle(7)">
+                        <img loading="lazy" id="council" src="./images/sdc.png" alt="" class="src">
                         <h2>Student Development Council</h2>
                     </a>
                 </div>
                 <div class="box">
-                    <a href="sdc.html">
-                        <img id="council" src="./images/rc.png" alt="" class="src">
+                    <a onclick="council_toggle(8)">
+                        <img loading="lazy" id="council" src="./images/rc.png" alt="" class="src">
                         <h2>The Representative Council</h2>
                     </a>
                 </div>
@@ -212,7 +338,7 @@
         <button class="popup_close" onclick="toggle()"><i class="fa-solid fa-xmark"></i></button>
         <div class="popup_main">
             <div class="popup_image">
-                <img src="./images/senate/devangkrishnan.jpeg" alt="" class="popupimage">
+                <img loading="lazy" src="./images/senate/devangkrishnan.jpeg" alt="" class="popupimage">
                 <h2 id="popup_head_name">Devang V Krishnan</h2>
                 <h3 id="popup_head_occp">President</h3>
             </div>
@@ -246,7 +372,7 @@
 
 
 
-    <div class="council_main senatemain" id="blur" style="background:#eee;padding-right: 50px; padding-left: 50px">
+    <div class="council_main senatemain"  id="blur"style="background:#eee;padding-right: 50px; padding-left: 50px">
         
         
         
@@ -260,7 +386,7 @@
             <div class="row senaterow">
                 <div class="box senate">
                     <!-- <div class="image" > -->
-                    <img onclick="toggle(1)" src="./images/senate/devangkrishnan.jpeg" alt="" class="image src">
+                    <img loading="lazy" onclick="toggle(1)" src="./images/senate/devangkrishnan.jpeg" alt="" class="image src">
                     <!-- <div class="links senatelinks"> -->
                         
                         <!-- <a href="https://www.instagram.com/_28devang_krishnan_/?hl=en"><i class="fa-brands fa-instagram"></i></a> -->
@@ -276,7 +402,7 @@
                     <!-- <div class="image"> -->
                         
 
-                    <img onclick="toggle(2)" src="./images/senate/anukaransingh.jpeg" alt="" class="src image">
+                    <img loading="lazy" onclick="toggle(2)" src="./images/senate/anukaransingh.jpeg" alt="" class="src image">
                     <!-- <div class="links senatelinks">
                         <a href="https://www.instagram.com/mayuraa_iiserb/?hl=en"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://in.linkedin.com/in/anukaran-singh-51711a222?trk=people-guest_people_search-card"><i class="fa-brands fa-linkedin" ></i></a>
@@ -289,7 +415,7 @@
                 <div class="box senate">
                     
                     <!-- <div class="image"> -->
-                        <img onclick="toggle(3)" src="./images/senate/aparnavinod.jpeg" alt="" class="src image">
+                        <img loading="lazy" onclick="toggle(3)" src="./images/senate/aparnavinod.jpeg" alt="" class="src image">
                     <!-- <div class="links senatelinks">
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://in.linkedin.com/in/aparna-vinod-bb1573224?trk=people-guest_people_search-card"><i class="fa-brands fa-linkedin" ></i></a>
@@ -302,7 +428,7 @@
 
                     <!-- <div class="image"> -->
                         
-                    <img onclick="toggle(4)" src="./images/senate/muhammedroshan.jpeg" alt="" class="src image">
+                    <img loading="lazy" onclick="toggle(4)" src="./images/senate/muhammedroshan.jpeg" alt="" class="src image">
                     <!-- <div class="links senatelinks">
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/mroshan1/?originalSubdomain=in"><i class="fa-brands fa-linkedin" ></i></a>
@@ -321,7 +447,7 @@
 
                     <!-- <div class="image"> -->
                         
-                    <img onclick="toggle(5)" src="./images/senate/agamdeepsingh.jpeg" alt="" class="src image">
+                    <img loading="lazy" onclick="toggle(5)" src="./images/senate/agamdeepsingh.jpeg" alt="" class="src image">
                     <!-- <div class="links senatelinks">
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/agamdeep-iiser/"><i class="fa-brands fa-linkedin" ></i></a>
@@ -333,7 +459,7 @@
                 <div class="box senate">
                     
                     <!-- <div class="image"> -->
-                        <img onclick="toggle(6)" src="./images/senate/sohumranade.jpeg" alt="" class="src image">
+                        <img loading="lazy" onclick="toggle(6)" src="./images/senate/sohumranade.jpeg" alt="" class="src image">
                     <!-- <div class="links senatelinks">
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/sohum-ranade-22a90916a/"><i class="fa-brands fa-linkedin" ></i></a>
@@ -345,7 +471,7 @@
                 <div class="box senate">
                     
                     <!-- <div class="image"> -->
-                        <img onclick="toggle(7)" src="./images/senate/himadri.png" alt="" class="src image">
+                        <img loading="lazy" onclick="toggle(7)" src="./images/senate/himadri.png" alt="" class="src image">
                     <!-- <div class="links senatelinks">
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href=""><i class="fa-brands fa-linkedin" ></i></a>
@@ -357,7 +483,7 @@
                 <div class="box senate">
                     
                     <!-- <div class="image"> -->
-                        <img onclick="toggle(8)" src="./images/senate/pranavkrishna.jpeg" alt="" class="src image">
+                        <img loading="lazy" onclick="toggle(8)" src="./images/senate/pranavkrishna.jpeg" alt="" class="src image">
                     <!-- <div class="links senatelinks">
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/pranav-krishna-aa7a7922b"><i class="fa-brands fa-linkedin" ></i></a>
@@ -373,7 +499,7 @@
                 <div class="box senate">
 
                     <!-- <div class="image"> -->
-                    <img onclick="toggle(9)"  src="./images/senate/abhishekpatel.jpeg" alt="" class="src image">
+                    <img loading="lazy" onclick="toggle(9)"  src="./images/senate/abhishekpatel.jpeg" alt="" class="src image">
                     <!-- <div class="links senatelinks">
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/abhishekppatel"><i class="fa-brands fa-linkedin" ></i></a>
@@ -399,7 +525,7 @@
 
                 <!--  for contact us info -->
                 <div class="footer-items">
-                    <img src="images/IISER White Logo.png"
+                    <img loading="lazy" src="images/IISER White Logo.png"
                         style="height: 150px;margin-right: auto !important;margin-bottom:15px;display: block !important" />
                     <h3 class="footer-heading">Contact us</h3>
                     <ul>

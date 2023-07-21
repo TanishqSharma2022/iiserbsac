@@ -60,75 +60,144 @@ body {
 .name img.mobile{
   display: none;
 }
-.carousel{
-  height: 100%;
+
+.activities{
   width: 100%;
-  position: relative;
-  transition: all 0.5s ease-in;
-  animation: slide 25s infinite ease;
-}
-@keyframes slide{
-  0%{
-    transform: translateX(0%);
-  }
-  32%{
-    transform: translateX(0%);
-
-  }
-  33%{
-    transform: translateX(-100%);
-  }
-  65%{
-    transform: translateX(-100%);
-
-  }
-  66%{
-    transform: translateX(-200%);
-  }
-  99%{
-    transform: translateX(-200%);
-
-  }
+  height: auto;
+  padding-block: 100px;
+  background: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.carousel_container{
+.carousel{ 
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* margin: 0 auto; */
+
+  transition: all 0.5s ease;
+
+  overflow: hidden;
+
+}
+.carousel-container{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  height: 400px;
   position: relative;
-  width: 100%;
-  height: 100vh;
-  /* border: 1px solid red; */
-  top: 0;
-  left: 0;
-  margin: 0;
-  padding: 0;
+
+  max-width: 1300px;
+  transition: all 0.5s ease;
+
+  /* transform: translateX(-500px); */
+}
+.c{
+  width: 33.333%;
+  height: 275px;
+  z-index: 99;
+  /* background: linear-gradient(#333, #222); */
+  opacity: 0.5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  background: black;
+  color: white;
+  font-family: Raleway;
+}
+.c h1{
+  font-size: 0rem;
+  color: white;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.c:hover h1{
+  font-size: 2rem;
+}
+.first{
+  transform: translate(-150%, -50%);
+}
+.two{
+  transform: translate(-50%, -50%);
+}
+.three{
+  transform: translate(50%, -50%);
+}
+.four{
+  transform: translate(150%, -50%);
+}
+.five{
+  transform: translate(250%, -50%);
+}
+
+
+
+
+.carousel-container img{
+  width: 33.333%;
+  height: 275px;
+  position: relative;
+  transition: all 0.5s ease;
+  /* opacity: 0.5; */
+
+  /* left: 0; */
+}
+.carousel-container img:before{
+  content: "hello";
+}
+
+.c:hover{
+  z-index: 99;
+  opacity: 0.8;
+  box-shadow: -2px 5px 33px 6px black;
+}
+
+.wrapper{
   margin: 0 auto;
   /* background: red; */
-  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-ul.carousel li img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* border: 1px solid blue; */
+
+/* 
+img.currentSlide{
+  width: 38%;
+  opacity: 1;
+transform: scale(1.3);
+  z-index: 999;
+  transition: all 1s ease;
+} */
+
+/* .carousel img:hover{
+  opacity: 1;
+  width: 33%;
+} */
+
+
+.activities i{
+  height: 30px;
+  width: 30px;
+  /* padding: 10px; */
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
 }
-.carousel{
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  /* overflow-x: hidden; */
-}
-ul.carousel li{
-  /* border: 2px solid brown; */
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-}
-.carousel_slide{
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-}
+
 
 .main,
 .main4 {
@@ -146,26 +215,7 @@ ul.carousel li{
 
 }
 
-@keyframes slider{
-  0%{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./images/iiser.jpeg); 
-  background-size: cover;
 
-  }
-  33%{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./images/iiserb.jpeg);
-  background-size: cover;
-
-  }
-  66%{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./images/iiserb_campus.png);
-  background-size: cover;
-
-  }
-}
 
 .navbar {
   width: 100%;
@@ -175,6 +225,7 @@ ul.carousel li{
   box-sizing: border-box;
   position: sticky;
   top: 0;
+  /* height: 6vh; */
   max-width: 100%;
   /* color: white; */
   /* background: brown; */
@@ -220,7 +271,7 @@ ul.carousel li{
 
 .navbar .content {
   max-width: 100%;
-  width: 97%;
+  width: 100%;
   height: 6vh;
   position: relative;
   top: 0;
@@ -470,6 +521,7 @@ li a:hover {
   filter: blur(10px);
   pointer-events: none;
 }
+
 .council_main#blur.active2{
   filter: blur(10px);
   pointer-events: none;
@@ -615,12 +667,12 @@ h1 em {
 font-style: normal;
 font-weight: 600;
 } */
-.one h1, .header h1 {
+.one h1, .header h1, .activity_header h1 {
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 5px;
 }
-.one h1:before, .header h1:before {
+.one h1:before, .header h1:before, .activity_header h1:before {
   width: 28px;
   height: 5px;
   display: block;
@@ -631,7 +683,7 @@ font-weight: 600;
   margin-left: -14px;
   background-color: #b80000;
 }
-.one h1:after, .header h1:after {
+.one h1:after, .header h1:after, .activity_header h1:after {
   width: 100px;
   height: 1px;
   display: block;
@@ -842,8 +894,136 @@ h1 > img {
 
 
 /* POPUP  */
+.council_logo{
+  /* width: 20%; */
+  height: 105px;
+  margin: 0 auto;
+  /* background: url('./images/cultural_council.png'); */
+  background-size: cover;
+  filter: drop-shadow(1px 1px 10px black);
 
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  /* mix-blend-mode: multiply; */
+  /* top: 3%; */
+}
+.council_container{
+  width: 100%;
+  /* background: red; */
+  height: 80%;
+  position: relative; 
+  margin: 0 auto;
+  display: flex;
+}
+.content{
+  width: 70%;
+  height: 100%;
+  padding: 10px;
+  overflow-y: scroll;
+  /* background: brown; */
+}
+.contact{
+  width: 30%;
+  height: 100%;
+  text-align: center;
+  /* background: blue; */
+  display: flex;
+  flex-direction: column;
+}
+.clubs_under{
+  width: 100%;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  text-align: center;
+  line-height: 1.4rem;
+  
+}
+.line{
+  width: 0.1%;
+  height: 70%;
+  margin-left: 10px;
+  background: black;
+}
+.contact_box{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.contact_box img{
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+  margin: 0 auto;
+
+}
+.social{
+  /* box-shadow: 1px 1px 10px black; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px); */
+  border-radius: 10px;
+  padding: 10px;
+  background: white;
+  /* width: 50px; */
+}
+.square{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 15px;
+  /* line-height: 20px; */
+  /* border: 1px solid red; */
+}
+.content h2{
+  text-align: center;
+}
+.clubs_under img{
+  width: 100%;
+  object-fit: contain;
+  height: 100px;
+  /* margin: 0 auto; */
+  filter: drop-shadow(1px 1px 5px black);
+}
+.square img:hover{
+  filter: drop-shadow(1px 1px 15px black);
+  cursor: pointer;
+}
+.square img:hover #club_name{
+  text-shadow: 1px 1px 15px black;
+  cursor: pointer;
+}
+.contact_box{
+  padding: 10px;
+}
+#instahandle, #gmailhandle{
+  text-decoration: none;
+  color: white;
+}
+
+#club_name{
+  font-family: 'PT Sans';
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding-top: 5px;
+}
+
+#member_name{
+  font-family: 'PT Sans';
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+
+
+.popup_council{padding: 10px;}
 .popup, .popup_council{
+
   width: 80%;
   /* border: 2px solid black; */
   position: fixed;
@@ -858,7 +1038,12 @@ h1 > img {
   visibility: hidden;
   opacity: 0;
   /* padding: 10px; */
-  background: var(--navlist-color);
+color: white;
+
+  background-color: #BA704F;
+  /* background: url(/picture.png); */
+  background-size: cover;
+  /* background: var(--navlist-color); */
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 19px 38px;
 
@@ -1365,13 +1550,17 @@ a {
     font-weight: 800;
     position: static;
   }
+  .name{
+    height: 100%;
+    /* background: brown; */
+  }
   .name .desktop{display: none;}
   .name .mobile {
-    width: 40px;
-    height: 40px;
+    /* width: 40px; */
+    height: 100%;
     aspect-ratio: 1/1;
     position: absolute;
-    top: 5px;
+    top: 0%;
     max-width: 100%;
     left: 20px;
     display: block;
@@ -1500,7 +1689,6 @@ a {
   }
   .fa-bars {
     position: relative;
-    /* top: 10%; */
     left: 0;
     font-size: 20px;
     transition: all 0.5s ease-in-out;
@@ -1509,7 +1697,7 @@ a {
     border: 2px solid #aaa;
     color:white;
     margin-right: 0px;
-    margin-top: 10px;
+    margin-top: 0.3vh;
   }
 
   .fa-times {
@@ -1533,8 +1721,16 @@ a {
   .navbar {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
     height: 6vh;
-    /* background: red; */
+
+  }
+  .navbar .content{
+
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
   }
   
   .navbar .list {
@@ -1585,22 +1781,35 @@ a {
     size: 5rem;
   }
 
+
+
+
+
+
+
+
+
+
 /* Boxes
  */
   .members{
-    padding: 50px;
+    padding: 0;
     margin: 0;
 
   }
 
 
+
+
   .row {
+
     /* border: 2px solid blue; */
     justify-content: space-between;
     flex-direction: column;
     height: 100%;
     padding: 0;
     margin: 0;
+    /* background: blue; */
   }
   .box {
     width: 100%;
@@ -1649,8 +1858,77 @@ a {
     width: 100%;
     height: 100vh;
     top: 0;
+    /* background: blue; */
     left: 0;
   }
+  .c{
+    width: 100%;
+    display: none;
+    /* background: red; */
+  }
+
+  .carousel-container img{
+    width: 100%;
+    opacity: 1;
+    object-fit: fill;
+    min-height: 275px;
+  }
+  .popup_council{
+    width: 95%;
+    height: 80%;
+    scroll-behavior: smooth;
+    overflow: auto;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .council_container{
+    overflow-y: scroll;
+    flex-direction: column;
+    /* background: blue; */
+    padding: 0;
+    margin: 0 auto;
+
+  }
+  .clubs_under{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 0 auto;
+      /* background: blue; */
+      padding: 0;
+  }
+  .square{
+    /* background: red; */
+    width: 100%;
+    padding: 10px;
+  }
+  .square img{
+    width: 100%;
+  }
+  .content{
+    /* background: skyblue; */
+    width: 100%;
+    height: auto;
+    overflow:visible;
+  }
+  .line{
+    width: 0;
+  }
+  .contact{
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    margin: 0 auto;
+    /* background: blue; */
+    width: 100%;
+  }
+  .contact_box{
+    width: 100%;
+    flex-direction: column;
+    /* background: red; */
+  }
+  .contact_box a, h3{
+    font-size: 1rem;
+  }
+  
 }
 .spinner-wrapper {
   width: 100%;
