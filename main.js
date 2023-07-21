@@ -374,14 +374,19 @@ function council_toggle(n){
             logo.src = "./images/cultural_council.png";
             content.innerHTML = "<ul><li>Aim to promote as well as practice different cultural activities like dance, music, drama in the Institute throughout the year.</li><li>Coordinate and arrange participation of institute in the Inter IISER Cultural Meet – IICM. </li><li>Organize regular classes or learning sessions for various cultural aspects on the demand of the clubs or the students.</li>";
             // CLUB 1
+            boxes[0].style.display = "flex";
+
             boxes[0].querySelector("img").src = "./images/clubs/uttarang.png";
             boxes[0].querySelector("#club_name").innerHTML = "Uttarang Club";
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
 
             // CLUB 2
+            boxes[1].style.display = "flex";
+
             boxes[1].querySelector("img").src = "./images/clubs/aarambh.png";
             boxes[1].querySelector("#club_name").innerHTML = "Aarambh Club";
             // boxes[1].querySelector("#member_name").innerHTML = "Aniket Asthana `20 <br> Vaishnavi Agarwal `19";
+            boxes[2].style.display="flex";
 
             // CLUB 3 
             boxes[2].querySelector("img").src = "./images/clubs/mayura.png";
@@ -417,16 +422,19 @@ function council_toggle(n){
         case 2:
             logo.src = "./images/cnc_logo.png";
             content.innerHTML = "<ul><li>Hosts Programming Contests like ArmaCode and Worshops.</li><li>Arrange Gaming Nights for competitive shooter and sports games.</li><li>Arrange Photography competitions and workshops.</li>"
+            boxes[0].style.display = "flex";
 
             boxes[0].querySelector("img").src = "./images/clubs/cyberheathens.png";
             boxes[0].querySelector("#club_name").innerHTML = "CyberHeathens (Programming Club)";
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
 
 
+            boxes[1].style.display = "flex";
 
             boxes[1].querySelector("img").src = "./images/clubs/gaming.png";
             boxes[1].querySelector("#club_name").innerHTML = "Resurgnec (Gaming Club)";
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+            boxes[2].style.display="flex";
 
             boxes[2].querySelector("img").src = "./images/clubs/photography.png";
             boxes[2].querySelector("#club_name").innerHTML = "Photography Club)";
@@ -457,6 +465,8 @@ function council_toggle(n){
             logo.src = "./images/falc.png";
             content.innerHTML = "<ul><li>“Artistic” council of IISER Bhopal</li><li>Conduct annual fest- ARTS AND LETTERS; which has various signature events like Art Street (The cosplay one), Plane crash, Big paper, Face painting, Battle of Fandoms and many many more.</li><li>Organize events throughout the year through various clubs that promote the creative and artistic mindset of students and give a platform to the ones with immense talent</li></ul>";
 
+            boxes[0].style.display = "flex";
+            boxes[1].style.display = "flex";
 
             boxes[0].querySelector("img").src = "./images/clubs/quiz.png";
             boxes[0].querySelector("#club_name").innerHTML = "IBQC";
@@ -467,6 +477,7 @@ function council_toggle(n){
             boxes[1].querySelector("img").src = "./images/clubs/aalankar.jpg";
             boxes[1].querySelector("#club_name").innerHTML = "Alankar Club";
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+            boxes[2].style.display="flex";
 
             boxes[2].querySelector("img").src = "./images/clubs/debate.png";
             boxes[2].querySelector("#club_name").innerHTML = "Debate Club";
@@ -514,6 +525,8 @@ function council_toggle(n){
             logo.src = "./images/science.png";
             content.innerHTML = "<ul><li>It aims to provide high quality and interdisciplinary research platform to the students.</li><li>The main event it conducts is SINGULARITY, the flagship science fest of IISERB.</li></ul>";
             
+            boxes[0].style.display = "flex";
+            boxes[1].style.display = "flex";
             
             boxes[0].querySelector("img").src = "./images/clubs/ibac.png";
             boxes[0].querySelector("#club_name").innerHTML = "IBAC";
@@ -524,7 +537,7 @@ function council_toggle(n){
             boxes[1].querySelector("img").src = "./images/clubs/eco.png";
             boxes[1].querySelector("#club_name").innerHTML = "Economics Club";
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
-
+            boxes[2].style.display="flex";
             boxes[2].querySelector("img").src = "./images/clubs/ees.png";
             boxes[2].querySelector("#club_name").innerHTML = "EES Club";
 
@@ -559,11 +572,135 @@ function council_toggle(n){
             gmail_handle.innerHTML = "science_council@iiserb.ac.in";
             gmail_handle.setAttribute("href", "mailto:falc@iiserb.ac.in");
 
-            club_head_email.innerHTML = "himadri20@iiserb.ac.in";
+            club_head_email.innerHTML = "roshan20@iiserb.ac.in";
             club_head_no.innerHTML = "9365822726";
             club_head_name.innerHTML = "Muhammed Roshan";
             club_head_image.src = "./images/senate/muhammedroshan.jpeg";
             break;
+
+        case 5:
+            boxes[0].style.display = "flex";
+            boxes[1].style.display = "flex";
+            logo.src = "./images/esic.png";
+            content.innerHTML = "<ul><li>As the name suggests, we are responsible for introducing new social initiatives and environmental policies and helping the community implement them.</li><li>  A part of our work includes spreading awareness about modern social approaches.</li><li> We also try and bring the most sustainable ways of living to the IISERB community. </li></ul>";
+
+            boxes[0].querySelector("img").src = "./images/clubs/humansofiiserb.jpg";
+            boxes[0].querySelector("#club_name").innerHTML = "Humans of IISER Bhopal";
+            // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+
+
+
+            boxes[1].querySelector("img").src = "./images/clubs/humansofiiserb.jpg";
+            boxes[1].querySelector("#club_name").innerHTML = "Animal Welfare Society";
+            // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+
+            boxes[2].style.display = "none";
+
+            // boxes[2].querySelector("#club_name").appendChild(document.createTextNode(""));
+            // boxes[2].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+
+            boxes[3].style.display = "none";
+            boxes[4].style.display = "none";
+            boxes[5].style.display = "none";
+            boxes[6].style.display = "none";
+            boxes[7].style.display = "none";
+
+            insta_handle.innerHTML = "@esic_iiserb"
+            insta_handle.setAttribute("href", "https://www.instagram.com/cnc_iiserb/");
+
+            gmail_handle.innerHTML = "esic@iiserb.ac.in";
+            gmail_handle.setAttribute("href", "mailto:cnc@iiserb.ac.in");
+
+            club_head_email.innerHTML = "sranade20@iiserb.ac.in";
+            club_head_no.innerHTML = "";
+            club_head_name.innerHTML = "Sohum Ranade";
+            club_head_image.src = "./images/senate/sohumranade.jpeg";
+            
+            break;
+
+        case 6:
+
+            logo.src = "./images/sports.png";
+            content.innerHTML = "<ul><li>Organise events like IISM, Sangharsh, Mini Marathon etc.</li><li>Motivate people to learn sports and also practice it regularly</li><li>Looks after all sports facilities including grounds/courts and equipment</li><li>Works in association with Sports Office.</li><li>Conducts The Intra IISERB Sports Tournament, Sangharsh , held annually in the even semesters.</li></ul>";
+            boxes[0].style.display = "none";
+            boxes[1].style.display = "none";
+            
+            boxes[2].style.display = "none";
+
+            // boxes[2].querySelector("#club_name").appendChild(document.createTextNode(""));
+            // boxes[2].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+
+            boxes[3].style.display = "none";
+            boxes[4].style.display = "none";
+            boxes[5].style.display = "none";
+            boxes[6].style.display = "none";
+            boxes[7].style.display = "none";
+
+            insta_handle.innerHTML = "@sports_iiserb"
+            insta_handle.setAttribute("href", "https://www.instagram.com/sports_iiserb/");
+
+            gmail_handle.innerHTML = "sportscouncil@iiserb.ac.in";
+            gmail_handle.setAttribute("href", "mailto:sportscouncil@iiserb.ac.in");
+
+            club_head_email.innerHTML = "sranade20@iiserb.ac.in";
+            club_head_no.innerHTML = "";
+            club_head_name.innerHTML = "Pranav Krishna";
+            club_head_image.src = "./images/senate/pranavkrishna.jpeg";
+            break;
+
+        case 7:
+
+            logo.src = "./images/sdc.png";
+            content.innerHTML = "<ul><li>Conducts Orientations related to Academics (Primer, Pre-Majors, Majors) and Professionals(Internship, CV, etc).</li><li>Publishes written content like Carma and SDC Blogs</li><li>Conducts Model United Nations (MUN).</li><li>Organizes talks and events like Alumni Events and Alumni Meets</li></ul>";
+            boxes[0].style.display = "none";
+            boxes[1].style.display = "none";
+            
+            boxes[2].style.display = "none";
+
+            // boxes[2].querySelector("#club_name").appendChild(document.createTextNode(""));
+            // boxes[2].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+
+            boxes[3].style.display = "none";
+            boxes[4].style.display = "none";
+            boxes[5].style.display = "none";
+            boxes[6].style.display = "none";
+            boxes[7].style.display = "none";
+
+            insta_handle.innerHTML = "@sports_iiserb"
+            insta_handle.setAttribute("href", "https://www.instagram.com/sports_iiserb/");
+
+            gmail_handle.innerHTML = "sportscouncil@iiserb.ac.in";
+            gmail_handle.setAttribute("href", "mailto:sportscouncil@iiserb.ac.in");
+
+            club_head_email.innerHTML = "abhishek@iiserb.ac.in";
+            club_head_no.innerHTML = "";
+            club_head_name.innerHTML = "Abhishek Patel";
+            club_head_image.src = "./images/senate/abhishekpatel.jpeg";
+            break;
         }
+
+
+
+
 }
+
+var i=0;
+
+function changebg(){
+
+    var backgroundImageList = ["./images/mainBackground/iiser1.png", "./images/mainBackground/iiser2.jpeg", "./images/mainBackground/iiser3.jpeg", "./images/mainBackground/iiser4.jpeg"];
+    var mainbackground = document.querySelector(".main");
+    mainbackground.setAttribute("style", `background-image:url(${backgroundImageList[i]});`);
+
+    i++;
+    if(i==backgroundImageList.length){
+        i=0;
+    }
+    
+    // console.log(`This is ${backgroundImageList}`);
+console.log("helo");
+}
+
+// setTimeout(changebg, 2000);
+
 
