@@ -685,12 +685,12 @@ function council_toggle(n){
 }
 
 var i=0;
+var backgroundImageList = ["./images/mainBackground/iiser1.png", "./images/mainBackground/iiser2.jpeg", "./images/mainBackground/iiser3.jpeg", "./images/mainBackground/iiser4.jpeg"];
+var mainbackground = document.querySelector(".main");
 
-function changebg(){
+function rightbg(){
 
-    var backgroundImageList = ["./images/mainBackground/iiser1.png", "./images/mainBackground/iiser2.jpeg", "./images/mainBackground/iiser3.jpeg", "./images/mainBackground/iiser4.jpeg"];
-    var mainbackground = document.querySelector(".main");
-    mainbackground.setAttribute("style", `background-image:url(${backgroundImageList[i]});`);
+    mainbackground.setAttribute("style", `background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(${backgroundImageList[i]});`);
 
     i++;
     if(i==backgroundImageList.length){
@@ -699,6 +699,19 @@ function changebg(){
     
     // console.log(`This is ${backgroundImageList}`);
 console.log("helo");
+}
+
+function leftbg(){
+
+    mainbackground.setAttribute("style", `background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${backgroundImageList[i]});`);
+
+    i--;
+    if(i<=0){
+        i=backgroundImageList.length-1;
+    }
+    
+    // console.log(`This is ${backgroundImageList}`);
+console.log(i);
 }
 
 // setTimeout(changebg, 2000);

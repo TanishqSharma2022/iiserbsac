@@ -94,7 +94,9 @@
                 <i class="fa-solid fa-angle-down"></i>
             </a>
         </span>
-<button onclick="changebg()"><i class="fa-solid fa-angle-right"></i></button>
+<button id="btnRight" onclick="rightbg()"><i class="fa-solid fa-angle-right"></i></button>
+<button id="btnLeft" onclick="leftbg()"><i class="fa-solid fa-angle-left"></i></button>
+
     </div>
 
     <div class="main2">
@@ -332,16 +334,18 @@
 
     <!-- POPUP FOR MEMBERS -->
     <div class="popup">
-        <button class="popup_close" onclick="toggle()"><i class="fa-solid fa-xmark"></i></button>
+        <button class="popup_close" onclick="toggle()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
         <div class="popup_main">
             <div class="popup_image">
-                <img loading="lazy" src="./images/senate/devangkrishnan.jpeg" alt="" class="popupimage">
-                <h2 id="popup_head_name">Devang V Krishnan</h2>
-                <h3 id="popup_head_occp">President</h3>
+                <img loading="lazy" src="" alt="" class="popupimage">
+                <h2 id="popup_head_name"></h2>
+                <h3 id="popup_head_occp"></h3>
             </div>
             <div class="popup_content">
                 <h2>About Me</h2>
-                <h3 id="popup_abtme_content">Analytical, Passionate Data Science and Engineering undergraduate looking for industry challenges with 3+ years of research lab experience; Hands-on experience with Data Analytics, Machine Learning, Database Management, Statistical Inference, Robotics and AI. Experience also includes paper writing, project proposal presentation and team leading. Python(5+ Years), SQL</h3>
+                <h3 id="popup_abtme_content"></h3>
                 <div class="links">
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-linkedin"></i>
