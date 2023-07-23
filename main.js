@@ -182,20 +182,6 @@ navbar.addEventListener('mouseover', function(event){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const rightBtn = document.querySelector("#rightBtn");
 const leftBtn = document.querySelector("#leftBtn");
 
@@ -684,6 +670,10 @@ function council_toggle(n){
 
 }
 
+
+
+// BACKGROUND CAROUSEL
+
 var i=0;
 var backgroundImageList = ["./images/mainBackground/iiser1.png", "./images/mainBackground/iiser2.jpeg", "./images/mainBackground/iiser3.jpeg", "./images/mainBackground/iiser4.jpeg"];
 var mainbackground = document.querySelector(".main");
@@ -715,5 +705,6 @@ console.log(i);
 }
 
 // setTimeout(changebg, 2000);
+
 
 

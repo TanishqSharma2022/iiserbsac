@@ -77,8 +77,9 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  height: 275px;
   /* margin: 0 auto; */
-
+margin-top: 30px;
   transition: all 0.5s ease;
 
   overflow: hidden;
@@ -88,7 +89,7 @@ body {
   display: flex;
   align-items: center;
   margin: 0 auto;
-  height: 400px;
+  /* height: 275px; */
   position: relative;
 
   max-width: 1300px;
@@ -99,31 +100,45 @@ body {
 .c{
   width: 33.333%;
   height: 275px;
-  z-index: 99;
+  z-index:999;
   /* background: linear-gradient(#333, #222); */
-  opacity: 0.5;
+  opacity: 0.3;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   margin: 0 auto;
   align-items: center;
   text-align: center;
   background: black;
   color: white;
   font-family: Raleway;
+  transition: all 0.3s ease;
 }
 .c h1{
   font-size: 0rem;
   color: white;
   position: relative;
-  top: 50%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.c h5{
+  font-size: 0rem;
+  color: white;
+  position: relative;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.c:hover{
+  opacity: 0.6;
 }
 
 .c:hover h1{
   font-size: 2rem;
+}
+.c:hover h5{
+  font-size: 1rem;
 }
 .first{
   transform: translate(-150%, -50%);
@@ -149,19 +164,13 @@ body {
   height: 275px;
   position: relative;
   transition: all 0.5s ease;
-  /* opacity: 0.5; */
 
   /* left: 0; */
 }
-.carousel-container img:before{
-  content: "hello";
-}
 
-.c:hover{
-  z-index: 99;
-  opacity: 0.8;
-  box-shadow: -2px 5px 33px 6px black;
-}
+
+
+
 
 .wrapper{
   margin: 0 auto;
@@ -222,7 +231,7 @@ body {
   position: relative;
   top: -6vh;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(./images/iiser.jpeg);
+    url(./images/mainBackground/iiser4.jpeg);
   background-size: 100% 100%;
   /* animation: slider 19s infinite ease; */
 
@@ -944,6 +953,7 @@ h1 > img {
   /* background: blue; */
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 .clubs_under{
   width: 100%;
@@ -966,13 +976,20 @@ h1 > img {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  padding: 0;
 }
+
 .contact_box img{
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   object-fit: contain;
   margin: 0 auto;
+}
 
+#club_head_image{
+  width: 100px;
+  height: 100px;
+  padding-bottom: 5px;
 }
 .social{
   /* box-shadow: 1px 1px 10px black; */
@@ -1609,7 +1626,6 @@ a {
   }
   .popup_main{
     flex-direction: column;
-    background: blue;
     justify-content: center;
     align-items: center;
   }
@@ -1617,7 +1633,6 @@ a {
     position: absolute;
     color: black;
     display: block;
-
     padding: 10px;
     justify-content: center;
     /* background: red; */
@@ -1625,10 +1640,15 @@ a {
     text-align: center;
     top:80%;
   }
+  .popup_content{
+    height: 300px;
+    position: relative;
+    top: 30%;
+  }
   .popup_content h2{
     font-size: 30px;
     position: relative;
-    color: black;
+    color: white;
 
     /* text-shadow: 1px 2px 10px black; */
 
@@ -1637,24 +1657,27 @@ a {
   .popup_content h3{
     font-size: 15px;
     /* text-shadow: 1px 2px 10px black; */
-    color: black;
+    color: white;
+    height: 40%;
 
 
   }
- 
+ .popup_close{
+  filter: drop-shadow(1px 1px 10px black);
+  padding: 0;
+  top: 10px;
+ }
 
   .popup_image h2{
-    position: relative;
-    bottom: 21%;
+
   }
   .popup_image h3{
-    position: relative;
-    bottom: 23%;
+
   }
   .popup_image{
     position: absolute;
     top: 0;
-    border: 2px solid red;
+    border: 2px solid white;
     /* position: absolute; */
     /* top: 0%; */
     width: 100%;
@@ -1668,10 +1691,12 @@ a {
     height: 300px;
   }
   .links{
+
     width: 100%;
 
   }
   .links i{
+
     color: white;
     text-shadow: 1px 2px 10px black;
 
@@ -1890,11 +1915,28 @@ a {
   }
   .c{
     width: 100%;
-    display: none;
-    /* background: red; */
+    /* display: none; */
   }
+  
 
+  .first{
+    transform: translate(-50%, -50%);
+  }
+  .two{
+    transform: translate(50%, -50%);
+  }
+  .three{
+    transform: translate(150%, -50%);
+  }
+  .four{
+    transform: translate(250%, -50%);
+  }
+  .five{
+    transform: translate(350%, -50%);
+  }
+  
   .carousel-container img{
+    height: 100%;
     width: 100%;
     opacity: 1;
     object-fit: fill;
