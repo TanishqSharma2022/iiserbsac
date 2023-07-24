@@ -723,9 +723,7 @@ function council_toggle(n){
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
 
 
-            boxes[4].style.display = "flex";
-            boxes[4].querySelector("img").src = "images/SAC Logo.png";
-            boxes[4].querySelector("#club_name").innerHTML = "Student Senate Members";
+            boxes[4].style.display = "none";
             boxes[5].style.display = "none";
             boxes[6].style.display = "none";
             boxes[7].style.display = "none";
