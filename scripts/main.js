@@ -699,7 +699,7 @@ function council_toggle(n){
         case 8:
 
             logo.src = "./images/rc.jpg";
-            content.innerHTML = "<ul><li>Conducts Elections. </li><li>All Senate Memebers are a part of Representative Council</li><li>Conducts General Body Meeting (GBM).</li><li>Acts as a bridge between Students and Academic Staff for changes in the Policy made if needed.</li></ul>";
+            content.innerHTML = "<ul><li>RC serves as the channel to convey the requests or representations of the students to the institute. </li><li>It is a team of elected representatives from a class, department, mess and hostel.</li><li>It accounts for general body notions of academic and social life at the IISER-B campus.</li></ul>";
             boxes[0].style.display = "flex";
             boxes[1].style.display = "flex";
            
