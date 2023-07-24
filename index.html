@@ -2,19 +2,17 @@
 <html lang="en">
 
 <head>
-    <script src="https://code.jquery.com/jquery-3.6.3.js"
-        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://kit.fontawesome.com/eecc9ab967.js" crossorigin="anonymous"></script>
- 
+
     <style>
         .material-symbols-outlined {
             font-variation-settings:
@@ -33,16 +31,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
 
     <title>SAC | IISER BHOPAL</title>
     <link rel="icon" type="images/x-icon" href="./images/SAC Logo.svg" />
-    
+
 
 </head>
 
-<body >
+<body>
     <!-- PRELOADER -->
     <!-- <div class="spinner-wrapper">
         <div class="spinner-grow text-primary" role="status">
@@ -51,13 +49,16 @@
     </div> -->
 
     <!-- MAIN CONTENT -->
-    
-    
-    <div  class="navbar">
+
+
+    <div class="navbar">
         <div class="content">
             <div class="name">
-                <a target="_blank" href="https://www.iiserb.ac.in"><img loading="lazy" class="desktop" src="./images/iiserbwhite.png" alt=""></a>
-                <img loading="lazy" class="mobile" src="./images/removed_bg.png"   class="src">
+                <a target="_blank" href="https://www.iiserb.ac.in">
+                    <img loading="lazy" class="desktop" src="./images/iiserbwhite.png" alt="">
+                
+                    <img loading="lazy" class="mobile" src="./images/removed_bg.png" class="src">
+                </a>
             </div>
             <ul class="list">
                 <div class="icon cancel-btn">
@@ -76,11 +77,12 @@
             </div>
         </div>
     </div>
-    
+
     <div id="home" class="main">
-    
+
         <div class="title">
-            <div class="logo"><img loading="lazy" src="./images/removed_bg.png" alt="" class="src"></div>
+            <div class="logo">
+                <img loading="lazy" src="./images/removed_bg.png" alt="" class="src"></div>
             <div class="sac">
                 <h1>Student Activity Council</h1>
                 <p>IISER BHOPAL</p>
@@ -88,23 +90,25 @@
             <!-- <div class="iiserb">IISER BHOPAL</div> -->
         </div>
 
-        
+
         <span class="material-symbols-outlined">
             <a id="linked">
                 <i class="fa-solid fa-angle-down"></i>
             </a>
         </span>
-<button id="btnRight" onclick="rightbg()"><i class="fa-solid fa-angle-right"></i></button>
-<button id="btnLeft" onclick="leftbg()"><i class="fa-solid fa-angle-left"></i></button>
+        <button id="btnRight" onclick="rightbg()"><i class="fa-solid fa-angle-right"></i></button>
+        <button id="btnLeft" onclick="leftbg()"><i class="fa-solid fa-angle-left"></i></button>
 
     </div>
 
     <div class="main2">
 
 
-        <div class="aboutus" >
-            <div class="header"><h1>About Us</h1></div>
-            <p class="about_para" >
+        <div class="aboutus">
+            <div class="header">
+                <h1>About Us</h1>
+            </div>
+            <p class="about_para">
                 SAC is the student activity council of IISER Bhopal. This is the elected student body, which acts as a
                 bridge between the administration and the students to ensure smooth functioning.</n>
                 We ensure that the concerns and demands of the students are properly conveyed to the administration.</n>
@@ -115,38 +119,62 @@
         </div>
     </div>
 
-<div class="activities">
-    <div class="activity_header"><h1>Latest Activities</H1></div>
-     
-     <div class="wrapper">
-        <i id="leftBtn" class="fa-solid fa-angle-left"></i>
-     
-        <div class="carousel">
-        <div class="carousel-container">
-            
-
-            <img loading="lazy" class="currentSlide" id="image" src="./activities/IMG_5778.png" id="item-1" alt="1">            
-            <img loading="lazy" src="./activities/IMG_5780.png" id="item-2" alt="2">
-            <img loading="lazy" src="./activities/IMG_5782.png" id="item-3" alt="3">
-            <img loading="lazy" src="./activities/IMG_5790.png" id="item-4" alt="4">
-            <img loading="lazy" src="./activities/IMG_5791.png" id="item-5" alt="5">
-
-
-
-            <div class="c first" onclick="knowmore()">
-                <h1>MUN</h1>
-                <h5>This is Model United Nations. Join it.</h5>
-            </div>
-            <div class="c two"><h1>Singularity</h1></div>
-            <div class="c three"><h1>Enthuzia</h1></div>
-            <div class="c four"><h1>Sports</h1></div>
-            <div class="c five"><h1>Something</h1></div>
+    <div class="activities">
+        <div class="activity_header">
+            <h1>Latest Activities</H1>
         </div>
-    </div>
-    <i id="rightBtn"  class="fa-solid fa-angle-right"></i>
-</div>
 
-</div>
+        <div class="wrapper">
+            <i id="leftBtn" class="fa-solid fa-angle-left"></i>
+
+            <div class="carousel">
+                <div class="carousel-container">
+
+
+                    <img loading="lazy" class="currentSlide" id="image" src="./activities/yoga.png" id="item-1" alt="1">
+                    <img loading="lazy" src="./activities/anl.jpg" id="item-2" alt="2">
+                    <img loading="lazy" src="./activities/anl2.jpg" id="item-3" alt="3">
+                    <img loading="lazy" src="./activities/anl3.jpg" id="item-4" alt="4">
+                    <img loading="lazy" src="./activities/book.jpg" id="item-5" alt="5">
+                    <img loading="lazy" src="./activities/enthuzia.png" id="item-5" alt="5">
+                    <img loading="lazy" src="./activities/group.jpg" id="item-5" alt="5">
+                    <img loading="lazy" src="./activities/iicm.jpg" id="item-5" alt="5">
+                    <img loading="lazy" src="./activities/iicm2.jpg" id="item-5" alt="5">
+                    <img loading="lazy" src="./activities/iicm3.jpg" id="item-5" alt="5">
+                    <img loading="lazy" src="./activities/kabaddi.jpg" id="item-5" alt="5">
+                    <img loading="lazy" src="./activities/music.png" id="item-5" alt="5">
+                    <img loading="lazy" src="./activities/music2.jpg" id="item-5" alt="5">
+                    <img loading="lazy" src="./activities/taekwondo.jpg" id="item-5" alt="5">
+                    <img loading="lazy" src="./activities/tennis.jpg" id="item-5" alt="5">
+
+
+
+
+
+
+
+                    <div class="c first" onclick="knowmore()">
+                        <h1></h1>
+                        <h5></h5>
+                    </div>
+                    <div class="c two">
+                        <h1></h1>
+                    </div>
+                    <div class="c three">
+                        <h1></h1>
+                    </div>
+                    <div class="c four">
+                        <h1></h1>
+                    </div>
+                    <div class="c five">
+                        <h1></h1>
+                    </div>
+                </div>
+            </div>
+            <i id="rightBtn" class="fa-solid fa-angle-right"></i>
+        </div>
+
+    </div>
 
 
 
@@ -160,95 +188,95 @@
     <div class="popup_council">
         <button class="popup_close" onclick="council_toggle()"><i class="fa-solid fa-xmark"></i></button>
         <!-- <div class="popup_container"> -->
-            <img src="" onclick="council_toggle()" class="council_logo">
-            <!-- <div class="council_logo"></div> -->
+        <img src="" onclick="council_toggle()" class="council_logo">
+        <!-- <div class="council_logo"></div> -->
 
-            <div class="council_container">
-                <div class="content">
-                    <h2>ABOUT US</h2>
-                    <p class="pcontent">
-                        
-                    </p>
-                    <h2>CLUBS UNDER US</h2>
-                    
-                    <div class="clubs_under">
-                       <div class="square"> <img src="" alt="">
+        <div class="council_container">
+            <div class="content">
+                <h2>ABOUT US</h2>
+                <p class="pcontent">
+
+                </p>
+                <h2>CLUBS UNDER US</h2>
+
+                <div class="clubs_under">
+                    <div class="square"> <img src="" alt="">
                         <a id="club_name"></a>
                         <a id="member_name"></a>
-                        </div>
-                       <div class="square"> <img src="" alt="">
+                    </div>
+                    <div class="square"> <img src="" alt="">
                         <a id="club_name"></a>
                         <a id="member_name"></a>
-                        </div>
-                       <div class="square"> <img src="" alt="">
+                    </div>
+                    <div class="square"> <img src="" alt="">
                         <a id="club_name"></a>
                         <a id="member_name">
                         </a>
-                        </div>
-                        <div class="square">
-                            <img src="" alt="">
-                            <a id="club_name"></a>
-                            <a id="member_name"></a>
-                        </div>
-                        <div class="square"> <img src="" alt="">
-                            <a id="club_name"></a>
-                            <a id="member_name"></a>
-                            </div>
-                           <div class="square"> <img src="" alt="">
-                            <a id="club_name"></a>
-                            <a id="member_name"></a>
-                            </div>
-                           <div class="square"> <img src="" alt="">
-                            <a id="club_name"></a>
-                            <a id="member_name">
-                            </a>
-                            </div>
-                            <div class="square">
-                                <img src="" alt="">
-                                <a id="club_name"></a>
-                                <a id="member_name"></a>
-                            </div>
                     </div>
-                </div>
-                <div class="line"></div>
-                <div class="contact">
-                    <h2>CONTACT US</h2>
-                    <div class="contact_box">
-                        <img class="social" src="./images/contacts/png/001-instagram.png" alt="">
-                        <a id="instahandle"></a>
+                    <div class="square">
+                        <img src="" alt="">
+                        <a id="club_name"></a>
+                        <a id="member_name"></a>
                     </div>
-                    <div class="contact_box">
-                        <img id="club_head_image" src="" alt="">
-                        <a id="club_head_name" ></a>
-                        <a id="club_head_email" ></a>
-                        <a id="club_head_no" ></a>
+                    <div class="square"> <img src="" alt="">
+                        <a id="club_name"></a>
+                        <a id="member_name"></a>
                     </div>
-                    <div class="contact_box">
-                        <img class="social"src="./images/contacts/png/005-gmail-1.png" alt="">
-                        <a id="gmailhandle"></a>
+                    <div class="square"> <img src="" alt="">
+                        <a id="club_name"></a>
+                        <a id="member_name"></a>
                     </div>
-
-
+                    <div class="square"> <img src="" alt="">
+                        <a id="club_name"></a>
+                        <a id="member_name">
+                        </a>
+                    </div>
+                    <div class="square">
+                        <img src="" alt="">
+                        <a id="club_name"></a>
+                        <a id="member_name"></a>
+                    </div>
                 </div>
             </div>
-            <!-- </div> -->
+            <div class="line"></div>
+            <div class="contact">
+                <h2>CONTACT US</h2>
+                <div class="contact_box">
+                    <img class="social" src="./images/contacts/png/001-instagram.png" alt="">
+                    <a id="instahandle"></a>
+                </div>
+                <div class="contact_box">
+                    <img id="club_head_image" src="" alt="">
+                    <a id="club_head_name"></a>
+                    <a id="club_head_email"></a>
+                    <a id="club_head_no"></a>
+                </div>
+                <div class="contact_box">
+                    <img class="social" src="./images/contacts/png/005-gmail-1.png" alt="">
+                    <a id="gmailhandle"></a>
+                </div>
+
+
+            </div>
         </div>
+        <!-- </div> -->
     </div>
-    
-
-
-<!--  onerror="this.style.display='none'" -->
+    </div>
 
 
 
+    <!--  onerror="this.style.display='none'" -->
 
 
 
-<!-- id=council_main -->
-        <p id="council_main"></p>
+
+
+
+    <!-- id=council_main -->
+    <p id="council_main"></p>
 
     <div style="padding: 50px;" id="blur2" class="council_main">
-        <div class="one" >
+        <div class="one">
             <h1>COUNCILS</h1>
         </div>
         <div class="members">
@@ -262,8 +290,9 @@
 
                 </div>
                 <div class="box">
-                    <a onclick="council_toggle(2)" target="_blank" >
-                        <img loading="lazy" id="council" src="./images/cnc_logo.png" style="object-fit: cover;" alt="" class="src">
+                    <a onclick="council_toggle(2)" target="_blank">
+                        <img loading="lazy" id="council" src="./images/cnc_logo.png" style="object-fit: cover;" alt=""
+                            class="src">
                         <h2>Computer & Networking Council</h2>
                     </a>
                 </div>
@@ -346,7 +375,6 @@
             </div>
         </div>
     </div>
-    
 
 
 
@@ -364,26 +392,28 @@
 
 
 
-    <div class="council_main senatemain"  id="blur"style="background:#eee;padding-right: 50px; padding-left: 50px">
-        
-        
-        
+
+    <div class="council_main senatemain" id="blur" style="background:#eee;padding-right: 50px; padding-left: 50px">
+
+
+
         <div class="titlebar" id="members">
             <div class="one">
                 <h1>Senate Members</h1>
             </div>
         </div>
         <!-- <a onclick="toggle()">asdf</a> -->
-        <div class="members senatemember" >
+        <div class="members senatemember">
             <div class="row senaterow">
                 <div class="box senate">
                     <!-- <div class="image" > -->
-                    <img loading="lazy" onclick="toggle(1)" src="./images/senate/devangkrishnan.jpeg" alt="" class="image src">
+                    <img loading="lazy" onclick="toggle(1)" src="./images/senate/devangkrishnan.jpeg" alt=""
+                        class="image src">
                     <!-- <div class="links senatelinks"> -->
-                        
-                        <!-- <a href="https://www.instagram.com/_28devang_krishnan_/?hl=en"><i class="fa-brands fa-instagram"></i></a> -->
-                        <!-- <a href="https://in.linkedin.com/in/devang-v-krishnan-47b482239"><i class="fa-brands fa-linkedin" ></i></a> -->
-                        <!-- <i class=" fa-regular fa-envelope" ><a href=""></a></i> -->
+
+                    <!-- <a href="https://www.instagram.com/_28devang_krishnan_/?hl=en"><i class="fa-brands fa-instagram"></i></a> -->
+                    <!-- <a href="https://in.linkedin.com/in/devang-v-krishnan-47b482239"><i class="fa-brands fa-linkedin" ></i></a> -->
+                    <!-- <i class=" fa-regular fa-envelope" ><a href=""></a></i> -->
                     <!-- </div> -->
                     <!-- </div> -->
                     <h2>Devang Krishnan</h2>
@@ -392,22 +422,24 @@
                 <div class="box senate">
 
                     <!-- <div class="image"> -->
-                        
 
-                    <img loading="lazy" onclick="toggle(2)" src="./images/senate/anukaransingh.jpeg" alt="" class="src image">
+
+                    <img loading="lazy" onclick="toggle(2)" src="./images/senate/anukaransingh.jpeg" alt=""
+                        class="src image">
                     <!-- <div class="links senatelinks">
                         <a href="https://www.instagram.com/mayuraa_iiserb/?hl=en"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://in.linkedin.com/in/anukaran-singh-51711a222?trk=people-guest_people_search-card"><i class="fa-brands fa-linkedin" ></i></a>
                         <i class="fa-regular fa-envelope" ></i>
                     </div> -->
-                <!-- </div> -->
+                    <!-- </div> -->
                     <h2>Anukaran Singh</h2>
                     <h3>Vice-President</h3>
                 </div>
                 <div class="box senate">
-                    
+
                     <!-- <div class="image"> -->
-                        <img loading="lazy" onclick="toggle(3)" src="./images/senate/aparnavinod.jpeg" alt="" class="src image">
+                    <img loading="lazy" onclick="toggle(3)" src="./images/senate/aparnavinod.jpeg" alt=""
+                        class="src image">
                     <!-- <div class="links senatelinks">
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://in.linkedin.com/in/aparna-vinod-bb1573224?trk=people-guest_people_search-card"><i class="fa-brands fa-linkedin" ></i></a>
@@ -419,8 +451,9 @@
                 <div class="box senate">
 
                     <!-- <div class="image"> -->
-                        
-                    <img loading="lazy" onclick="toggle(4)" src="./images/senate/muhammedroshan.jpeg" alt="" class="src image">
+
+                    <img loading="lazy" onclick="toggle(4)" src="./images/senate/muhammedroshan.jpeg" alt=""
+                        class="src image">
                     <!-- <div class="links senatelinks">
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/mroshan1/?originalSubdomain=in"><i class="fa-brands fa-linkedin" ></i></a>
@@ -429,7 +462,7 @@
                     <h2>Muhammed Roshan</h2>
                     <h3>Science Council Secretary</h3>
                 </div>
-                
+
             </div>
             <div class="row senaterow">
 
@@ -438,8 +471,9 @@
                 <div class="box senate">
 
                     <!-- <div class="image"> -->
-                        
-                    <img loading="lazy" onclick="toggle(5)" src="./images/senate/agamdeepsingh.jpeg" alt="" class="src image">
+
+                    <img loading="lazy" onclick="toggle(5)" src="./images/senate/agamdeepsingh.jpeg" alt=""
+                        class="src image">
                     <!-- <div class="links senatelinks">
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/agamdeep-iiser/"><i class="fa-brands fa-linkedin" ></i></a>
@@ -449,9 +483,10 @@
                     <h3>CNC Secretary</h3>
                 </div>
                 <div class="box senate">
-                    
+
                     <!-- <div class="image"> -->
-                        <img loading="lazy" onclick="toggle(6)" src="./images/senate/sohumranade.jpeg" alt="" class="src image">
+                    <img loading="lazy" onclick="toggle(6)" src="./images/senate/sohumranade.jpeg" alt=""
+                        class="src image">
                     <!-- <div class="links senatelinks">
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/sohum-ranade-22a90916a/"><i class="fa-brands fa-linkedin" ></i></a>
@@ -461,9 +496,9 @@
                     <h3>ESIC Secretary</h3>
                 </div>
                 <div class="box senate">
-                    
+
                     <!-- <div class="image"> -->
-                        <img loading="lazy" onclick="toggle(7)" src="./images/senate/himadri.png" alt="" class="src image">
+                    <img loading="lazy" onclick="toggle(7)" src="./images/senate/himadri.png" alt="" class="src image">
                     <!-- <div class="links senatelinks">
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href=""><i class="fa-brands fa-linkedin" ></i></a>
@@ -473,9 +508,10 @@
                     <h3>FALC Secretary</h3>
                 </div>
                 <div class="box senate">
-                    
+
                     <!-- <div class="image"> -->
-                        <img loading="lazy" onclick="toggle(8)" src="./images/senate/pranavkrishna.jpeg" alt="" class="src image">
+                    <img loading="lazy" onclick="toggle(8)" src="./images/senate/pranavkrishna.jpeg" alt=""
+                        class="src image">
                     <!-- <div class="links senatelinks">
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/pranav-krishna-aa7a7922b"><i class="fa-brands fa-linkedin" ></i></a>
@@ -486,20 +522,47 @@
                 </div>
             </div>
             <div class="row senaterow">
-                
-                
+
+
                 <div class="box senate">
 
                     <!-- <div class="image"> -->
-                    <img loading="lazy" onclick="toggle(9)"  src="./images/senate/abhishekpatel.jpeg" alt="" class="src image">
+                    <img loading="lazy" onclick="toggle(9)" src="./images/senate/abhishekpatel.jpeg" alt=""
+                        class="src image">
+                    <!-- <div class="links senatelinks">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/abhishekppatel"><i class="fa-brands fa-linkedin" ></i></a>
+                        <a href=""><i class="fa-regular fa-envelope" ></i></a>
+                    </div></div> -->
+
+                    <h2>Abhishek Patel</h2>
+                    <h3>SDC Secretary</h3>
+                </div>
+                <div class="box senate">
+
+                    <!-- <div class="image"> -->
+                    <img loading="lazy" onclick="toggle(10)"  src="./images/senate/amanKumar.jpg" alt="" class="src image">
                     <!-- <div class="links senatelinks">
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/abhishekppatel"><i class="fa-brands fa-linkedin" ></i></a>
                         <a href=""><i class="fa-regular fa-envelope" ></i></a>
                     </div></div> -->
             
-                    <h2>Abhishek Patel</h2>
-                    <h3>SDC Secretary</h3>
+                    <h2>Aman Kumar</h2>
+                    <h3>RC Secretary</h3>
+                </div>
+                <div class="box senate">
+
+                    <!-- <div class="image"> -->
+                    <img loading="lazy" onclick="toggle(11)"  src="./images/senate/AaryaPalwekar.jpg" alt="" class="src image">
+                    <!-- <div class="links senatelinks">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/abhishekppatel"><i class="fa-brands fa-linkedin" ></i></a>
+                        <a href=""><i class="fa-regular fa-envelope" ></i></a>
+                    </div></div> -->
+            
+                    <h2>Aarya Palwekar</h2>
+                    <h3>RC Secretary</h3>
                 </div>
             </div>
 
@@ -509,9 +572,9 @@
 
 
 
-    <div class="footerlast" >
+    <div class="footerlast">
         <!--  Footer -->
-        <footer class="footer" >
+        <footer class="footer">
             <div class="inner-footer">
 
 
@@ -531,7 +594,6 @@
                     </ul>
                     <!--   for social links -->
                     <div class="social-media">
-
                     </div>
                 </div>
                 <div class="footer-items brdr-left">
@@ -609,10 +671,10 @@
             <!--   Footer Bottom start  -->
             <div class="footer-bottom">
                 <span style="color:#dadada;font-size:1.2em;margin-bottom: 7px;display:block;">Designed & Developed by
-                    <a  href="https://www.linkedin.com/in/tanishq-sharma-5204bb249" target="_blank"
+                    <a href="https://www.linkedin.com/in/tanishq-sharma-5204bb249" target="_blank"
                         style="color:#fafafa;text-decoration-color: #dadada;text-decoration: underline;">Tanishq
                         Sharma</a> and
-                    <a  href="https://www.linkedin.com/in/shailesh-kachhi-681a041a2" target="_blank"
+                    <a href="https://www.linkedin.com/in/shailesh-kachhi-681a041a2" target="_blank"
                         style="color:#fafafa;text-decoration-color: #dadada;text-decoration: underline;">Shailesh
                         Kachhi</a></span>
                 <p>Copyright &copy; Student Activity Council, Indian Institute of Science Education and Research
@@ -625,8 +687,8 @@
 
 
 
-    <script src="main.js"></script>
-    
+    <script src="./scripts/main.js"></script>
+
 </body>
 
 </html></a>
