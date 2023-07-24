@@ -663,7 +663,10 @@ function council_toggle(n){
 
             logo.src = "./images/sdc.png";
             content.innerHTML = "<ul><li>Conducts Orientations related to Academics (Primer, Pre-Majors, Majors) and Professionals(Internship, CV, etc).</li><li>Publishes written content like Carma and SDC Blogs</li><li>Conducts Model United Nations (MUN).</li><li>Organizes talks and events like Alumni Events and Alumni Meets</li></ul>";
-            boxes[0].style.display = "none";
+            boxes[0].style.display = "flex";
+           
+            boxes[0].querySelector("img").src = "images/SDC Logo.jpg";
+            boxes[0].querySelector("#club_name").innerHTML = "Placement Team";
             boxes[1].style.display = "none";
             
             boxes[2].style.display = "none";
