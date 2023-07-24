@@ -504,8 +504,8 @@ li a:hover {
 
 
 .carousel-container img {
-  width: 33.333%;
-  height: 275px;
+  width: 33.333% ;
+  height: 275px !important;
   position: relative;
   transition: all 0.5s ease;
 
@@ -585,7 +585,6 @@ li a:hover {
 .header h1 {
   font-size: clamp(0.5rem, 5vw, 1.2rem);
   font-family: "Poppins";
-
   font-size: 2.5rem;
   /* background: blue; */
   font-weight: 500;
@@ -721,6 +720,8 @@ font-weight: 600;
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 5px;
+  font-family: 'Poppins';
+  font-weight: 400;
 }
 
 .one h1:before,
@@ -796,8 +797,7 @@ h1 > img {
   object-fit: cover;
 } */
 
-.fa-brands,
-.fa-regular {
+.links i{
   font-size: 50px;
 }
 

@@ -81,7 +81,7 @@ body{
 
 :root{
     --top-margin:49px;
-    background-color: #e2d09d;
+    background-color:   #d4a45f;
    
    
    
@@ -104,7 +104,7 @@ width: inherit;
 }
 .profile-box {
 background: #fafafa;/*#e6f2ff;*/
-box-shadow: 0 2px 6px 0 rgba(47,83,151,0.10);
+box-shadow: 0px 2px 6px rgba(47,83,151,0.2);
 border-radius: 3px;
 margin: 20px 16px;
 padding: 16px 16px 12px;
@@ -119,7 +119,7 @@ user-select:   none;
 /* box-shadow: 0 2px 6px 0 rgba(47,83,151,0.40); */
 background-color: #eaeaea; /* #cce6ff;*/
 /*border-color: #1a8cff;*/
-box-shadow: 0 0 20px 9px rgba(0,0,0,0.03);
+box-shadow: 0 0 20px rgba(0,0,0,0.3);
 transform: scale(1.03);
 }
 .page-wrapper img {
@@ -150,7 +150,7 @@ position:  relative;
 font-size: 1.5rem;
 font-weight: 600;
 margin-bottom: 25px;
-color: #444;
+color: #330490 ;
 }
 .tabcontent>h2:after {
 position: absolute;
@@ -161,7 +161,7 @@ width: 50px;
 left: 0;
 right: 0;
 margin: 5px 0;
-background: silver
+background: #330490 ;
 }
 h1{
 font-size: 1.8rem;
@@ -172,9 +172,6 @@ color: #ffffff;
 text-align: center;
 margin-right: 80px;
 margin-left:80px;
-
-
-
 }
 h1:hover {
 /* box-shadow: 0 2px 6px 0 rgba(47,83,151,0.40); */
@@ -189,27 +186,12 @@ font-size: 1.8rem;
 text-transform: uppercase;
 font-weight: 400;
 /* margin-bottom: 2rem; */
-color: #5a5959;
+color: #220960 ;
 text-align: center;
-font-family: 'Montserrat';
+
 }
-.page-wrapper .mem-contact{
-margin: 6px 2.5% 15px;
-display:  inline-block;
-transition: 300ms;
-border: 0.5px solid #000;
-}
-.mem-contact i{
-display: inline-block;
-border: 1px solid #000;
-background: #000;
-color: #fff;
-padding: 6px 12px;
-text-decoration: none;
-}
-.mem-contact span{
-padding: 6px 8px;
-}
+
+
 .page-wrapper .mem-contact:hover{
 border: 0.5px solid #444;
 cursor:  pointer;
@@ -217,58 +199,20 @@ cursor:  pointer;
 .page-wrapper .mem-contact:hover i{
 background-color: #444;
 }
-.page-wrapper .mem-social{
+/* .page-wrapper .mem-social{
 margin: 18px 2.5% 9px;
 padding: 6px 4px;
 transition: 300ms;
 font-size: 1.2em;
 text-align: center;
-background: red;
-}
-.mem-social .fb{
-display: inline-block;
-border: 1px solid#444;
-color: #444;
-padding: 6px 12px;
-text-decoration: none;
-margin-right: 6px;
-}
-.mem-social.mem-social .fb:hover{
-background:#444;
-color: white;
-/* box-shadow: 4px 4px 6px 0 rgba(47,83,151,0.10); */
-}
-.mem-social .mail{
-display: inline-block;
-border: 1px solid#444;
-color: #444;
-padding: 6px 12px;
-text-decoration: none;
-margin-right: 6px;
-}
+} */
+
+
 .mem-social .mail:hover{
 background: #444;
 color: white;
 }
-.mem-social .phone{
-/* position: relative; */
-display: inline-block;
-border: 1px solid #000657;
-color: #07006a;
-padding: 6px 12px;
-text-decoration: none;
-margin-right: 6px;
-}
 
-.mem-social .phone:hover{
-background: #090050;
-color: white;
-cursor:  pointer;
-}
-.mem-social .phone:hover .ph-num {
-visibility: visible;
-opacity: 1;
-}
 
 .h5{
 transition: 500ms;
@@ -288,4 +232,28 @@ text-align: center;
 font-family: 'Poppins';
 text-shadow: 0px 0px 5px #002a55;
 
+}
+
+
+.mem-social i{
+    /* border: 1px solid black; */
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;
+    color:#220960;
+    transition: 0.3s;
+}
+.fa-instagram:hover, .fa-envelope:hover, .fa-whatsapp:hover{
+    color: white;
+    background: #d4a45f 
+    ;
+}
+.mem-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer h3{
+    color: #eee;
 }
