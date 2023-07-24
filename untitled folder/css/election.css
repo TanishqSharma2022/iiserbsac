@@ -1,0 +1,299 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@600&family=Raleway:ital,wght@0,400;0,600;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=PT+Sans&family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lumanosimo&family=Pangolin&family=Rock+Salt&display=swap');
+
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.contain{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid black;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/election/wallpaper.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 100%;
+    top: -6vh;
+}
+.contain_header{
+    text-align: center;
+    position: relative; 
+    
+    font-family: 'poppins';
+    font-size: 5rem;
+    letter-spacing: 1px;
+    COLOR: WHITE;
+    font-weight: 800;
+    text-shadow: 0px 5px 20px black;
+    
+}   
+
+#ii{
+    font-family: 'rock salt';
+    font-size: 3rem;
+    font-style: italic;
+    letter-spacing:5px;
+    color:white;
+    text-shadow: 0px 0px 15px black;
+
+}
+
+.container_two{
+    background: white;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px){
+    .contain_header{
+        font-size: 2rem;
+    }
+    #ii{
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+:root{
+    --top-margin:49px;
+    background-color: #e2d09d;
+   
+   
+   
+  }
+ 
+
+ 
+
+  /************************************ Team * ***************************/
+/* https://codepen.io/JarlLyng/pen/qyZLPp */
+.page-wrapper {
+font-family: 'Lato', sans-serif;
+display: flex;
+flex-wrap: wrap;
+align-content: flex-start;
+justify-content: space-evenly;
+padding-left: calc(5% - 16px);
+padding-right: calc(5% - 16px);
+width: inherit;
+/* padding: 0 5%; */
+}
+.profile-box {
+background: #fafafa;/*#e6f2ff;*/
+box-shadow: 0 2px 6px 0 rgba(47,83,151,0.10);
+border-radius: 3px;
+margin: 20px 16px;
+padding: 16px 16px 12px;
+width: 250px;
+max-width: calc(100% - 17px);
+text-align: center;
+transition: 300ms;
+flex-grow: 1;
+user-select:   none;
+}
+.profile-box:hover {
+/* box-shadow: 0 2px 6px 0 rgba(47,83,151,0.40); */
+background-color: #eaeaea; /* #cce6ff;*/
+/*border-color: #1a8cff;*/
+box-shadow: 0 0 20px 9px rgba(0,0,0,0.03);
+transform: scale(1.03);
+}
+.page-wrapper img {
+width: 80px;
+height: 80px;
+border-radius: 40%;
+box-shadow: 0 2px 6px 0 rgba(47,83,151,0.10);
+}
+.page-wrapper h3 {
+font-weight: 500;
+color: #002a55;
+font-size: 1.2em;
+margin-top: 20px;
+margin-bottom: 5px;
+
+}
+.page-wrapper h4 {
+transition: 500ms;
+font-weight: 300;
+font-size: 1.14em;
+color: #0073e6;
+margin-top: 12px;
+/*cursor: pointer;*/
+}
+
+.tabcontent h2 {
+position:  relative;
+font-size: 1.5rem;
+font-weight: 600;
+margin-bottom: 25px;
+color: #444;
+}
+.tabcontent>h2:after {
+position: absolute;
+content: '';
+top: 100%;
+height: 3px;
+width: 50px;
+left: 0;
+right: 0;
+margin: 5px 0;
+background: silver
+}
+h1{
+font-size: 1.8rem;
+text-transform: uppercase;
+font-weight: 600;
+margin-bottom: 2rem;
+color: #ffffff;
+text-align: center;
+margin-right: 80px;
+margin-left:80px;
+
+
+
+}
+h1:hover {
+/* box-shadow: 0 2px 6px 0 rgba(47,83,151,0.40); */
+text-decoration: #b2b1b1; /* #cce6ff;*/
+/*border-color: #1a8cff;*/
+text-shadow: 0 0 20px 9px rgba(0,0,0,0.03);
+transform: scale(1.03);
+}
+
+h3 {
+font-size: 1.4rem;
+text-transform: uppercase;
+font-weight: 400;
+margin-bottom: 2rem;
+color: #5a5959;
+text-align: center;
+}
+.position{
+    font-size: 1.4rem;
+text-transform: uppercase;
+font-weight: 600;
+margin-bottom: 2rem;
+color: #5a5959;
+text-align: center;
+}
+.page-wrapper .mem-contact{
+margin: 6px 2.5% 15px;
+display:  inline-block;
+transition: 300ms;
+border: 0.5px solid #000;
+}
+.mem-contact i{
+display: inline-block;
+border: 1px solid #000;
+background: #000;
+color: #fff;
+padding: 6px 12px;
+text-decoration: none;
+}
+.mem-contact span{
+padding: 6px 8px;
+}
+.page-wrapper .mem-contact:hover{
+border: 0.5px solid #444;
+cursor:  pointer;
+}
+.page-wrapper .mem-contact:hover i{
+background-color: #444;
+}
+.page-wrapper .mem-social{
+margin: 18px 2.5% 9px;
+padding: 6px 4px;
+transition: 300ms;
+font-size: 1.2em;
+text-align: center;
+}
+.mem-social.mem-social.mem-social .fb{
+display: inline-block;
+border: 1px solid#444;
+color: #444;
+padding: 6px 12px;
+text-decoration: none;
+margin-right: 6px;
+}
+.mem-social.mem-social .fb:hover{
+background:#444;
+color: white;
+/* box-shadow: 4px 4px 6px 0 rgba(47,83,151,0.10); */
+}
+.mem-social .mail{
+display: inline-block;
+border: 1px solid#444;
+color: #444;
+padding: 6px 12px;
+text-decoration: none;
+margin-right: 6px;
+}
+.mem-social .mail:hover{
+background: #444;
+color: white;
+}
+.mem-social .phone{
+position: relative;
+display: inline-block;
+border: 1px solid #000657;
+color: #07006a;
+padding: 6px 12px;
+text-decoration: none;
+margin-right: 6px;
+}
+
+.mem-social .phone:hover{
+background: #090050;
+color: white;
+cursor:  pointer;
+}
+.mem-social .phone:hover .ph-num {
+visibility: visible;
+opacity: 1;
+}
+
+.h5{
+transition: 500ms;
+font-weight: 300;
+font-size: 1.0em;
+color: #aa4b4b;
+margin-top: 12px;
+
+}
+.rc {
+font-weight: 700;
+color:#ffffff;
+font-size: 3.2em;
+margin-top: 20px;
+margin-bottom: 5px;
+text-align: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-shadow: #002a55;
+
+}

@@ -6,90 +6,273 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reprensentative Council</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css\style.css">
     <script src="https://kit.fontawesome.com/eecc9ab967.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap" rel="stylesheet">
+
     <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/riajulislam" title="riajulislam">riajulislam</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
     <style>
-    .header
-    {color: white;
-    position: fixed;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    z-index:0;
-    font-size: 200px;
-    text-shadow: 2px 2px 10px black;
-}
-@media only screen and (max-width: 972px){
-    .header{
-        font-size: 4rem;
-        top: 25%;
-    }
-    .container{
-        margin-top: -50%;
-    }
-}
+
+
+        @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@600&family=Raleway:ital,wght@0,400;0,600;1,300&display=swap");
+
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=PT+Sans&family=Passion+One:wght@400;700;900&display=swap');
+
+        :root{
+            background-color: #1f6200;
+        }
+        .page-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: space-evenly;
+        padding-left: calc(5% - 16px);
+        padding-right: calc(5% - 16px);
+        width: inherit;
+        /* padding: 0 5%; */
+        }
+        .profile-box {
+        background: #fafafa;/*#e6f2ff;*/
+        box-shadow: 0 2px 6px 0 rgba(47,83,151,0.10);
+        border-radius: 3px;
+        margin: 20px 16px;
+        padding: 16px 16px 12px;
+        width: 250px;
+        max-width: calc(100% - 17px);
+        text-align: center;
+        transition: 300ms;
+        flex-grow: 1;
+        user-select:   none;
+        }
+        .profile-box:hover {
+        /* box-shadow: 0 2px 6px 0 rgba(47,83,151,0.40); */
+        background-color: #eaeaea; /* #cce6ff;*/
+        /*border-color: #1a8cff;*/
+        box-shadow: 0 0 20px 9px rgba(0,0,0,0.03);
+        transform: scale(1.03);
+        }
+        .page-wrapper img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        box-shadow: 0 2px 6px 0 rgba(47,83,151,0.10);
+        }
+        .page-wrapper h3 {
+        font-weight: 800;
+        color: #002a55;
+        font-size: 1.6em;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        font-family: 'Raleway';
+        }
+
+        .rc {
+        font-weight: 700;
+        color:#e0aa15;
+        font-size: clamp(2rem, 3vw, 5rem);
+        margin-top: 20px;
+        margin-bottom: 5px;
+        text-align: center;
+        font-family: 'Poppins';
+        text-shadow: 0px 0px 10px #002a55;
+        
+        }
+        .page-wrapper h4 {
+        transition: 500ms;
+        font-weight: 300;
+        font-size: 1.14em;
+        color: #055ab5;
+        margin-top: 12px;
+        /*cursor: pointer;*/
+        }
+   
 
     </style>
 </head>
 <body>
-    <!-- <div class="main" style="background-attachment: fixed;">
-        <h1 class="header" style="">Cultural Council</h1>
-        
-    </div> -->
-    <div style="margin-top: 0;" class="container">
-        <div class="bar">
-<h1 class="heading" style="">Reprensentative Council</h1></label>
-        </div>
-        <div class="content-block mayuraa" id="content">
-            <div class="logo_council">
-                <img src="images\1.png" alt="" class="src">
+    <div  class="navbar">
+        <div class="content">
+            <div class="name">
+                <a target="_blank" href="https://www.iiserb.ac.in"><img loading="lazy" class="desktop" src="./images/iiserbwhite.png" alt=""></a>
+                <img loading="lazy" class="mobile" src="./images/removed_bg.png"   class="src">
             </div>
-            <div class="matter">
-                <div class="head">Class Representatives  (CRs)
+            <ul class="list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
                 </div>
-                <p>The CRs basically function as the class monitor of your batch. They work closely with professors and helps out students in the matters like assignments submission, quiz schedules, grading scheme etc. You will be the point of contact between your batchmates and your professors across all departments. This post is applicable only for the 1st year students. We are planning to have two CRs (one male & one female) from Natural Science Stream and one each from Engineering and Economics.
-                </p>
-               
+                <li><a href="index.html">Home</a></li>
+                <li><a id="council_click scroll" href="#council_main">Councils</a></li>
+                <li><a id="scroll" href="#members">Members</a></li>
+                <li><a target="_blank" href="elections.html">Elections</a></li>
+
+                <li><a target="_blank" href="comingsoon.html">Fests</a></li>
+                <li><a id="aboutus_href" href="#">Contact</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
             </div>
-            
         </div>
-        <div class="content-block uttarang">
-            <div class="matter">
-                <div class="head">Department Representatives (DRs)
-                </div>
-                <p>When you come to your 2nd year, you will be choosing your pre-major departments. Each department will have a DR. They have the same functions as CR, but will be handling only one department. There is one DR per department.
-                </p>
+    </div>
+   
+   
+<h3 class="rc">Reprensentative Council</h3>
+        <div class="page-wrapper">
+           
+            <div class="profile-box">
+              <img src="images\1.png" alt="profile pic">
+              <h3>Class Representatives  (CRs)</h3>
+              <h4>The CRs basically function as the class monitor of your batch. They work closely with professors and helps out students 
+                in the matters like assignments submission, quiz schedules, grading scheme etc. You will be the point of contact between your
+                 batchmates and your professors across all departments. This post is applicable only for the 1st year students.
+                 We are planning to have two CRs (one male & one female) from Natural Science Stream and one each from Engineering and Economics. </h4>
+              
+                 
                 
             </div>
-            <div class="logo_council">
-                <img src="images\2.png" alt="" class="src">
-            </div>
-        </div>
-        <div class="content-block aarambh">
-            <div class="logo_council">
-                <img src="images\3.png" alt="" class="src">
-            </div>
-            <div class="matter">
-                <div class="head">Mess Representatives  (MRs)</div>
-                <p>All messes inside our campus are Student Cooperative Mess Management Committee (SCMMC), ie, it is completely under the control of the students. They MRs are responsible to ensure that good quality food is served to the students. They are in charge of the mess menu. They have to take regular feedback from the students and resolve issues that come up inside the messes. There two male and two female MRs from each batch.
-                </p>
-               
-            </div>
-        </div>
-        <div class="content-block Movie_Club">
-            <div class="matter">
-                <div class="head">Hostel Representatives (HRs)</div>
-                <p>The HRs are members of the Hostel Committee, and are responsible for dealing with broad issues that happen in the hostels.They have to take regular feedback from the students and resolve issues that come up. They are also the first point of contact for the students in case of a medical emergency. It will be their responsibility to inform the caretaker & warden in case of such emergency.  There two male and two female HRs from each batch.
-                </p>
+            <div class="profile-box">
+              <img src="images\2.png" alt="profile pic">
+              <h3>Department Representatives (DRs) </h3>
+              <h4>When you come to your 2nd year, you will be choosing your pre-major departments. Each department will have a DR. 
+                They have the same functions as CR, but will be handling only one department. There is one DR per department. </h4>
               
+                 
+                
             </div>
-            <div class="logo_council">
-                <img src="images\4.png" alt="" class="src">
+            <div class="profile-box">
+              <img src="images\3.png" alt="profile pic">
+              <h3>Mess Representatives  (MRs) </h3>
+              <h4>All messes inside our campus are Student Cooperative Mess Management Committee (SCMMC), ie, it is completely under the control of the students.
+                 They MRs are responsible to ensure that good quality food is served to the students. They are in charge of the mess menu. 
+                 They have to take regular feedback from the students and resolve issues that come up inside the messes. There two male and two female MRs from each batch. </h4>
+              
+                 
+                
+            </div>
+            <div class="profile-box">
+              <img src="images\4.png" alt="profile pic">
+              <h3>Hostel Representatives (HRs) </h3>
+              <h4>The HRs are members of the Hostel Committee, and are responsible for dealing with broad issues that happen in the hostels.
+                They have to take regular feedback from the students and resolve issues that come up. They are also the first point of contact
+                 for the students in case of a medical emergency. It will be their responsibility to inform the caretaker & warden in case of such emergency. 
+                  There two male and two female HRs from each batch. </h4>
+              
+                 
+                
             </div>
             
+          </div>
+          <div class="footerlast" >
+            <!--  Footer -->
+                   <footer class="footer" >
+                <div class="inner-footer">
+    
+    
+                    <!--  for contact us info -->
+                    <div class="footer-items">
+                        <img src="images/IISER White Logo.png"
+                            style="height: 150px;margin-right: auto !important;margin-bottom:15px;display: block !important" />
+                        <h3 class="footer-heading">Contact us</h3>
+                        <ul>
+                            <li><a
+                                    href="https://www.google.com/maps/place/IISER+BHOPAL/@23.2857935,77.2706367,17z/data=!3m1!4b1!4m6!3m5!1s0x397c60d9f8872aef:0x9b99241b1431032!8m2!3d23.2857936!4d77.2755076!16s%2Fg%2F12xql9g02?entry=ttu"><i
+                                        class="fa fa-map-marker" aria-hidden="true"></i>IISER Bhopal, Bhauri</a></li>
+                            <li><a href="mailto:sac@iiserb.ac.in"><i class="fa fa-envelope"
+                                        aria-hidden="true"></i>sac@iiserb.ac.in</a></li>
+                            <li><a href="https://www.instagram.com/sac_iiserb/"><i class="fa fa-instagram"
+                                        aria-hidden="true"></i>instagram.com/sac_iiserb</a></li>
+                        </ul>
+                        <!--   for social links -->
+                        <div class="social-media">
+    
+                        </div>
+                    </div>
+                    <div class="footer-items brdr-left">
+                        <h3 class="footer-heading">Councils</h3>
+                        <ul>
+                            <li class="boards-footer-flex">
+                                <div style="flex-grow: 1;">
+                                    <a href="mailto: culturalcouncil@iiserb.ac.in" target="_blank">Cultural Council</a>
+                                </div>
+    
+                            </li>
+                            <li class="boards-footer-flex">
+                                <div style="flex-grow: 1;">
+                                    <a href="mailto: cnc@iiserb.ac.in" target="_blank">Computer and Networking Council</a>
+                                </div>
+    
+                            </li>
+                            <li class="boards-footer-flex">
+                                <div style="flex-grow: 1;">
+                                    <a href="mailto: esic@iiserb.ac.in" target="_blank">Environmental and Social Initiatives Council </a>
+                                </div>
+    
+                            </li>
+                            <li class="boards-footer-flex">
+                                <div style="flex-grow: 1;">
+                                    <a href="mailto: falc@iiserb.ac.in" target="_blank">Fine Arts and Literary Council </a>
+                                </div>
+    
+                            </li>
+                            <li class="boards-footer-flex">
+                                <div style="flex-grow: 1;">
+                                    <a href="mailto: sciencecouncil@iiserb.ac.in" target="_blank">Science Council </a>
+                                </div>
+    
+                            </li>
+                            <li class="boards-footer-flex">
+                                <div style="flex-grow: 1;">
+                                    <a href="mailto: sportscouncil@iiserb.ac.in" target="_blank">Sports Council</a>
+                                </div>
+    
+                            </li>
+                            <li class="boards-footer-flex">
+                                <div style="flex-grow: 1;">
+                                    <a href="mailto: sdc@iiserb.ac.in" target="_blank">Student Development Council</a>
+                                </div>
+    
+                            </li>
+                        </ul>
+                    </div>
+                    <!--  for quick links  -->
+                    <div class="footer-items">
+                        <h3 class="footer-heading">Services</h3>
+                        <ul>
+                            <li><a href="Representativecouncil.html" target="_blank">Representative Council </a></li>
+                            <li><a href="https://www.iiserb.ac.in/hc" target="_blank">Health center </a></li>
+                            <li><a href="https://www.iiserb.ac.in/dosa/counsellor" target="_blank">Councelling Cell </a>
+                            </li>
+                            <li><a href="https://icdpc.iiserb.ac.in/" target="_blank">Placement cell </a></li>
+                        </ul>
+                    </div>
+                    <!--  for some other links -->
+                    <div class="footer-items">
+                        <h3 class="footer-heading">Links</h3>
+                        <ul>
+                            <li><a href="https://www.iiserb.ac.in/doaa" target="_blank">Office,Academic Affairs </a></li>
+                            <li><a href="https://www.iiserb.ac.in/dosa" target="_blank">Office, Student Affairs </a></li>
+                            <li><a href="https://www.iiserb.ac.in/iwd/people" target="_blank">Office, Institute Works Department </a></li>
+                            <li><a href="https://www.iiserb.ac.in/vh/" target="_blank">Visitor's Hostel</i></a></li>
+                        </ul>
+                        <div class="scroll-top-button" onclick="scrollTopAnimated(500)">
+                            Scroll to top<i class="fa fa-long-arrow-up" aria-hidden="true" style="margin-left: 10px"></i>
+                        </div>
+                    </div>
+                </div>
+                <!--   Footer Bottom start  -->
+                <div class="footer-bottom">
+                    <span style="color:#dadada;font-size:1.2em;margin-bottom: 7px;display:block;">Designed & Developed by
+                        <a  href="https://www.linkedin.com/in/tanishq-sharma-5204bb249" target="_blank"
+                            style="color:#fafafa;text-decoration-color: #dadada;text-decoration: underline;">Tanishq
+                            Sharma</a> and
+                        <a  href="https://www.linkedin.com/in/shailesh-kachhi-681a041a2" target="_blank"
+                            style="color:#fafafa;text-decoration-color: #dadada;text-decoration: underline;">Shailesh
+                            Kachhi</a></span>
+                    <p>Copyright &copy;2023 Student Activity Council, Indian Institute of Science Education and Research
+                        Bhopal. All Rights Reserved.</p>
+                </div>
+            </footer>
         </div>
-</div>
+    
 
 </body>
 </html>
