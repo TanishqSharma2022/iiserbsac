@@ -1,7 +1,7 @@
 # SAC, IISER BHOPAL 
 ## <li> ABOUT</li>
 This is the official repository of IISER Bhopal's SAC website.
-
+The website is live at <a href="https://iiserbsac.netlify.com">iiserbsac.netlify.com</a> as of now.
 # 
 
 ## <li><b>DEVELOPERS:</b></li>
