@@ -178,17 +178,34 @@ navbar.addEventListener('mouseover', function(event){
 
 
 
-// POPUP FUNCTION FOR COUNCIL
+// CAROUSEL CONTAINER FOR ACTIVITIES
 
 
 
 const rightBtn = document.querySelector("#rightBtn");
 const leftBtn = document.querySelector("#leftBtn");
 
+
+
+
+
 // document.querySelector('.currentSlide').nextElementSibling.style.opacity = 1;
 var track = document.querySelector(".carousel-container");
 // var images = Array.from(track.children);
-var images = track.getElementsByTagName('img');
+var images = track.querySelectorAll('img');
+// console.log(images);
+if(window.matchMedia("(min-width: 972px)").matches){
+
+images.forEach((slide, index) => {
+    slide.style.left = `${index*33.33}%`;
+});
+}else{
+    images.forEach((slide, index) => {
+        slide.style.left = `${index*100}%`;
+    }); 
+}
+
+
 
 var numOfImages = images.length + 1;
 

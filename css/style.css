@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@600&family=Raleway:ital,wght@0,400;0,600;1,300&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=PT+Sans&family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=PT+Sans:ital,wght@0,400;0,700&family=Passion+One:wght@400;700;900&display=swap');
 
 :root {
   --navlist-color: #b65a21;
@@ -10,7 +10,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: "PT Sans";
+  /* font-family: "PT Sans"; */
 }
 
 a {
@@ -405,9 +405,20 @@ li a:hover {
   align-items: center;
   flex-direction: column;
 }
+.wrapper {
+  margin: 0 auto;
+  /* background: red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 
 .carousel {
-  width: 80%;
+  width: 70%;
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -415,22 +426,23 @@ li a:hover {
   /* margin: 0 auto; */
   margin-top: 30px;
   transition: all 0.5s ease;
-
   overflow: hidden;
+  box-shadow: 0px 0px 10px black;
+
 
 }
 
 .carousel-container {
   display: flex;
+  flex-direction: row;
   align-items: center;
   margin: 0 auto;
-  /* height: 275px; */
+  height: 275px;
   position: relative;
-
   max-width: 1300px;
   transition: all 0.5s ease;
-
-  /* transform: translateX(-500px); */
+  width: 100%;
+  
 }
 
 .c {
@@ -505,26 +517,20 @@ li a:hover {
 
 
 .carousel-container img {
-  width: 33.333% ;
-  height: 275px !important;
-  position: relative;
+  width: 33.333%;
+  height: 275px;
+  position: absolute;
   transition: all 0.5s ease;
+  object-fit: cover;
 
-  /* left: 0; */
+  /* left: 33.33%; */
 }
 
 
 
 
 
-.wrapper {
-  margin: 0 auto;
-  /* background: red; */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
+
 
 
 
@@ -604,9 +610,12 @@ li a:hover {
 
 .fa-angle-left, .fa-angle-right{
   transition: 0.4s ease;
+  color: #444;
 }
 .fa-angle-right:hover , .fa-angle-left:hover{
-  transform: scale(1.2)
+  transform: scale(1.2);
+  filter: drop-shadow(0px 0px 10px black);
+  color: #222;
 }
 
 .fa-bars {
@@ -922,10 +931,9 @@ h1 > img {
   height: 105px;
   margin: 0 auto;
   /* background: url('./images/cultural_council.png'); */
-  background-size: cover;
-  filter: drop-shadow(1px 1px 10px black);
-
-
+  background-size: contain;
+  box-shadow: 1px 1px 10px black;
+  background: white;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -949,7 +957,10 @@ h1 > img {
   overflow-y: scroll;
   /* background: brown; */
 }
-
+.content p{
+  font-family: 'PT Sans';
+  font-weight: 400;
+}
 .contact {
   width: 30%;
   height: 100%;
@@ -959,6 +970,7 @@ h1 > img {
   flex-direction: column;
   padding: 0;
 }
+
 
 .clubs_under {
   width: 100%;
@@ -972,10 +984,13 @@ h1 > img {
 }
 
 .line {
-  width: 0.1%;
-  height: 70%;
+  width: 0.2%;
+  height: 80%;
+  border: none;
   margin-left: 10px;
-  background: black;
+  background: #222;
+  border-radius: 50%;
+
 }
 
 .contact_box {
@@ -984,6 +999,15 @@ h1 > img {
   flex-direction: column;
   margin: 0 auto;
   padding: 0;
+  font-family: 'PT Sans'
+}
+#club_head_name, #club_head_email, #club_head_no {
+  font-family: Poppins;
+  font-weight: 500;
+}
+#club_head_email{
+  font-style: italic;
+  font-weight: 300;
 }
 
 .contact_box img {
@@ -1019,8 +1043,11 @@ h1 > img {
   /* border: 1px solid red; */
 }
 
-.content h2 {
+.content h2 , .contact h2{
   text-align: center;
+  font-family: 'Poppins';
+  color: #111;
+  text-shadow: 1px 1px 2px grey;
 }
 
 .clubs_under img {
@@ -1170,7 +1197,8 @@ button.popup_close:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 50px;
+  font-family: arial;
 }
 
 .popupimage {
@@ -1185,21 +1213,25 @@ button.popup_close:hover {
 }
 
 .links {
-  width: 40%;
+  width: 80%;
   display: flex;
-  top: 10%;
   justify-content: space-around;
+
 }
 
 .links i {
-  font-size: 3rem;
-  color: white;
-  transition: 0.5s;
+  font-size: 1.5rem;
+  color: var(--navlist-color);
+  transition: 0.2s;
+  background: white;
+  padding: 10px;
+  border-radius: 15px;
 }
 
 .links i:hover {
   transform: scale(1.03);
   filter: drop-shadow(2px 2px 10px black);
+  /* text-shadow: 2px 2px 10px black; */
 }
 
 .popup_image h2 {
@@ -1209,15 +1241,17 @@ button.popup_close:hover {
 
 .popup_content h2 {
   color: white;
-  font-family: 'Passion One';
+  font-family: 'anton';
+  text-transform: uppercase;
   font-size: 4rem;
   font-weight: 500;
+  text-shadow: 0px 0px 13px black;
 }
 
 .popup_content h3 {
   text-decoration: none;
   font-style: none;
-  font-family: Raleway;
+  font-family: 'Raleway';
   font-weight: 0;
   line-height: 25px;
 }
@@ -1999,6 +2033,7 @@ a {
     height: 100vh;
     top: 0;
     /* background: blue; */
+
     left: 0;
   }
 
