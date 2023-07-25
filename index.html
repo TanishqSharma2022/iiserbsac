@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://kit.fontawesome.com/eecc9ab967.js" crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/scrollreveal@4"></script>
     <style>
         .material-symbols-outlined {
             font-variation-settings:
@@ -122,6 +122,7 @@
             </p>
         </div>
     </div>
+
 
     <div class="activities">
         <div class="activity_header">
@@ -714,10 +715,36 @@
     </div>
 
 
+    <!-- <div class="up"><i class="fa-solid fa-angle-up"></i></div> -->
 
 
 
-    <script src="./scripts/main.js"></script>
+    <script src="./scripts/main.js">
+    </script>
+
+    <script>
+
+        ScrollReveal({
+            reset: false,
+            distance: '60px',
+            duration: 2500,
+            // delay: 400
+        });
+        ScrollReveal().reveal('.sac', {delay: 200});
+        ScrollReveal().reveal('.logo', {delay: 200});
+        ScrollReveal().reveal('.header', {delay: 200});
+        ScrollReveal().reveal('.about_para', {delay: 200});
+        ScrollReveal().reveal('.activity_header', {delay: 200});
+        ScrollReveal().reveal('.carousel', {delay: 200, origin:'right'});
+        ScrollReveal().reveal('.one', {delay: 200});
+        ScrollReveal().reveal('.navbar', {delay: 200, origin:'top'});
+
+
+
+        ScrollReveal().reveal('.box', {delay: 0, origin: 'left', reset: false});
+
+
+    </script>
 
 </body>
 
