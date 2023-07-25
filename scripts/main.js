@@ -266,6 +266,12 @@ function toggle(n){
     var name = document.querySelector("#popup_head_name");
     var position = document.querySelector("#popup_head_occp");
     var content = document.querySelector("#popup_abtme_content");
+
+    var sec_insta = document.querySelector("#sec_insta");
+    var sec_linkedin = document.querySelector("#sec_linkedin");
+    var sec_mail = document.querySelector("#sec_mail");
+    var sec_whatsapp = document.querySelector("#sec_whatsapp");
+
     switch(n){
         case 1:
             popupimage.src = "./images/senate/devangkrishnan.jpeg";
@@ -295,7 +301,11 @@ function toggle(n){
             popupimage.src = "./images/senate/agamdeepsingh.jpeg";
             name.innerHTML = "Agamdeep Singh";
             position.innerHTML = "CNC Secretary";
-            content.innerHTML="Hello I am Agamdeep Singh. I am the head of CNC club.";
+            content.innerHTML="Hello I am Agamdeep Singh. I am the head of CNC club. A computer vision research who loves being part of and promoting the hacker and maker culture.";
+            sec_insta.setAttribute("href", "https://www.instagram.com/gimme_math_and_pizza/");
+            sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/agamdeep-iiser/");
+            sec_mail.setAttribute("href", "mailto:agamdeep20@iiserb.ac.in");
+            sec_whatsapp.setAttribute("href", "https://wa.me/919417574801");
             break;
         case 6:
             popupimage.src = "./images/senate/sohumranade.jpeg";
@@ -425,19 +435,18 @@ function council_toggle(n){
         
         case 2:
             logo.src = "./images/cnc_logo.png";
-            content.innerHTML = "<ul><li>Hosts Programming Contests like ArmaCode and Worshops.</li><li>Arrange Gaming Nights for competitive shooter and sports games.</li><li>Arrange Photography competitions and workshops.</li>"
+            content.innerHTML = "<ul><li>Provide financial resources and administrative support for Programming, Photography and Gaming Club.</li><li>Technical support in conducting student elections, and event conduction for other councils and clubs.</li><li>Host Armageddon: A 3 day gaming and techno fest with photowalks, programming competitions and E-Sports tournaments in 8 games. We release really cool merch that you can buy before the fest.</li></ul>";
             boxes[0].style.display = "flex";
 
             boxes[0].querySelector("img").src = "./images/clubs/cyberheathens.png";
             boxes[0].querySelector("#club_name").innerHTML = "CyberHeathens (Programming Club)";
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
 
-            weblink.setAttribute("href", "https://sites.google.com/iiserb.ac.in/cnc/cnc");
 
             boxes[1].style.display = "flex";
 
             boxes[1].querySelector("img").src = "./images/clubs/gaming.png";
-            boxes[1].querySelector("#club_name").innerHTML = "Resurgnec (Gaming Club)";
+            boxes[1].querySelector("#club_name").innerHTML = "Resurgence (Gaming Club)";
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
             boxes[2].style.display="flex";
 
@@ -463,6 +472,9 @@ function council_toggle(n){
             club_head_no.innerHTML = "";
             club_head_name.innerHTML = "Agamdeep Singh";
             club_head_image.src = "./images/senate/agamdeepsingh.jpeg";
+            
+            // website handle
+            weblink.setAttribute("href", "https://sites.google.com/iiserb.ac.in/cnc/cnc");
             
             break;
         

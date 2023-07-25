@@ -15,6 +15,7 @@
 
 a {
   scroll-behavior: smooth;
+  text-decoration: none;
 }
 
 .fa-xmark {
@@ -1192,9 +1193,12 @@ button.popup_close:hover {
 
 .links i {
   font-size: 3rem;
+  color: white;
+  transition: 0.5s;
 }
 
 .links i:hover {
+  transform: scale(1.03);
   filter: drop-shadow(2px 2px 10px black);
 }
 
