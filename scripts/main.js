@@ -275,10 +275,12 @@ leftBtn.addEventListener("click",()=>{
 
 
 function toggle(n){
-    var blur = document.querySelector('#blur');
-    blur.classList.toggle('active');
+    
     var popup = document.querySelector('.popup');
     popup.classList.toggle('active');
+    document.querySelector('body').classList.toggle('active');
+    document.querySelector('.blurred').classList.toggle('blur');
+
     var popupimage = document.querySelector(".popupimage");
     var name = document.querySelector("#popup_head_name");
     var position = document.querySelector("#popup_head_occp");
@@ -288,19 +290,19 @@ function toggle(n){
     var sec_linkedin = document.querySelector("#sec_linkedin");
     var sec_mail = document.querySelector("#sec_mail");
     var sec_whatsapp = document.querySelector("#sec_whatsapp");
-
+    
     switch(n){
         case 1:
             popupimage.src = "./images/senate/devangkrishnan.jpeg";
             name.innerHTML = "Devang V Krishnan";
             position.innerHTML = "President";
-            content.innerHTML="Hello I am Devang V Krishnan";
+            content.innerHTML="Hello, I am Devang V Krishnan. I am the President.";
             break;
         case 2:
             popupimage.src = "./images/senate/anukaransingh.jpeg";
             name.innerHTML = "Anukaran Singh";
             position.innerHTML = "Vice President";
-            content.innerHTML="Hello I am Anukaran Singh";
+            content.innerHTML="Hello, I am Anukaran Singh. I am the Vice-President.";
             break;
         case 3:
             popupimage.src = "./images/senate/aparnavinod.jpeg";
@@ -317,7 +319,7 @@ function toggle(n){
             popupimage.src = "./images/senate/muhammedroshan.jpeg";
             name.innerHTML = "Muhammed Roshan";
             position.innerHTML = "Science Secretary";
-            content.innerHTML="Hello I am Muhammed Roshan";
+            content.innerHTML="Hello, I am Muhammed Roshan. I am the head of the Science Council.";
             break;    
         case 5:
             popupimage.src = "./images/senate/agamdeepsingh.jpeg";
@@ -333,39 +335,39 @@ function toggle(n){
             popupimage.src = "./images/senate/sohumranade.jpeg";
             name.innerHTML = "Sohum Ranade";
             position.innerHTML = "ESIC Secretary";
-            content.innerHTML="Hello I am Sohum Ranade";
+            content.innerHTML="Hello, I am Sohum Ranade. I am the head of the ESIC Council.";
             break;                                    
         case 7:
             popupimage.src = "./images/senate/himadri.png";
             name.innerHTML = "Himadri Sonowal";
             position.innerHTML = "FALC Secretary";
-            content.innerHTML="Hello I am Himadri Sonowal";
+            content.innerHTML="Hello, I am Himadri Sonowal. I am the head of FALC Council.";
             break;
         case 8:
             popupimage.src = "./images/senate/pranavkrishna.jpeg";
             name.innerHTML = "Pranav Krishna";
             position.innerHTML = "Sports Secretary";
-            content.innerHTML="Hello I am Pranav Krishna";
+            content.innerHTML="Hello, I am Pranav Krishna. I am the head of Sports Council.";
             break;
         case 9:
             popupimage.src = "./images/senate/abhishekpatel.jpeg";
             name.innerHTML = "Abhishek Patel";
             position.innerHTML = "SDC Secretary";
-            content.innerHTML="Hello I am Abhishek Patel";
+            content.innerHTML="Hello, I am Abhishek Patel. I am the head of SDC Council.";
             break;
         
         case 10:
             popupimage.src = "./images/senate/amanKumar.jpg";
             name.innerHTML = "Aman Kumar";
             position.innerHTML = "RC Secretary";
-            content.innerHTML="Hello I am Aman Kumar";
+            content.innerHTML="Hello, I am Aman Kumar. I am the head of RC Secretary.";
             break;
         
         case 11:
             popupimage.src = "./images/senate/AaryaPalwekar.jpg";
             name.innerHTML = "Aarya Palwekar";
             position.innerHTML = "RC Secretary";
-            content.innerHTML="Hello I am Aarya Palwekar";
+            content.innerHTML="Hello, I am Aarya Palwekar. I am the head of RC Secretary.";
             break;
         }
 
@@ -380,10 +382,13 @@ function toggle(n){
 
 
 function council_toggle(n){
-    var blur2 = document.querySelector('#blur2');
-    blur2.classList.toggle('active2');
+    
     var popup_council = document.querySelector('.popup_council');
     popup_council.classList.toggle('active2');
+
+    document.querySelector('body').classList.toggle('active');
+    document.querySelector('.blurred').classList.toggle('blur');
+
     
     var logo = document.querySelector(".council_logo");
     var content = document.querySelector(".pcontent");
@@ -703,7 +708,7 @@ function council_toggle(n){
         case 7:
 
             logo.src = "./images/sdc.png";
-            content.innerHTML = "<ul><li>Conducts Orientations related to Academics (Primer, Pre-Majors, Majors) and Professionals(Internship, CV, etc).</li><li>Publishes written content like Carma and SDC Blogs</li><li>Conducts Model United Nations (MUN).</li><li>Organizes talks and events like Alumni Events and Alumni Meets</li></ul>";
+            content.innerHTML = "<ul><li>Conducts Orientations related to Academics (Primer, Pre-Majors, Majors) and Professionals(Internship, CV, etc).</li><li>Conducts Placements and Internship Drives.</li><li>Publishes written content like Carma and SDC Blogs</li><li>Conducts Model United Nations (MUN).</li><li>Organizes talks and events like Alumni Events and Alumni Meets</li></ul>";
             boxes[0].style.display = "flex";
            
             boxes[0].querySelector("img").src = "images/SDC Logo.jpg";
@@ -726,10 +731,10 @@ function council_toggle(n){
             boxes[7].style.display = "none";
 
             // insta_handle.innerHTML = "@sports_iiserb"
-            insta_handle.setAttribute("href", "https://www.instagram.com/sports_iiserb/");
+            insta_handle.setAttribute("href", "https://www.instagram.com/sdc_iiserb/");
 
             // gmail_handle.innerHTML = "sportscouncil@iiserb.ac.in";
-            gmail_handle.setAttribute("href", "mailto:sportscouncil@iiserb.ac.in");
+            gmail_handle.setAttribute("href", "mailto:sdc@iiserb.ac.in");
 
             club_head_email.innerHTML = "abhishek@iiserb.ac.in";
             club_head_no.innerHTML = "";
@@ -831,3 +836,13 @@ console.log(i);
 
 
 
+
+
+
+
+// PRELOADER
+
+window.addEventListener("load", function(){
+    var loader = document.querySelector('.spinner-wrapper');
+    loader.style.display = 'none';
+})

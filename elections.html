@@ -5,14 +5,29 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elections@IISERB</title>
+    <title>ELECTIONS | IISERB</title>
     <link rel="stylesheet" href="./css/election.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://unpkg.com/scrollreveal@4"></script>
 
     <script src="https://kit.fontawesome.com/eecc9ab967.js" crossorigin="anonymous"></script>
 
-
+<STYLE>
+  .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 500,
+                'GRAD' 0,
+                'opsz' 48;
+            color: white;
+            position: absolute;
+            top: 90%;
+            font-size: 20px;
+            left: 48%;
+            text-shadow: 1px 1px 10px black;
+        }
+</STYLE>
+<link rel="icon" type="images/x-icon" href="./images/SAC Logo.svg" />
 
   <!-- HTML Meta Tags -->
   <meta name="description" content="SAC is the student activity council of IISER Bhopal. This is the elected student body, which acts as a bridge between the administration and the students to ensure smooth functioning. We ensure that the concerns and demands of the students are properly conveyed to the administration. We are also responsible for all students activities hosted on campus.We are not just about conducting fests and other activities inside the campus, we are also responsible for upholding the rights and values of the students">
@@ -40,6 +55,12 @@
 
 </head>
 <body>
+  <div class="spinner-wrapper">
+    <div class="spinner" role="status">
+      </div>
+  </div>
+
+
     <div class="navbar">
         <div class="content">
             <div class="name">
@@ -69,6 +90,12 @@
         <a class="contain_header">
             ELECTIONS<a id="ii">&nbsp;@iiserb</a>
         </a>
+
+        <span class="material-symbols-outlined">
+          <a id="linked">
+              <i class="fa-solid fa-angle-down"></i>
+          </a>
+      </span>
     </div>
     
     <!-- <div class="contain container_two"> -->
@@ -909,6 +936,14 @@
         ScrollReveal().reveal('.profile-box', {delay: 200});
 
 
+
+
+
+        // PRELOADER
+        window.addEventListener("load", function(){
+        var loader = document.querySelector('.spinner-wrapper');
+          loader.style.display = 'none';
+        })
         </script>
 
 
