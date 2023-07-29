@@ -306,7 +306,12 @@ function toggle(n){
             popupimage.src = "./images/senate/aparnavinod.jpeg";
             name.innerHTML = "Aparna Vinod";
             position.innerHTML = "Cultural Secretary";
-            content.innerHTML="Hello I am Aparna Vinod";
+            content.innerHTML="Hello, I am Aparna Vinod. I am the head of the <b>Cultural Council</b>. I believe in `<i><b>going above and beyond with art.`</b></i>";
+            sec_insta.setAttribute("href", "https://www.instagram.com/_.aparna_.vinod/");
+
+            sec_linkedin.setAttribute("href", "https://in.linkedin.com/in/aparna-vinod-bb1573224");
+            sec_mail.setAttribute("href", "mailto:aparna20@iiserb.ac.in");
+            sec_whatsapp.setAttribute("href", "https://wa.me/919188067884");
             break;
         case 4:
             popupimage.src = "./images/senate/muhammedroshan.jpeg";
@@ -409,6 +414,7 @@ function council_toggle(n){
 
             boxes[0].querySelector("img").src = "./images/clubs/uttarang.png";
             boxes[0].querySelector("#club_name").innerHTML = "Uttarang Club";
+            document.querySelector("#sqr1").setAttribute("href", "https://www.instagram.com/uttarang_iiserb");
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
 
             // CLUB 2
@@ -416,18 +422,24 @@ function council_toggle(n){
 
             boxes[1].querySelector("img").src = "./images/clubs/aarambh.png";
             boxes[1].querySelector("#club_name").innerHTML = "Aarambh Club";
+            document.querySelector("#sqr2").setAttribute("href", "https://www.instagram.com/aarambh_iiserb");
+
             // boxes[1].querySelector("#member_name").innerHTML = "Aniket Asthana `20 <br> Vaishnavi Agarwal `19";
             boxes[2].style.display="flex";
 
             // CLUB 3 
             boxes[2].querySelector("img").src = "./images/clubs/mayura.png";
             boxes[2].querySelector("#club_name").innerHTML = "Mayuraa Club";
+            document.querySelector("#sqr3").setAttribute("href", "https://www.instagram.com/mayuraa_iiserb");
+
             // boxes[2].querySelector("#member_name").innerHTML = "Sayantan Mondal `20";
 
             // CLUB 4
             boxes[3].style.display = "flex";
             boxes[3].querySelector("img").src = "./images/clubs/movie.png";
             boxes[3].querySelector("#club_name").innerHTML = "Movie Club";
+            document.querySelector("#sqr4").setAttribute("href", "https://www.instagram.com/movieclub_iiserb");
+
             // boxes[3].querySelector("#member_name").innerHTML = "Deependra Singh Siniswar `19 <br> Udit Varma `19 <br> Abhinav Purohit `20";
             
             boxes[4].style.display = "none";
@@ -443,7 +455,7 @@ function council_toggle(n){
             gmail_handle.setAttribute("href", "mailto:culturalcouncil@iiserb.ac.in")
 
             club_head_email.innerHTML = "aparna20@iiserb.ac.in";
-            club_head_no.innerHTML = "";
+            club_head_no.innerHTML = "9188067884";
             club_head_name.innerHTML = "Aparna Vinod";
             club_head_image.src = "./images/senate/aparnavinod.jpeg";
                 
