@@ -9,14 +9,23 @@ const cancelBtn = document.querySelector(".cancel-btn");
 menuBtn.onclick = () => {
     menu.classList.add("active");
     menuBtn.classList.add("hide");
+    document.querySelector(".blurred").classList.add("blur");
+    document.querySelector('body').classList.add('active');
+
 }
 
 cancelBtn.onclick = () => {
     menu.classList.remove("active");
     menuBtn.classList.remove("hide");
-
+    document.querySelector(".blurred").classList.remove("blur");
+    document.querySelector('body').classList.remove('active');
 }
-
+document.querySelector(".blurred").onclick = () => {
+    menu.classList.remove("active");
+    menuBtn.classList.remove("hide");
+    document.querySelector(".blurred").classList.remove("blur");
+    document.querySelector('body').classList.remove('active');
+}
 
 
 
@@ -152,28 +161,28 @@ $(document).ready(function () {
 
 // HIDE NAV BAR after 2 seconds and reappear when scrolling up
 
-var my_window = $(window);
-var position = my_window.scrollTop();
+// var my_window = $(window);
+// var position = my_window.scrollTop();
     
-my_window.scroll(function () {
-    if(window.scrollY > 1000+'px'){
+// my_window.scroll(function () {
+//     if(window.scrollY > 1000+'px'){
     
-    if (my_window.scrollTop()  > position) {
-        setTimeout(function(){$('.navbar').addClass('navup')}, 2000);
-    }else{
-        $('.navbar').removeClass('navup');
-    }
+//     if (my_window.scrollTop()  > position) {
+//         setTimeout(function(){$('.navbar').addClass('navup')}, 2000);
+//     }else{
+//         $('.navbar').removeClass('navup');
+//     }
     
     
-    console.log(window.scrollY);
-    position = my_window.scrollTop();}
-});
+//     console.log(window.scrollY);
+//     position = my_window.scrollTop();}
+// });
 
-var navbar = document.querySelector('.navbar');
-navbar.addEventListener('mouseover', function(event){
-    $('.navbar').removeClass('navup');
-    console.log('mouseover');
-});
+// var navbar = document.querySelector('.navbar');
+// navbar.addEventListener('mouseover', function(event){
+//     $('.navbar').removeClass('navup');
+//     console.log('mouseover');
+// });
 
 
 

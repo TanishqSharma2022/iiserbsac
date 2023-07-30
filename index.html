@@ -109,6 +109,9 @@
         </div>
     </div>
 
+
+
+
     <div id="home" class="main">
 
         <div class="title">
@@ -383,7 +386,7 @@
     <!-- id=council_main -->
     <!-- <p id="council_main">fgkhg</p> -->
 
-    <div style="padding: 50px;" class="council_main">
+    <div style="padding: 50px;" id="council_main" class="council_main">
         <div class="one">
             <h1>COUNCILS</h1>
         </div>
@@ -820,14 +823,8 @@
 
 
         ScrollReveal().reveal('.box', {delay: 0, origin: 'left', reset: false});
-        if(window.matchMedia("(min-width: 972px)").matches){
-            ScrollReveal().reveal('.navbar', {delay: 200, origin:'top'});
-            ScrollReveal().reveal('.list li', {delay: 200, origin:'top', interval:300});
-
-        }else{
-            ScrollReveal().reveal('.navbar', {delay: 200, origin:'top', interval:300});
-        }
-        
+        ScrollReveal().reveal('.navbar', {delay: 200, origin:'top'});
+         
 
     </script>
 

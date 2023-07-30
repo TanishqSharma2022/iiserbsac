@@ -60,7 +60,7 @@
       </div>
   </div>
 
-
+  <div class="blurred"></div>
     <div class="navbar">
         <div class="content">
             <div class="name">
@@ -75,8 +75,8 @@
                     <i class="fas fa-times"></i>
                 </div>
                 <li><a href="./index.html">Home</a></li>
-                <li><a id="council_click scroll" href="./index.html/">Councils</a></li>
-                <li><a id="scroll" href="./index.html">Members</a></li>
+                <li><a id="council_click scroll" href="./index.html#council_main">Councils</a></li>
+                <li><a id="scroll" href="./index.html#members">Members</a></li>
 
                 <li><a target="_blank" href="comingsoon.html">Fests</a></li>
                 <li><a id="aboutus_href" href="#">Contact</a></li>
@@ -86,6 +86,12 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
     <div class="contain">
         <a class="contain_header">
             ELECTIONS<a id="ii">&nbsp;@iiserb</a>
@@ -925,8 +931,7 @@
             duration: 2000,
             // delay: 400
         });
-        ScrollReveal().reveal('.navbar', { origin:'top'});
-        ScrollReveal().reveal('.list li', { origin:'top', interval:300});
+  
         ScrollReveal().reveal('.contain_header', {delay: 200, origin: 'left'});
         ScrollReveal().reveal('#ii', {delay: 200, origin: 'right'});
 
@@ -944,6 +949,7 @@
         var loader = document.querySelector('.spinner-wrapper');
           loader.style.display = 'none';
         })
+
         </script>
 
 

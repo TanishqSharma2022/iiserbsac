@@ -13,10 +13,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  
+  background: black;
+opacity: 0.5;
   z-index: 99999;
--webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px);
+/* -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px); */
 }
 
 * {
@@ -53,7 +54,7 @@ body {
   width: 100%;
   /* height: 2%; */
   /* background: #ddd; */
-  z-index: 999;
+  z-index: 999999;
   box-sizing: border-box;
   position: sticky;
   top: 0;
@@ -142,6 +143,9 @@ body {
   top: 20px;
 }
 
+ul.list li i{
+  display: none;
+}
 ul.list {
   width: 80%;
   height: 6vh;
@@ -171,7 +175,7 @@ ul.list li a {
   font-weight: 300;
   /* font-weight: 100; */
   border: 1px solid transparent;
-  transition: all 0.2s ease;
+  transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
   display: inline-block;
   position: relative;
 }
@@ -622,11 +626,13 @@ li a:hover {
   height: 100%;
   padding-top: 10px;
   color: black;
-  line-height: 0.51em;
   text-align: center;
   align-items: center;
-  font-size: clamp(10px, 1vw, 30px);
+  font-size: clamp(10px, 1vw, 20px);
   /* border: 2px solid red; */
+}
+.box h2{
+  line-height: 2rem;
 }
 
 .box img {
@@ -1919,9 +1925,9 @@ a {
   }
 
   .fa-times {
-    font-size: 30px;
+    font-size: 25px;
     margin-right: 0px;
-    padding: 10px;
+    /* padding: 10px; */
     /* filter: drop-shadow(1px 2px 5\4\\px black); */
   }
 
@@ -1954,6 +1960,9 @@ a {
     margin: 0;
 
   }
+  ul.list li i{
+    display:initial;
+  }
 
   .navbar .list {
     margin: 0;
@@ -1961,30 +1970,42 @@ a {
     text-align: center;
     top: 0%;
     left: -100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
-    width: 70%;
+    width: 60%;
     max-width: 400px;
-    background: white;
+    background: #eee;
     border: 2px solid grey;
     float: none;
-    text-align: center;
-    transition: all 0.5s ease;
+    align-items: center;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     padding-top: 80px;
     padding-left: 0px;
+    border-radius: 0px 10px 10px 0px;
   }
 
   .navbar .list li {
+    text-transform: uppercase;
     box-sizing: border-box;
     margin-top: 5px;
-    padding-block: 20px;
-    text-align: center;
-    line-height: 10px;
+    padding-block: 5px;
+    padding-left: 10px;
+    background: #eee;
+    text-align: left;
     width: 100%;
     top: 10%;
     left: 0%;
-  }
 
+  }
+  .navbar .list li:hover{
+    box-shadow: 0px 0px 10px #aaa;
+  }
+  .navbar .list li a{
+    color: black;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
   .navbar .list li:hover {
     border: 2px solid var(--navlist-color);
     color: var(--navlist-color);
@@ -1994,7 +2015,7 @@ a {
     left: 0;
   }
 
-  .navbar .list li a {
+  .navbar .list  {
     color: black;
     border-style: none;
     font-size: 20px;
@@ -2269,7 +2290,7 @@ a {
   border-bottom: 5px solid #b3aeae;
 
   border-radius: 50%;
-  transition: all 1s ease;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   animation: spin 0.5s infinite linear;
 }
 
