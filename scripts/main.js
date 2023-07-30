@@ -11,6 +11,7 @@ menuBtn.onclick = () => {
     menuBtn.classList.add("hide");
     document.querySelector(".blurred").classList.add("blur");
     document.querySelector('body').classList.add('active');
+    document.querySelector('.navbar').style.zIndex = 99999;
 
 }
 
@@ -19,12 +20,16 @@ cancelBtn.onclick = () => {
     menuBtn.classList.remove("hide");
     document.querySelector(".blurred").classList.remove("blur");
     document.querySelector('body').classList.remove('active');
+    document.querySelector('.navbar').style.zIndex = 999;
+
 }
 document.querySelector(".blurred").onclick = () => {
     menu.classList.remove("active");
     menuBtn.classList.remove("hide");
     document.querySelector(".blurred").classList.remove("blur");
     document.querySelector('body').classList.remove('active');
+    document.querySelector('.navbar').style.zIndex = 999;
+
 }
 
 
@@ -290,6 +295,14 @@ function toggle(n){
     document.querySelector('body').classList.toggle('active');
     document.querySelector('.blurred').classList.toggle('blur');
 
+    document.querySelector('.blurred').addEventListener('click', e => {
+        popup.classList.remove('active');
+    })
+
+
+
+
+
     var popupimage = document.querySelector(".popupimage");
     var name = document.querySelector("#popup_head_name");
     var position = document.querySelector("#popup_head_occp");
@@ -397,6 +410,11 @@ function council_toggle(n){
 
     document.querySelector('body').classList.toggle('active');
     document.querySelector('.blurred').classList.toggle('blur');
+
+    document.querySelector('.blurred').addEventListener('click', e => {
+        popup_council.classList.remove('active2');
+
+    })
 
     
     var logo = document.querySelector(".council_logo");
