@@ -15,8 +15,8 @@
   left: 0;
   
   z-index: 99999;
--webkit-backdrop-filter: blur(.5rem);
-  backdrop-filter: blur(.5rem);
+-webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
 }
 
 * {
@@ -415,7 +415,7 @@ li a:hover {
   width: 100%;
   height: auto;
   padding-block: 50px;
-  background: #ddd;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -491,16 +491,6 @@ li a:hover {
   font-size: 20px;
   text-align: center;
   align-items: center;
-}
-
-.senatemain#blur.active {
-  filter: blur(10px);
-  pointer-events: none;
-}
-
-.council_main#blur.active2 {
-  filter: blur(10px);
-  pointer-events: none;
 }
 
 
@@ -610,7 +600,6 @@ li a:hover {
   justify-content: space-between;
   position: relative;
   /* top: 16%; */
-
   padding-block: 50px;
 }
 
@@ -675,6 +664,11 @@ h1 em {
 font-style: normal;
 font-weight: 600;
 } */
+
+.activity_header{
+  width: 90%;
+}
+
 .one h1,
 .header h1,
 .activity_header h1, .constitute_contain h1 {
@@ -682,7 +676,9 @@ font-weight: 600;
   text-transform: uppercase;
   padding-bottom: 5px;
   font-family: 'Poppins';
-  font-weight: 400;
+  font-weight: 800;
+  font-size: clamp(0.5rem, 5vw, 1.2rem);
+  font-size: 2.5rem;
 }
 
 .one h1:before,
@@ -784,6 +780,7 @@ h1 > img {
 
 .council_main {
   width: 100%;
+  background: #eee;
   /* height: 100vh; */
   /* max-height: 1000px; */
 }
@@ -968,6 +965,11 @@ h1 > img {
   margin: 0 auto;
 }
 
+.contact_box img:hover{
+  box-shadow: 0px 0px 10px rgb(57, 44, 29);
+  cursor: pointer;
+}
+
 #club_head_image {
   width: 100px;
   height: 100px;
@@ -1009,13 +1011,12 @@ h1 > img {
   filter: drop-shadow(1px 1px 5px black);
 }
 
-.square img:hover,
-.contact_box img:hover {
+.square img:hover{
   filter: drop-shadow(1px 1px 15px black);
   cursor: pointer;
 }
 
-.square img:hover #club_name {
+.square:hover #club_name{
   text-shadow: 1px 1px 15px black;
   color: black;
   cursor: pointer;
@@ -1023,6 +1024,12 @@ h1 > img {
 
 .contact_box {
   padding: 10px;
+}
+
+
+#club_head_image{
+  filter: drop-shadow(1px 1px 15px black);
+
 }
 
 #instahandle,
@@ -1064,7 +1071,6 @@ h1 > img {
   width: 80%;
   /* border: 2px solid black; */
   position: fixed;
-  background: white;
   z-index: 99999;
   max-height: 800px;
   /* min-height: 600px; */
@@ -1081,9 +1087,9 @@ h1 > img {
   /* background: url(/picture.png); */
   background-size: cover;
   /* background: var(--navlist-color); */
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 19px 38px;
-
+  /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 19px 38px; */
+  box-shadow: 0px 0px 20px black;
 }
 
 .popup.active,
@@ -1103,12 +1109,14 @@ button.popup_close {
   right: 10px;
   z-index: 99999;
   /* border-radius: 20%; */
-  /* transition: all 0.4s ease-in-out; */
+  transition: all 0.2s ease;
 }
 
 button.popup_close:hover {
   cursor: pointer;
   filter: drop-shadow(0px 0px 10px #673313);
+  background: white;
+  color: var(--navlist-color);
   /* transform: scale(1.2); */
 }
 
@@ -1122,8 +1130,6 @@ button.popup_close:hover {
   display: flex;
   justify-content: center;
   flex-direction: row;
-
-
 }
 
 .popup_image {
@@ -1289,6 +1295,7 @@ a {
   max-width: 300px;
   filter: drop-shadow(0px 0px 10px black);
   object-fit: contain;
+  mix-blend-mode: multiply;
 }
 
 .constitute_contain{
@@ -1680,8 +1687,16 @@ a {
 
 /*  RESPONSIVE FOR MOBILE DEVICES */
 
-
+#senate_para{
+  background: #eee;
+}
+ 
 @media only screen and (max-width: 972px) {
+  #senate_para{
+    background: white;
+  }
+
+
   .main {
     overflow-x: hidden;
     margin-top: -6vh;
@@ -2076,7 +2091,7 @@ a {
     height: 100%;
     width: 100%;
     opacity: 1;
-    object-fit: fill;
+    object-fit: cover;
     min-height: 275px;
   }
 

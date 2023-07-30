@@ -736,8 +736,8 @@ function council_toggle(n){
             // gmail_handle.innerHTML = "sportscouncil@iiserb.ac.in";
             gmail_handle.setAttribute("href", "mailto:sdc@iiserb.ac.in");
 
-            club_head_email.innerHTML = "abhishek@iiserb.ac.in";
-            club_head_no.innerHTML = "";
+            club_head_email.innerHTML = "abhishekp20@iiserb.ac.in";
+            club_head_no.innerHTML = "+918999366201";
             club_head_name.innerHTML = "Abhishek Patel";
             club_head_image.src = "./images/senate/abhishekpatel.jpeg";
             break;
@@ -784,7 +784,11 @@ function council_toggle(n){
             club_head_no.innerHTML = "";
             club_head_name.innerHTML = " Aman Kumar";
             club_head_image.src = "../images/senate/amanKumar.jpg";
+
+            // let newpicture = document.createElement('img');
             
+            // newpicture.setAttribute("src", "./images/4.png");
+            // document.querySelector(".container").appendChild(newpicture)
             
             break;
         
