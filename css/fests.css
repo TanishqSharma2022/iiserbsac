@@ -163,6 +163,7 @@ width: 100%;
     padding: 10px 0px;
 }
 
+
 .radio-container button{
     border: none;
     border-radius: 50%;
@@ -172,6 +173,7 @@ width: 100%;
     margin: 0 10px;
     transition: all 1s ease;
     cursor: pointer;
+    z-index: 99999;
 }
 .radio-container .current-slide{
     background: rgb(0, 0, 0, 0.7)
@@ -221,7 +223,7 @@ width: 100%;
     position: absolute;
     top: 0;
     object-fit: contain;
-    aspect-raio: 16/9;
+    aspect-ratio: 16/9;
 }
 .wrap-slider{
     width: 50%;
@@ -251,7 +253,7 @@ width: 100%;
     }
     .wrap-slider{
         width: 80%;
-        height: auto;
+        /* height: auto; */
 
     }
     .radio-container{
