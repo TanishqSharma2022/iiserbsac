@@ -25,7 +25,7 @@ function click(f, btn, i){
 
 const radioContain = document.getElementsByClassName("radio-container");
 
-for(var f=0; f<4; f++){
+for(var f=0; f<6; f++){
 
 
 var btns = radioContain[f].querySelectorAll('button');

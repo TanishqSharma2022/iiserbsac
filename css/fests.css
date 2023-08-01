@@ -38,7 +38,7 @@ width: 100%;
     text-align: center;
     position: relative; 
     
-    font-family: 'poppins';
+    font-family: 'Poppins';
     font-size: 5rem;
     letter-spacing: 1px;
     COLOR: WHITE;
@@ -181,7 +181,9 @@ width: 100%;
 
 
 .fest_content h1{
-    font-family: 'BANGERS';
+    font-family: 'POPPINS';
+    text-transform: uppercase;
+    font-weight: 800;
     font-size: 3.5rem;
 }
 
@@ -222,8 +224,8 @@ width: 100%;
     width: 100%;
     position: absolute;
     top: 0;
-    object-fit: contain;
-    aspect-ratio: 16/9;
+    object-fit: cover;
+    /* aspect-ratio: 16/9; */
 }
 .wrap-slider{
     width: 50%;
@@ -266,6 +268,14 @@ width: 100%;
         width: 100%;
         height: auto;
     }
+    .imageslider_wrapper img{
+        height: 300px;
+    }
+
+    .fest_content h1{
+        font-size: 2.5rem;
+    }
+    
 }
 
 
