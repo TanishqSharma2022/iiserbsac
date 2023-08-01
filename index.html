@@ -100,7 +100,7 @@
                 <li><a id="scroll" href="#members">Members</a></li>
                 <li><a target="_blank" href="elections.html">Elections</a></li>
 
-                <li><a target="_blank" href="comingsoon.html">Fests</a></li>
+                <li><a target="_blank" href="fests.html">Fests</a></li>
                 <li><a id="aboutus_href" href="#">Contact</a></li>
             </ul>
             <div class="icon menu-btn">
@@ -175,7 +175,7 @@
 
         <div class="aboutus">
             <div class="constitute">
-                <img src="./images/sac_constitution.png" alt="">
+                <img src="./images/sac_constitution.png" alt="" class="constitution_image">
 
                 <div class="constitute_contain">
                     <h1>SAC CONSTITUTION</h1>
@@ -806,25 +806,33 @@
 
     <script>
 
-        ScrollReveal({
-            reset: false,
-            distance: '60px',
-            duration: 2000,
-            // delay: 400
-        });
-        ScrollReveal().reveal('.sac', {delay: 200});
-        ScrollReveal().reveal('.logo', {delay: 200});
-        ScrollReveal().reveal('.header', {delay: 200});
-        ScrollReveal().reveal('.about_para', {delay: 200});
-        ScrollReveal().reveal('.activity_header', {delay: 200});
-        ScrollReveal().reveal('.carousel', {delay: 200, origin:'right'});
-        ScrollReveal().reveal('.one', {delay: 200});
+        // ScrollReveal({
+        //     reset: false,
+        //     distance: '60px',
+        //     duration: 2000,
+        //     // delay: 400
+        // });
+        // ScrollReveal().reveal('.sac', {delay: 200});
+        // ScrollReveal().reveal('.logo', {delay: 200});
+        // ScrollReveal().reveal('.header', {delay: 200});
+        // ScrollReveal().reveal('.about_para', {delay: 200});
+        // ScrollReveal().reveal('.activity_header', {delay: 200});
+        // ScrollReveal().reveal('.carousel', {delay: 200, origin:'right'});
+        // ScrollReveal().reveal('.one', {delay: 200});
+        // ScrollReveal().reveal('.constitution_image', {delay: 200, origin:'left'});
+        // ScrollReveal().reveal('.constitute_contain', {delay: 200, origin:'right'});
 
 
 
-        ScrollReveal().reveal('.box', {delay: 0, origin: 'left', reset: false});
-        ScrollReveal().reveal('.navbar', {delay: 200, origin:'top'});
-         
+
+        // ScrollReveal().reveal('.box', {delay: 0, origin: 'left', reset: false});
+        // ScrollReveal().reveal('.navbar', {delay: 200, origin:'top'});
+          // PRELOADER
+ window.addEventListener("load", function(){
+        var loader = document.querySelector('.spinner-wrapper');
+          loader.style.display = 'none';
+        })
+
 
     </script>
 

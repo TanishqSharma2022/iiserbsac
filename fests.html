@@ -1,409 +1,523 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fests</title>
+    <title>Fests | IISERB</title>
+    <link rel="stylesheet" href="css\fests.css">
     <link rel="stylesheet" href="css\style.css">
+
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+
     <script src="https://kit.fontawesome.com/eecc9ab967.js" crossorigin="anonymous"></script>
     <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/riajulislam" title="riajulislam">riajulislam</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
-    <style>
-        :root{
-            background-color: #000000;
+    <STYLE>
+        .contain {
+            background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(./images/fest.jpg);
+            background-size: cover;
         }
-        .page-wrapper {
-  font-family: 'Lato', sans-serif;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  justify-content: space-evenly;
-  padding-left: calc(5% - 16px);
-  padding-right: calc(5% - 16px);
-  width: inherit;
-  /* padding: 0 5%; */
-}
-body{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+  .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 500,
+                'GRAD' 0,
+                'opsz' 48;
+            color: white;
+            position: absolute;
+            top: 90%;
+            font-size: 20px;
+            left: 48%;
+            text-shadow: 1px 1px 10px black;
+        }
 
-
-.contain{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    border: 1px solid black;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(activities\fest.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    max-width: 100%;
-    top: -6vh;
-}
-.contain_header{
-    text-align: center;
-    position: relative; 
-    
-    font-family: 'poppins';
-    font-size: 5rem;
-    letter-spacing: 1px;
-    COLOR: WHITE;
-    font-weight: 800;
-    text-shadow: 0px 5px 20px black;
-    
-}   
-
-#ii{
-    font-family: 'rock salt';
-    font-size: 3rem;
-    font-style: italic;
-    letter-spacing:5px;
-    color:white;
-    text-shadow: 0px 0px 15px black;
-
-}
-
-.container_two{
-    background: white;
-}
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 900px){
-    .contain_header{
-        font-size: 2rem;
-    }
-    #ii{
-        font-size: 1rem;
-    }
-}
-.profile-box {
-  background: #fafafa;/*#e6f2ff;*/
-  box-shadow: 0 2px 6px 0 rgba(47,83,151,0.10);
-  border-radius: 3px;
-  margin: 20px 16px;
-  padding: 16px 16px 12px;
-  width: 250px;
-  max-width: calc(100% - 17px);
-  text-align: center;
-  transition: 300ms;
-  flex-grow: 1;
-  user-select:   none;
-}
-.profile-box:hover {
-  /* box-shadow: 0 2px 6px 0 rgba(47,83,151,0.40); */
-  background-color: #eaeaea; /* #cce6ff;*/
-  /*border-color: #1a8cff;*/
-  box-shadow: 0 0 20px 9px rgba(0,0,0,0.03);
-  transform: scale(1.03);
-}
-.page-wrapper img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  box-shadow: 0 2px 6px 0 rgba(47,83,151,0.10);
-}
-.page-wrapper h3 {
-  font-weight: 500;
-  color: #002a55;
-  font-size: 1.6em;
-  margin-top: 20px;
-  margin-bottom: 5px;
-  
- }
-
-.rc {
-  font-weight: 700;
-  color:#ffffff;
-  font-size: 3.2em;
-  margin-top: 20px;
-  margin-bottom: 5px;
-  text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  text-shadow: #002a55;
-  
- }
-.page-wrapper h4 {
-  transition: 500ms;
-  font-weight: 300;
-  font-size: 1.14em;
-  color: #055ab5;
-  margin-top: 12px;
-  /*cursor: pointer;*/
-}
-.mem-social.mem-social.mem-social .fb{
-   display: inline-block;
-   border: 1px solid#d21c22;
-   color: #d21c22;
-   padding: 6px 12px;
-   text-decoration: none;
-   margin-right: 6px;
- }
-.mem-social.mem-social .fb:hover{
-   background:#d21c22;
-   color: white;
-   /* box-shadow: 4px 4px 6px 0 rgba(47,83,151,0.10); */
- }
- .mem-social.mem-social.mem-social .mail{
-   display: inline-block;
-   border: 1px solid#82d006;
-   color: #82d006;
-   padding: 6px 12px;
-   text-decoration: none;
-   margin-right: 6px;
- }
-.mem-social.mem-social .mail:hover{
-   background:#82d006;
-   color: white;
-   /* box-shadow: 4px 4px 6px 0 rgba(47,83,151,0.10); */
- }
- .mem-social .phone{
-  position: relative;
-   display: inline-block;
-   border: 1px solid #005cbe;
-   color:#005cbe;
-   padding: 6px 12px;
-   text-decoration: none;
-   margin-right: 6px;
- }
-
- .mem-social .phone:hover{
-   background: #005cbe;
-   color: rgb(255, 255, 255);
-   cursor:  pointer;
- }
- .mem-social .phone:hover .ph-num {
-   visibility: visible;
-   opacity: 1;
- }
-   
-
-    </style>
+    </STYLE>
 </head>
+
 <body>
-    <div  class="navbar">
-        <div class="content">
-            <div class="name">
-                <a target="_blank" href="https://www.iiserb.ac.in"><img loading="lazy" class="desktop" src="./images/iiserbwhite.png" alt=""></a>
-                <img loading="lazy" class="mobile" src="./images/removed_bg.png"   class="src">
-            </div>
-            <ul class="list">
-                <div class="icon cancel-btn">
-                    <i class="fas fa-times"></i>
-                </div>
-                <li><a href="index.html">Home</a></li>
-                <li><a id="council_click scroll" href="index.html">Councils</a></li>
-                <li><a id="scroll" href="index.html">Members</a></li>
-                <li><a target="_blank" href="elections.html">Elections</a></li>
-
-                <li><a target="_blank" href="fests.html">Fests</a></li>
-                <li><a id="aboutus_href" href="#">Contact</a></li>
-            </ul>
-            <div class="icon menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </div>
-    <div class="contain">
-        <a class="contain_header">
-            Fests<a id="ii">&nbsp;@iiserb</a>
-        </a>
-    </div>
-   
-   
-<h3 class="rc">Fests</h3>
-        <div class="page-wrapper">
-           
-            <div class="profile-box">
-              <img src="images/Enthuzia Logo.jpg" alt="profile pic">
-              <h3>Ethuzia</h3>
-              <h4>The Cultural Fest </h4>
-
-              <div class="mem-social">
-                <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                <a class="phone" href='#'>
-                    <i class="fa-solid fa-globe"></i>
-                  <span class="ph-num"></span>
-                </a>
-                <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-              </div>
-              
-                 
-                
-            </div>
-            <div class="profile-box">
-              <img src="images/SINGULARITY 2020 LOGO_transparent.png" alt="profile pic">
-              <h3>Singularity </h3>
-              <h4> The Science Fest </h4>
-              <div class="mem-social">
-                <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                <a class="phone" href='#'>
-                    <i class="fa-solid fa-globe"></i>
-                  <span class="ph-num"></span>
-                </a>
-                <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-              </div>
-              
-                 
-                
-            </div>
-            <div class="profile-box">
-              <img src="images/Armageddon _23 Logo Blue.png" alt="profile pic">
-              <h3>Armageddon Fest </h3>
-              <h4> The Tech Fest </h4>
-              <div class="mem-social">
-                <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                <a class="phone" href='#'>
-                    <i class="fa-solid fa-globe"></i>
-                  <span class="ph-num"></span>
-                </a>
-                <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-              </div>
-              
-                 
-                
-            </div>
-           
-            <!--<div class="fest" >
-                <video class="fest_main" autoplay loop muted inline >
-                    <source src="#">
-                </video>
-                <div class="overlay">
-                    <div class="text">
-                        ENTHUZIA
-                    </div>
-                </div>   -->
-                
-                  
-            </div>
-            <div class="mainfest"></div>
-            
+    <div class="spinner-wrapper">
+        <div class="spinner" role="status">
           </div>
-          <div class="footerlast" >
-            <!--  Footer -->
-                   <footer class="footer" >
-                <div class="inner-footer">
+      </div>
     
-    
-                    <!--  for contact us info -->
-                    <div class="footer-items">
-                        <img src="images/IISER White Logo.png"
-                            style="height: 150px;margin-right: auto !important;margin-bottom:15px;display: block !important" />
-                        <h3 class="footer-heading">Contact us</h3>
-                        <ul>
-                            <li><a
-                                    href="https://www.google.com/maps/place/IISER+BHOPAL/@23.2857935,77.2706367,17z/data=!3m1!4b1!4m6!3m5!1s0x397c60d9f8872aef:0x9b99241b1431032!8m2!3d23.2857936!4d77.2755076!16s%2Fg%2F12xql9g02?entry=ttu"><i
-                                        class="fa fa-map-marker" aria-hidden="true"></i>IISER Bhopal, Bhauri</a></li>
-                            <li><a href="mailto:sac@iiserb.ac.in"><i class="fa fa-envelope"
-                                        aria-hidden="true"></i>sac@iiserb.ac.in</a></li>
-                            <li><a href="https://www.instagram.com/sac_iiserb/"><i class="fa fa-instagram"
-                                        aria-hidden="true"></i>instagram.com/sac_iiserb</a></li>
-                        </ul>
-                        <!--   for social links -->
-                        <div class="social-media">
-    
-                        </div>
-                    </div>
-                    <div class="footer-items brdr-left">
-                        <h3 class="footer-heading">Councils</h3>
-                        <ul>
-                            <li class="boards-footer-flex">
-                                <div style="flex-grow: 1;">
-                                    <a href="mailto: culturalcouncil@iiserb.ac.in" target="_blank">Cultural Council</a>
-                                </div>
-    
-                            </li>
-                            <li class="boards-footer-flex">
-                                <div style="flex-grow: 1;">
-                                    <a href="mailto: cnc@iiserb.ac.in" target="_blank">Computer and Networking Council</a>
-                                </div>
-    
-                            </li>
-                            <li class="boards-footer-flex">
-                                <div style="flex-grow: 1;">
-                                    <a href="mailto: esic@iiserb.ac.in" target="_blank">Environmental and Social Initiatives Council </a>
-                                </div>
-    
-                            </li>
-                            <li class="boards-footer-flex">
-                                <div style="flex-grow: 1;">
-                                    <a href="mailto: falc@iiserb.ac.in" target="_blank">Fine Arts and Literary Council </a>
-                                </div>
-    
-                            </li>
-                            <li class="boards-footer-flex">
-                                <div style="flex-grow: 1;">
-                                    <a href="mailto: sciencecouncil@iiserb.ac.in" target="_blank">Science Council </a>
-                                </div>
-    
-                            </li>
-                            <li class="boards-footer-flex">
-                                <div style="flex-grow: 1;">
-                                    <a href="mailto: sportscouncil@iiserb.ac.in" target="_blank">Sports Council</a>
-                                </div>
-    
-                            </li>
-                            <li class="boards-footer-flex">
-                                <div style="flex-grow: 1;">
-                                    <a href="mailto: sdc@iiserb.ac.in" target="_blank">Student Development Council</a>
-                                </div>
-    
-                            </li>
-                        </ul>
-                    </div>
-                    <!--  for quick links  -->
-                    <div class="footer-items">
-                        <h3 class="footer-heading">Services</h3>
-                        <ul>
-                            <li><a href="Representativecouncil.html" target="_blank">Representative Council </a></li>
-                            <li><a href="https://www.iiserb.ac.in/hc" target="_blank">Health center </a></li>
-                            <li><a href="https://www.iiserb.ac.in/dosa/counsellor" target="_blank">Councelling Cell </a>
-                            </li>
-                            <li><a href="https://icdpc.iiserb.ac.in/" target="_blank">Placement cell </a></li>
-                        </ul>
-                    </div>
-                    <!--  for some other links -->
-                    <div class="footer-items">
-                        <h3 class="footer-heading">Links</h3>
-                        <ul>
-                            <li><a href="https://www.iiserb.ac.in/doaa" target="_blank">Office,Academic Affairs </a></li>
-                            <li><a href="https://www.iiserb.ac.in/dosa" target="_blank">Office, Student Affairs </a></li>
-                            <li><a href="https://www.iiserb.ac.in/iwd/people" target="_blank">Office, Institute Works Department </a></li>
-                            <li><a href="https://www.iiserb.ac.in/vh/" target="_blank">Visitor's Hostel</i></a></li>
-                        </ul>
-                        <div class="scroll-top-button" onclick="scrollTopAnimated(500)">
-                            Scroll to top<i class="fa fa-long-arrow-up" aria-hidden="true" style="margin-left: 10px"></i>
-                        </div>
-                    </div>
+      <div class="blurred"></div>
+        <div class="navbar">
+            <div class="content">
+                <div class="name">
+                    <a target="_blank" href="https://www.iiserb.ac.in">
+                        <img loading="lazy" class="desktop" src="./images/iiserbwhite.png" alt="">
+                    
+                        <img loading="lazy" class="mobile" src="./images/removed_bg.png" class="src">
+                    </a>
                 </div>
-                <!--   Footer Bottom start  -->
-                <div class="footer-bottom">
-                    <span style="color:#dadada;font-size:1.2em;margin-bottom: 7px;display:block;">Designed & Developed by
-                        <a  href="https://www.linkedin.com/in/tanishq-sharma-5204bb249" target="_blank"
-                            style="color:#fafafa;text-decoration-color: #dadada;text-decoration: underline;">Tanishq
-                            Sharma</a> and
-                        <a  href="https://www.linkedin.com/in/shailesh-kachhi-681a041a2" target="_blank"
-                            style="color:#fafafa;text-decoration-color: #dadada;text-decoration: underline;">Shailesh
-                            Kachhi</a></span>
-                    <p>Copyright &copy;2023 Student Activity Council, Indian Institute of Science Education and Research
-                        Bhopal. All Rights Reserved.</p>
+                <ul class="list">
+                    <div class="icon cancel-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a id="council_click scroll" href="./index.html#council_main">Councils</a></li>
+                    <li><a id="scroll" href="./index.html#members">Members</a></li>
+    
+                    <li><a target="_blank" href="elections.html">Elections</a></li>
+                    <li><a id="aboutus_href" href="#">Contact</a></li>
+                </ul>
+                <div class="icon menu-btn">
+                    <i class="fas fa-bars"></i>
                 </div>
-            </footer>
+            </div>
         </div>
     
+    
+    
+    
+
+
+
+
+            <div class="contain">
+                <a class="contain_header">
+                    FESTS<a id="ii">&nbsp;@iiserb</a>
+                </a>
+
+                <span class="material-symbols-outlined">
+                    <a id="linked">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                </span>
+            </div>
+
+
+            <div class="contain2">
+
+                <div class="fest-left-card">
+                    <div class="wrap-slider">
+                    <div class="imageslider">
+
+                        <div class="imageslider_wrapper">
+                                <img src="/images/Enthuzia Logo.jpg" alt="">
+                                <img src="/images/Armageddon _23 Logo Blue.png" alt="">
+                                <img src="/images/ESIC logo.png" alt="">
+                                <img src="/images/Sports Council Logo.jpg" alt="">
+                                <img src="/images/Enthuzia Logo.jpg" alt="">
+                                <img src="/images/Enthuzia Logo.jpg" alt="">
+                            </div>
+                    </div>
+                    <div class="radio-container">
+                    <button class="slider current-slide"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+
+    
+                    </div>
+                </div>
+                    <div class="fest_content">
+                        <h1>ENTHUZIA</h1>
+                        <h4>Enthuzia is the annual socio-cultural fest conducted by the Indian Institute of Science, Education & Research, Bhopal. It is the most prominent fest organised in Central India. The prime focus of the fest is to guarantee enjoyment & learning opportunities through fun, exciting activities. The fest is a 3-day celebration of arts, culture & coming together of diverse communities. Exciting events & entertaining talent displays make Enthuzia a truly reveling experience for all attending audiences. Enthuzia, in its spectacular journey so far, has hosted many brilliant artists like Comedians Zakir Khan & Anubhav Singh Bassi, singers Ami Mishra & Stebin Ben, and rock bands Indian Ocean & Underground Authority. </h4>
+                        <div class="fest_links">
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-solid fa-globe"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class=" fest-right-card">
+                    <div class="wrap-slider">
+                    <div class="imageslider">
+
+                        <div class="imageslider_wrapper">
+                                <img src="/images/SINGULARITY 2020 LOGO_transparent.png" alt="">
+                                <img src="/images/A_L.png" alt="">
+                                <img src="/images/ESIC logo.png" alt="">
+                                <img src="/images/Sports Council Logo.jpg" alt="">
+                                <img src="/images/Enthuzia Logo.jpg" alt="">
+                                <img src="/images/Enthuzia Logo.jpg" alt="">
+                            </div>
+                    </div>
+                    <div class="radio-container">
+                    <button class="slider current-slide"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+
+    
+                    </div>
+                </div>
+                    <div class="fest_content">
+                        <h1>SINGULARITY</h1>
+                        <h4>The annual science fest of IISER Bhopal. Singularity has expanded its entourage of influence, attracting college and school students alike to witness this extraordinary merry of science. Highlighting the promethean nuances of IISER as an institute meant to patronize, endow and give oxygen to scientific thinking, Singularity aims to promote out-of-the-box thinking and inculcate scientific ratiocination in the youth.</h4>
+                        <div class="fest_links">
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-solid fa-globe"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="fest-left-card">
+                    <div class="wrap-slider">
+                    <div class="imageslider">
+
+                        <div class="imageslider_wrapper">
+                                <img src="/images/MUN Logo.jpg" alt="">
+                                <img src="/images/Armageddon _23 Logo Blue.png" alt="">
+                                <img src="/images/ESIC logo.png" alt="">
+                                <img src="/images/Sports Council Logo.jpg" alt="">
+                                <img src="/images/Enthuzia Logo.jpg" alt="">
+                                <img src="/images/Enthuzia Logo.jpg" alt="">
+                            </div>
+                    </div>
+                    <div class="radio-container">
+                    <button class="slider current-slide"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+
+    
+                    </div>
+                </div>
+                    <div class="fest_content">
+                        <h1>MUN</h1>
+                        <h4>Model United Nations is an authentic simulation of the UN General Assembly, UN Security Council, or other multilateral bodies, which catapults participants into the world of diplomacy and negotiation. In Model UN, participants step into the shoes of ambassadors of UN member states, from Afghanistan to Zimbabwe to debate current issues on the Organisation's vast agenda.</h4>
+                        <div class="fest_links">
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-solid fa-globe"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="fest-right-card">
+                    <div class="wrap-slider">
+                    <div class="imageslider">
+
+                        <div class="imageslider_wrapper">
+                                <img src="/images/Enthuzia Logo.jpg" alt="">
+                                <img src="/images/Armageddon _23 Logo Blue.png" alt="">
+                                <img src="/images/ESIC logo.png" alt="">
+                                <img src="/images/Sports Council Logo.jpg" alt="">
+                                <img src="/images/Enthuzia Logo.jpg" alt="">
+                                <img src="/images/Enthuzia Logo.jpg" alt="">
+                            </div>
+                    </div>
+                    <div class="radio-container">
+                    <button class="slider current-slide"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+
+    
+                    </div>
+                </div>
+                    <div class="fest_content">
+                        <h1>IISM</h1>
+                        <h4>The Inter IISER Sports Meet (abbreviated and better known as IISM) is the premier multi-sport event of the national institutes dedicated to basic sciences and research. Held annually in the month of December
+                            An event of its stature must represent the diverse sporting talent among its thousand odd participants. Accordingly, the tournament usually spans twelve broad sporting categories (Athletics, Badminton, Basketball, Chess, Cricket, Football, Kabaddi, Kho Kho, Lawn Tennis, Table Tennis, Carrom and Volleyball) with carrom being the latest addition.</h4>
+                        <div class="fest_links">
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-solid fa-globe"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="fest-left-card">
+                    <div class="wrap-slider">
+                    <div class="imageslider">
+
+                        <div class="imageslider_wrapper">
+                                <img src="/images/Armageddon _23 Logo Blue.png" alt="">
+                                <img src="/images/ESIC logo.png" alt="">
+                                <img src="/images/Sports Council Logo.jpg" alt="">
+                                <img src="/images/Enthuzia Logo.jpg" alt="">
+                                <img src="/images/Enthuzia Logo.jpg" alt="">
+                            </div>
+                    </div>
+                    <div class="radio-container">
+                    <button class="slider current-slide"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+
+    
+                    </div>
+                </div>
+                    <div class="fest_content">
+                        <h1>Armagaeddon</h1>
+                        <h4>The annual e-gaming fest of IISER Bhopal. The Computing and Networking Council (CNC) promotes e-gaming and organises the Intra IISER e-gaming event, Armageddon.</h4>
+                        <div class="fest_links">
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-solid fa-globe"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="fest-right-card">
+                    <div class="wrap-slider">
+                    <div class="imageslider">
+
+                        <div class="imageslider_wrapper">
+                                <img src="/images/iiserb_weather.jpeg" alt="">
+                                <img src="/images/Armageddon _23 Logo Blue.png" alt="">
+                                <img src="/images/ESIC logo.png" alt="">
+                                <img src="/images/Sports Council Logo.jpg" alt="">
+                                <img src="/images/Enthuzia Logo.jpg" alt="">
+                                <img src="/images/Enthuzia Logo.jpg" alt="">
+                            </div>
+                    </div>
+                    <div class="radio-container">
+                    <button class="slider current-slide"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+                    <button class="slider"></button>
+
+    
+                    </div>
+                </div>
+                    <div class="fest_content">
+                        <h1>Sangharsh</h1>
+                        <h4>Sangharsh is the Intra IISERB Sports Tournament, held annually in the even semesters. It features most events spanning sports organised in the Inter IISER Sports Meets, apart from a few more. Most events are organised in batchwise teams. The tournament provides community members a chance to prove their prowess and have recreational fun, hence attracting large participation. It is also aimed at building the spirits of teamwork and sportsmanship, and promoting leadership qualities. Outstanding student performers and hidden talents are identified too here, and may get a chance to represent the institute in the IISM.</h4>
+                        <div class="fest_links">
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-solid fa-globe"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footerlast">
+        <!--  Footer -->
+        <footer class="footer">
+            <div class="inner-footer">
+
+
+                <!--  for contact us info -->
+                <div class="footer-items">
+                    <img src="images/IISER White Logo.png"
+                        style="height: 150px;margin-right: auto !important;margin-bottom:15px;display: block !important" />
+                    <h3 class="footer-heading">Contact us</h3>
+                    <ul>
+                        <li><a
+                                href="https://www.google.com/maps/place/IISER+BHOPAL/@23.2857935,77.2706367,17z/data=!3m1!4b1!4m6!3m5!1s0x397c60d9f8872aef:0x9b99241b1431032!8m2!3d23.2857936!4d77.2755076!16s%2Fg%2F12xql9g02?entry=ttu"><i
+                                    class="fa fa-map-marker" aria-hidden="true"></i>IISER Bhopal, Bhauri</a></li>
+                        <li><a href="mailto:sac@iiserb.ac.in"><i class="fa fa-envelope"
+                                    aria-hidden="true"></i>sac@iiserb.ac.in</a></li>
+                        <li><a href="https://www.instagram.com/sac_iiserb/"><i class="fa fa-instagram"
+                                    aria-hidden="true"></i>instagram.com/sac_iiserb</a></li>
+                    </ul>
+                    <!--   for social links -->
+                    <div class="social-media">
+
+                    </div>
+                </div>
+                <div class="footer-items brdr-left">
+                    <h3 class="footer-heading">Councils</h3>
+                    <ul>
+                        <li class="boards-footer-flex">
+                            <div style="flex-grow: 1;">
+                                <a href="mailto: culturalcouncil@iiserb.ac.in" target="_blank">Cultural Council</a>
+                            </div>
+
+                        </li>
+                        <li class="boards-footer-flex">
+                            <div style="flex-grow: 1;">
+                                <a href="mailto: cnc@iiserb.ac.in" target="_blank">Computer and Networking Council</a>
+                            </div>
+
+                        </li>
+                        <li class="boards-footer-flex">
+                            <div style="flex-grow: 1;">
+                                <a href="mailto: esic@iiserb.ac.in" target="_blank">Environmental and Social Initiatives
+                                    Council </a>
+                            </div>
+
+                        </li>
+                        <li class="boards-footer-flex">
+                            <div style="flex-grow: 1;">
+                                <a href="mailto: falc@iiserb.ac.in" target="_blank">Fine Arts and Literary Council </a>
+                            </div>
+
+                        </li>
+                        <li class="boards-footer-flex">
+                            <div style="flex-grow: 1;">
+                                <a href="mailto: sciencecouncil@iiserb.ac.in" target="_blank">Science Council </a>
+                            </div>
+
+                        </li>
+                        <li class="boards-footer-flex">
+                            <div style="flex-grow: 1;">
+                                <a href="mailto: sportscouncil@iiserb.ac.in" target="_blank">Sports Council</a>
+                            </div>
+
+                        </li>
+                        <li class="boards-footer-flex">
+                            <div style="flex-grow: 1;">
+                                <a href="mailto: sdc@iiserb.ac.in" target="_blank">Student Development Council</a>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <!--  for quick links  -->
+                <div class="footer-items">
+                    <h3 class="footer-heading">Services</h3>
+                    <ul>
+                        <li><a href="Representativecouncil.html" target="_blank">Representative Council </a></li>
+                        <li><a href="https://www.iiserb.ac.in/hc" target="_blank">Health center </a></li>
+                        <li><a href="https://www.iiserb.ac.in/dosa/counsellor" target="_blank">Councelling Cell </a>
+                        </li>
+                        <li><a href="https://icdpc.iiserb.ac.in/" target="_blank">Placement cell </a></li>
+                    </ul>
+                </div>
+                <!--  for some other links -->
+                <div class="footer-items">
+                    <h3 class="footer-heading">Links</h3>
+                    <ul>
+                        <li><a href="https://www.iiserb.ac.in/doaa" target="_blank">Office,Academic Affairs </a></li>
+                        <li><a href="https://www.iiserb.ac.in/dosa" target="_blank">Office, Student Affairs </a></li>
+                        <li><a href="https://www.iiserb.ac.in/iwd/people" target="_blank">Office, Institute Works
+                                Department </a></li>
+                        <li><a href="https://www.iiserb.ac.in/vh/" target="_blank">Visitor's Hostel</i></a></li>
+                    </ul>
+                    <div class="scroll-top-button" onclick="scrollTopAnimated(500)">
+                        Scroll to top<i class="fa fa-long-arrow-up" aria-hidden="true" style="margin-left: 10px"></i>
+                    </div>
+                </div>
+            </div>
+            <!--   Footer Bottom start  -->
+            <div class="footer-bottom">
+                <span style="color:#dadada;font-size:1.2em;margin-bottom: 7px;display:block;">Designed & Developed by
+                    <a href="https://www.linkedin.com/in/tanishq-sharma-5204bb249" target="_blank"
+                        style="color:#fafafa;text-decoration-color: #dadada;text-decoration: underline;">Tanishq
+                        Sharma</a> and
+                    <a href="https://www.linkedin.com/in/shailesh-kachhi-681a041a2" target="_blank"
+                        style="color:#fafafa;text-decoration-color: #dadada;text-decoration: underline;">Shailesh
+                        Kachhi</a></span>
+                <p>Copyright &copy;2023 Student Activity Council, Indian Institute of Science Education and Research
+                    Bhopal. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+<script src="./scripts/main.js"></script>
+
+
+<script>
+
+    // ScrollReveal({
+    //     reset: false,
+    //     distance: '60px',
+    //     duration: 2000,
+    //     // delay: 400
+    // });
+    //     ScrollReveal().reveal('.contain_header', {delay: 200, origin: 'left'});
+    //     ScrollReveal().reveal('#ii', {delay: 200, origin: 'right'});
+
+    //     ScrollReveal().reveal('.fest-left-card', {delay: 200, origin: 'left'});
+    //     ScrollReveal().reveal('.fest-right-card', {delay: 200, origin: 'right'});
+
+
+
+
+
+
+    // // ScrollReveal().reveal('.box', {delay: 0, origin: 'left', reset: false});
+    // // ScrollReveal().reveal('.navbar', {delay: 200, origin:'top'});
+     
+ // PRELOADER
+ window.addEventListener("load", function(){
+        var loader = document.querySelector('.spinner-wrapper');
+          loader.style.display = 'none';
+        })
+
+        </script>
+</script>
+
 
 </body>
+
 </html>

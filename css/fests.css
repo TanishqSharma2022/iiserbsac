@@ -1,0 +1,269 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@600&family=Raleway:ital,wght@0,400;0,600;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=PT+Sans&family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lumanosimo&family=Pangolin&family=Rock+Salt&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+overflow-x: hidden;
+width: 100%;
+}
+
+.contain{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid black;
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(./images/fest.jpg);
+    background-size: cover;
+    max-width: 100%;
+    top: -6vh;
+}
+.contain_header{
+    text-align: center;
+    position: relative; 
+    
+    font-family: 'poppins';
+    font-size: 5rem;
+    letter-spacing: 1px;
+    COLOR: WHITE;
+    font-weight: 800;
+    text-shadow: 0px 5px 20px black;
+    
+}   
+
+#ii{
+    font-family: 'rock salt';
+    font-size: 3rem;
+    font-style: italic;
+    letter-spacing:5px;
+    color:white;
+    text-shadow: 0px 0px 15px black;
+
+}
+
+.contain2{
+
+    width: 100%;
+    background: linear-gradient(to bottom, #0b0f12, #072b39);
+/* paddin-block: 60px; */
+    /* background: grey; */
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: -49px;
+
+}
+
+.fest-left-card{
+    margin-bottom: 49px;
+    width: 80%;
+    height: 500px; 
+    /* border: 2px solid #eee; */
+    background: #eee;
+    position: relative;
+    top: 50px;
+    border-end-end-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-block: 100px;
+    padding-inline: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.fest-right-card{
+    margin-bottom: 49px;
+    width: 80%;
+    height: 500px; 
+    background: #eee;
+    position: relative;
+    top: 50px;
+    padding-block: 100px;
+    padding-inline: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-end-end-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+   right: -20%;
+}
+
+
+
+.fest_content{
+    width: 60%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+}
+.fest_links{
+    width: 50%;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fest_links i{
+    margin: 0 20px;
+    background: #eee;
+    height: 50px;
+    width: 50px;
+    font-size: 2rem;
+    display: grid;
+    place-items: center;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+.fest_links i:hover{
+    transform: scale(1.2);
+}
+
+.wrap-slider{
+    width: 40%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.radio-container{
+    display: flex;  
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.radio-container button{
+    border: none;
+    border-radius: 50%;
+    background: rgb(0, 0, 0, 0.3);
+    height: 15px; 
+    width: 15px;
+    margin: 0 10px;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+.radio-container .current-slide{
+    background: rgb(0, 0, 0, 0.7)
+}
+
+
+.fest_content h1{
+    font-family: 'BANGERS';
+    font-size: 3.5rem;
+}
+
+.fest_content h4{
+    font-family: 'PT Sans';
+    line-height: 21px;
+    font-size: 1.1rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+
+
+
+
+.imageslider{
+    width: 100%;
+    /* background: #aaa; */
+    height: 400px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.imageslider_wrapper{
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: auto;
+    object-fit: contain;
+    transition: all 0.7s ease;
+    
+    /* width: 1000px; */
+    /* right: 100%; */
+}
+.imageslider_wrapper img{
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    object-fit: contain;
+    aspect-raio: 16/9;
+}
+.wrap-slider{
+    width: 50%;
+    display: flex;
+    /* position: relative; */
+}
+
+
+
+
+@media only screen and (max-width: 900px){
+    .contain_header{
+        font-size: 2rem;
+    }
+    #ii{
+        font-size: 1rem;
+    }
+
+    .fest-left-card, .fest-right-card{
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        height: auto;
+    }
+    .fest-right-card{
+        right: 0;
+    }
+    .wrap-slider{
+        width: 80%;
+        height: auto;
+
+    }
+    .radio-container{
+        padding: 0px;
+        margin-top: -50px;
+
+    }
+    .fest_content{
+        padding: 20px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+

@@ -1843,7 +1843,7 @@ a {
   .popup_image {
     position: absolute;
     top: 0;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     /* position: absolute; */
     /* top: 0%; */
     width: 100%;
