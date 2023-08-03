@@ -77,8 +77,8 @@ body {
 }
 
 .navbar.sticking {
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(55px);
+  backdrop-filter: blur(3rem);
   /* background: #412F26; */
 
   background: hsl(0, 0, 1, 1);
@@ -2283,12 +2283,11 @@ a {
 }
 .spinner{
   width: 60px; height: 60px;
-  border-top: 5px solid rgb(85, 163, 216);
-  border-left: 5px solid #b3aeae;
-  border-right: 5px solid #b3aeae;
-  border-bottom: 5px solid #b3aeae;
-
-  border-radius: 50%;
+  border-top: 10px solid rgb(59, 133, 182);
+  border-left: 10px solid rgb(185, 221, 245);
+  border-right: 10px solid rgb(185, 221, 245);
+  border-bottom: 10px solid rgb(185, 221, 245);
+  border-radius: 60%;
   transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   animation: spin 0.5s infinite linear;
 }
@@ -2297,6 +2296,12 @@ a {
 @keyframes spin{
   from{
     transform: rotate(0deg);
+  }
+  15%{
+    transform: rotate(90deg);
+  }
+  70%{
+    transform: rotate(180deg);
   }
   to{
     transform: rotate(360deg);

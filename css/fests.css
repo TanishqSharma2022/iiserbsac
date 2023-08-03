@@ -7,16 +7,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lumanosimo&family=Pangolin&family=Rock+Salt&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Notable:wght@400&display=swap');
+
+
 *{
     box-sizing: border-box;
 }
 
+html{
+    overflow-x: hidden;
+}
 
 body{
     margin: 0;
     padding: 0;
-overflow-x: hidden;
-width: 100%;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .contain{
@@ -58,9 +64,10 @@ width: 100%;
 }
 
 .contain2{
-
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
     width: 100%;
-    background: linear-gradient(to bottom, #0b0f12, #072b39);
+    background: linear-gradient(to bottom, #041724, #0b4151);
 /* paddin-block: 60px; */
     /* background: grey; */
     position: relative;
@@ -68,16 +75,18 @@ width: 100%;
     left: 0;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: -49px;
+    margin-top: -80px;
 
 }
 
 .fest-left-card{
+    scroll-snap-align: start;
     margin-bottom: 49px;
     width: 80%;
     height: 500px; 
     /* border: 2px solid #eee; */
-    background: #eee;
+    background: linear-gradient(#1380b4, #0c3458);
+
     position: relative;
     top: 50px;
     border-end-end-radius: 20px;
@@ -87,14 +96,23 @@ width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transition: all 0.5s ease;
+    transform: scale(0.9) translateX(-100px);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
+}
+.fest-left-card:hover{
+    transform: scale(1) translateX(0px);
+    box-shadow: 0px 0px 10px black;
 }
 
 .fest-right-card{
+    scroll-snap-align: start;
+
     margin-bottom: 49px;
     width: 80%;
     height: 500px; 
-    background: #eee;
+    background: linear-gradient(#1380b4, #0c3458);
     position: relative;
     top: 50px;
     padding-block: 100px;
@@ -107,8 +125,15 @@ width: 100%;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
    right: -20%;
-}
+   transition: all 0.5s ease;
+   transform: scale(0.9) translateX(100px);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
+}
+.fest-right-card:hover{
+    transform: scale(1) translateX(0px);
+    box-shadow: 0px 0px 10px black;
+}
 
 
 .fest_content{
@@ -132,14 +157,15 @@ width: 100%;
 
 .fest_links i{
     margin: 0 20px;
-    background: #eee;
+    /* background: #eee; */
     height: 50px;
     width: 50px;
     font-size: 2rem;
     display: grid;
     place-items: center;
-    color: black;
+    color: #1bb1de;
     transition: all 0.2s ease-in-out;
+    filter: drop-shadow(0px 0px 10px black)
 }
 
 .fest_links i:hover{
@@ -167,16 +193,17 @@ width: 100%;
 .radio-container button{
     border: none;
     border-radius: 50%;
-    background: rgb(0, 0, 0, 0.3);
+    background: #1380b4;
     height: 15px; 
     width: 15px;
     margin: 0 10px;
     transition: all 1s ease;
     cursor: pointer;
     z-index: 99999;
+    box-shadow: 0px 0px 10px #0c3458;
 }
 .radio-container .current-slide{
-    background: rgb(0, 0, 0, 0.7)
+    background: #1bb1de;
 }
 
 
@@ -185,7 +212,26 @@ width: 100%;
     text-transform: uppercase;
     font-weight: 800;
     font-size: 3.5rem;
+    color: #eee;
+    text-shadow: 5px 5px 10px #0c3458;
+    letter-spacing: 10px;
+    /* text-shadow: 0px 0px 10px white; */
+
 }
+
+.fest_content h1:after{
+    content: '';
+    height: 3px;
+    width: 100px;
+    display: block;
+    position: relative;
+    left: 50%;
+    margin-left: -50px;
+    background-color: #0c3458;
+    margin-top: 10px;
+
+}
+
 
 .fest_content h4{
     font-family: 'PT Sans';
@@ -193,7 +239,10 @@ width: 100%;
     font-size: 1.1rem;
     font-weight: 100;
     text-align: center;
+    color: white;
 }
+
+
 
 
 
@@ -206,6 +255,8 @@ width: 100%;
     position: relative;
     display: flex;
     overflow: hidden;
+    filter: drop-shadow(0px 0px 10px black);
+
 }
 
 .imageslider_wrapper{
@@ -213,8 +264,10 @@ width: 100%;
     width: 100%;
     display: flex;
     height: auto;
+    left: 0;
     object-fit: contain;
     transition: all 0.7s ease;
+
     
     /* width: 1000px; */
     /* right: 100%; */
@@ -224,12 +277,14 @@ width: 100%;
     width: 100%;
     position: absolute;
     top: 0;
-    object-fit: cover;
+    object-fit: contain;
+    transition: all 0.7s ease;
     /* aspect-ratio: 16/9; */
 }
 .wrap-slider{
     width: 50%;
     display: flex;
+
     /* position: relative; */
 }
 
@@ -249,6 +304,8 @@ width: 100%;
         flex-direction: column;
         padding: 0;
         height: auto;
+        transform: scale(1) translateX(0px);
+
     }
     .fest-right-card{
         right: 0;
@@ -261,7 +318,7 @@ width: 100%;
     .radio-container{
         padding: 0px;
         margin-top: -50px;
-
+        display: none;
     }
     .fest_content{
         padding: 20px;
@@ -270,12 +327,25 @@ width: 100%;
     }
     .imageslider_wrapper img{
         height: 300px;
+        scroll-snap-align: start;
     }
 
     .fest_content h1{
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
+    .imageslider_wrapper{
+        
+        left: 0;
+    }
+
+    .imageslider{
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        height: 300px;
+
+    }
+
+
     
 }
-
-

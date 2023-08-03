@@ -18,14 +18,14 @@ function click(f, btn, i){
 
 
 
-
+var noOfSections = 8;
 
 
 // NAV INDICATORS IMAGE CAROUSEL FOR FESTSS
 
 const radioContain = document.getElementsByClassName("radio-container");
 
-for(var f=0; f<6; f++){
+for(var f=0; f<noOfSections; f++){
 
 
 var btns = radioContain[f].querySelectorAll('button');
@@ -45,7 +45,7 @@ btns.forEach((btn, i) => {
 
 var x = document.getElementsByClassName("imageslider_wrapper");
 
-for(var i=0; i<6; i++){
+for(var i=0; i<noOfSections; i++){
 
 // var images = Array.from(track.children);
 var y = x[i].querySelectorAll('img');

@@ -526,6 +526,8 @@ function council_toggle(n){
 
             boxes[0].querySelector("img").src = "./images/clubs/cyberheathens.png";
             boxes[0].querySelector("#club_name").innerHTML = "CyberHeathens (Programming Club)";
+            document.querySelector("#sqr1").setAttribute("href", "https://www.instagram.com/cnc_programming_division");
+
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
 
 
@@ -533,11 +535,15 @@ function council_toggle(n){
 
             boxes[1].querySelector("img").src = "./images/clubs/gaming.png";
             boxes[1].querySelector("#club_name").innerHTML = "Resurgence (Gaming Club)";
+            document.querySelector("#sqr2").setAttribute("href", "https://www.instagram.com/resurgence_iiserb");
+
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
             boxes[2].style.display="flex";
 
             boxes[2].querySelector("img").src = "./images/clubs/photography.png";
             boxes[2].querySelector("#club_name").innerHTML = "Photography Club)";
+            document.querySelector("#sqr3").setAttribute("href", "https://www.instagram.com/claude__glass");
+
 
             // boxes[2].querySelector("#club_name").appendChild(document.createTextNode(""));
             // boxes[2].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
@@ -574,32 +580,42 @@ function council_toggle(n){
             boxes[0].querySelector("img").src = "./images/clubs/quiz.png";
             boxes[0].querySelector("#club_name").innerHTML = "IBQC";
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+            document.querySelector("#sqr1").setAttribute("href", "https://www.instagram.com/iiserb_quizclub");
 
             weblink.setAttribute("href", "https://sites.google.com/d/1YfAHEMpPRmI9rUL3FGSAiJ9ezoDeElJV/p/1E4LypuWrDJyW58rHEGqgLcyvcicawYXI/edit");
 
 
             boxes[1].querySelector("img").src = "./images/clubs/aalankar.jpg";
             boxes[1].querySelector("#club_name").innerHTML = "Alankar Club";
+            document.querySelector("#sqr2").setAttribute("href", "https://www.instagram.com/alankar_iiserb");
+
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
             boxes[2].style.display="flex";
 
             boxes[2].querySelector("img").src = "./images/clubs/debate.png";
             boxes[2].querySelector("#club_name").innerHTML = "Debate Club";
+            document.querySelector("#sqr3").setAttribute("href", "https://www.instagram.com/debsoc.iiserb");
 
             boxes[3].style.display = "flex";
             boxes[3].querySelector("img").src = "./images/clubs/book.png";
             boxes[3].querySelector("#club_name").innerHTML = "Book Club";
+            document.querySelector("#sqr4").setAttribute("href", "https://www.instagram.com/iiserbhopalbookclub");
+
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
 
 
             boxes[4].style.display = "flex";
             boxes[4].querySelector("img").src = "./images/clubs/comix.png";
             boxes[4].querySelector("#club_name").innerHTML = "Comic Club";
+            document.querySelector("#sqr5").setAttribute("href", "https://www.instagram.com/comixclubiiserb");
+
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
 
             boxes[5].style.display = "flex";
             boxes[5].querySelector("img").src = "./images/clubs/aalekhya.png";
             boxes[5].querySelector("#club_name").innerHTML = "Aalekhya Club";
+            document.querySelector("#sqr6").setAttribute("href", "https://www.instagram.com/aalekhya_iiserb");
+
 
 
             // boxes[2].querySelector("#club_name").appendChild(document.createTextNode(""));
@@ -614,7 +630,7 @@ function council_toggle(n){
 
             // contact
             // insta_handle.innerHTML = "@falc_iiserb";
-            insta_handle.setAttribute("href", "https://www.instagram.com/cnc_iiserb/");
+            insta_handle.setAttribute("href", "https://www.instagram.com/falc_iiserb/");
 
             // gmail_handle.innerHTML = "falc@iiserb.ac.in";
             gmail_handle.setAttribute("href", "mailto:falc@iiserb.ac.in");
@@ -635,39 +651,54 @@ function council_toggle(n){
             boxes[0].querySelector("img").src = "./images/clubs/ibac.png";
             boxes[0].querySelector("#club_name").innerHTML = "IBAC";
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+            document.querySelector("#sqr1").setAttribute("href", "https://www.instagram.com/ibac_official");
 
             weblink.setAttribute("href", "https://in.linkedin.com/company/science-council-iiser-bhopal");
 
 
             boxes[1].querySelector("img").src = "./images/clubs/eco.png";
             boxes[1].querySelector("#club_name").innerHTML = "Economics Club";
+            document.querySelector("#sqr2").setAttribute("href", "https://www.instagram.com/iiserb_econ_club");
+
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
             boxes[2].style.display="flex";
             boxes[2].querySelector("img").src = "./images/clubs/ees.png";
             boxes[2].querySelector("#club_name").innerHTML = "EES Club";
+            document.querySelector("#sqr3").setAttribute("href", "https://www.instagram.com/earth_and_environment_iiserb");
+
 
             boxes[3].style.display = "flex";
             boxes[3].querySelector("img").src = "./images/clubs/bio.png";
             boxes[3].querySelector("#club_name").innerHTML = "BIO Club";
+            document.querySelector("#sqr4").setAttribute("href", "https://www.instagram.com/iiserb_bioclub");
+
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
 
 
             boxes[4].style.display = "flex";
             boxes[4].querySelector("img").src = "./images/clubs/phy.png";
             boxes[4].querySelector("#club_name").innerHTML = "Physics Club";
+            document.querySelector("#sqr5").setAttribute("href", "https://www.instagram.com/phyclub_iiserb");
+
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
 
             boxes[5].style.display = "flex";
             boxes[5].querySelector("img").src = "./images/clubs/maths.png";
             boxes[5].querySelector("#club_name").innerHTML = "Maths Club";
+            document.querySelector("#sqr6").setAttribute("href", "https://www.instagram.com/mathsclub_iiserb");
+
 
             boxes[6].style.display = "flex";
             boxes[6].querySelector("img").src = "./images/clubs/chem.png";
             boxes[6].querySelector("#club_name").innerHTML = "Chemistry Club";
+            document.querySelector("#sqr5").setAttribute("href", "https://www.instagram.com/chemclub_iiserb");
+
 
             boxes[7].style.display = "flex";
             boxes[7].querySelector("img").src = "./images/clubs/chrysallis.png";
-            boxes[7].querySelector("#club_name").innerHTML = "Chrysallis Magazine";
+            boxes[7].querySelector("#club_name").innerHTML = "Chrysalis Magazine";
+            document.querySelector("#sqr5").setAttribute("href", "https://www.instagram.com/chrysalisiiserb");
+
 
 
             // contact
@@ -675,7 +706,7 @@ function council_toggle(n){
             insta_handle.setAttribute("href", "https://www.instagram.com/science_council_iiserb/");
 
             // gmail_handle.innerHTML = "science_council@iiserb.ac.in";
-            gmail_handle.setAttribute("href", "mailto:falc@iiserb.ac.in");
+            gmail_handle.setAttribute("href", "mailto:sciencecouncil@iiserb.ac.in");
 
             club_head_email.innerHTML = "roshan20@iiserb.ac.in";
             club_head_no.innerHTML = "9365822726";
@@ -691,6 +722,9 @@ function council_toggle(n){
 
             boxes[0].querySelector("img").src = "./images/clubs/humansofiiserb.jpg";
             boxes[0].querySelector("#club_name").innerHTML = "Humans of IISER Bhopal";
+
+            document.querySelector("#sqr1").setAttribute("href", "https://www.instagram.com/humansofiiserb");
+
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
             weblink.setAttribute("href", "https://cs2.iiserb.ac.in/activities/prayaas.php");
 
@@ -698,6 +732,8 @@ function council_toggle(n){
 
             boxes[1].querySelector("img").src = "./images/clubs/humansofiiserb.jpg";
             boxes[1].querySelector("#club_name").innerHTML = "Animal Welfare Society";
+            document.querySelector("#sqr2").setAttribute("href", "https://www.instagram.com/");
+
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
 
             boxes[2].style.display = "none";
@@ -712,10 +748,10 @@ function council_toggle(n){
             boxes[7].style.display = "none";
 
             // insta_handle.innerHTML = "@esic_iiserb"
-            insta_handle.setAttribute("href", "https://www.instagram.com/cnc_iiserb/");
+            insta_handle.setAttribute("href", "https://www.instagram.com/esic_iiserb/");
 
             // gmail_handle.innerHTML = "esic@iiserb.ac.in";
-            gmail_handle.setAttribute("href", "mailto:cnc@iiserb.ac.in");
+            gmail_handle.setAttribute("href", "mailto:esic@iiserb.ac.in");
 
             club_head_email.innerHTML = "sranade20@iiserb.ac.in";
             club_head_no.innerHTML = "";
@@ -765,7 +801,12 @@ function council_toggle(n){
            
             boxes[0].querySelector("img").src = "images/SDC Logo.jpg";
             boxes[0].querySelector("#club_name").innerHTML = "Placement Team";
+            document.querySelector("#sqr1").setAttribute("href", "https://www.instagram.com/");
+            
+            
+            
             boxes[1].style.display = "none";
+
             
             boxes[2].style.display = "none";
 
@@ -804,20 +845,26 @@ function council_toggle(n){
             boxes[0].querySelector("img").src = "images/1.png";
             boxes[0].querySelector("#club_name").innerHTML = "CRs";
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+            document.querySelector("#sqr1").setAttribute("href", "#");
 
             weblink.setAttribute("href", "Representativecouncil.html");
 
 
             boxes[1].querySelector("img").src = "images/2.png";
             boxes[1].querySelector("#club_name").innerHTML = "DRs";
+            document.querySelector("#sqr2").setAttribute("href", "#");
+
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
             boxes[2].style.display="flex";
             boxes[2].querySelector("img").src = "images/3.png";
             boxes[2].querySelector("#club_name").innerHTML = "MRs";
+            document.querySelector("#sqr3").setAttribute("href", "#");
 
             boxes[3].style.display = "flex";
             boxes[3].querySelector("img").src = "images/4.png";
             boxes[3].querySelector("#club_name").innerHTML = "HRs";
+            document.querySelector("#sqr4").setAttribute("href", "#");
+            
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
 
 
