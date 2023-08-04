@@ -380,9 +380,9 @@ function toggle(n){
             break;
         case 6:
             popupimage.src = "./images/senate/sohumranade.jpeg";
-            name.innerHTML = "Sohum Ranade";
+            name.innerHTML = "Anjaly Suma";
             position.innerHTML = "ESIC Secretary";
-            content.innerHTML="Hello, I am Sohum Ranade. I am the head of the ESIC Council.";
+            content.innerHTML="<li>Hello, I am Anjaly Suma. I am the head of the ESIC Council.</li> <li>I am a passionate and dedicated geology student with an unwavering commitment to environmental conservation and societal betterment.</li> <li>I'm a Biology student and I absolutely love birds!";
             break;                                    
         case 7:
             popupimage.src = "./images/senate/himadri.png";

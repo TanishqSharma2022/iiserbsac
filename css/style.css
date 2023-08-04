@@ -80,7 +80,7 @@ body {
   -webkit-backdrop-filter: blur(55px);
   backdrop-filter: blur(3rem);
   /* background: #412F26; */
-
+position: fixed;
   background: hsl(0, 0, 1, 1);
   box-shadow: 0px 0px 10px black;
   /* border: 1px solid red; */
@@ -167,12 +167,14 @@ ul.list {
 }
 
 ul.list li a {
-  font-size: clamp(1rem, 1vw, 3rem);
+  font-size: clamp(1rem, 1.15vw, 3rem);
   text-decoration: none;
   padding: 5px 10px 5px 10px;
+  /* margin-right: 15px; */
   color: white;
   font-family: "Poppins";
   font-weight: 300;
+  letter-spacing: 1.2px;
   /* font-weight: 100; */
   border: 1px solid transparent;
   transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -202,6 +204,7 @@ ul.list li a:after {
 .list li a:hover {
 
   color: var(--navlist-color);
+  cursor: pointer;
 
 }
 
@@ -214,15 +217,15 @@ ul.list li a:after {
 .main4 {
   max-width: 100%;
   width: 100%;
+  /* padding: 30%; */
   height: 100vh;
-  /* min-height: 100vh; */
+  aspect-ratio: 16/9;;
   position: relative;
+  /* min-height: 100%; */
   margin-top: -6vh;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../images/mainBackground/iiser3.jpeg);
-  background-size: 100% 100%;
-  text-align: center;
-  align-items: center;
+  background-size: cover;
   /* animation: slider 19s infinite ease; */
 }
 
@@ -236,7 +239,7 @@ ul.list li a:after {
   height: 50px;
   background: linear-gradient(#333, #222);
   color: white;
-  opacity: 0.4;
+  opacity: 0.5;
   border: none;
   padding: 0;
   margin-left: 30px;
@@ -244,13 +247,15 @@ ul.list li a:after {
 
 #btnRight {
   top: 50%;
-  left: 50%;
+  left: 100%;
   transform: translate(-50%, -50%);
+  position: relative;
+  margin-left: -30px;
 }
 
 #btnLeft {
   top: 50%;
-  left: -50%;
+  left: 0%;
   transform: translate(-50%, -50%);
   margin-left: 30px;
 }
@@ -281,13 +286,14 @@ ul.list li a:after {
 }
 
 .name img.desktop {
-  height: 6vh;
+  height: 5vh;
   /* width: 100px; */
   position: absolute;
-  top: 0%;
+  top: 50%;
+  transform: translate(0%, -50%);
   left: 6%;
   /* background: red; */
-  filter: drop-shadow(0px 0px 5px black);
+  /* filter: drop-shadow(0px 0px 5px black); */
 
 
 }
@@ -339,73 +345,75 @@ li a:hover {
   }
 }
 
-.logo img {
-  max-width: 100%;
-  width: auto;
-  /* height: 30vh; */
-  background-size: cover;
-  /* position: absolute; */
-  /* top: 5px; */
-  /* left: 15px; */
-  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.35));
 
-}
 
-.logo {
-  width: 20%;
-  box-sizing: border-box;
-  /* background: red; */
-  margin-left: -20%;
-}
 
 .title {
   /* border: 2px solid blue; */
-  width: 80%;
-  /* height: 50vh */
+  width: 75%;
+  
+  height: 30vh;
   box-sizing: border-box;
   color: white;
   position: absolute;
   /* top: 27%; */
   /* left: 5%; */
-  margin: auto;
+  padding: 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  align-items: center;
   display: flex;
-  justify-content: center;
-  flex-direction: row;
-  /* border: 2px solid red; */
-}
+  justify-content: space-between;
+  align-items: center;
 
+}
+.logo, .iiserblogo {
+  width: 20%;
+  height: 100%;
+}
 .sac {
-  font-size: clamp(2.5rem, 5vw, 10rem);
+  text-transform: uppercase;
+  width: 60%;
+  height: 100%;
+  text-align: center;
   font-family: "Poppins";
-  padding: 10px 0px;
   text-shadow: 0px 5px 10px black;
   position: relative;
-  margin-top: -10%;
-  left: 5%;
-  float: left;
-  /* border: 2px solid blue; */
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+
+
 }
 
 .sac h1 {
+  font-size: clamp(1.5rem, 3.4vw, 10rem);
+
   font-family: "Poppins";
   font-weight: 800;
   color: white;
+
 }
 
-.sac p {
-  font-size: 2rem;
+.sac h4 {
+  font-size: clamp(0.5rem, 2vw, 5rem);
   font-family: "BEBAS NEUE", cursive;
   color: white;
   letter-spacing: 0.3em;
-  position: absolute;
-  left: 0;
 }
 
+.logo img, .iiserblogo img {
+  max-width: 100%;
+  /* width: auto; */
+  /* height: 30vh; */
+  background-size: cover;
+  /* position: absolute; */
+  /* top: 5px; */
+  /* left: 15px; */
+  filter: drop-shadow(0px 0px 10px rgba(10, 9, 9, 0.6));
+
+}
 
 
 
@@ -1704,8 +1712,9 @@ a {
 
   .main {
     overflow-x: hidden;
-    margin-top: -6vh;
-    height: 55vh;
+    /* margin-top: -6vh; */
+height: 55vh;
+
 
     background-size: cover;
     /* padding: 100px; */
@@ -1738,7 +1747,7 @@ a {
 
   .sac p {
     position: static;
-    font-size: clamp(0.7rem, 5vw, 2rem);
+    font-size: 2rem;
   }
 
   .sac h1 {
@@ -1879,7 +1888,7 @@ a {
     color: black;
   }
 
-  .logo img {
+  .logo img , .iiserblogo img{
     width: 50px;
     height: 50PX;
     position: absolute;
@@ -2192,13 +2201,7 @@ a {
     font-size: 12.5px;
   }
 
-  #btnRight {
-    margin-left: 20px;
-  }
-
-  #btnLeft {
-    margin-left: 20px;
-  }
+  
 
   .constitute{
     flex-direction: column-reverse;
