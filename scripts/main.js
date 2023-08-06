@@ -59,22 +59,22 @@ document.querySelector(".blurred").onclick = () => {
 
 
 
-$(document).ready(function(){
-    $('#linked').click(function(){
-        $("html, body").animate({
-            scrollTop: window.innerHeight
+// $(document).ready(function(){
+//     $('#linked').click(function(){
+//         $("html, body").animate({
+//             scrollTop: window.innerHeight
               
-        }, 500);
-    });
-});
-$(document).ready(function(){
-    $('#aboutus_href').click(function(){
-        $("html, body").animate({
-            scrollTop: $(
-              'html, body').get(0).scrollHeight
-        }, 1800);
-    });
-});
+//         }, 500);
+//     });
+// });
+// $(document).ready(function(){
+//     $('#aboutus_href').click(function(){
+//         $("html, body").animate({
+//             scrollTop: $(
+//               'html, body').get(0).scrollHeight
+//         }, 1800);
+//     });
+// });
 
 $(document).ready(function(){
     var scrollLink = $('.scroll');

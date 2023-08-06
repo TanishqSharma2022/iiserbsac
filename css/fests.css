@@ -28,14 +28,16 @@ body{
 .contain{
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 104vh;
+    max-height: 1080px;
+    min-height: 500px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     border: 1px solid black;
-    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(./images/fest.jpg);
+    /* background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(./images/fest.jpg); */
     background-size: cover;
     max-width: 100%;
     top: -6vh;
@@ -43,14 +45,12 @@ body{
 .contain_header{
     text-align: center;
     position: relative; 
-    
     font-family: 'Poppins';
     font-size: 5rem;
     letter-spacing: 1px;
     COLOR: WHITE;
     font-weight: 800;
     text-shadow: 0px 5px 20px black;
-    
 }   
 
 #ii{
@@ -63,11 +63,13 @@ body{
 
 }
 
+
 .contain2{
-    overflow-y: scroll;
     scroll-snap-type: y mandatory;
     width: 100%;
+
     background: linear-gradient(to bottom, #041724, #0b4151);
+    
 /* paddin-block: 60px; */
     /* background: grey; */
     position: relative;
@@ -288,6 +290,10 @@ body{
     /* position: relative; */
 }
 
+ul.list a{
+    text-shadow: 0px 0px 10px #0c3458;
+}
+
 
 
 
@@ -318,7 +324,6 @@ body{
     .radio-container{
         padding: 0px;
         margin-top: -50px;
-        display: none;
     }
     .fest_content{
         padding: 20px;
@@ -338,13 +343,13 @@ body{
         left: 0;
     }
 
-    .imageslider{
+    /* .imageslider{
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
         height: 300px;
 
-    }
+    } */
 
 
     

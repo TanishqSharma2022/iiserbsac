@@ -57,6 +57,10 @@
             color: white;
             text-decoration: none;
         }
+        .fa-angle-down{
+            color: white;
+            text-decoration: none;
+        }
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -65,7 +69,6 @@
 
     <title>SAC | IISER BHOPAL</title>
     <link rel="icon" type="images/x-icon" href="./images/SAC Logo.svg" />
-
 
 </head>
 
@@ -103,9 +106,12 @@
                 <li><a target="_blank" href="fests.html">Fests</a></li>
                 <li><a id="aboutus_href" href="#">Contact</a></li>
             </ul>
+            
+     
             <div class="icon menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
+            
         </div>
     </div>
 
@@ -129,7 +135,7 @@
 
 
         <span class="material-symbols-outlined">
-            <a id="linked">
+            <a href="#about_us" >
                 <i class="fa-solid fa-angle-down"></i>
             </a>
         </span>
@@ -138,7 +144,7 @@
 
     </div>
 
-    <div class="main2">
+    <div class="main2" id="about_us">
 
 
         <div class="aboutus">
@@ -178,7 +184,9 @@
 
         <div class="aboutus">
             <div class="constitute">
-                <img src="./images/sac_constitution.png" alt="" class="constitution_image">
+                <a href="#">
+                    <img src="./images/sac_constitution.png" alt="" class="constitution_image" />
+                </a>
 
                 <div class="constitute_contain">
                     <h1>SAC CONSTITUTION</h1>
@@ -804,8 +812,9 @@
 
 
 
-    <script src="./scripts/main.js">
+    <script src="./scripts/fest.js">
     </script>
+    <script src="./scripts/main.js"></script>
 
     <script>
 
