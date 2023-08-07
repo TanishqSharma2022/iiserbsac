@@ -1323,6 +1323,15 @@ a {
 
 }
 
+
+.constitute i{
+  color:rgb(52, 149, 240);
+}
+
+.constitute i:hover{
+  text-decoration: underline;
+}
+
 .constitute_contain{
   padding: 50px;  
 
