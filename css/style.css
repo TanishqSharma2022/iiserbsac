@@ -11,12 +11,11 @@
 
 ::-webkit-scrollbar{
   background: white;
-  width:5px;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  border: 5px solid transparent;
+  border: 4px solid transparent;
   border-radius: 100px;
   background-color: var(--navlist-color);
   background-clip: content-box;
