@@ -15,6 +15,13 @@
   border-radius: 10px;
 }
 
+::-webkit-scrollbar-thumb {
+  border: 5px solid transparent;
+  border-radius: 100px;
+  background-color: var(--navlist-color);
+  background-clip: content-box;
+}
+
 .blur{
   width: 100%;
   height: 1400vh;
