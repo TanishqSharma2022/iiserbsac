@@ -9,6 +9,11 @@
   --navbar-change-color: #111011;
 }
 
+::-webkit-scrollbar{
+  background: white;
+  width:5px;
+  border-radius: 10px;
+}
 
 .blur{
   width: 100%;
@@ -2154,6 +2159,7 @@ height: 55vh;
     overflow: auto;
     padding: 0;
     margin: 0 auto;
+    
   }
 
   .council_container {
