@@ -108,20 +108,22 @@ body {
 }
 
 .navbar.sticking li a {
-  color: var(--navbar-change-color);
+  color: var(--accent);
   /* color: #cbb89d; */
   border: none;
 }
 
 .navbar.sticking li a:hover {
-  color: var(--navlist-color);
+  color: black;
   background: none;
   border: none;
   /* box-shadow: 0px 3px 2px black; */
 }
 
 .navbar.sticking .fa-bars {
-  color: var(--navbar-change-color);
+  color: var(--accent);
+  border: none;
+  margin-top: 30%;
 }
 
 
@@ -425,7 +427,7 @@ li a:hover {
 }
 
 .sac h4 {
-  font-size: clamp(0.5rem, 2vw, 5rem);
+  font-size: clamp(1rem, 2vw, 5rem);
   font-family: "BEBAS NEUE", cursive;
   color: white;
   letter-spacing: 0.3em;
@@ -809,7 +811,7 @@ h1 > img {
 
 .links {
   position: relative;
-  top: 25%;
+  /* top: 25%; */
   display: flex;
   justify-content: space-around;
 }
@@ -872,6 +874,10 @@ h1 > img {
   /* display: flex; */
   /* flex-wrap: wrap; */
   /* justify-content: space-around; */
+}
+.box h3{
+  margin-top: -10px;
+  padding-bottom: 10px;
 }
 
 .box img#council {
@@ -1215,6 +1221,9 @@ button.popup_close:hover {
 .popup_image {
   /* border: 2px solid red; */
   width: 40%;
+  border-top-left-radius:14px;
+  border-bottom-left-radius:14px;
+
 
   text-align: center;
   /* display: flex; */
@@ -1258,6 +1267,8 @@ button.popup_close:hover {
   height: 600px;
   /* aspect-ratio: 1/1; */
   object-fit: cover;
+  border-radius:14px;
+
   mask-image: linear-gradient(black, brown, transparent);
   -webkit-mask-image: linear-gradient(black, brown, transparent);
 
@@ -1267,7 +1278,7 @@ button.popup_close:hover {
   width: 80%;
   display: flex;
   justify-content: space-around;
-
+  top: 10%;
 }
 
 .links i {
@@ -1480,6 +1491,7 @@ a {
 }
 
 .footer {
+  box-shadow: 0px 0px 10px 1px rgb(0,0,0,0.5);
   font-family: "Inter";
 
   width: 100%;
@@ -1884,7 +1896,12 @@ a {
   .popup {
     /* border: 2px solid red; */
     max-width: 600px;
+    height: 90%;
   }
+ #popup_head_occp{
+  color: var(--text);
+}
+
 
   .popup_main {
     flex-direction: column;
@@ -1893,7 +1910,7 @@ a {
   }
 
   .popup_content {
-    position: absolute;
+    position: relative;
     color: black;
     display: block;
     padding: 10px;
@@ -1901,19 +1918,24 @@ a {
     /* background: red; */
     align-items: center;
     text-align: center;
-    top: 80%;
+    top: 47%;
+  }
+  .popup_content_bio{
+    padding: 0px;
   }
 
   .popup_content {
-    height: 300px;
+    /* height: 300px; */
     position: relative;
-    top: 30%;
+    /* top: 30%; */
+    
+    background: var(--secondary);
   }
 
   .popup_content h2 {
     font-size: 30px;
     position: relative;
-    color: white;
+    color: var(--text);
 
     /* text-shadow: 1px 2px 10px black; */
 
@@ -1923,8 +1945,8 @@ a {
   .popup_content h3 {
     font-size: 15px;
     /* text-shadow: 1px 2px 10px black; */
-    color: white;
-    height: 40%;
+    color: var(--text);
+    /* height: 40%; */
 
   }
 
@@ -1937,34 +1959,35 @@ a {
 
   .popup_image {
     position: absolute;
-    top: 0;
+    width: 80%;
+    height: 200px;
+    top: 50px;
+    /* top: 0; */
     /* border: 2px solid white; */
     /* position: absolute; */
     /* top: 0%; */
-    width: 100%;
+    /* width: 100%; */
     /* overflow: hidden; */
   }
 
   .popupimage {
-    mask-image: linear-gradient(black, brown, transparent);
-    -webkit-mask-image: linear-gradient(black, brown, transparent);
+    height: 200px;
   }
 
-  .popup_image img {
-    height: 300px;
+  .popup_image {
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+    /* height: 300px; */
   }
 
   .links {
-
+    top: 0;
     width: 100%;
-
   }
 
   .links i {
-
     color: white;
-    text-shadow: 1px 2px 10px black;
-
+    text-shadow: 1px 2px 5px var(--accent);
     font-size: 25px;
   }
 
@@ -2012,7 +2035,6 @@ a {
     transition: all 0.5s ease-in-out;
     padding: 5px;
     border-radius: 20%;
-    border: 2px solid #aaa;
     color: white;
     margin-right: 0px;
     margin-top: 20%;
@@ -2069,7 +2091,7 @@ a {
     height: 100vh;
     width: 60%;
     max-width: 400px;
-    background: var(--navlist-color);
+    background: var(--secondary);
     border: 2px solid grey;
     float: none;
     align-items: center;
@@ -2096,7 +2118,7 @@ a {
     box-shadow: 0px 0px 10px #aaa;
   }
   .navbar .list li a{
-    color: white;
+    color: var(--text);
     font-weight: 500;
     font-size: 1.2rem;
   }
@@ -2267,7 +2289,7 @@ a {
   }
 
   .contact_box {
-    width: 100%;
+    width: 80%;
     flex-direction: column;
     /* background: red; */
   }
@@ -2277,10 +2299,6 @@ a {
     font-size: 1rem;
   }
 
- 
-  .links i{
-    background: #222;
-  }
 
   .main button {
     width: 20px;
@@ -2358,7 +2376,7 @@ a {
 
 
 .spinner-wrapper{
-  background: white;
+  background: var(--background);
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -2372,10 +2390,10 @@ a {
 }
 .spinner{
   width: 60px; height: 60px;
-  border-top: 10px solid rgb(59, 133, 182);
-  border-left: 10px solid rgb(185, 221, 245);
-  border-right: 10px solid rgb(185, 221, 245);
-  border-bottom: 10px solid rgb(185, 221, 245);
+  border-top: 10px solid var(--accent);
+  border-left: 10px solid var(--primary);
+  border-right: 10px solid var(--primary);
+  border-bottom: 10px solid var(--primary);
   border-radius: 60%;
   transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   animation: spin 0.5s infinite linear;
@@ -2389,6 +2407,7 @@ a {
   15%{
     transform: rotate(90deg);
   }
+  
   70%{
     transform: rotate(180deg);
   }
