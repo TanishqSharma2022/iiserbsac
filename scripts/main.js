@@ -3,12 +3,12 @@
 
 
 
-
-
-
-
-
-
+const btnScrollToTop = document.querySelector(".scrollup");
+const arrowup = btnScrollToTop.querySelector("i");
+window.addEventListener('scroll', e => {
+    btnScrollToTop.style.transform = window.scrollY > 20 ? 'translateY(0px)' : 'translateY(100px)';
+    arrowup.style.animation = "slideup 2s infinite linear";
+});
 
 
 
