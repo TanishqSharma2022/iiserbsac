@@ -184,11 +184,11 @@
 
         <div class="aboutus">
             <div class="constitute">
-                <a>
-                    <embed height="450" src="./constitution/sac_v54.pdf" alt="" class="constitution_image" />
+                <!-- <a> -->
+                    <iframe height="450" width="400" class="constitution_image" frameborder="0" > </iframe>
                     <br>
-                    <i>Click here to download</i>
-                </a>
+                    <!-- <i>Click here to download</i> -->
+                <!-- </a> -->
 
                 <div class="constitute_contain">
                     <h1>SAC CONSTITUTION</h1>
@@ -842,10 +842,16 @@
         // ScrollReveal().reveal('.box', {delay: 0, origin: 'left', reset: false});
         // ScrollReveal().reveal('.navbar', {delay: 200, origin:'top'});
           // PRELOADER
- window.addEventListener("load", function(){
+          document.querySelector(".constitution_image").setAttribute("src", "https://drive.google.com/file/d/17Da7R1wS3KgXAQMo9E2ARPx5D_JSegLW/preview?usp=sharing")
+
+
+          window.addEventListener("load", function(){
         var loader = document.querySelector('.spinner-wrapper');
           loader.style.display = 'none';
         })
+
+
+
 
 
     </script>
