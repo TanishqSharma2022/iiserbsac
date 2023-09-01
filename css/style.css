@@ -77,23 +77,25 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 999999;
+  z-index: 9995;
   border-radius: 50%;
   display: grid;
   place-items: center;
+  transform: translateY(100px);
 }
 .scrollup i{
   color: black;
+
   font-size: 1.5rem;
   /* animation: slideup 0.5s ease-in; */
 }
 
 @slideup{
-  0%, 100%{
-    transform: translateY(0);
+  0%, 2%{
+    top: 0;
   }
-  50%{
-    transform: translateY(50%);
+  1%{
+    margin-top: -500px;
   }
 }
 
