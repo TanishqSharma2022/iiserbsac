@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-
+    <!-- <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://kit.fontawesome.com/eecc9ab967.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <!-- <script src="https://unpkg.com/scrollreveal@4"></script> -->
 
 
   <!-- HTML Meta Tags -->
@@ -82,7 +82,7 @@
           </div>
     </div>
 
-<div class="blurred"></div>
+    <div class="blurred"></div>
 
 
 
@@ -186,7 +186,7 @@
                 <b><u>Senate Meetings</u></b> are held regularly to resolve these issues and approve overall finance and other high priority issues such as mass level concerns, disputes between the branches of SAC, hostel rules, activity and fest related issues. The Agenda and Minutes of all senate meetings are released in public interest for the reference of the general body.<br>
 
             </p>
-        </div>
+        </div>  
     </div>
 
     <div class="main2">
@@ -195,7 +195,16 @@
         <div class="aboutus">
             <div class="constitute">
                 <!-- <a> -->
-                    <iframe height="450" width="400" class="constitution_image" frameborder="0" > </iframe>
+
+                        <object id="pdf_content" width="400" height="450" class="constitution_image" type="application/pdf"  trusted="yes" application="yes" title="Assembly" data="https://docs.google.com/gview?embedded=true&url=http://iiserbsac.netlify.app/constitution/sac_v54.pdf">
+                        <!-- <embed src="constitution/sac_v54.pdf" width="400" height="450" class="constitution_image" type="application/pdf" trusted="yes" application="yes" title="Assembly"> -->
+                        <!-- </embed> -->
+                        <!-- <p>System Error - This PDF cannot be displayed, please contact IT.</p> -->
+                        </object>
+
+                
+                    <!-- <iframe height="450" width="400" class="constitution_image" frameborder="0"></iframe> -->
+                            <!-- <div id="adobe-dc-view" style="height: 360px; width: 500px;"></div> -->
                     <br>
                     <!-- <i>Click here to download</i> -->
                 <!-- </a> -->
@@ -820,13 +829,16 @@
     </div>
 
 
+
     <!-- <div class="up"><i class="fa-solid fa-angle-up"></i></div> -->
 
 
 
-    <script src="./scripts/fest.js">
+    <!-- <script src="./scripts/fest.js"> -->
     </script>
     <script src="./scripts/main.js"></script>
+    <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
+
 
     <script>
 
@@ -852,13 +864,35 @@
         // ScrollReveal().reveal('.box', {delay: 0, origin: 'left', reset: false});
         // ScrollReveal().reveal('.navbar', {delay: 200, origin:'top'});
           // PRELOADER
-          document.querySelector(".constitution_image").setAttribute("src", "https://drive.google.com/file/d/17Da7R1wS3KgXAQMo9E2ARPx5D_JSegLW/preview?usp=sharing")
+
+
+
+        //   document.querySelector(".constitution_image").setAttribute("src", "https://drive.google.com/file/d/17Da7R1wS3KgXAQMo9E2ARPx5D_JSegLW/preview?usp=sharing")
+        //   document.querySelector(".constitution_image").setAttribute("src", "https://docs.google.com/gview?url=https://drive.google.com/uc?id=17Da7R1wS3KgXAQMo9E2ARPx5D_JSegLW&embedded=true")
+
 
 
           window.addEventListener("load", function(){
         var loader = document.querySelector('.spinner-wrapper');
           loader.style.display = 'none';
         })
+
+
+
+
+//   document.addEventListener("adobe_dc_view_sdk.ready", function(){
+//     var adobeDCView = new AdobeDC.View({clientId: "6bf37ce0b9044ba68a17c4525b025324", divId: "adobe-dc-view"});
+    
+//     adobeDCView.previewFile({
+//         content:{ location: { url: "constitution/sac_v54.pdf"}},
+//         metaData:{fileName: "sac_v54.pdf"}
+//     },
+//     {
+//       embedMode: "SIZED_CONTAINER"
+//     });
+//   });
+
+
 
 
 

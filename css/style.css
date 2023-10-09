@@ -151,10 +151,14 @@ body {
 }
 
 .navbar.sticking li a:hover {
-  color: black;
+  color: var(--primary);
   background: none;
   border: none;
   /* box-shadow: 0px 3px 2px black; */
+}
+
+.navbar.sticking li a:after{
+  background-color: var(--primary)
 }
 
 .navbar.sticking .fa-bars {
@@ -251,7 +255,7 @@ ul.list li a:after {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--navlist-color);
+  background-color: var(--background);
   /* background: #b80000; */
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
@@ -261,11 +265,12 @@ ul.list li a:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 
+
 }
 
 .list li a:hover {
 
-  color: var(--navlist-color);
+  color: var(--background);
   cursor: pointer;
 
 }
@@ -379,8 +384,8 @@ li a:hover {
   text-decoration: none;
   /* border-color: white; */
   cursor: pointer;
+  color: red;
   /* color: rgba(0, 0, 0, 0.5); */
-  color: #b05923;
   /* background: white; */
   /* text-shadow: 0px 0px 5px rgb(9, 9, 9); */
   /* -webkit-text-stroke: 0.5px white; */
