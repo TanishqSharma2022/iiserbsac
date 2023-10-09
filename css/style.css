@@ -636,13 +636,17 @@ li a:hover {
   text-shadow: 0px 0px 20px black;
 }
 
+.fa-angle-right{
+  margin-left: 20px;
+
+}
+
 .fa-angle-left, .fa-angle-right{
   transition: 0.4s ease;
   color: #eee;
 }
 .fa-angle-right:hover , .fa-angle-left:hover{
   transform: scale(1.2);
-  filter: drop-shadow(0px 0px 10px black);
   color: #222;
 }
 
