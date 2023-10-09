@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://kit.fontawesome.com/eecc9ab967.js" crossorigin="anonymous"></script>
 
-
+    <script src="https://unpkg.com/scrollreveal"></script>
   <!-- HTML Meta Tags -->
   <title>SAC | IISER BHOPAL</title>
   <meta name="description" content="SAC is the student activity council of IISER Bhopal. This is the elected student body, which acts as a bridge between the administration and the students to ensure smooth functioning. We ensure that the concerns and demands of the students are properly conveyed to the administration. We are also responsible for all students activities hosted on campus.We are not just about conducting fests and other activities inside the campus, we are also responsible for upholding the rights and values of the students">
+
+  <link rel="stylesheet" href="css/glide.core.min.css">
+  <link rel="stylesheet" href="css/glide.theme.min.css">
+
+
 
   <!-- Facebook Meta Tags -->
   <meta property="og:url" content="https://iiserbsac.netlify.app">
@@ -70,17 +75,19 @@
 
 
     <!-- PRELOADER -->
-    <div class="spinner-wrapper">
+    <!-- <div class="spinner-wrapper">
         <div class="spinner" role="status">
           </div>
-    </div>
+    </div> -->
 
     <div class="blurred"></div>
 
 
 
     <div class="scrollup">
-        <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+        <a href="#home">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
     </div>
 
 
@@ -105,7 +112,6 @@
                 <li><a id="council_click scroll" href="#council_main">Councils</a></li>
                 <li><a id="scroll" href="#members">Members</a></li>
                 <li><a target="_blank" href="elections.html">Elections</a></li>
-
                 <li><a target="_blank" href="fests.html">Fests</a></li>
                 <li><a id="aboutus_href" href="#">Contact</a></li>
             </ul>
@@ -142,7 +148,9 @@
                 <i class="fa-solid fa-angle-down"></i>
             </a>
         </span>
-        <button id="btnRight" onclick="rightbg()"><i class="fa-solid fa-angle-right"></i></button>
+        <button id="btnRight" onclick="rightbg()">
+            <i class="fa-solid fa-angle-right"></i>
+        </button>
         <button id="btnLeft" onclick="leftbg()"><i class="fa-solid fa-angle-left"></i></button>
 
     </div>
@@ -216,15 +224,49 @@
 
 
 
-    <div class="activities">
+    <div class="activities" >
         <div class="activity_header">
             <h1>Latest Activities</H1>
         </div>
 
-        <div class="wrapper">
-            <i style="color: var(--primary); font-size: 2rem;" id="leftBtn" class="fa-solid fa-angle-left"></i>
+        <div class="glide" style=" width: 70%; height: 300px;overflow-y:hidden; margin-top: 50px;">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                <img  class="currentSlide" id="image" src="./activities/yoga.png" id="item-1" alt="1">
+                    
+                </li>
+                <li class="glide__slide" >
+                <img  src="./activities/anl.jpg" style="object-fit:cover" id="item-2" alt="2">
+
+                </li>
+                <li class="glide__slide">
+                <img  src="./activities/anl2.jpg"  id="item-3" alt="3">
+
+                </li>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button  class="glide__arrow glide__arrow--left"  data-glide-dir="<">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+              </div>
+          </div>
+
+        <!-- <div class="wrapper">
+            <i style="color: var(--primary); font-size: 2rem; margin-right: 20px" id="leftBtn" class="fa-solid fa-angle-left"></i>
+
+
+              
+
+
 
             <div class="carousel">
+
+
                 <div class="carousel-container">
 
 
@@ -247,8 +289,8 @@
 
                 </div>
             </div>
-            <i style="color: var(--primary); font-size: 2rem;" id="rightBtn" class="fa-solid fa-angle-right"></i>
-        </div>
+            <i style="color: var(--primary); font-size: 2rem; margin-left: 20px;" id="rightBtn" class="fa-solid fa-angle-right"></i>
+        </div> -->
 
     </div>
 
@@ -794,10 +836,10 @@
             <div class="footer-bottom">
                 <span style="color:var(--text);font-size:1.2em;margin-bottom: 7px;display:block;">Designed & Developed by
                     <a alt="asdf"  href="https://www.linkedin.com/in/tanishq-sharma-5204bb249" target="_blank"
-                        style="font-family:Poppins;color:var(--accent);text-decoration-color: #dadada;text-decoration: underline;">Tanishq
+                        style="font-family:Inter;color:var(--accent);text-decoration-color: #dadada;text-decoration: underline;">Tanishq
                         Sharma</a> and
                     <a  href="https://www.linkedin.com/in/shailesh-kachhi-681a041a2" target="_blank"
-                        style="font-family:Poppins;color:var(--accent);text-decoration-color: #dadada;text-decoration: underline;">Shailesh
+                        style="font-family:Inter;color:var(--accent);text-decoration-color: #dadada;text-decoration: underline;">Shailesh
                         Kachhi</a></span>
                 <p>Copyright &copy;2023 Student Activity Council, IISER
                     Bhopal. All Rights Reserved.</p>
@@ -806,39 +848,45 @@
     </div>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <!-- <div class="up"><i class="fa-solid fa-angle-up"></i></div> -->
 
 
 
     <!-- <script src="./scripts/fest.js"> -->
-    </script>
-    <script src="./scripts/main.js"></script>
+    <!-- </script> -->
+    <script src="scripts/main.js"></script>
 
 
     <script>
+        const config = {
+            type: "carousel",
+            perView: 3,
+            breakpoints: {
+                600:{
+                    perView: 1
+                }
+            }
 
-        // ScrollReveal({
-        //     reset: false,
-        //     distance: '60px',
-        //     duration: 2000,
-        //     // delay: 400
-        // });
-        // ScrollReveal().reveal('.sac', {delay: 200});
-        // ScrollReveal().reveal('.logo', {delay: 200});
-        // ScrollReveal().reveal('.header', {delay: 200});
-        // ScrollReveal().reveal('.about_para', {delay: 200});
-        // ScrollReveal().reveal('.activity_header', {delay: 200});
-        // ScrollReveal().reveal('.carousel', {delay: 200, origin:'right'});
-        // ScrollReveal().reveal('.one', {delay: 200});
-        // ScrollReveal().reveal('.constitution_image', {delay: 200, origin:'left'});
-        // ScrollReveal().reveal('.constitute_contain', {delay: 200, origin:'right'});
+        }
+         new Glide('.glide', config).mount()
+</script>
+
+<script>
+
+        ScrollReveal({
+            reset: false,
+            distance: '60px',
+            duration: 2000,
+            // delay: 400
+        });
+        ScrollReveal().reveal('.title', {delay: 200});
 
 
 
 
-        // ScrollReveal().reveal('.box', {delay: 0, origin: 'left', reset: false});
-        // ScrollReveal().reveal('.navbar', {delay: 200, origin:'top'});
+        ScrollReveal().reveal('.box', {delay: 0, origin: 'left', reset: false});
+        ScrollReveal().reveal('.navbar', {delay: 200, origin:'top'});
           // PRELOADER
 
 
@@ -846,10 +894,10 @@
 
 
 
-          window.addEventListener("load", function(){
-        var loader = document.querySelector('.spinner-wrapper');
-          loader.style.display = 'none';
-        })
+        //   window.addEventListener("load", function(){
+        // var loader = document.querySelector('.spinner-wrapper');
+        //   loader.style.display = 'none';
+        // })
 
 
 

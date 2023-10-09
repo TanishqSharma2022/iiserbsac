@@ -40,7 +40,7 @@ body{
     /* background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(./images/fest.jpg); */
     background-size: cover;
     max-width: 100%;
-    top: -6vh;
+    top: -8vh;
 }
 .contain_header{
     text-align: center;
@@ -63,11 +63,9 @@ body{
 
 }
 
-
 .contain2{
     scroll-snap-type: y mandatory;
     width: 100%;
-
     background: linear-gradient(to bottom, #041724, #0b4151);
     
 /* paddin-block: 60px; */

@@ -29,7 +29,7 @@ body{
     background-size: cover;
     background-attachment: fixed;
     max-width: 100%;
-    top: -6vh;
+    top: -8vh;
 }
 .contain_header{
     text-align: center;
@@ -84,10 +84,12 @@ body{
 
 :root{
     --top-margin:49px;
-    background-color:   #d4a45f;
-   
-   
-   
+    --text: #0e0b01;
+    --background: #fbf0d0;
+    --primary: #f2cb5f;
+    --secondary: #fae9bd;
+    --accent: #d9a412;
+   background: #fae9bd;
   }
  
 

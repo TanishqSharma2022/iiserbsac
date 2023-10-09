@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="css\style.css">
 
 
+  <link rel="stylesheet" href="css/glide.core.min.css">
+  <link rel="stylesheet" href="css/glide.theme.min.css">
+
     <script src="https://unpkg.com/scrollreveal@4"></script>
 
     <script src="https://kit.fontawesome.com/eecc9ab967.js" crossorigin="anonymous"></script>
@@ -100,8 +103,11 @@
 
             <div class="contain2" id="nextsection">
 
+
+                
                 <div class="fest-left-card">
                     <div class="wrap-slider">
+                        
                     <div class="imageslider">
 
                         <div class="imageslider_wrapper">
@@ -570,7 +576,25 @@
     <script src="./scripts/main.js"></script>
 
 <script src="./scripts/fest.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<!-- <div class="up"><i class="fa-solid fa-angle-up"></i></div> -->
 
+
+
+<!-- <script src="./scripts/fest.js"> -->
+<!-- </script> -->
+
+
+
+<script>
+    const config = {
+        type: "carousel",
+        perView: 1,
+
+
+    }
+     new Glide('.glide', config).mount()
+</script>
 <script>
 
     // ScrollReveal({
