@@ -1407,14 +1407,19 @@ a {
 }
 
 
-
+.senate_members_heading h1{
+  color: rgb(0,0,0,0.6);
+   
+}
 
 .senate_members_heading h1:hover{
   animation: upDown 200ms ease-in-out 1;
+  color: rgb(0,0,0, 1);
+  transition: all 100ms;
 }
 
 @keyframes upDown{
-  0%{
+  10%{
 
     transform: translateY(0)
   }
