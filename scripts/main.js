@@ -69,8 +69,8 @@ function close_modal(){
             
             modal.classList.toggle("appear");
             console.log(image.src)
-            modal_container.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${String(image.src)})`;
-
+            // modal_container.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${String(image.src)})`;
+            modal_image.src = image.src;
 
         })
     })
