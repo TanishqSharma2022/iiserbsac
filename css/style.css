@@ -1541,6 +1541,13 @@ height: 100%;
   font-style: italic;
 }
 
+
+.glide__slide img{
+  object-fit: cover;
+  aspect-ratio: 1/1; 
+  width:100%;
+}
+
 .glide__arrow{
   /* background: black; */
   /* opacity: 0.5; */
