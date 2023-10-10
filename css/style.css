@@ -1407,6 +1407,30 @@ a {
 }
 
 
+
+
+.senate_members_heading h1:hover{
+  animation: upDown 200ms ease-in-out 1;
+}
+
+@keyframes upDown{
+  0%{
+
+    transform: translateY(0)
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
 /* SAC CONSTITUTION */
 
 
