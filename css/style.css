@@ -1713,7 +1713,11 @@ a {
   .scroll-top-button {
     margin-top: 50px;
   }
+  
 }
+
+
+
 
 /* for tablet mode view */
 @media screen and (max-width: 900px) {
@@ -2302,7 +2306,6 @@ a {
     margin: 0 auto;
 
   }
-
   .clubs_under {
     display: grid;
     grid-template-columns: 1fr 1fr;

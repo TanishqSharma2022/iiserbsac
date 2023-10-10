@@ -382,7 +382,7 @@ function toggle(n){
             popupimage.src = "./images/senate/sohumranade.jpeg";
             name.innerHTML = "Anjaly Suma";
             position.innerHTML = "ESIC Secretary";
-            content.innerHTML="<li>Hello, I am Anjaly Suma. I am the head of the ESIC Council.</li> <li>I am a passionate and dedicated geology student with an unwavering commitment to environmental conservation and societal betterment.</li>";
+            content.innerHTML="<li>Hello, I am Sohum Ranade. I am the head of the ESIC Council.</li> <li>I am a passionate and dedicated geology student with an unwavering commitment to environmental conservation and societal betterment.</li>";
             break;                                    
         case 7:
             popupimage.src = "./images/senate/himadri.png";
