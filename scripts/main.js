@@ -59,22 +59,6 @@ document.querySelector(".blurred").onclick = () => {
 
 
 
-// $(document).ready(function(){
-//     $('#linked').click(function(){
-//         $("html, body").animate({
-//             scrollTop: window.innerHeight
-              
-//         }, 500);
-//     });
-// });
-// $(document).ready(function(){
-//     $('#aboutus_href').click(function(){
-//         $("html, body").animate({
-//             scrollTop: $(
-//               'html, body').get(0).scrollHeight
-//         }, 1800);
-//     });
-// });
 
 $(document).ready(function(){
     var scrollLink = $('.scroll');
@@ -87,16 +71,6 @@ $(document).ready(function(){
 });
 
 
-
-
-// const spinnerWrapper = document.querySelector('.spinner-wrapper');
-// window.addEventListener('load', () => {
-//     spinnerWrapper.style.opacity = '0';
-//     setTimeout(() => {
-//         spinnerWrapper.style.display = 'none';
-//     }, 4000);
-
-// });
 
 
 
@@ -221,85 +195,85 @@ $(document).ready(function () {
 
 
 
-const rightBtn = document.querySelector("#rightBtn");
-const leftBtn = document.querySelector("#leftBtn");
+// const rightBtn = document.querySelector("#rightBtn");
+// const leftBtn = document.querySelector("#leftBtn");
 
 
 
 
 
-// document.querySelector('.currentSlide').nextElementSibling.style.opacity = 1;
-var track = document.querySelector(".carousel-container");
-// var images = Array.from(track.children);
-var images = track.querySelectorAll('img');
-// console.log(images);
-if(window.matchMedia("(min-width: 972px)").matches){
+// // document.querySelector('.currentSlide').nextElementSibling.style.opacity = 1;
+// var track = document.querySelector(".carousel-container");
+// // var images = Array.from(track.children);
+// var images = track.querySelectorAll('img');
+// // console.log(images);
+// if(window.matchMedia("(min-width: 972px)").matches){
 
-images.forEach((slide, index) => {
-    slide.style.left = `${index*33.33}%`;
-});
-}else{
-    images.forEach((slide, index) => {
-        slide.style.left = `${index*100}%`;
-    }); 
-}
-
-
-
-var numOfImages = images.length + 1;
-
-var rightCount = 1
-var leftCount = 1;
-rightBtn.addEventListener("click",()=>{
-    // const slider = document.querySelector('.slider');
-    const img = document.querySelector("#image");
-    // slider.style.transform = "translateX(-" + width*rightCount + "px)";
-    var currentSlide = document.querySelector(".currentSlide");
-    // console.log(currentSlide.nextElementSibling);
-    const width = currentSlide.getBoundingClientRect().width;
-    leftBtn.style.display = 'block';
+// images.forEach((slide, index) => {
+//     slide.style.left = `${index*33.33}%`;
+// });
+// }else{
+//     images.forEach((slide, index) => {
+//         slide.style.left = `${index*100}%`;
+//     }); 
+// }
 
 
-    // var nextSlide = currentSlide.nextElementSibling;
-    // document.querySelector('.carousel').scrollLeft += width;
-    if(rightCount != numOfImages-1){
-        track.style.transform = 'translateX(-'+width*rightCount+'px)';
-        rightCount++;
-        leftCount--;
-    }
-    console.log(rightCount);
-    if(rightCount == numOfImages-1){
-        rightBtn.style.display = "none";
-    }
-    if(leftCount != 1){
-        leftBtn.style.display = "block";
-    }
+
+// var numOfImages = images.length + 1;
+
+// var rightCount = 1
+// var leftCount = 1;
+// rightBtn.addEventListener("click",()=>{
+//     // const slider = document.querySelector('.slider');
+//     const img = document.querySelector("#image");
+//     // slider.style.transform = "translateX(-" + width*rightCount + "px)";
+//     var currentSlide = document.querySelector(".currentSlide");
+//     // console.log(currentSlide.nextElementSibling);
+//     const width = currentSlide.getBoundingClientRect().width;
+//     leftBtn.style.display = 'block';
+
+
+//     // var nextSlide = currentSlide.nextElementSibling;
+//     // document.querySelector('.carousel').scrollLeft += width;
+//     if(rightCount != numOfImages-1){
+//         track.style.transform = 'translateX(-'+width*rightCount+'px)';
+//         rightCount++;
+//         leftCount--;
+//     }
+//     console.log(rightCount);
+//     if(rightCount == numOfImages-1){
+//         rightBtn.style.display = "none";
+//     }
+//     if(leftCount != 1){
+//         leftBtn.style.display = "block";
+//     }
     
 
-} )
-if(leftCount == 1){
-    leftBtn.style.display = 'none';
-}
-leftBtn.addEventListener("click",()=>{
-    // const slider = document.querySelector('.slider');
+// } )
+// if(leftCount == 1){
+//     leftBtn.style.display = 'none';
+// }
+// leftBtn.addEventListener("click",()=>{
+//     // const slider = document.querySelector('.slider');
 
-    const img = document.querySelector("#image");
-    const width = img.getBoundingClientRect().width;
-    // document.querySelector('.carousel').scrollLeft -= width;
-    console.log(leftCount);
-    if(leftCount != numOfImages-1){
-        track.style.transform = 'translateX('+width*leftCount+'px)';
-        leftCount++;
-        rightCount--;
-    }
-    if(leftCount == 1){
-        leftBtn.style.display = "none";
-    }
+//     const img = document.querySelector("#image");
+//     const width = img.getBoundingClientRect().width;
+//     // document.querySelector('.carousel').scrollLeft -= width;
+//     console.log(leftCount);
+//     if(leftCount != numOfImages-1){
+//         track.style.transform = 'translateX('+width*leftCount+'px)';
+//         leftCount++;
+//         rightCount--;
+//     }
+//     if(leftCount == 1){
+//         leftBtn.style.display = "none";
+//     }
 
-    if(rightCount != numOfImages-1){
-        rightBtn.style.display = 'block';
-    }
-} );
+//     if(rightCount != numOfImages-1){
+//         rightBtn.style.display = 'block';
+//     }
+// } );
 
 
 
@@ -340,81 +314,82 @@ function toggle(n){
     
     switch(n){
         case 1:
-            popupimage.src = "./images/senate/devangkrishnan.jpeg";
-            name.innerHTML = "Devang V Krishnan";
+            popupimage.src = "./images/avatar.png";
+            name.innerHTML = " Krishnan";
             position.innerHTML = "President";
-            content.innerHTML="Hello, I am Devang V Krishnan. I am the President.";
+            content.innerHTML="";
             break;
         case 2:
-            popupimage.src = "./images/senate/anukaransingh.jpeg";
-            name.innerHTML = "Anukaran Singh";
+            popupimage.src = "./images/avatar.png";
+            name.innerHTML = "";
             position.innerHTML = "Vice President";
-            content.innerHTML="Hello, I am Anukaran Singh. I am the Vice-President.";
+            content.innerHTML="";
             break;
         case 3:
-            popupimage.src = "./images/senate/aparnavinod.jpeg";
-            name.innerHTML = "Aparna Vinod";
+            popupimage.src = "./images/avatar.png";
+            name.innerHTML = "";
             position.innerHTML = "Cultural Secretary";
-            content.innerHTML="Hello, I am Aparna Vinod. I am the head of the <b>Cultural Council</b>. I believe in `<i><b>going above and beyond with art.`</b></i>";
-            sec_insta.setAttribute("href", "https://www.instagram.com/_.aparna_.vinod/");
-
-            sec_linkedin.setAttribute("href", "https://in.linkedin.com/in/aparna-vinod-bb1573224");
-            sec_mail.setAttribute("href", "mailto:aparna20@iiserb.ac.in");
-            sec_whatsapp.setAttribute("href", "https://wa.me/919188067884");
+            content.innerHTML="";
+            
+            
+            // sec_insta.setAttribute("href", "https://www.instagram.com/_.aparna_.vinod/");
+            // sec_linkedin.setAttribute("href", "https://in.linkedin.com/in/aparna-vinod-bb1573224");
+            // sec_mail.setAttribute("href", "mailto:aparna20@iiserb.ac.in");
+            // sec_whatsapp.setAttribute("href", "https://wa.me/919188067884");
             break;
         case 4:
-            popupimage.src = "./images/senate/muhammedroshan.jpeg";
-            name.innerHTML = "Muhammed Roshan";
+            popupimage.src = "./images/avatar.png";
+            name.innerHTML = "";
             position.innerHTML = "Science Secretary";
-            content.innerHTML="Hello, I am Muhammed Roshan. I am the head of the Science Council.";
+            content.innerHTML="";
             break;    
         case 5:
-            popupimage.src = "./images/senate/agamdeepsingh.jpeg";
-            name.innerHTML = "Agamdeep Singh";
+            popupimage.src = "./images/avatar.png";
+            name.innerHTML = "";
             position.innerHTML = "CNC Secretary";
-            content.innerHTML="Hello I am Agamdeep Singh. I am the head of CNC club. A computer vision research who loves being part of and promoting the hacker and maker culture.";
-            sec_insta.setAttribute("href", "https://www.instagram.com/gimme_math_and_pizza/");
-            sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/agamdeep-iiser/");
-            sec_mail.setAttribute("href", "mailto:agamdeep20@iiserb.ac.in");
-            sec_whatsapp.setAttribute("href", "https://wa.me/919417574801");
+            content.innerHTML="";
+            // sec_insta.setAttribute("href", "https://www.instagram.com/gimme_math_and_pizza/");
+            // sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/agamdeep-iiser/");
+            // sec_mail.setAttribute("href", "mailto:agamdeep20@iiserb.ac.in");
+            // sec_whatsapp.setAttribute("href", "https://wa.me/919417574801");
             break;
         case 6:
-            popupimage.src = "./images/senate/sohumranade.jpeg";
-            name.innerHTML = "Anjaly Suma";
+            popupimage.src = "./images/avatar.png";
+            name.innerHTML = "";
             position.innerHTML = "ESIC Secretary";
-            content.innerHTML="<li>Hello, I am Sohum Ranade. I am the head of the ESIC Council.</li> <li>I am a passionate and dedicated geology student with an unwavering commitment to environmental conservation and societal betterment.</li>";
+            content.innerHTML="";
             break;                                    
         case 7:
-            popupimage.src = "./images/senate/himadri.png";
-            name.innerHTML = "Himadri Sonowal";
+            popupimage.src = "./images/avatar.png";
+            name.innerHTML = "";
             position.innerHTML = "FALC Secretary";
-            content.innerHTML="Hello, I am Himadri Sonowal. I am the head of FALC Council.";
+            content.innerHTML="";
             break;
         case 8:
-            popupimage.src = "./images/senate/pranavkrishna.jpeg";
-            name.innerHTML = "Pranav Krishna";
+            popupimage.src = "./images/avatar.png";
+            name.innerHTML = "";
             position.innerHTML = "Sports Secretary";
-            content.innerHTML="Hello, I am Pranav Krishna. I am the head of Sports Council.";
+            content.innerHTML="";
             break;
         case 9:
-            popupimage.src = "./images/senate/abhishekpatel.jpeg";
-            name.innerHTML = "Abhishek Patel";
+            popupimage.src = "./images/avatar.png";
+            name.innerHTML = "";
             position.innerHTML = "SDC Secretary";
-            content.innerHTML="Hello, I am Abhishek Patel. I am the head of SDC Council.";
+            content.innerHTML="";
             break;
         
         case 10:
-            popupimage.src = "./images/senate/amanKumar.jpg";
-            name.innerHTML = "Aman Kumar";
+            popupimage.src = "./images/avatar.png";
+            name.innerHTML = "";
             position.innerHTML = "RC Secretary";
-            content.innerHTML="Hello, I am Aman Kumar. I am the head of RC Secretary.";
+            content.innerHTML="";
             break;
         
         case 11:
-            popupimage.src = "./images/senate/AaryaPalwekar.jpg";
-            name.innerHTML = "Aarya Palwekar";
+            popupimage.src = "./images/avatar.png";
+            name.innerHTML = "";
             position.innerHTML = "RC Secretary";
-            content.innerHTML="Hello, I am Aarya Palwekar. I am the head of RC Secretary.";
+            content.innerHTML="";
             break;
         }
 

@@ -9,6 +9,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Notable:wght@400&display=swap');
 
+:root {
+    --navlist-color: #cb7139;
+    /* --navlist-color: #6a6551; */
+    /* --navlist-color: #6699cc; */
+  
+    --navbar-change-color: #111011;
+    --text: #0e0b01;
+    --background: #0b4151;
+    --primary: #1380b4;
+    --secondary: #fae9bd;
+    --accent: #d9a412;
+  }
+
+
 
 *{
     box-sizing: border-box;
@@ -286,10 +300,6 @@ body{
     display: flex;
 
     /* position: relative; */
-}
-
-ul.list a{
-    text-shadow: 0px 0px 10px #0c3458;
 }
 
 

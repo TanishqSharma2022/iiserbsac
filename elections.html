@@ -1,966 +1,1043 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ELECTIONS | IISERB</title>
-   
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <script src="https://unpkg.com/scrollreveal@4"></script>
 
-    <script src="https://kit.fontawesome.com/eecc9ab967.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/eecc9ab967.js"
+      crossorigin="anonymous"
+    ></script>
 
-<style>
-  .material-symbols-outlined {
-            font-variation-settings:
-                'FILL' 0,
-                'wght' 500,
-                'GRAD' 0,
-                'opsz' 48;
-            color: white;
-            position: absolute;
-            top: 90%;
-            font-size: 20px;
-            left: 48%;
-            text-shadow: 1px 1px 10px black;
-        }
-        .fa-angle-down{
-          color: white;
-        }
-</style>
-<link rel="icon" type="images/x-icon" href="./images/SAC Logo.svg" />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 48;
+        color: white;
+        position: absolute;
+        top: 90%;
+        font-size: 20px;
+        left: 48%;
+        text-shadow: 1px 1px 10px black;
+      }
+      .fa-angle-down {
+        color: white;
+      }
+    </style>
+    <link rel="icon" type="images/x-icon" href="./images/SAC Logo.svg" />
 
-  <!-- HTML Meta Tags -->
-  <meta name="description" content="SAC is the student activity council of IISER Bhopal. This is the elected student body, which acts as a bridge between the administration and the students to ensure smooth functioning. We ensure that the concerns and demands of the students are properly conveyed to the administration. We are also responsible for all students activities hosted on campus.We are not just about conducting fests and other activities inside the campus, we are also responsible for upholding the rights and values of the students">
+    <!-- HTML Meta Tags -->
+    <meta
+      name="description"
+      content="SAC is the student activity council of IISER Bhopal. This is the elected student body, which acts as a bridge between the administration and the students to ensure smooth functioning. We ensure that the concerns and demands of the students are properly conveyed to the administration. We are also responsible for all students activities hosted on campus.We are not just about conducting fests and other activities inside the campus, we are also responsible for upholding the rights and values of the students"
+    />
 
-  <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://iiserbsac.netlify.app">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="SAC, IISER BHOPAL">
-  <meta property="og:description" content="SAC is the student activity council of IISER Bhopal. This is the elected student body, which acts as a bridge between the administration and the students to ensure smooth functioning. We ensure that the concerns and demands of the students are properly conveyed to the administration. We are also responsible for all students activities hosted on campus.We are not just about conducting fests and other activities inside the campus, we are also responsible for upholding the rights and values of the students">
-  <meta property="og:image" content="https://iiserbsac.netlify.app/images/opengraph_sac.png">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://iiserbsac.netlify.app" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SAC, IISER BHOPAL" />
+    <meta
+      property="og:description"
+      content="SAC is the student activity council of IISER Bhopal. This is the elected student body, which acts as a bridge between the administration and the students to ensure smooth functioning. We ensure that the concerns and demands of the students are properly conveyed to the administration. We are also responsible for all students activities hosted on campus.We are not just about conducting fests and other activities inside the campus, we are also responsible for upholding the rights and values of the students"
+    />
+    <meta
+      property="og:image"
+      content="https://iiserbsac.netlify.app/images/opengraph_sac.png"
+    />
 
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta property="twitter:domain" content="iiserbsac.netlify.app">
-  <meta property="twitter:url" content="https://iiserbsac.netlify.app">
-  <meta name="twitter:title" content="SAC, IISER BHOPAL">
-  <meta name="twitter:description" content="SAC is the student activity council of IISER Bhopal. This is the elected student body, which acts as a bridge between the administration and the students to ensure smooth functioning. We ensure that the concerns and demands of the students are properly conveyed to the administration. We are also responsible for all students activities hosted on campus.We are not just about conducting fests and other activities inside the campus, we are also responsible for upholding the rights and values of the students">
-  <meta name="twitter:image" content="https://iiserbsac.netlify.app/images/opengraph_sac.png">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="iiserbsac.netlify.app" />
+    <meta property="twitter:url" content="https://iiserbsac.netlify.app" />
+    <meta name="twitter:title" content="SAC, IISER BHOPAL" />
+    <meta
+      name="twitter:description"
+      content="SAC is the student activity council of IISER Bhopal. This is the elected student body, which acts as a bridge between the administration and the students to ensure smooth functioning. We ensure that the concerns and demands of the students are properly conveyed to the administration. We are also responsible for all students activities hosted on campus.We are not just about conducting fests and other activities inside the campus, we are also responsible for upholding the rights and values of the students"
+    />
+    <meta
+      name="twitter:image"
+      content="https://iiserbsac.netlify.app/images/opengraph_sac.png"
+    />
 
-  <!-- Meta Tags Generated via https://www.opengraph.xyz -->
-  <link rel="stylesheet" href="./css/style.css">
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
 
-  <link rel="stylesheet" href="./css/election.css">
-
-</head>
-<body>
-  <div class="spinner-wrapper">
+    <link rel="stylesheet" href="./css/election.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- <div class="spinner-wrapper">
     <div class="spinner" role="status">
       </div>
-  </div>
+  </div> -->
 
-  <div class="blurred"></div>
+    <div class="blurred"></div>
 
-
-  
-  <div class="navbar">
-    <div class="content">
+    <div class="navbar">
+      <div class="content">
         <div class="name">
-            <a target="_blank" href="https://www.iiserb.ac.in">
-                <img alt="IISERB LOGO" loading="lazy" class="desktop" src="./Images/removed_bg.png" alt="">
-            
-                <img loading="lazy" class="mobile" src="./images/removed_bg.png" class="src">
-            </a>
+          <a target="_blank" href="https://www.iiserb.ac.in">
+            <img
+              alt="IISERB LOGO"
+              class="desktop"
+              src="./images/removed_bg.png"
+              alt=""
+            />
+
+            <img class="mobile" src="./images/removed_bg.png" class="src" />
+          </a>
         </div>
         <ul class="list">
-            <div class="icon cancel-btn">
-                <i class="fas fa-times"></i>
-            </div>
-            <li><a href="#home">Home</a></li>
-            <li><a id="council_click scroll" href="#council_main">Councils</a></li>
-            <li><a id="scroll" href="#members">Members</a></li>
-            <li><a target="_blank" href="elections.html">Elections</a></li>
-
-            <li><a target="_blank" href="fests.html">Fests</a></li>
-            <li><a id="aboutus_href" href="#">Contact</a></li>
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="https://iiserbsac.netlify.app/">Home</a></li>
+          <li>
+            <a id="council_click scroll" href="https://iiserbsac.netlify.app/#council_main">Councils</a>
+          </li>
+          <li><a id="scroll" href="https://iiserbsac.netlify.app/#members">Members</a></li>
+          <li><a target="_blank" href="https://iiserbsac.netlify.app/fests.html">Fests</a></li>
+          <li><a id="aboutus_href" href="https://iiserbsac.netlify.app/contact.html#">Contact</a></li>
         </ul>
+
         <div class="icon menu-btn">
-            <i class="fas fa-bars"></i>
+          <i class="fas fa-bars"></i>
         </div>
+      </div>
     </div>
-</div>
-
-
-
-
-
-
 
     <div class="contain">
-        <a class="contain_header">
-            ELECTIONS<a id="ii">&nbsp;@iiserb</a>
-        </a>
+      <a class="contain_header"> ELECTIONS<a id="ii">&nbsp;@iiserb</a> </a>
 
-        <span class="material-symbols-outlined">
-          <a href="#nextsection">
-              <i class="fa-solid fa-angle-down"></i>
-          </a>
+      <span class="material-symbols-outlined">
+        <a href="#nextsection">
+          <i class="fa-solid fa-angle-down"></i>
+        </a>
       </span>
     </div>
-    
+
     <!-- <div class="contain container_two"> -->
 
+    <h3 class="rc" id="nextsection">Elections 2023</h3>
 
-        <h3 class="rc" id="nextsection">Elections 2023</h3>
-          
+    <h3 id="electionheader" style="font-family: 'Pangolin'; font-style: italic">
+      Nominations for SAC President
+    </h3>
+    <hr
+      style="width: 10%; height: 2px; border: none; background-color: black"
+    />
+    <div class="page-wrapper">
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 1</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
 
-        
-                       
-        <h3 id="electionheader" style="font-family: 'Pangolin';font-style: italic;">Nominations for SAC President </h3>
-        <hr style="width: 10%;height: 2px;border: none;background-color: black;">
-        <div class="page-wrapper">
-            <div class="profile-box">
-              <img src="images/removed_bg.png" alt="profile pic">
-              <h3> Candidate 1 </h3>
-              <h4>Name and Batch</h4>
-                  <h3>Agenda </h3>
-                  <h4>Their agenda will be displayed here</h4>
-                 
-
-
-
-                  
-                  <div class="mem-social">
-                    <a  href="mailto: #">
-                      <i class="fa-solid fa-envelope"></i>
-                    </a>
-                    <a  href='#'>
-                      <i class="fa-brands fa-whatsapp"></i>
-                      <!-- <span class="ph-num"></span> -->
-                    </a>
-                    <a href='#'><i class="fa-brands fa-instagram"></i></a>
-                  </div>
-            </div>
-
-            <div class="profile-box">
-                <img src="images/removed_bg.png" alt="profile pic">
-                <h3> Candidate 1 </h3>
-                <h4>Name and Batch</h4>
-                    <h3>Agenda </h3>
-                    <h4>Their agenda will be displayed here</h4>
-                   
-  
-  
-  
-                    
-                    <div class="mem-social">
-                      <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                      <a class="phone" href='#'>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span class="ph-num"></span>
-                      </a>
-                      <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-              </div>
-              
-
-
-
-            <div class="profile-box">
-                <img src="images/removed_bg.png" alt="profile pic">
-                <h3>Candidate 2 </h3>
-                <h4>Name and Batch</h4>
-                    <h3>Agenda </h3>
-                    <h4>Their agenda will be displayed here</h4>
-                   
-  
-  
-  
-                    
-                    <div class="mem-social">
-                      <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                      <a class="phone" href='#'>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span class="ph-num"></span>
-                      </a>
-                      <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-              </div>
-              <div class="profile-box">
-                <img src="images/removed_bg.png" alt="profile pic">
-                <h3>Candidate 3</h3>
-                <h4>Name and Batch</h4>
-                    <h3>Agenda </h3>
-                    <h4>Their agenda will be displayed here</h4>
-                   
-  
-  
-  
-                    
-                    <div class="mem-social">
-                      <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                      <a class="phone" href='#'>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span class="ph-num"></span>
-                      </a>
-                      <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-              </div>
-            
-          </div>
-
-
-
-
-
-          <h3  style="font-family: 'Pangolin';font-style: italic;">Nominations for SAC Vice-President </h3>
-        <hr style="width: 10%;height: 2px;border: none;background-color: black;">
-
-        <div class="page-wrapper">
-            <div class="profile-box">
-              <img src="images/removed_bg.png" alt="profile pic">
-              <h3  >Candidate 1 </h3>
-              <h4>Name and Batch</h4>
-                  <h3>Agenda </h3>
-                  <h4>Their agenda will be displayed here</h4>
-                 
-
-
-
-                  
-                  <div class="mem-social">
-                    <a class="mail" href="mailto: #">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-                    <a class="phone" href='#'>
-                      <i class="fa-brands fa-whatsapp"></i>
-                      <span class="ph-num"></span>
-                    </a>
-                    <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                  </div>
-            </div>
-            <div class="profile-box">
-                <img src="images/removed_bg.png" alt="profile pic">
-                <h3>Candidate 2 </h3>
-                <h4>Name and Batch</h4>
-                    <h3>Agenda </h3>
-                    <h4>Their agenda will be displayed here</h4>
-                   
-  
-  
-  
-                    
-                    <div class="mem-social">
-                      <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                      <a class="phone" href='#'>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span class="ph-num"></span>
-                      </a>
-                      <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-              </div>
-              <div class="profile-box">
-                <img src="images/removed_bg.png" alt="profile pic">
-                <h3>Candidate 3</h3>
-                <h4>Name and Batch</h4>
-                    <h3>Agenda </h3>
-                    <h4>Their agenda will be displayed here</h4>
-                   
-  
-  
-  
-                    
-                    <div class="mem-social">
-                      <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                      <a class="phone" href='#'>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span class="ph-num"></span>
-                      </a>
-                      <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-              </div>
-            
-          </div>
-          <h3  style="font-family: 'Pangolin';font-style: italic;">Nominations for Cultural Secretary </h3>
-        <hr style="width: 10%;height: 2px;border: none;background-color: black;">
-
-        <div class="page-wrapper">
-            <div class="profile-box">
-              <img src="images/removed_bg.png" alt="profile pic">
-              <h3 >Candidate 1 </h3>
-              <h4>Name and Batch</h4>
-                  <h3>Agenda </h3>
-                  <h4>Their agenda will be displayed here</h4>
-                 
-
-
-
-                  
-                  <div class="mem-social">
-                    <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                    <a class="phone" href='#'>
-                      <i class="fa-brands fa-whatsapp"></i>
-                      <span class="ph-num"></span>
-                    </a>
-                    <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                  </div>
-            </div>
-            <div class="profile-box">
-                <img src="images/removed_bg.png" alt="profile pic">
-                <h3>Candidate 2 </h3>
-                <h4>Name and Batch</h4>
-                    <h3>Agenda </h3>
-                    <h4>Their agenda will be displayed here</h4>
-                   
-  
-  
-  
-                    
-                    <div class="mem-social">
-                      <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                      <a class="phone" href='#'>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span class="ph-num"></span>
-                      </a>
-                      <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-              </div>
-              <div class="profile-box">
-                <img src="images/removed_bg.png" alt="profile pic">
-                <h3>Candidate 3</h3>
-                <h4>Name and Batch</h4>
-                    <h3>Agenda </h3>
-                    <h4>Their agenda will be displayed here</h4>
-                   
-  
-  
-  
-                    
-                    <div class="mem-social">
-                      <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                      <a class="phone" href='#'>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span class="ph-num"></span>
-                      </a>
-                      <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-              </div>
-            
-          </div>
-          <h3  style="font-family: 'Pangolin';font-style: italic;">Nominations for Science Council Secretary </h3>
-        <hr style="width: 10%;height: 2px;border: none;background-color: black;">
-
-        <div class="page-wrapper">
-            <div class="profile-box">
-              <img src="images/removed_bg.png" alt="profile pic">
-              <h3 >Candidate 1 </h3>
-              <h4>Name and Batch</h4>
-                  <h3>Agenda </h3>
-                  <h4>Their agenda will be displayed here</h4>
-                 
-
-
-
-                  
-                  <div class="mem-social">
-                    <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                    <a class="phone" href='#'>
-                      <i class="fa-brands fa-whatsapp"></i>
-                      <span class="ph-num"></span>
-                    </a>
-                    <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                  </div>
-            </div>
-            <div class="profile-box">
-                <img src="images/removed_bg.png" alt="profile pic">
-                <h3>Candidate 2 </h3>
-                <h4>Name and Batch</h4>
-                    <h3>Agenda </h3>
-                    <h4>Their agenda will be displayed here</h4>
-                   
-  
-  
-  
-                    
-                    <div class="mem-social">
-                      <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                      <a class="phone" href='#'>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span class="ph-num"></span>
-                      </a>
-                      <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-              </div>
-              <div class="profile-box">
-                <img src="images/removed_bg.png" alt="profile pic">
-                <h3>Candidate 3</h3>
-                <h4>Name and Batch</h4>
-                    <h3>Agenda </h3>
-                    <h4>Their agenda will be displayed here</h4>
-                   
-  
-  
-  
-                    
-                    <div class="mem-social">
-                      <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                      <a class="phone" href='#'>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span class="ph-num"></span>
-                      </a>
-                      <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-              </div>
-            
-          </div>
-          <h3  style="font-family: 'Pangolin';font-style: italic;">Nominations for CNC Secretary </h3>
-        <hr style="width: 10%;height: 2px;border: none;background-color: black;">
-
-        <div class="page-wrapper">
-            <div class="profile-box">
-              <img src="images/removed_bg.png" alt="profile pic">
-              <h3 >Candidate 1 </h3>
-              <h4>Name and Batch</h4>
-                  <h3>Agenda </h3>
-                  <h4>Their agenda will be displayed here</h4>
-                 
-
-
-
-                  
-                  <div class="mem-social">
-                    <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                    <a class="phone" href='#'>
-                      <i class="fa-brands fa-whatsapp"></i>
-                      <span class="ph-num"></span>
-                    </a>
-                    <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                  </div>
-            </div>
-            <div class="profile-box">
-                <img src="images/removed_bg.png" alt="profile pic">
-                <h3>Candidate 2 </h3>
-                <h4>Name and Batch</h4>
-                    <h3>Agenda </h3>
-                    <h4>Their agenda will be displayed here</h4>
-                   
-  
-  
-  
-                    
-                    <div class="mem-social">
-                      <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                      <a class="phone" href='#'>
-                        <i class="fa-regular fa-whatsapp"></i>
-                        <span class="ph-num"></span>
-                      </a>
-                      <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-              </div>
-              <div class="profile-box">
-                <img src="images/removed_bg.png" alt="profile pic">
-                <h3>Candidate 3</h3>
-                <h4>Name and Batch</h4>
-                    <h3>Agenda </h3>
-                    <h4>Their agenda will be displayed here</h4>
-                   
-  
-  
-  
-                    
-                    <div class="mem-social">
-                      <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                      <a class="phone" href='#'>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span class="ph-num"></span>
-                      </a>
-                      <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-              </div>
-            
-          </div>
-          <h3  style="font-family: 'Pangolin';font-style: italic;">Nominations for ESIC Secretary </h3>
-        <hr style="width: 10%;height: 2px;border: none;background-color: black;">
-
-        <div class="page-wrapper">
-            <div class="profile-box">
-              <img src="images/removed_bg.png" alt="profile pic">
-              <h3 >Candidate 1 </h3>
-              <h4>Name and Batch</h4>
-                  <h3>Agenda </h3>
-                  <h4>Their agenda will be displayed here</h4>
-                 
-
-
-
-                  
-                  <div class="mem-social">
-                    <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                    <a class="phone" href='#'>
-                      <i class="fa-brands fa-whatsapp"></i>
-                      <span class="ph-num"></span>
-                    </a>
-                    <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                  </div>
-            </div>
-            <div class="profile-box">
-                <img src="images/removed_bg.png" alt="profile pic">
-                <h3>Candidate 2 </h3>
-                <h4>Name and Batch</h4>
-                    <h3>Agenda </h3>
-                    <h4>Their agenda will be displayed here</h4>
-                   
-  
-  
-  
-                    
-                    <div class="mem-social">
-                      <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                      <a class="phone" href='#'>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span class="ph-num"></span>
-                      </a>
-                      <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-              </div>
-              <div class="profile-box">
-                <img src="images/removed_bg.png" alt="profile pic">
-                <h3>Candidate 3</h3>
-                <h4>Name and Batch</h4>
-                    <h3>Agenda </h3>
-                    <h4>Their agenda will be displayed here</h4>
-                   
-  
-  
-  
-                    
-                    <div class="mem-social">
-                      <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                      <a class="phone" href='#'>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span class="ph-num"></span>
-                      </a>
-                      <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-              </div>
-            
-          </div>
-          <h3  style="font-family: 'Pangolin';font-style: italic;">Nominations for FALC Secretary </h3>
-        <hr style="width: 10%;height: 2px;border: none;background-color: black;">
-
-        <div class="page-wrapper">
-            <div class="profile-box">
-              <img src="images/removed_bg.png" alt="profile pic">
-              <h3 >Candidate 1 </h3>
-              <h4>Name and Batch</h4>
-                  <h3>Agenda </h3>
-                  <h4>Their agenda will be displayed here</h4>
-                 
-
-
-
-                  
-                  <div class="mem-social">
-                    <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                    <a class="phone" href='#'>
-                      <i class="fa-brands fa-whatsapp"></i>
-                      <span class="ph-num"></span>
-                    </a>
-                    <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                  </div>
-            </div>
-            <div class="profile-box">
-                <img src="images/removed_bg.png" alt="profile pic">
-                <h3>Candidate 2 </h3>
-                <h4>Name and Batch</h4>
-                    <h3>Agenda </h3>
-                    <h4>Their agenda will be displayed here</h4>
-                   
-  
-  
-  
-                    
-                    <div class="mem-social">
-                      <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                      <a class="phone" href='#'>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span class="ph-num"></span>
-                      </a>
-                      <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-              </div>
-              <div class="profile-box">
-                <img src="images/removed_bg.png" alt="profile pic">
-                <h3>Candidate 3</h3>
-                <h4>Name and Batch</h4>
-                    <h3>Agenda </h3>
-                    <h4>Their agenda will be displayed here</h4>
-                   
-  
-  
-  
-                    
-                    <div class="mem-social">
-                      <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                      <a class="phone" href='#'>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span class="ph-num"></span>
-                      </a>
-                      <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-              </div>
-            
-          </div>
-          <h3  style="font-family: 'Pangolin';font-style: italic;">Nominations for Sports Council Secretary </h3>
-        <hr style="width: 10%;height: 2px;border: none;background-color: black;">
-
-        <div class="page-wrapper">
-            <div class="profile-box">
-              <img src="images/removed_bg.png" alt="profile pic">
-              <h3 >Candidate 1 </h3>
-              <h4>Name and Batch</h4>
-                  <h3>Agenda </h3>
-                  <h4>Their agenda will be displayed here</h4>
-                 
-
-
-
-                  
-                  <div class="mem-social">
-                    <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                    <a class="phone" href='#'>
-                      <i class="fa-brands fa-whatsapp"></i>
-                      <span class="ph-num"></span>
-                    </a>
-                    <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                  </div>
-            </div>
-            <div class="profile-box">
-                <img src="images/removed_bg.png" alt="profile pic">
-                <h3>Candidate 2 </h3>
-                <h4>Name and Batch</h4>
-                    <h3>Agenda </h3>
-                    <h4>Their agenda will be displayed here</h4>
-                   
-  
-  
-  
-                    
-                    <div class="mem-social">
-                      <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                      <a class="phone" href='#'>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span class="ph-num"></span>
-                      </a>
-                      <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-              </div>
-              <div class="profile-box">
-                <img src="images/removed_bg.png" alt="profile pic">
-                <h3>Candidate 3</h3>
-                <h4>Name and Batch</h4>
-                    <h3>Agenda </h3>
-                    <h4>Their agenda will be displayed here</h4>
-                   
-  
-  
-  
-                    
-                    <div class="mem-social">
-                      <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                      <a class="phone" href='#'>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span class="ph-num"></span>
-                      </a>
-                      <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-              </div>
-            
-          </div>
-          <h3 style="font-family: 'Pangolin';font-style: italic;">Nominations for SDC Secretary </h3>
-        <hr style="width: 10%;height: 2px;border: none;background-color: black;">
-
-        <div class="page-wrapper">
-            <div class="profile-box">
-              <img src="images/removed_bg.png" alt="profile pic">
-              <h3 >Candidate 1 </h3>
-              <h4>Name and Batch</h4>
-                  <h3>Agenda </h3>
-                  <h4>Their agenda will be displayed here</h4>
-                 
-
-
-
-                  
-                  <div class="mem-social">
-                    <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                    <a class="phone" href='#'>
-                      <i class="fa-brands fa-whatsapp"></i>
-                      <span class="ph-num"></span>
-                    </a>
-                    <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                  </div>
-            </div>
-            <div class="profile-box">
-                <img src="images/removed_bg.png" alt="profile pic">
-                <h3>Candidate 2 </h3>
-                <h4>Name and Batch</h4>
-                    <h3>Agenda </h3>
-                    <h4>Their agenda will be displayed here</h4>
-                   
-  
-  
-  
-                    
-                    <div class="mem-social">
-                      <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                      <a class="phone" href='#'>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span class="ph-num"></span>
-                      </a>
-                      <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-              </div>
-              <div class="profile-box">
-                <img src="images/removed_bg.png" alt="profile pic">
-                <h3>Candidate 3</h3>
-                <h4>Name and Batch</h4>
-                    <h3>Agenda </h3>
-                    <h4>Their agenda will be displayed here</h4>
-                   
-  
-  
-  
-                    
-                    <div class="mem-social">
-                      <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                      <a class="phone" href='#'>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span class="ph-num"></span>
-                      </a>
-                      <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-              </div>
-            
-          </div>
-          <h3 style="font-family: 'Pangolin';font-style: italic;">Nominations for RC Secretary </h3>
-        <hr style="width: 10%;height: 2px;border: none;background-color: black;">
-
-        <div class="page-wrapper">
-            <div class="profile-box">
-              <img src="images/removed_bg.png" alt="profile pic">
-              <h3 >Candidate 1 </h3>
-              <h4>Name and Batch</h4>
-                  <h3>Agenda </h3>
-                  <h4>Their agenda will be displayed here</h4>
-                 
-
-
-
-                  
-                  <div class="mem-social">
-                    <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                    <a class="phone" href='#'>
-                      <i class="fa-brands fa-whatsapp"></i>
-                      <span class="ph-num"></span>
-                    </a>
-                    <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                  </div>
-            </div>
-            <div class="profile-box">
-                <img src="images/removed_bg.png" alt="profile pic">
-                <h3>Candidate 2 </h3>
-                <h4>Name and Batch</h4>
-                    <h3>Agenda </h3>
-                    <h4>Their agenda will be displayed here</h4>
-                   
-  
-  
-  
-                    
-                    <div class="mem-social">
-                      <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                      <a class="phone" href='#'>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span class="ph-num"></span>
-                      </a>
-                      <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-              </div>
-              <div class="profile-box">
-                <img src="images/removed_bg.png" alt="profile pic">
-                <h3>Candidate 3</h3>
-                <h4>Name and Batch</h4>
-                    <h3>Agenda </h3>
-                    <h4>Their agenda will be displayed here</h4>
-                   
-  
-  
-  
-                    
-                    <div class="mem-social">
-                      <a class="mail" href="mailto: #"><i class="fa-solid fa-envelope"></i></a>
-                      <a class="phone" href='#'>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span class="ph-num"></span>
-                      </a>
-                      <a class="fb" href='#'><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-              </div>
-            
-          </div>
-          
-        
+        <div class="mem-social">
+          <a href="mailto: #">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <!-- <span class="ph-num"></span> -->
+          </a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
         </div>
+      </div>
 
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 1</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
 
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
 
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 2</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
+
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 3</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
+
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
     </div>
-      <div class="footerlast" >
-        <!--  Footer -->
-               <footer class="footer" >
-            <div class="inner-footer">
 
+    <h3 style="font-family: 'Pangolin'; font-style: italic">
+      Nominations for SAC Vice-President
+    </h3>
+    <hr
+      style="width: 10%; height: 2px; border: none; background-color: black"
+    />
 
-                <!--  for contact us info -->
-                <div class="footer-items">
-                    <img src="images/IISER White Logo.png"
-                        style="height: 150px;margin-right: auto !important;margin-bottom:15px;display: block !important" />
-                    <h3 class="footer-heading">Contact us</h3>
-                    <ul>
-                        <li><a
-                                href="https://www.google.com/maps/place/IISER+BHOPAL/@23.2857935,77.2706367,17z/data=!3m1!4b1!4m6!3m5!1s0x397c60d9f8872aef:0x9b99241b1431032!8m2!3d23.2857936!4d77.2755076!16s%2Fg%2F12xql9g02?entry=ttu"><i
-                                    class="fa fa-map-marker" aria-hidden="true"></i>IISER Bhopal, Bhauri</a></li>
-                        <li><a href="mailto:sac@iiserb.ac.in"><i class="fa fa-envelope"
-                                    aria-hidden="true"></i>sac@iiserb.ac.in</a></li>
-                        <li><a href="https://www.instagram.com/sac_iiserb/"><i class="fa fa-instagram"
-                                    aria-hidden="true"></i>instagram.com/sac_iiserb</a></li>
-                    </ul>
-                    <!--   for social links -->
-                    <div class="social-media">
+    <div class="page-wrapper">
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 1</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
 
-                    </div>
-                </div>
-                <div class="footer-items brdr-left">
-                    <h3 class="footer-heading">Councils</h3>
-                    <ul>
-                        <li class="boards-footer-flex">
-                            <div style="flex-grow: 1;">
-                                <a href="mailto: culturalcouncil@iiserb.ac.in" target="_blank">Cultural Council</a>
-                            </div>
-
-                        </li>
-                        <li class="boards-footer-flex">
-                            <div style="flex-grow: 1;">
-                                <a href="mailto: cnc@iiserb.ac.in" target="_blank">Computer and Networking Council</a>
-                            </div>
-
-                        </li>
-                        <li class="boards-footer-flex">
-                            <div style="flex-grow: 1;">
-                                <a href="mailto: esic@iiserb.ac.in" target="_blank">Environmental and Social Initiatives Council </a>
-                            </div>
-
-                        </li>
-                        <li class="boards-footer-flex">
-                            <div style="flex-grow: 1;">
-                                <a href="mailto: falc@iiserb.ac.in" target="_blank">Fine Arts and Literary Council </a>
-                            </div>
-
-                        </li>
-                        <li class="boards-footer-flex">
-                            <div style="flex-grow: 1;">
-                                <a href="mailto: sciencecouncil@iiserb.ac.in" target="_blank">Science Council </a>
-                            </div>
-
-                        </li>
-                        <li class="boards-footer-flex">
-                            <div style="flex-grow: 1;">
-                                <a href="mailto: sportscouncil@iiserb.ac.in" target="_blank">Sports Council</a>
-                            </div>
-
-                        </li>
-                        <li class="boards-footer-flex">
-                            <div style="flex-grow: 1;">
-                                <a href="mailto: sdc@iiserb.ac.in" target="_blank">Student Development Council</a>
-                            </div>
-
-                        </li>
-                    </ul>
-                </div>
-                <!--  for quick links  -->
-                <div class="footer-items">
-                    <h3 class="footer-heading">Services</h3>
-                    <ul>
-                        <li><a href="Representativecouncil.html" target="_blank">Representative Council </a></li>
-                        <li><a href="https://www.iiserb.ac.in/hc" target="_blank">Health center </a></li>
-                        <li><a href="https://www.iiserb.ac.in/dosa/counsellor" target="_blank">Councelling Cell </a>
-                        </li>
-                        <li><a href="https://icdpc.iiserb.ac.in/" target="_blank">Placement cell </a></li>
-                    </ul>
-                </div>
-                <!--  for some other links -->
-                <div class="footer-items">
-                    <h3 class="footer-heading">Links</h3>
-                    <ul>
-                        <li><a href="https://www.iiserb.ac.in/doaa" target="_blank">Office,Academic Affairs </a></li>
-                        <li><a href="https://www.iiserb.ac.in/dosa" target="_blank">Office, Student Affairs </a></li>
-                        <li><a href="https://www.iiserb.ac.in/iwd/people" target="_blank">Office, Institute Works Department </a></li>
-                        <li><a href="https://www.iiserb.ac.in/vh/" target="_blank">Visitor's Hostel</i></a></li>
-                    </ul>
-                    <div class="scroll-top-button" onclick="scrollTopAnimated(500)">
-                        Scroll to top<i class="fa fa-long-arrow-up" aria-hidden="true" style="margin-left: 10px"></i>
-                    </div>
-                </div>
-            </div>
-            <!--   Footer Bottom start  -->
-            <div class="footer-bottom">
-                <span style="color:#dadada;font-size:1.2em;margin-bottom: 7px;display:block;">Designed & Developed by
-                    <a  href="https://www.linkedin.com/in/tanishq-sharma-5204bb249" target="_blank"
-                        style="color:#fafafa;text-decoration-color: #dadada;text-decoration: underline;">Tanishq
-                        Sharma</a> and
-                    <a  href="https://www.linkedin.com/in/shailesh-kachhi-681a041a2" target="_blank"
-                        style="color:#fafafa;text-decoration-color: #dadada;text-decoration: underline;">Shailesh
-                        Kachhi</a></span>
-                <p>Copyright &copy;2023 Student Activity Council, Indian Institute of Science Education and Research
-                    Bhopal. All Rights Reserved.</p>
-            </div>
-        </footer>
+        <div class="mem-social">
+          <a class="mail" href="mailto: #">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
         </div>
+      </div>
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 2</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
 
-        <script src="scripts/main.js"></script>
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 3</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
 
-        <script>
-        //   ScrollReveal({
-        //     reset: false,
-        //     distance: '60px',
-        //     duration: 2000,
-        //     // delay: 400
-        // });
-  
-        // ScrollReveal().reveal('.contain_header', {delay: 200, origin: 'left'});
-        // ScrollReveal().reveal('#ii', {delay: 200, origin: 'right'});
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <h3 style="font-family: 'Pangolin'; font-style: italic">
+      Nominations for Cultural Secretary
+    </h3>
+    <hr
+      style="width: 10%; height: 2px; border: none; background-color: black"
+    />
 
-        // ScrollReveal().reveal('.rc', {delay: 200});
-        // ScrollReveal().reveal('h3', {delay: 200, origin: 'left'});
+    <div class="page-wrapper">
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 1</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
 
-        // ScrollReveal().reveal('.profile-box', {delay: 200});
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 2</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
 
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 3</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
 
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <h3 style="font-family: 'Pangolin'; font-style: italic">
+      Nominations for Science Council Secretary
+    </h3>
+    <hr
+      style="width: 10%; height: 2px; border: none; background-color: black"
+    />
 
+    <div class="page-wrapper">
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 1</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
 
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 2</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
 
-        // PRELOADER
-        window.addEventListener("load", function(){
-        var loader = document.querySelector('.spinner-wrapper');
-          loader.style.display = 'none';
-        })
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 3</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
 
-        </script>
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <h3 style="font-family: 'Pangolin'; font-style: italic">
+      Nominations for CNC Secretary
+    </h3>
+    <hr
+      style="width: 10%; height: 2px; border: none; background-color: black"
+    />
 
+    <div class="page-wrapper">
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 1</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
 
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 2</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
 
-</body>
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-regular fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 3</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
+
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <h3 style="font-family: 'Pangolin'; font-style: italic">
+      Nominations for ESIC Secretary
+    </h3>
+    <hr
+      style="width: 10%; height: 2px; border: none; background-color: black"
+    />
+
+    <div class="page-wrapper">
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 1</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
+
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 2</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
+
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 3</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
+
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <h3 style="font-family: 'Pangolin'; font-style: italic">
+      Nominations for FALC Secretary
+    </h3>
+    <hr
+      style="width: 10%; height: 2px; border: none; background-color: black"
+    />
+
+    <div class="page-wrapper">
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 1</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
+
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 2</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
+
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 3</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
+
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <h3 style="font-family: 'Pangolin'; font-style: italic">
+      Nominations for Sports Council Secretary
+    </h3>
+    <hr
+      style="width: 10%; height: 2px; border: none; background-color: black"
+    />
+
+    <div class="page-wrapper">
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 1</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
+
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 2</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
+
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 3</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
+
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <h3 style="font-family: 'Pangolin'; font-style: italic">
+      Nominations for SDC Secretary
+    </h3>
+    <hr
+      style="width: 10%; height: 2px; border: none; background-color: black"
+    />
+
+    <div class="page-wrapper">
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 1</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
+
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 2</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
+
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 3</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
+
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <h3 style="font-family: 'Pangolin'; font-style: italic">
+      Nominations for RC Secretary
+    </h3>
+    <hr
+      style="width: 10%; height: 2px; border: none; background-color: black"
+    />
+
+    <div class="page-wrapper">
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 1</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
+
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 2</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
+
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="profile-box">
+        <img src="images/removed_bg.png" alt="profile pic" />
+        <h3>Candidate 3</h3>
+        <h4>Name and Batch</h4>
+        <h3>Agenda</h3>
+        <h4>Their agenda will be displayed here</h4>
+
+        <div class="mem-social">
+          <a class="mail" href="mailto: #"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a class="phone" href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ph-num"></span>
+          </a>
+          <a class="fb" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- </div> -->
+
+    <!-- </div> -->
+    <div class="footerlast">
+      <!--  Footer -->
+      <footer class="footer">
+        <div class="inner-footer">
+          <!--  for contact us info -->
+          <div class="footer-items">
+            <img
+              src="images/IISER White Logo.png"
+              style="
+                height: 150px;
+                margin-right: auto !important;
+                margin-bottom: 15px;
+                display: block !important;
+              "
+            />
+            <h3 class="footer-heading">Contact us</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://www.google.com/maps/place/IISER+BHOPAL/@23.2857935,77.2706367,17z/data=!3m1!4b1!4m6!3m5!1s0x397c60d9f8872aef:0x9b99241b1431032!8m2!3d23.2857936!4d77.2755076!16s%2Fg%2F12xql9g02?entry=ttu"
+                  ><i class="fa fa-map-marker" aria-hidden="true"></i>IISER
+                  Bhopal, Bhauri</a
+                >
+              </li>
+              <li>
+                <a href="mailto:sac@iiserb.ac.in"
+                  ><i class="fa fa-envelope" aria-hidden="true"></i
+                  >sac@iiserb.ac.in</a
+                >
+              </li>
+              <li>
+                <a href="https://www.instagram.com/sac_iiserb/"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                  >instagram.com/sac_iiserb</a
+                >
+              </li>
+            </ul>
+            <!--   for social links -->
+            <div class="social-media"></div>
+          </div>
+          <div class="footer-items brdr-left">
+            <h3 class="footer-heading">Councils</h3>
+            <ul>
+              <li class="boards-footer-flex">
+                <div style="flex-grow: 1">
+                  <a href="mailto: culturalcouncil@iiserb.ac.in" target="_blank"
+                    >Cultural Council</a
+                  >
+                </div>
+              </li>
+              <li class="boards-footer-flex">
+                <div style="flex-grow: 1">
+                  <a href="mailto: cnc@iiserb.ac.in" target="_blank"
+                    >Computer and Networking Council</a
+                  >
+                </div>
+              </li>
+              <li class="boards-footer-flex">
+                <div style="flex-grow: 1">
+                  <a href="mailto: esic@iiserb.ac.in" target="_blank"
+                    >Environmental and Social Initiatives Council
+                  </a>
+                </div>
+              </li>
+              <li class="boards-footer-flex">
+                <div style="flex-grow: 1">
+                  <a href="mailto: falc@iiserb.ac.in" target="_blank"
+                    >Fine Arts and Literary Council
+                  </a>
+                </div>
+              </li>
+              <li class="boards-footer-flex">
+                <div style="flex-grow: 1">
+                  <a href="mailto: sciencecouncil@iiserb.ac.in" target="_blank"
+                    >Science Council
+                  </a>
+                </div>
+              </li>
+              <li class="boards-footer-flex">
+                <div style="flex-grow: 1">
+                  <a href="mailto: sportscouncil@iiserb.ac.in" target="_blank"
+                    >Sports Council</a
+                  >
+                </div>
+              </li>
+              <li class="boards-footer-flex">
+                <div style="flex-grow: 1">
+                  <a href="mailto: sdc@iiserb.ac.in" target="_blank"
+                    >Student Development Council</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--  for quick links  -->
+          <div class="footer-items">
+            <h3 class="footer-heading">Services</h3>
+            <ul>
+              <li>
+                <a href="Representativecouncil.html" target="_blank"
+                  >Representative Council
+                </a>
+              </li>
+              <li>
+                <a href="https://www.iiserb.ac.in/hc" target="_blank"
+                  >Health center
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.iiserb.ac.in/dosa/counsellor"
+                  target="_blank"
+                  >Councelling Cell
+                </a>
+              </li>
+              <li>
+                <a href="https://icdpc.iiserb.ac.in/" target="_blank"
+                  >Placement cell
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--  for some other links -->
+          <div class="footer-items">
+            <h3 class="footer-heading">Links</h3>
+            <ul>
+              <li>
+                <a href="https://www.iiserb.ac.in/doaa" target="_blank"
+                  >Office,Academic Affairs
+                </a>
+              </li>
+              <li>
+                <a href="https://www.iiserb.ac.in/dosa" target="_blank"
+                  >Office, Student Affairs
+                </a>
+              </li>
+              <li>
+                <a href="https://www.iiserb.ac.in/iwd/people" target="_blank"
+                  >Office, Institute Works Department
+                </a>
+              </li>
+              <li>
+                <a href="https://www.iiserb.ac.in/vh/" target="_blank"
+                  >Visitor's Hostel</a
+                >
+              </li>
+            </ul>
+            <div class="scroll-top-button" onclick="scrollTopAnimated(500)">
+              Scroll to top<i
+                class="fa fa-long-arrow-up"
+                aria-hidden="true"
+                style="margin-left: 10px"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <!--   Footer Bottom start  -->
+        <div class="footer-bottom">
+          <span
+            style="
+              color: #dadada;
+              font-size: 1.2em;
+              margin-bottom: 7px;
+              display: block;
+            "
+            >Designed & Developed by
+            <a
+              href="https://www.linkedin.com/in/tanishq-sharma-5204bb249"
+              target="_blank"
+              style="
+                color: #fafafa;
+                text-decoration-color: #dadada;
+                text-decoration: underline;
+              "
+              >Tanishq Sharma</a
+            >
+            and
+            <a
+              href="https://www.linkedin.com/in/shailesh-kachhi-681a041a2"
+              target="_blank"
+              style="
+                color: #fafafa;
+                text-decoration-color: #dadada;
+                text-decoration: underline;
+              "
+              >Shailesh Kachhi</a
+            ></span
+          >
+          <p>
+            Copyright &copy;2023 Student Activity Council, Indian Institute of
+            Science Education and Research Bhopal. All Rights Reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- <script src="scripts/main.js"></script> -->
+    <script src="./scripts/common.js"></script>
+
+    <script>
+      //   ScrollReveal({
+      //     reset: false,
+      //     distance: '60px',
+      //     duration: 2000,
+      //     // delay: 400
+      // });
+
+      // ScrollReveal().reveal('.contain_header', {delay: 200, origin: 'left'});
+      // ScrollReveal().reveal('#ii', {delay: 200, origin: 'right'});
+
+      // ScrollReveal().reveal('.rc', {delay: 200});
+      // ScrollReveal().reveal('h3', {delay: 200, origin: 'left'});
+
+      // ScrollReveal().reveal('.profile-box', {delay: 200});
+
+      // const menu = document.querySelector(".list");
+      // const menuBtn = document.querySelector(".menu-btn");
+      // const cancelBtn = document.querySelector(".cancel-btn");
+
+      // menuBtn.onclick = () => {
+      //   menu.classList.add("active");
+      //   menuBtn.classList.add("hide");
+      //   document.querySelector(".blurred").classList.add("blur");
+      //   document.querySelector("body").classList.add("active");
+      //   document.querySelector(".navbar").style.zIndex = 99999;
+      // };
+
+      // cancelBtn.onclick = () => {
+      //   menu.classList.remove("active");
+      //   menuBtn.classList.remove("hide");
+      //   document.querySelector(".blurred").classList.remove("blur");
+      //   document.querySelector("body").classList.remove("active");
+      //   document.querySelector(".navbar").style.zIndex = 999;
+      // };
+      // document.querySelector(".blurred").onclick = () => {
+      //   menu.classList.remove("active");
+      //   menuBtn.classList.remove("hide");
+      //   document.querySelector(".blurred").classList.remove("blur");
+      //   document.querySelector("body").classList.remove("active");
+      //   document.querySelector(".navbar").style.zIndex = 999;
+      // };
+
+      // const primaryHeader = document.querySelector(".navbar");
+      // const scrollWatcher = document.createElement("div");
+
+      // scrollWatcher.setAttribute("data-scroll-watcher", "");
+      // primaryHeader.before(scrollWatcher);
+
+      // const navObserver = new IntersectionObserver(
+      //   (entries) => {
+      //     primaryHeader.classList.toggle(
+      //       "sticking",
+      //       !entries[0].isIntersecting
+      //     );
+      //   },
+      //   { rootMargin: "200px 0px 0px 0px" }
+      // );
+
+      // navObserver.observe(scrollWatcher);
+    </script>
+  </body>
 </html>

@@ -2147,7 +2147,7 @@ a {
     height: 100vh;
     width: 60%;
     max-width: 400px;
-    background: var(--secondary);
+    background: var(--background);
     border: 2px solid grey;
     float: none;
     align-items: center;
