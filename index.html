@@ -247,10 +247,11 @@
     <div class="activities">
     <div class="image_modal">
       <div class="image_modal_container">
-      <div class="modal_header" style="position: absolute;top: 50px;right:50px">
-        <i class="fa fa-times" style="font-size: 2rem;"  onclick=close_modal()></i>
-      </div>
-      <div class="modal_container" style="box-shadow: 0px 0px 10px black">
+      
+      <div class="modal_container" style="position:relative;box-shadow: 0px 0px 10px black">
+        <!-- <div class="modal_header" style=""> -->
+          <i class="fa fa-times" style="position: absolute;top:10px;right:10px;font-size: 2rem;"  onclick=close_modal()></i>
+        <!-- </div> -->
         <img alt="" class="modal_image" />
         <div class="modal_content">
           <h1>HEADING</h1>
@@ -1093,16 +1094,16 @@
         (instance) => {}
       );
 
-      ScrollReveal({
-        reset: false,
-        distance: "60px",
-        duration: 2000,
-        // delay: 400
-      });
-      ScrollReveal().reveal(".title", { delay: 200 });
+      // ScrollReveal({
+      //   reset: false,
+      //   distance: "60px",
+      //   duration: 2000,
+      //   // delay: 400
+      // });
+      // ScrollReveal().reveal(".title", { delay: 200 });
 
-      ScrollReveal().reveal(".box", { delay: 0, origin: "left", reset: false });
-      ScrollReveal().reveal(".navbar", { delay: 200, origin: "top" });
+      // ScrollReveal().reveal(".box", { delay: 0, origin: "left", reset: false });
+      // ScrollReveal().reveal(".navbar", { delay: 200, origin: "top" });
 
     </script>
   </body>
