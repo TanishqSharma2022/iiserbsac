@@ -143,20 +143,22 @@ body {
 }
 
 .navbar.sticking li a {
-  color: var(--primary);
+  color: var(--accent);
   /* color: #cbb89d; */
   border: none;
 }
 
 .navbar.sticking li a:hover {
   color: var(--accent);
+  filter: brightness(90%);
   background: none;
   border: none;
   /* box-shadow: 0px 3px 2px black; */
 }
 
 .navbar.sticking li a:after{
-  background-color: var(--primary)
+  background-color: var(--accent);
+
 }
 
 .navbar.sticking .fa-bars {
@@ -1589,11 +1591,23 @@ height: 100%;
   background: black;
   opacity: 0.5;
   padding: 0;
-  display: flex;
+  display: block;
   height: 40px;
   width: 40px;
   align-items: center;
   justify-content: center;
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+.glide__arrow i:hover{
+  color: white;
+  opacity: 0.8;
+}
+
+
+.glide:hover .glide__arrow i{
+  
+  display: flex;
 }
 
 @media screen and (max-width: 972px) {
@@ -1664,11 +1678,13 @@ height: 100%;
 :root {
   --footer-background-color: #fae9bd;
   --footer-scroll-top-color: #fae9bd;
+  --footer-text-color: #000000;
 }
 
 .footer {
   box-shadow: 0px 0px 10px 1px rgb(0,0,0,0.5);
   font-family: "Inter";
+  color: var(--footer-text-color);
 
   width: 100%;
   background: var(--footer-background-color);
@@ -1692,7 +1708,8 @@ height: 100%;
   font-family: "Inter";
   padding: 10px 20px;
   box-sizing: border-box;
-  color: var(--text);
+  color: var(--footer-text-color);
+
   text-align: left;
 }
 
@@ -1715,7 +1732,8 @@ height: 100%;
 } */
 .footer-items ul {
   list-style: none;
-  color: var(--text);
+  color: var(--footer-text-color);
+
   font-size: 15px;
   letter-spacing: 0.5px;
   padding-left: 0px;
@@ -1729,14 +1747,16 @@ height: 100%;
 .footer-items a {
   text-decoration: none;
   outline: none;
-  color: var(--text);
+  color: var(--footer-text-color);
+
 
   transition: 0.3s;
 }
 
 .footer-items ul a:hover,
 .footer-items a:hover {
-  color: var(--text);
+  color: var(--footer-text-color);
+
 
   text-decoration: underline;
   cursor: pointer;
@@ -1812,7 +1832,8 @@ height: 100%;
 .footer-bottom {
   padding: 10px;
   background: var(--footer-background-color);
-  color: var(--text);
+  color: var(--footer-text-color);
+
   font-size: 12px;
   text-align: center;
 }
