@@ -4,6 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
+html, body{
+  overflow-x: hidden;
+}
+
 
 :root {
   --navlist-color: #cb7139;
@@ -1472,22 +1476,15 @@ a {
 
 }
 
-@keyframes appear{
-  0%{
-    transform: scale(2);
-  }
-  100%{
-    transform: scale(1);
-
-  }
-}
-
 .image_modal.appear{
   display: block;
+  transition: all 0.5s ease-in-out;
 }
 .image_modal{
 width: 100%;
 height: 100%;
+transition: all 0.5s ease-in-out;
+
 }
 .modal_image{
   width: 100%;
@@ -1500,6 +1497,7 @@ height: 100%;
   place-items: center;
   width: 100%;
   height: 100%;
+  transition: all 0.5s ease-in-out;
 }
 
 
@@ -1512,15 +1510,15 @@ height: 100%;
   height: 80vh;
   /* background: white; */
   background-size: cover;
-  animation: appear 200ms linear 1;
   display: flex;
   align-items: top;
   justify-content: space-around;
-
+  transition: all 1s ease-in-out;
 }
 .modal_image{
   height: 40%;
   object-fit: cover;
+  
 }
 
 .modal_content{
@@ -1602,12 +1600,16 @@ height: 100%;
   object-fit: cover;
   aspect-ratio: 1/1; 
   width:100%;
+}
+.glide__bullet{
+  background: var(--primary);
+}
 
+.glide__bullet--active{
+  background: var(--accent);
 }
 
 .glide__arrow{
-  /* background: black; */
-  /* opacity: 0.5; */
   display: flex;
   align-items: center;
   justify-content: center;
