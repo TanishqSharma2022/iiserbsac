@@ -1119,6 +1119,7 @@ h1 > img {
 #club_head_name, #club_head_email, #club_head_no {
   font-family: Inter;
   font-weight: 500;
+
 }
 #club_head_email{
   font-style: italic;
@@ -1155,6 +1156,7 @@ h1 > img {
   width: 100px;
   height: 100px;
   padding-bottom: 5px;
+  object-fit: cover;
 }
 
 
