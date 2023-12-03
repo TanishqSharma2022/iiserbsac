@@ -291,6 +291,7 @@ ul.list li a:after {
   overflow: hidden;
   min-height: 500px;
   max-height: 1080px;
+  z-index: 999;
   /* animation: slider 19s infinite ease; */
 }
 
@@ -410,6 +411,16 @@ li a:hover {
     -webkit-transform: translate(0px, 20px);
     opacity: 0;
   }
+}
+
+
+.svg_blob{
+  width: 300px; 
+  height: 300px;
+  position: absolute;
+  left: -15vh;
+  top: -10vh;
+  z-index: 15;
 }
 
 
@@ -1609,13 +1620,37 @@ height: 100%;
   
   display: flex;
 }
-
+.left_blob{
+  left: 70%; top: 1vh;
+  position: absolute;
+}
 @media screen and (max-width: 972px) {
   .glide__arrow i{
     height: 20px;
     width: 20px;
     font-size: 0.5rem;
   }
+  .svg_blob{
+    width: 200px;
+
+  
+  }
+  .left_blob{
+    
+    left: 40%;
+  }
+
+}
+
+
+
+.bg_members{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+
+  opacity: 0.1;
 }
 
 
