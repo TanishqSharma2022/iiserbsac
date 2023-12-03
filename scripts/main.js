@@ -336,79 +336,117 @@ function toggle(n){
     switch(n){
         case 1:
             popupimage.src = "./images/avatar.png";
-            name.innerHTML = " Krishnan";
-            position.innerHTML = "President";
+            name.innerHTML = "Debasmita Panda";
+            position.innerHTML = "Acting-President";
             content.innerHTML="";
             break;
         case 2:
             popupimage.src = "./images/avatar.png";
-            name.innerHTML = "";
-            position.innerHTML = "Vice President";
+            name.innerHTML = "Not elected";
+            position.innerHTML = "Vice President 2023-24";
             content.innerHTML="";
             break;
         case 3:
-            popupimage.src = "./images/avatar.png";
-            name.innerHTML = "";
+            popupimage.src = "images/senate/senate 23-24/Rohan.jpg";
+            name.innerHTML = "Rohan Mehra";
             position.innerHTML = "Cultural Secretary";
             content.innerHTML="";
             
             
-            // sec_insta.setAttribute("href", "https://www.instagram.com/_.aparna_.vinod/");
-            // sec_linkedin.setAttribute("href", "https://in.linkedin.com/in/aparna-vinod-bb1573224");
-            // sec_mail.setAttribute("href", "mailto:aparna20@iiserb.ac.in");
-            // sec_whatsapp.setAttribute("href", "https://wa.me/919188067884");
+             //sec_insta.setAttribute("href", "");
+         sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/mehra-rohan?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BRhpkHyZ2R%2B%2BB357mThtdMw%3D%3D");
+             sec_mail.setAttribute("href", "mailto:rohan21@iiserb.ac.in");
+             sec_whatsapp.setAttribute("href", "https://wa.me/8808398402");
             break;
         case 4:
-            popupimage.src = "./images/avatar.png";
-            name.innerHTML = "";
+            popupimage.src = "images/senate/senate 23-24/Suraj.jpg";
+            name.innerHTML = "Suraj Chauhan";
             position.innerHTML = "Science Secretary";
-            content.innerHTML="";
+            content.innerHTML="Science does not know its debt to imagination";
+             
+            
+            sec_insta.setAttribute("href", "https://instagram.com/exceptional__surajchauhan?igshid=MzMyNGUyNmU2YQ==");
+         sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/suraj-chauhan-5a0664246?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bq787IolPSrmsZGI3sRd8jQ%3D%3D");
+         sec_mail.setAttribute("href", "mailto:surajc21@iiserb.ac.in ");
+         sec_whatsapp.setAttribute("href", "https://wa.me/8791528568");
             break;    
         case 5:
             popupimage.src = "./images/avatar.png";
-            name.innerHTML = "";
+            name.innerHTML = "Srutanik Bhaduri";
             position.innerHTML = "CNC Secretary";
             content.innerHTML="";
-            // sec_insta.setAttribute("href", "https://www.instagram.com/gimme_math_and_pizza/");
-            // sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/agamdeep-iiser/");
-            // sec_mail.setAttribute("href", "mailto:agamdeep20@iiserb.ac.in");
-            // sec_whatsapp.setAttribute("href", "https://wa.me/919417574801");
+                 
+            
+            //sec_insta.setAttribute("href", "");
+         sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/srutanik-bhaduri-3a9a691b9?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYoefVd8MTwSi9dFeGDGHNQ%3D%3D");
+         sec_mail.setAttribute("href", "mailto:srutanik21@iiserb.ac.in ");
+         sec_whatsapp.setAttribute("href", "https://wa.me/8697396153");
             break;
         case 6:
-            popupimage.src = "./images/avatar.png";
-            name.innerHTML = "";
+            popupimage.src = "images/senate/senate 23-24/Omkar.jpg";
+            name.innerHTML = "Omkar Tidke";
             position.innerHTML = "ESIC Secretary";
-            content.innerHTML="";
+            content.innerHTML="3rd Year Undergraduate, EES Major Passionate Reader and an avid Traveller";
+                   
+            
+            //sec_insta.setAttribute("href", "");
+         sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/omkar-tidke-he-him-560036202?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BaZo4WsslQ4%2BEi58f5Nwq8Q%3D%3D");
+         sec_mail.setAttribute("href", "mailto:omkar21@iiserb.ac.in ");
+         sec_whatsapp.setAttribute("href", "https://wa.me/7020551982");
             break;                                    
         case 7:
             popupimage.src = "./images/avatar.png";
-            name.innerHTML = "";
+            name.innerHTML = "Debasmita Panda";
             position.innerHTML = "FALC Secretary";
             content.innerHTML="";
+                   
+            
+            //sec_insta.setAttribute("href", "");
+         sec_linkedin.setAttribute("href", "");
+         sec_mail.setAttribute("href", "mailto:@iiserb.ac.in");
+         sec_whatsapp.setAttribute("href", "https://wa.me/");
             break;
         case 8:
-            popupimage.src = "./images/avatar.png";
-            name.innerHTML = "";
+            popupimage.src = "images/senate/senate 23-24/Ashim.jpg";
+            name.innerHTML = "Ashim Dhor";
             position.innerHTML = "Sports Secretary";
-            content.innerHTML="";
+            content.innerHTML="Embracing the power of technology, challenging the status quo, and creating a future where possibilities are limitless";
+                   
+            
+            sec_insta.setAttribute("href", "https://www.instagram.com/ash_h.im/");
+         sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/ashim-dhor/");
+         sec_mail.setAttribute("href", "mailto:ashim21@iiserb.ac.in");
+         sec_whatsapp.setAttribute("href", "https://wa.me/7086482909");
             break;
         case 9:
-            popupimage.src = "./images/avatar.png";
-            name.innerHTML = "";
+            popupimage.src = "images/senate/senate 23-24/saisab.png";
+            name.innerHTML = " Saisab Sadhu";
             position.innerHTML = "SDC Secretary";
             content.innerHTML="";
+                   
+            
+            //sec_insta.setAttribute("href", "");
+         sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/saisab-sadhu?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BJgMfxSHdTWC0W7uO4PpBWQ%3D%3D");
+         sec_mail.setAttribute("href", "mailto:saisab21@iiserb.ac.in ");
+         sec_whatsapp.setAttribute("href", "https://wa.me/9933387874");
             break;
         
         case 10:
             popupimage.src = "./images/avatar.png";
-            name.innerHTML = "";
+            name.innerHTML = "Adithyan Cherusseri";
             position.innerHTML = "RC Secretary";
             content.innerHTML="";
+                   
+            
+            //sec_insta.setAttribute("href", "");
+         sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/adithyancherusseri?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BKj0o2NqAQHSjBooG3tlENQ%3D%3D");
+         sec_mail.setAttribute("href", "mailto:adithyan21@iiserb.ac.in ");
+         sec_whatsapp.setAttribute("href", "https://wa.me/8590484969");
             break;
         
         case 11:
             popupimage.src = "./images/avatar.png";
-            name.innerHTML = "";
+            name.innerHTML = "Not Elected";
             position.innerHTML = "RC Secretary";
             content.innerHTML="";
             break;
@@ -499,6 +537,17 @@ function council_toggle(n){
             boxes[5].style.display = "none";
             boxes[6].style.display = "none";
             boxes[7].style.display = "none";
+            boxes[8].style.display = "none";
+            boxes[9].style.display = "none";
+            boxes[10].style.display = "none";
+            boxes[11].style.display = "none";
+            boxes[12].style.display = "none";
+            boxes[13].style.display = "none";
+            boxes[14].style.display = "none";
+            boxes[15].style.display = "none";
+            boxes[16].style.display = "none";
+            boxes[17].style.display = "none";
+
 
 
             // insta_handle.innerHTML = "@iiserb.cultural"
@@ -507,10 +556,10 @@ function council_toggle(n){
             // gmail_handle.innerHTML = "culturalcouncil@iiserb.ac.in";
             gmail_handle.setAttribute("href", "mailto:culturalcouncil@iiserb.ac.in")
 
-            club_head_email.innerHTML = "aparna20@iiserb.ac.in";
-            club_head_no.innerHTML = "9188067884";
-            club_head_name.innerHTML = "Aparna Vinod";
-            club_head_image.src = "./images/senate/aparnavinod.jpeg";
+            club_head_email.innerHTML = "rohan21@iiserb.ac.in";
+            club_head_no.innerHTML = "+91 88083 98402";
+            club_head_name.innerHTML = "Rohan Mehra";
+            club_head_image.src = "images/senate/senate 23-24/Rohan.jpg";
                 
             
             break;
@@ -549,6 +598,16 @@ function council_toggle(n){
             boxes[5].style.display = "none";
             boxes[6].style.display = "none";
             boxes[7].style.display = "none";
+            boxes[8].style.display = "none";
+            boxes[9].style.display = "none";
+            boxes[10].style.display = "none";
+            boxes[11].style.display = "none";
+            boxes[12].style.display = "none";
+            boxes[13].style.display = "none";
+            boxes[14].style.display = "none";
+            boxes[15].style.display = "none";
+            boxes[16].style.display = "none";
+            boxes[17].style.display = "none";
 
             // insta_handle.innerHTML = "@cnc_iiserb"
             insta_handle.setAttribute("href", "https://www.instagram.com/cnc_iiserb/");
@@ -556,10 +615,10 @@ function council_toggle(n){
             // gmail_handle.innerHTML = "cnc@iiserb.ac.in";
             gmail_handle.setAttribute("href", "mailto:cnc@iiserb.ac.in");
 
-            club_head_email.innerHTML = "agamdeep20@iiserb.ac.in";
-            club_head_no.innerHTML = "";
-            club_head_name.innerHTML = "Agamdeep Singh";
-            club_head_image.src = "./images/senate/agamdeepsingh.jpeg";
+            club_head_email.innerHTML = "srutanik21@iiserb.ac.in  ";
+            club_head_no.innerHTML = "+91 86973 96153";
+            club_head_name.innerHTML = "Srutanik Bhaduri 21275";
+            club_head_image.src = "images/avatar.png";
             
             // website handle
             weblink.setAttribute("href", "https://sites.google.com/iiserb.ac.in/cnc/cnc");
@@ -622,6 +681,16 @@ function council_toggle(n){
             boxes[6].querySelector("#club_name").innerHTML = "Poetry Club";
 
             boxes[7].style.display = "none";
+            boxes[8].style.display = "none";
+            boxes[9].style.display = "none";
+            boxes[10].style.display = "none";
+            boxes[11].style.display = "none";
+            boxes[12].style.display = "none";
+            boxes[13].style.display = "none";
+            boxes[14].style.display = "none";
+            boxes[15].style.display = "none";
+            boxes[16].style.display = "none";
+            boxes[17].style.display = "none";
 
 
             // contact
@@ -631,10 +700,10 @@ function council_toggle(n){
             // gmail_handle.innerHTML = "falc@iiserb.ac.in";
             gmail_handle.setAttribute("href", "mailto:falc@iiserb.ac.in");
 
-            club_head_email.innerHTML = "himadri20@iiserb.ac.in";
-            club_head_no.innerHTML = "9365822726";
-            club_head_name.innerHTML = "Himadri Sonowal";
-            club_head_image.src = "./images/senate/himadri.png";
+            club_head_email.innerHTML = "debasmitap21@iiserb.ac.in";
+            club_head_no.innerHTML = "+91 6370 291 813";
+            club_head_name.innerHTML = "Debasmita Panda";
+            club_head_image.src = "images/avatar.png";
             break;
         
         case 4:
@@ -647,7 +716,7 @@ function council_toggle(n){
             boxes[0].querySelector("img").src = "./images/clubs/ibac.png";
             boxes[0].querySelector("#club_name").innerHTML = "IBAC";
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
-            document.querySelector("#sqr1").setAttribute("href", "https://www.instagram.com/ibac_official");
+            document.querySelector("#sqr1").setAttribute("href", "https://sites.google.com/view/astronomyiiserb/home");
 
             weblink.setAttribute("href", "https://in.linkedin.com/company/science-council-iiser-bhopal");
 
@@ -695,6 +764,17 @@ function council_toggle(n){
             boxes[7].querySelector("#club_name").innerHTML = "Chrysalis Magazine";
             document.querySelector("#sqr5").setAttribute("href", "https://www.instagram.com/chrysalisiiserb");
 
+            boxes[8].style.display = "none";
+            boxes[9].style.display = "none";
+            boxes[10].style.display = "none";
+            boxes[11].style.display = "none";
+            boxes[12].style.display = "none";
+            boxes[13].style.display = "none";
+            boxes[14].style.display = "none";
+            boxes[15].style.display = "none";
+            boxes[16].style.display = "none";
+            boxes[17].style.display = "none";
+
 
 
             // contact
@@ -704,10 +784,10 @@ function council_toggle(n){
             // gmail_handle.innerHTML = "science_council@iiserb.ac.in";
             gmail_handle.setAttribute("href", "mailto:sciencecouncil@iiserb.ac.in");
 
-            club_head_email.innerHTML = "roshan20@iiserb.ac.in";
+            club_head_email.innerHTML = "surajc21@iiserb.ac.in";
             club_head_no.innerHTML = "9365822726";
-            club_head_name.innerHTML = "Muhammed Roshan";
-            club_head_image.src = "./images/senate/muhammedroshan.jpeg";
+            club_head_name.innerHTML = "Suraj Chauhan";
+            club_head_image.src = "images/senate/senate 23-24/Suraj.jpg";
             break;
 
         case 5:
@@ -742,6 +822,16 @@ function council_toggle(n){
             boxes[5].style.display = "none";
             boxes[6].style.display = "none";
             boxes[7].style.display = "none";
+            boxes[8].style.display = "none";
+            boxes[9].style.display = "none";
+            boxes[10].style.display = "none";
+            boxes[11].style.display = "none";
+            boxes[12].style.display = "none";
+            boxes[13].style.display = "none";
+            boxes[14].style.display = "none";
+            boxes[15].style.display = "none";
+            boxes[16].style.display = "none";
+            boxes[17].style.display = "none";
 
             // insta_handle.innerHTML = "@esic_iiserb"
             insta_handle.setAttribute("href", "https://www.instagram.com/esic_iiserb/");
@@ -749,33 +839,121 @@ function council_toggle(n){
             // gmail_handle.innerHTML = "esic@iiserb.ac.in";
             gmail_handle.setAttribute("href", "mailto:esic@iiserb.ac.in");
 
-            club_head_email.innerHTML = "sranade20@iiserb.ac.in";
-            club_head_no.innerHTML = "";
-            club_head_name.innerHTML = "Sohum Ranade";
-            club_head_image.src = "./images/senate/sohumranade.jpeg";
+            club_head_email.innerHTML = "omkar21@iiserb.ac.in ";
+            club_head_no.innerHTML = "+91 70205 51982";
+            club_head_name.innerHTML = "Omkar Tidke";
+            club_head_image.src = "images/senate/senate 23-24/Omkar.jpg";
             
             break;
 
         case 6:
 
             logo.src = "./images/sports.png";
-            content.innerHTML = "<ul><li>Organise events like IISM, Sangharsh, Mini Marathon etc.</li><li>Motivate people to learn sports and also practice it regularly</li><li>Looks after all sports facilities including grounds/courts and equipment</li><li>Works in association with Sports Office.</li><li>Conducts The Intra IISERB Sports Tournament, Sangharsh , held annually in the even semesters.</li></ul>";
-            boxes[0].style.display = "none";
-            boxes[1].style.display = "none";
-            
-            boxes[2].style.display = "none";
-
-            // boxes[2].querySelector("#club_name").appendChild(document.createTextNode(""));
-            // boxes[2].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
-
+            content.innerHTML = "<ul><li>The Sports Council at IISER Bhopal plays a pivotal role in fostering a dynamic and inclusive environment of sportsmanship and community engagement. This council is grounded in the philosophy that physical well-being is integral to mental acuity. It efficiently oversees a variety of sports clubs, each spearheaded by dedicated coordinators who are committed not only to their respective sports but also to promoting unity and teamwork within the community</li><li>Beyond facilitating competitive sports, the Council organizes significant annual events, such as the Inter IISERs Sports Tournament (IISM), Sangharsh, and Mini Marathons. These events, along with those supported by the Ministry of Education (MoE), transcend traditional competitive boundaries, serving as expansive celebrations that invite widespread participation and foster a sense of shared enthusiasm and camaraderie among attendees. </li><li>What distinguishes the Sports Council at IISER Bhopal is its dedication to promoting holistic wellness. The Council's initiatives extend beyond mere athletic triumphs to encompass a broader vision of well-being. Through various fitness programs and initiatives, the Council actively encourages the entire IISER Bhopal community to pursue personal excellence and holistic health.</li><li>The institution invites its community to be part of this vibrant journey that intertwines athleticism with communal well-being. Each sportive encounter—be it a game, a run, or a match—is an opportunity to strengthen community bonds, nurture physical fitness, and cultivate a vibrant, healthy, and thriving community. The ethos of the Council can be summed up in its guiding mantra: Stay Fit, Stay Healthy, Stay Awesome!</li></ul>";
             weblink.setAttribute("href", "http://dosa.iiserb.ac.in/campus_facilities/sports");
+            boxes[0].style.display = "flex";
+            boxes[1].style.display = "flex";
+            
+            boxes[0].querySelector("img").src = "images/clubs/football.png";
+            boxes[0].querySelector("#club_name").innerHTML = "Football Club ";
+            // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+            document.querySelector("#sqr1").setAttribute("href", "https://www.instagram.com/football_iiserb");
+
+           
 
 
-            boxes[3].style.display = "none";
-            boxes[4].style.display = "none";
-            boxes[5].style.display = "none";
-            boxes[6].style.display = "none";
-            boxes[7].style.display = "none";
+            boxes[1].querySelector("img").src = "images/clubs/kabbadi.png";
+            boxes[1].querySelector("#club_name").innerHTML = "Kabaddi ";
+            document.querySelector("#sqr2").setAttribute("href", "https://www.instagram.com/kabaddi_iiserb");
+
+            // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+            boxes[2].style.display="flex";
+            boxes[2].querySelector("img").src = "images/clubs/badminton.png";
+            boxes[2].querySelector("#club_name").innerHTML = "Badminton Club ";
+            document.querySelector("#sqr3").setAttribute("href", "https://www.instagram.com/badminton_iiserb");
+
+
+            boxes[3].style.display = "flex";
+            boxes[3].querySelector("img").src = "images/clubs/basketball.png";
+            boxes[3].querySelector("#club_name").innerHTML = "Basketball Club ";
+            document.querySelector("#sqr4").setAttribute("href", "https://www.instagram.com/basketball_iiserb");
+
+            // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+
+
+            boxes[4].style.display = "flex";
+            boxes[4].querySelector("img").src = "images/clubs/cricket.png";
+            boxes[4].querySelector("#club_name").innerHTML = "Cricket Club";
+            document.querySelector("#sqr5").setAttribute("href", "https://www.instagram.com/cricket_iiser_b");
+
+            // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+
+            boxes[5].style.display = "flex";
+            boxes[5].querySelector("img").src = "images/clubs/khokho.png";
+            boxes[5].querySelector("#club_name").innerHTML = "Kho Kho Club ";
+            document.querySelector("#sqr6").setAttribute("href", "https://www.instagram.com/khokho.iiserb");
+
+
+            boxes[6].style.display = "flex";
+            boxes[6].querySelector("img").src = "images/clubs/volleyball.png";
+            boxes[6].querySelector("#club_name").innerHTML = "Volleyball Club ";
+            document.querySelector("#sqr7").setAttribute("href", "https://www.instagram.com/iiserb_volleyball");
+
+
+            boxes[7].style.display = "flex";
+            boxes[7].querySelector("img").src = "images/clubs/gymkanna.png";
+            boxes[7].querySelector("#club_name").innerHTML = "Gymkhana";
+            document.querySelector("#sqr8").setAttribute("href", "https://www.instagram.com/gymkhana_iiserb");
+
+
+            boxes[8].style.display="flex";
+            boxes[8].querySelector("img").src = "images/clubs/athletics.png";
+            boxes[8].querySelector("#club_name").innerHTML = "Athletics Club ";
+            document.querySelector("#sqr9").setAttribute("href", "https://www.instagram.com/athletics_iiserb");
+
+
+            boxes[9].style.display = "flex";
+            boxes[9].querySelector("img").src = "images/clubs/carrom.png";
+            boxes[9].querySelector("#club_name").innerHTML = "Carrom Club ";
+            document.querySelector("#sqr10").setAttribute("href", "https://www.instagram.com/carrom_iiserb");
+
+            // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+
+
+            boxes[10].style.display = "flex";
+            boxes[10].querySelector("img").src = "images/clubs/taekondow.png";
+            boxes[10].querySelector("#club_name").innerHTML = "Taekwondo Club";
+            document.querySelector("#sqr11").setAttribute("href", "https://www.instagram.com/martialarts_iiserb");
+
+            // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+
+            boxes[11].style.display = "flex";
+            boxes[11].querySelector("img").src = "images/clubs/chess.jpg";
+            boxes[11].querySelector("#club_name").innerHTML = "Chess Club ";
+            document.querySelector("#sqr12").setAttribute("href", "https://www.instagram.com/iiserb_chess");
+
+
+            boxes[12].style.display = "flex";
+            boxes[12].querySelector("img").src = "images/clubs/tabletennis.png";
+            boxes[12].querySelector("#club_name").innerHTML = "Table Tennis Club ";
+            document.querySelector("#sqr13").setAttribute("href", "https://www.instagram.com/iiserb_table_tennis");
+
+
+            boxes[13].style.display = "flex";
+            boxes[13].querySelector("img").src = "images/clubs/lawntennis.png";
+            boxes[13].querySelector("#club_name").innerHTML = "Lawn Tennis";
+           // document.querySelector("#sqr14").setAttribute("href", "https://www.instagram.com/gymkhana_iiserb");
+
+           boxes[14].style.display = "flex";
+           boxes[14].querySelector("img").src = "images/clubs/yoga.png";
+           boxes[14].querySelector("#club_name").innerHTML = "Yoga Club ";
+           document.querySelector("#sqr15").setAttribute("href", "https://www.instagram.com/yoga_iiserb");
+            
+
+       
+
+
+
 
             // insta_handle.innerHTML = "@sports_iiserb"
             insta_handle.setAttribute("href", "https://www.instagram.com/sports_iiserb/");
@@ -783,10 +961,10 @@ function council_toggle(n){
             // gmail_handle.innerHTML = "sportscouncil@iiserb.ac.in";
             gmail_handle.setAttribute("href", "mailto:sportscouncil@iiserb.ac.in");
 
-            club_head_email.innerHTML = "pranav@iiserb.ac.in";
-            club_head_no.innerHTML = "";
-            club_head_name.innerHTML = "Pranav Krishna";
-            club_head_image.src = "./images/senate/pranavkrishna.jpeg";
+            club_head_email.innerHTML = "ashim21@iiserb.ac.in ";
+            club_head_no.innerHTML = "+91 70864 82909";
+            club_head_name.innerHTML = "Ashim Dhor";
+            club_head_image.src = "images/senate/senate 23-24/Ashim.jpg";
             break;
 
         case 7:
@@ -818,6 +996,16 @@ function council_toggle(n){
             boxes[5].style.display = "none";
             boxes[6].style.display = "none";
             boxes[7].style.display = "none";
+            boxes[8].style.display = "none";
+            boxes[9].style.display = "none";
+            boxes[10].style.display = "none";
+            boxes[11].style.display = "none";
+            boxes[12].style.display = "none";
+            boxes[13].style.display = "none";
+            boxes[14].style.display = "none";
+            boxes[15].style.display = "none";
+            boxes[16].style.display = "none";
+            boxes[17].style.display = "none";
 
             // insta_handle.innerHTML = "@sports_iiserb"
             insta_handle.setAttribute("href", "https://www.instagram.com/sdc_iiserb/");
@@ -825,10 +1013,10 @@ function council_toggle(n){
             // gmail_handle.innerHTML = "sportscouncil@iiserb.ac.in";
             gmail_handle.setAttribute("href", "mailto:sdc@iiserb.ac.in");
 
-            club_head_email.innerHTML = "abhishekp20@iiserb.ac.in";
-            club_head_no.innerHTML = "+918999366201";
-            club_head_name.innerHTML = "Abhishek Patel";
-            club_head_image.src = "./images/senate/abhishekpatel.jpeg";
+            club_head_email.innerHTML = "saisab21@iiserb.ac.in ";
+            club_head_no.innerHTML = "+91 99333 87874";
+            club_head_name.innerHTML = "Saisab Sadhu";
+            club_head_image.src = "images/senate/senate 23-24/saisab.png";
             break;
         
         case 8:
@@ -868,6 +1056,16 @@ function council_toggle(n){
             boxes[5].style.display = "none";
             boxes[6].style.display = "none";
             boxes[7].style.display = "none";
+            boxes[8].style.display = "none";
+            boxes[9].style.display = "none";
+            boxes[10].style.display = "none";
+            boxes[11].style.display = "none";
+            boxes[12].style.display = "none";
+            boxes[13].style.display = "none";
+            boxes[14].style.display = "none";
+            boxes[15].style.display = "none";
+            boxes[16].style.display = "none";
+            boxes[17].style.display = "none";
 
             // insta_handle.innerHTML = "@sac_iiserb"
             insta_handle.setAttribute("href", "https://www.instagram.com/sac_iiserb/");
@@ -875,10 +1073,10 @@ function council_toggle(n){
             // gmail_handle.innerHTML = "rc@iiserb.ac.in";
             gmail_handle.setAttribute("href", "mailto:rc@iiserb.ac.in");
 
-            club_head_email.innerHTML = "aman18@iiserb.ac.in";
-            club_head_no.innerHTML = "";
-            club_head_name.innerHTML = " Aman Kumar";
-            club_head_image.src = "../images/senate/amanKumar.jpg";
+            club_head_email.innerHTML = "adithyan21@iiserb.ac.in ";
+            club_head_no.innerHTML = "+91 85904 84969";
+            club_head_name.innerHTML = "Adithyan Cherusseri";
+            club_head_image.src = "images/avatar.png";
 
             // let newpicture = document.createElement('img');
             

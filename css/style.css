@@ -685,6 +685,40 @@ li a:hover {
   /* background: blue; */
   text-align: center;
 }
+.past{
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 5px;
+  padding-bottom: 100px;
+  background: #fbf0d0;
+  text-align: center;
+
+  height: 10px;
+  text-decoration:wavy;
+  color:#cb7139;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: 'Inter';
+  text-align: center;
+  text-decoration: none;
+  background-color:  #fae9bd; /* Blue color */
+  color: #434343; /* White text color */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  z-index:100;
+}
+
+/* Hover effect for the button */
+.button:hover {
+  box-shadow: rgba(37, 29, 29, 0.23) 0px 3px 6px;
+  text-decoration: underline;
+}
+
 
 /* 
 .mem-title {
@@ -1443,8 +1477,17 @@ a {
   color: rgb(0,0,0,0.6);
    
 }
+.past_members_heading h1{
+  color: rgb(0,0,0,0.6);
+   
+}
 
 .senate_members_heading h1:hover{
+  animation: upDown 200ms ease-in-out 1;
+  color: rgb(0,0,0, 1);
+  transition: all 100ms;
+}
+.past_members_heading h1:hover{
   animation: upDown 200ms ease-in-out 1;
   color: rgb(0,0,0, 1);
   transition: all 100ms;
