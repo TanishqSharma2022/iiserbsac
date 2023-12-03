@@ -1562,7 +1562,15 @@ transition: all 0.5s ease-in-out;
   max-width: 300px;
   filter: drop-shadow(0px 0px 20px #8e8a8a);
   object-fit: contain;
-
+  animation: upDown 7s ease-in-out infinite;
+}
+@keyframes upDown {
+  0%, 100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-10px);
+  }
 }
 
 
