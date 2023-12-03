@@ -414,15 +414,30 @@ li a:hover {
 }
 
 
-.svg_blob{
+.svg_blob, .consti_blob{
   width: 300px; 
   height: 300px;
   position: absolute;
+  
+}
+.svg_blob{
   left: -15vh;
   top: -10vh;
   z-index: 15;
+
+}
+.consti_blob{
+  left: 45vh; margin-top: 40vh; z-index: 0;
 }
 
+.svg_2_blob{
+  width: 300px; 
+  height: 300px;
+  position: absolute;
+  margin-top: 50vh;
+  right: -3vh;
+  z-index: 0;
+}
 
 
 
@@ -1644,24 +1659,6 @@ height: 100%;
 
 
 
-.bg_members{
-  height: 70vh;
-  position: absolute;
-  right: 0;
-  margin-top: -30vh;
-  opacity: 0.1;
-}
-
-.bg_councils{
-  height: 50vh;
-  position: absolute;
-  left: 0;
-  margin-top: -20vh;
-
-  opacity: 0.1;
-}
-
-
 
 
 
@@ -2042,7 +2039,29 @@ height: 100%;
     background: red;
   }
   
+
 } */
+
+
+
+.bg_members{
+  height: 70vh;
+  position: absolute;
+  right: 0;
+  margin-top: -30vh;
+  opacity: 0.1;
+}
+
+.bg_councils{
+  height: 50vh;
+  position: absolute;
+  left: 0;
+  margin-top: -20vh;
+
+  opacity: 0.1;
+}
+
+
 
 
 
@@ -2051,7 +2070,19 @@ height: 100%;
 
  
 @media only screen and (max-width: 972px) {
+  .consti_blob{
+    left: -10vh;
+  }
 
+  .svg_2_blob{
+    left: 40px;
+  }
+
+  .bg_councils{
+      height: 30vh;
+      margin-top: -10vh;
+      left: -10vh;
+  }
 
   .main {
     overflow-x: hidden;
