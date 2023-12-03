@@ -160,7 +160,14 @@
     <div class="main2" id="about_us">
 <div class="svg_blob">
       <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
-        <path  fill="#f2cb5f">
+        <defs>
+          <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color: rgb(242, 203, 95);"></stop>
+            <stop offset="100%" style="stop-color: rgb(217, 164, 18);"></stop>
+          </linearGradient>
+        </defs>
+        
+        <path  fill="url(#gradient)">
           <animate attributeName="d" repeatCount="indefinite" dur="10000ms" values="
           M409,315.5Q326,381,249,383Q172,385,114,317.5Q56,250,100.5,158.5Q145,67,252.5,63.5Q360,60,426,155Q492,250,409,315.5Z;
 
@@ -220,9 +227,9 @@
     
         </div>
         <div class="header">
-          <h1 style="z-index: 999;">Functioning of the Student Senate</h1>
+          <h1 style="z-index: 99;">Functioning of the Student Senate</h1>
         </div>
-        <p class="about_para" id="senate_para" style="z-index: 999;">
+        <p class="about_para" id="senate_para" style="z-index: 99;">
           The Student Senate is elected via the General Elections held every
           year.<br /><br />
           The senate conducts <b><u>General Body Meetings (GBM)</u></b> at
@@ -242,7 +249,13 @@
       <div class="aboutus">
         <div class="svg_blob">
           <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
-            <path  fill="#f2cb5f">
+            <defs>
+              <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color: rgb(242, 203, 95);"></stop>
+                <stop offset="100%" style="stop-color: rgb(217, 164, 18);"></stop>
+              </linearGradient>
+            </defs>
+            <path  fill="url(#gradient)">
               <animate attributeName="d" repeatCount="indefinite" dur="10000ms" values="
               M409,315.5Q326,381,249,383Q172,385,114,317.5Q56,250,100.5,158.5Q145,67,252.5,63.5Q360,60,426,155Q492,250,409,315.5Z;
     
@@ -545,27 +558,34 @@
 
           <!-- id=council_main -->
           <!-- <p id="council_main">fgkhg</p> -->
-
+          <div class="svg_blob" >
+            <svg viewBox="0 0 500 500" width="100%" id="blobSvg">
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" style="stop-color: rgb(242, 203, 95);"></stop>
+                  <stop offset="100%" style="stop-color: rgb(217, 164, 18);"></stop>
+                </linearGradient>
+              </defs>
+              <path  fill="url(#gradient)">
+                <animate attributeName="d" repeatCount="indefinite" dur="10000ms" values="
+                M409,315.5Q326,381,249,383Q172,385,114,317.5Q56,250,100.5,158.5Q145,67,252.5,63.5Q360,60,426,155Q492,250,409,315.5Z;
+          
+                M407.5,329.5Q342,409,246.5,415.5Q151,422,100,336Q49,250,105,172.5Q161,95,256,85.5Q351,76,412,163Q473,250,407.5,329.5Z;
+                M411.5,352Q368,454,255.5,445Q143,436,93,343Q43,250,90.5,153Q138,56,245.5,64Q353,72,404,161Q455,250,411.5,352Z;
+          
+          
+          
+  
+                M409,315.5Q326,381,249,383Q172,385,114,317.5Q56,250,100.5,158.5Q145,67,252.5,63.5Q360,60,426,155Q492,250,409,315.5Z;
+                "></animate>
+              </path>
+            </svg>
+          
+          </div>
           <div style="padding: 50px" id="council_main" class="council_main">
-            <div class="svg_blob" >
-              <svg viewBox="0 0 500 500" width="100%" id="blobSvg">
-                <path  fill="#f2cb5f">
-                  <animate attributeName="d" repeatCount="indefinite" dur="10000ms" values="
-                  M409,315.5Q326,381,249,383Q172,385,114,317.5Q56,250,100.5,158.5Q145,67,252.5,63.5Q360,60,426,155Q492,250,409,315.5Z;
-            
-                  M407.5,329.5Q342,409,246.5,415.5Q151,422,100,336Q49,250,105,172.5Q161,95,256,85.5Q351,76,412,163Q473,250,407.5,329.5Z;
-                  M411.5,352Q368,454,255.5,445Q143,436,93,343Q43,250,90.5,153Q138,56,245.5,64Q353,72,404,161Q455,250,411.5,352Z;
-            
-            
-            
-    
-                  M409,315.5Q326,381,249,383Q172,385,114,317.5Q56,250,100.5,158.5Q145,67,252.5,63.5Q360,60,426,155Q492,250,409,315.5Z;
-                  "></animate>
-                </path>
-              </svg>
-            
-            </div>
+           
             <div class="one">
+              <img src="./images/counc.jpg" class="bg_councils" />
               
               <h1>COUNCILS</h1>
             </div>
@@ -725,12 +745,15 @@
       id="blur"
       style="padding-right: 50px; padding-left: 50px"
     >
+    <img class="bg_members" src="./images/5251.jpg" />
+
+
       <div class="titlebar" id="members">
         <div class="one">
+          
           <a href="https://iiserbsac.netlify.app/members.html" style="color: black; display: flex; align-items: center; justify-content: center;" class="senate_members_heading"><h1 >Senate Members    <i class="fa-solid fa-people-group"></i></h1></a>
         </div>
       </div>
-      <img class="bg_members" src="./images/5251.jpg" />
 
       <!-- <a onclick="toggle()">asdf</a> -->
       <div class="members senatemember">
