@@ -410,7 +410,7 @@ function toggle(n){
             popupimage.src = "images/senate/senate_23_24/Ashim.jpg";
             name.innerHTML = "Ashim Dhor";
             position.innerHTML = "Sports Secretary";
-            content.innerHTML="Embracing the power of technology, challenging the status quo, and creating a future where possibilities are limitless";
+            content.innerHTML="Hey everyone, it's Ashim, your go-to Sports Maestro! I'm all about blending the unconventional with a touch of style, and I'm here to take our sports culture to new heights. Let's team up to redefine what excellence looks like in our arena. Drop by with your ideas, and let's sculpt a sports culture that's both classy and kickin'!Ready for a dash of class and a splash of adrenaline? Buckle up, folks!";
                    
             
             sec_insta.setAttribute("href", "https://www.instagram.com/ash_h.im/");
@@ -422,7 +422,7 @@ function toggle(n){
             popupimage.src = "images/senate/senate_23_24/saisab.png";
             name.innerHTML = " Saisab Sadhu";
             position.innerHTML = "SDC Secretary";
-            content.innerHTML="";
+            content.innerHTML="I'm Saisab Sadhu, Secretary for the Student Development Council (SDC). Passion drives my work to enrich our student community. In my role, I find myself weaving together various responsibilities. I'm keen on fostering an environment where innovation, collaboration, and professional growth are at the forefront. Through my efforts, I aim to create a nurturing space where every student is equipped with the tools and opportunities to feel recognised and embark on a successful and fulfilling career path.";
                    
             
             //sec_insta.setAttribute("href", "");
