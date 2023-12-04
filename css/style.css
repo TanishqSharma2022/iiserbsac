@@ -2225,9 +2225,12 @@ transition: all 0.5s ease-in-out;
 
 
   .popup {
-    /* border: 2px solid red; */
-    max-width: 600px;
-    height: 90%;
+    max-width: 650px;
+    height: 99.8%;
+width: 95%;
+    z-index: 999999999;
+    
+    overflow: auto;
   }
  #popup_head_occp{
   color: var(--text);
@@ -2241,6 +2244,7 @@ transition: all 0.5s ease-in-out;
   }
 
   .popup_content {
+    width: 96%;
     position: relative;
     color: black;
     display: block;
@@ -2249,7 +2253,7 @@ transition: all 0.5s ease-in-out;
     /* background: red; */
     align-items: center;
     text-align: center;
-    top: 47%;
+    top: 60%;
   }
   .popup_content_bio{
     padding: 0px;
