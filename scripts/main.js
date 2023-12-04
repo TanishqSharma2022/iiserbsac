@@ -335,10 +335,10 @@ function toggle(n){
     
     switch(n){
         case 1:
-            popupimage.src = "./images/avatar.png";
+            popupimage.src = "images/senate/senate_23_24/Debasmita.jpg";
             name.innerHTML = "Debasmita Panda";
             position.innerHTML = "Acting-President";
-            content.innerHTML="";
+            content.innerHTML="Meet me, the cool and quirky by heart ! As the SAC President, I'm not just about making a difference; I'm about adding color and joy to every corner. Think of me as a blend of all the best Friends episodes - relatable, hilarious, and always there for you. Fueled by sitcoms and a love for food, this artist and leader is the friend you've always wanted. Get ready for some fun and inspiration, campus life's never been this vibrant!";
             break;
         case 2:
             popupimage.src = "./images/avatar.png";
@@ -395,10 +395,10 @@ function toggle(n){
          sec_whatsapp.setAttribute("href", "https://wa.me/7020551982");
             break;                                    
         case 7:
-            popupimage.src = "./images/avatar.png";
+            popupimage.src = "images/senate/senate_23_24/Debasmita.jpg";
             name.innerHTML = "Debasmita Panda";
             position.innerHTML = "FALC Secretary";
-            content.innerHTML="";
+            content.innerHTML="Meet me, the cool and quirky by heart ! As the FALC Secretary, I'm not just about making a difference; I'm about adding color and joy to every corner. Think of me as a blend of all the best Friends episodes - relatable, hilarious, and always there for you. Fueled by sitcoms and a love for food, this artist and leader is the friend you've always wanted. Get ready for some fun and inspiration, campus life's never been this vibrant!";
                    
             
             //sec_insta.setAttribute("href", "");
@@ -703,7 +703,7 @@ function council_toggle(n){
             club_head_email.innerHTML = "debasmitap21@iiserb.ac.in";
             club_head_no.innerHTML = "+91 6370 291 813";
             club_head_name.innerHTML = "Debasmita Panda";
-            club_head_image.src = "images/avatar.png";
+            club_head_image.src = "images/senate/senate_23_24/Debasmita.jpg";
             break;
         
         case 4:
