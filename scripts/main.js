@@ -1067,25 +1067,25 @@ function council_toggle(n){
             boxes[0].querySelector("img").src = "images/1.png";
             boxes[0].querySelector("#club_name").innerHTML = "CRs";
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
-            document.querySelector("#sqr1").setAttribute("href", "#");
+            document.querySelector("#sqr1").setAttribute("href", "Representativecouncil.html");
 
             weblink.setAttribute("href", "Representativecouncil.html");
 
 
             boxes[1].querySelector("img").src = "images/2.png";
             boxes[1].querySelector("#club_name").innerHTML = "DRs";
-            document.querySelector("#sqr2").setAttribute("href", "#");
+            document.querySelector("#sqr2").setAttribute("href", "Representativecouncil.html");
 
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
             boxes[2].style.display="flex";
             boxes[2].querySelector("img").src = "images/3.png";
             boxes[2].querySelector("#club_name").innerHTML = "MRs";
-            document.querySelector("#sqr3").setAttribute("href", "#");
+            document.querySelector("#sqr3").setAttribute("href", "Representativecouncil.html");
 
             boxes[3].style.display = "flex";
             boxes[3].querySelector("img").src = "images/4.png";
             boxes[3].querySelector("#club_name").innerHTML = "HRs";
-            document.querySelector("#sqr4").setAttribute("href", "#");
+            document.querySelector("#sqr4").setAttribute("href", "Representativecouncil.html");
             
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
 
