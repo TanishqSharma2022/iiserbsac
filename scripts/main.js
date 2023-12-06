@@ -333,7 +333,7 @@ function toggle(n){
             popupimage.src = "images/senate/senate_23_24/Ashim.jpg";
             name.innerHTML = "Ashim Dhor";
             position.innerHTML = "Sports Secretary";
-            content.innerHTML="Embracing the power of technology, challenging the status quo, and creating a future where possibilities are limitless";
+            content.innerHTML="Hey everyone, it's Ashim, your go-to Sports Maestro! I'm all about blending the unconventional with a touch of style, and I'm here to take our sports culture to new heights. Let's team up to redefine what excellence looks like in our arena. Drop by with your ideas, and let's sculpt a sports culture that's both classy and kickin'!Ready for a dash of class and a splash of adrenaline? Buckle up, folks!";
                    
             
             sec_insta.setAttribute("href", "https://www.instagram.com/ash_h.im/");
@@ -345,10 +345,10 @@ function toggle(n){
             popupimage.src = "images/senate/senate_23_24/saisab.png";
             name.innerHTML = " Saisab Sadhu";
             position.innerHTML = "SDC Secretary";
-            content.innerHTML="";
+            content.innerHTML="I'm Saisab Sadhu, Secretary for the Student Development Council (SDC). Passion drives my work to enrich our student community. In my role, I find myself weaving together various responsibilities. I'm keen on fostering an environment where innovation, collaboration, and professional growth are at the forefront. Through my efforts, I aim to create a nurturing space where every student is equipped with the tools and opportunities to feel recognised and embark on a successful and fulfilling career path.";
                    
             
-            //sec_insta.setAttribute("href", "");
+         sec_insta.setAttribute("href", "https://www.instagram.com/saisab_sadhu/");
          sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/saisab-sadhu?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BJgMfxSHdTWC0W7uO4PpBWQ%3D%3D");
          sec_mail.setAttribute("href", "mailto:saisab21@iiserb.ac.in ");
          sec_whatsapp.setAttribute("href", "https://wa.me/9933387874");
@@ -408,6 +408,8 @@ function council_toggle(n){
     var club_head_email = document.querySelector("#club_head_email");
     var club_head_no = document.querySelector("#club_head_no");
     var club_head_image = document.querySelector("#club_head_image");
+    var club_under_us = document.querySelector(".clubs_under_us");
+    var what = document.querySelector(".what");
 
 
 
@@ -420,6 +422,8 @@ function council_toggle(n){
     switch(n){
 
         case 1:
+            what.innerHTML="WHAT THE COUNCIL DOES";
+            club_under_us.innerHTML="CLUBS UNDER US";
             logo.src = "./images/cultural_council.png";
             content.innerHTML = "<ul><li>Aim to promote as well as practice different cultural activities like dance, music, drama in the Institute throughout the year.</li><li>Coordinate and arrange participation of institute in the Inter IISER Cultural Meet – IICM. </li><li>Organize regular classes or learning sessions for various cultural aspects on the demand of the clubs or the students.</li>";
             // CLUB 1
@@ -488,6 +492,8 @@ function council_toggle(n){
             break;
         
         case 2:
+            what.innerHTML="WHAT THE COUNCIL DOES";
+            club_under_us.innerHTML="CLUBS UNDER US";
             logo.src = "./images/cnc_logo.png";
             content.innerHTML = "<ul><li>Provide financial resources and administrative support for Programming, Photography and Gaming Club.</li><li>Technical support in conducting student elections, and event conduction for other councils and clubs.</li><li>Host Armageddon: A 3 day gaming and techno fest with photowalks, programming competitions and E-Sports tournaments in 8 games. We release really cool merch that you can buy before the fest.</li></ul>";
             boxes[0].style.display = "flex";
@@ -540,7 +546,7 @@ function council_toggle(n){
 
             club_head_email.innerHTML = "srutanik21@iiserb.ac.in  ";
             club_head_no.innerHTML = "+91 86973 96153";
-            club_head_name.innerHTML = "Srutanik Bhaduri 21275";
+            club_head_name.innerHTML = "Srutanik Bhaduri";
             club_head_image.src = "images/avatar.png";
             
             // website handle
@@ -549,6 +555,8 @@ function council_toggle(n){
             break;
         
         case 3:
+            what.innerHTML="WHAT THE COUNCIL DOES";
+            club_under_us.innerHTML="CLUBS UNDER US";
             logo.src = "./images/falc.png";
             content.innerHTML = "<ul><li>“Artistic” council of IISER Bhopal</li><li>Conduct annual fest- ARTS AND LETTERS; which has various signature events like Art Street (The cosplay one), Plane crash, Big paper, Face painting, Battle of Fandoms and many many more.</li><li>Organize events throughout the year through various clubs that promote the creative and artistic mindset of students and give a platform to the ones with immense talent</li></ul>";
 
@@ -630,6 +638,8 @@ function council_toggle(n){
             break;
         
         case 4:
+            what.innerHTML="WHAT THE COUNCIL DOES";
+            club_under_us.innerHTML="CLUBS UNDER US";
             logo.src = "./images/science.png";
             content.innerHTML = "<ul><li>It aims to provide high quality and interdisciplinary research platform to the students.</li><li>The main event it conducts is SINGULARITY, the flagship science fest of IISERB.</li></ul>";
             
@@ -714,6 +724,8 @@ function council_toggle(n){
             break;
 
         case 5:
+            what.innerHTML="WHAT THE COUNCIL DOES";
+            club_under_us.innerHTML="CLUBS UNDER US";
             boxes[0].style.display = "flex";
             boxes[1].style.display = "flex";
             logo.src = "./images/esic.png";
@@ -770,7 +782,8 @@ function council_toggle(n){
             break;
 
         case 6:
-
+            what.innerHTML="WHAT THE COUNCIL DOES";
+            club_under_us.innerHTML="CLUBS UNDER US";
             logo.src = "./images/sports.png";
             content.innerHTML = "<ul><li>The Sports Council at IISER Bhopal plays a pivotal role in fostering a dynamic and inclusive environment of sportsmanship and community engagement. This council is grounded in the philosophy that physical well-being is integral to mental acuity. It efficiently oversees a variety of sports clubs, each spearheaded by dedicated coordinators who are committed not only to their respective sports but also to promoting unity and teamwork within the community</li><li>Beyond facilitating competitive sports, the Council organizes significant annual events, such as the Inter IISERs Sports Tournament (IISM), Sangharsh, and Mini Marathons. These events, along with those supported by the Ministry of Education (MoE), transcend traditional competitive boundaries, serving as expansive celebrations that invite widespread participation and foster a sense of shared enthusiasm and camaraderie among attendees. </li><li>What distinguishes the Sports Council at IISER Bhopal is its dedication to promoting holistic wellness. The Council's initiatives extend beyond mere athletic triumphs to encompass a broader vision of well-being. Through various fitness programs and initiatives, the Council actively encourages the entire IISER Bhopal community to pursue personal excellence and holistic health.</li><li>The institution invites its community to be part of this vibrant journey that intertwines athleticism with communal well-being. Each sportive encounter—be it a game, a run, or a match—is an opportunity to strengthen community bonds, nurture physical fitness, and cultivate a vibrant, healthy, and thriving community. The ethos of the Council can be summed up in its guiding mantra: Stay Fit, Stay Healthy, Stay Awesome!</li></ul>";
             weblink.setAttribute("href", "http://dosa.iiserb.ac.in/campus_facilities/sports");
@@ -872,7 +885,8 @@ function council_toggle(n){
            boxes[14].querySelector("#club_name").innerHTML = "Yoga Club ";
            document.querySelector("#sqr15").setAttribute("href", "https://www.instagram.com/yoga_iiserb");
             
-
+           boxes[15].style.display = "none";
+            boxes[16].style.display = "none";
        
 
 
@@ -891,33 +905,56 @@ function council_toggle(n){
             break;
 
         case 7:
-
+            what.innerHTML="";
+            club_under_us.innerHTML="Areas of Work";
             logo.src = "./images/sdc.png";
-            content.innerHTML = "<ul><li>Conducts Orientations related to Academics (Primer, Pre-Majors, Majors) and Professionals(Internship, CV, etc).</li><li>Conducts Placements and Internship Drives.</li><li>Publishes written content like Carma and SDC Blogs</li><li>Conducts Model United Nations (MUN).</li><li>Organizes talks and events like Alumni Events and Alumni Meets</li></ul>";
+            content.innerHTML = "";
             boxes[0].style.display = "flex";
-           
-            boxes[0].querySelector("img").src = "images/SDC Logo.jpg";
-            boxes[0].querySelector("#club_name").innerHTML = "Placement Team";
-            document.querySelector("#sqr1").setAttribute("href", "https://www.instagram.com/");
+            weblink.setAttribute("href", "https://sites.google.com/view/sdc-iiserb/home");
+            boxes[0].querySelector("img").src = "images/clubs/Placements.png";
+            boxes[0].querySelector("#club_name").innerHTML = "Placements and Internships";
+            document.querySelector("#sqr1").setAttribute("href", "https://sites.google.com/view/sdc-iiserb/home");
             
             
             
-            boxes[1].style.display = "none";
-
             
-            boxes[2].style.display = "none";
+            boxes[1].querySelector("img").src = "images/clubs/Carma.png";
+            boxes[1].querySelector("#club_name").innerHTML = "CarMa and Blogs ";
+            document.querySelector("#sqr2").setAttribute("href", "https://sites.google.com/view/sdc-iiserb/home");
 
-            // boxes[2].querySelector("#club_name").appendChild(document.createTextNode(""));
-            // boxes[2].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+            // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+            boxes[2].style.display="flex";
+            boxes[2].querySelector("img").src = "images/clubs/Orientations.png";
+            boxes[2].querySelector("#club_name").innerHTML = "Orientations ";
+            document.querySelector("#sqr3").setAttribute("href", "https://sites.google.com/view/sdc-iiserb/home");
 
 
-            weblink.setAttribute("href", "https://sdciiserb.wordpress.com/");
+            boxes[3].style.display = "flex";
+            boxes[3].querySelector("img").src = "images/clubs/Career Talk.png";
+            boxes[3].querySelector("#club_name").innerHTML = "Career Talks ";
+            document.querySelector("#sqr4").setAttribute("href", "https://sites.google.com/view/sdc-iiserb/home");
+
+            // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
 
 
-            boxes[3].style.display = "none";
-            boxes[4].style.display = "none";
-            boxes[5].style.display = "none";
-            boxes[6].style.display = "none";
+            boxes[4].style.display = "flex";
+            boxes[4].querySelector("img").src = "images/clubs/alumni.png";
+            boxes[4].querySelector("#club_name").innerHTML = "Alumni Events";
+            document.querySelector("#sqr5").setAttribute("href", "https://sites.google.com/view/sdc-iiserb/home");
+
+            // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
+
+            boxes[5].style.display = "flex";
+            boxes[5].querySelector("img").src = "images/clubs/outreach.png";
+            boxes[5].querySelector("#club_name").innerHTML = "Institute Outreach ";
+            document.querySelector("#sqr6").setAttribute("href", "https://sites.google.com/view/sdc-iiserb/home");
+
+
+            boxes[6].style.display = "flex";
+            boxes[6].querySelector("img").src = "images/clubs/E Cell.png";
+            boxes[6].querySelector("#club_name").innerHTML = "Entrepreneurship Cell (coming soon...) ";
+            document.querySelector("#sqr7").setAttribute("href", "https://sites.google.com/view/sdc-iiserb/home");
+            
             boxes[7].style.display = "none";
             boxes[8].style.display = "none";
             boxes[9].style.display = "none";
@@ -943,7 +980,8 @@ function council_toggle(n){
             break;
         
         case 8:
-
+            what.innerHTML="WHAT THE COUNCIL DOES";
+            club_under_us.innerHTML="CLUBS UNDER US";
             logo.src = "./images/rc.jpg";
             content.innerHTML = "<ul><li>RC serves as the channel to convey the requests or representations of the students to the institute. </li><li>It is a team of elected representatives from a class, department, mess and hostel.</li><li>It accounts for general body notions of academic and social life at the IISER-B campus.</li></ul>";
             boxes[0].style.display = "flex";
@@ -952,25 +990,25 @@ function council_toggle(n){
             boxes[0].querySelector("img").src = "images/1.png";
             boxes[0].querySelector("#club_name").innerHTML = "CRs";
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
-            document.querySelector("#sqr1").setAttribute("href", "#");
+            document.querySelector("#sqr1").setAttribute("href", "Representativecouncil.html");
 
             weblink.setAttribute("href", "Representativecouncil.html");
 
 
             boxes[1].querySelector("img").src = "images/2.png";
             boxes[1].querySelector("#club_name").innerHTML = "DRs";
-            document.querySelector("#sqr2").setAttribute("href", "#");
+            document.querySelector("#sqr2").setAttribute("href", "Representativecouncil.html");
 
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
             boxes[2].style.display="flex";
             boxes[2].querySelector("img").src = "images/3.png";
             boxes[2].querySelector("#club_name").innerHTML = "MRs";
-            document.querySelector("#sqr3").setAttribute("href", "#");
+            document.querySelector("#sqr3").setAttribute("href", "Representativecouncil.html");
 
             boxes[3].style.display = "flex";
             boxes[3].querySelector("img").src = "images/4.png";
             boxes[3].querySelector("#club_name").innerHTML = "HRs";
-            document.querySelector("#sqr4").setAttribute("href", "#");
+            document.querySelector("#sqr4").setAttribute("href", "Representativecouncil.html");
             
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
 

@@ -245,7 +245,6 @@ body{
 
 
 
-
 @media only screen and (max-width: 900px){
     .contain_header{
         font-size: 2rem;
@@ -253,6 +252,10 @@ body{
     #ii{
         font-size: 1rem;
     }
+    .rules {
+    
+    padding-left: 20px;  
+    padding-right: 20px;     }
     
     
 }
@@ -356,7 +359,7 @@ margin-bottom: 2rem;
 color: #ffffff;
 text-align: center;
 margin-right: 80px;
-margin-left:80px;
+margin-left:80px; ;
 }
 h1:hover {
 /* box-shadow: 0 2px 6px 0 rgba(47,83,151,0.40); */
@@ -440,5 +443,58 @@ text-shadow: 0px 0px 5px #002a55;
 }
 
 .footer h3{
-    color: #eee;
+    color: rgb(41, 41, 41);
+}
+
+.rules {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.rules h1 {
+  font-weight: 500;
+  color: rgb(0, 0, 116);
+}
+
+.rulehead {
+  font-size: 35px;
+ 
+}
+
+.rules h2 {
+  font-size: 22px;
+  color: rgb(0, 0, 71);
+}
+
+.rules p {
+  font-size: 17px;
+  color: #484848;
+}
+
+.rules section {
+  margin-bottom: 20px;
+}
+
+/* Responsive styles */
+@media screen and (min-width: 600px) {
+  .rules {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .rules {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .rules {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
 }
