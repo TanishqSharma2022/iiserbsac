@@ -61,12 +61,18 @@ function close_modal(){
 }
     const modal = document.querySelector(".image_modal");
     const modal_image = document.querySelector(".modal_image");
+    const modal_content_title = document.querySelector(".modal_content_title");
+    const modal_content_para = document.querySelector(".modal_content_detail");
 
     const images = document.querySelectorAll(".glide__slides img");
-    images.forEach(image => {
+
+    images.forEach((image, index) => {
         image.addEventListener('click', () => {
+            console.log(image, index);
             const modal_container = document.querySelector(".modal_container");
-            
+            modal_content_title.innerHTML = image.getAttribute("data-title");
+            modal_content_para.innerHTML = image.getAttribute("data-para");
+
             modal.classList.toggle("appear");
             // modal_container.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${String(image.src)})`;
             modal_image.src = image.src;
@@ -80,7 +86,7 @@ function close_modal(){
 
 
 
-
+// TO SMOOOOTH THE SCROLLING EFFECT OF THE NAVBAR
 $(document).ready(function(){
     var scrollLink = $('.scroll');
     scrollLink.click(function(e){
@@ -99,6 +105,7 @@ $(document).ready(function(){
 
 
 /////////////// scroll top ///////////////////////////
+// AT THE BOTTOM OF THE PAGE, THERE IS A BUTTON WHICH TAKES YOU TO THE TOP OF THE PAGE
 var stepTime = 20;
 var docBody = document.body;
 var focElem = document.documentElement;
@@ -178,6 +185,8 @@ $(document).ready(function () {
 
 
 
+
+
 // HIDE NAV BAR after 2 seconds and reappear when scrolling up
 
 // var my_window = $(window);
@@ -212,92 +221,6 @@ $(document).ready(function () {
 
 
 
-// CAROUSEL CONTAINER FOR ACTIVITIES
-
-
-
-// const rightBtn = document.querySelector("#rightBtn");
-// const leftBtn = document.querySelector("#leftBtn");
-
-
-
-
-
-// // document.querySelector('.currentSlide').nextElementSibling.style.opacity = 1;
-// var track = document.querySelector(".carousel-container");
-// // var images = Array.from(track.children);
-// var images = track.querySelectorAll('img');
-// // console.log(images);
-// if(window.matchMedia("(min-width: 972px)").matches){
-
-// images.forEach((slide, index) => {
-//     slide.style.left = `${index*33.33}%`;
-// });
-// }else{
-//     images.forEach((slide, index) => {
-//         slide.style.left = `${index*100}%`;
-//     }); 
-// }
-
-
-
-// var numOfImages = images.length + 1;
-
-// var rightCount = 1
-// var leftCount = 1;
-// rightBtn.addEventListener("click",()=>{
-//     // const slider = document.querySelector('.slider');
-//     const img = document.querySelector("#image");
-//     // slider.style.transform = "translateX(-" + width*rightCount + "px)";
-//     var currentSlide = document.querySelector(".currentSlide");
-//     // console.log(currentSlide.nextElementSibling);
-//     const width = currentSlide.getBoundingClientRect().width;
-//     leftBtn.style.display = 'block';
-
-
-//     // var nextSlide = currentSlide.nextElementSibling;
-//     // document.querySelector('.carousel').scrollLeft += width;
-//     if(rightCount != numOfImages-1){
-//         track.style.transform = 'translateX(-'+width*rightCount+'px)';
-//         rightCount++;
-//         leftCount--;
-//     }
-//     console.log(rightCount);
-//     if(rightCount == numOfImages-1){
-//         rightBtn.style.display = "none";
-//     }
-//     if(leftCount != 1){
-//         leftBtn.style.display = "block";
-//     }
-    
-
-// } )
-// if(leftCount == 1){
-//     leftBtn.style.display = 'none';
-// }
-// leftBtn.addEventListener("click",()=>{
-//     // const slider = document.querySelector('.slider');
-
-//     const img = document.querySelector("#image");
-//     const width = img.getBoundingClientRect().width;
-//     // document.querySelector('.carousel').scrollLeft -= width;
-//     console.log(leftCount);
-//     if(leftCount != numOfImages-1){
-//         track.style.transform = 'translateX('+width*leftCount+'px)';
-//         leftCount++;
-//         rightCount--;
-//     }
-//     if(leftCount == 1){
-//         leftBtn.style.display = "none";
-//     }
-
-//     if(rightCount != numOfImages-1){
-//         rightBtn.style.display = 'block';
-//     }
-// } );
-
-
-
 
 
 
@@ -307,7 +230,7 @@ $(document).ready(function () {
 
 // POPUP FUNCTION FOR MEMBERS
 
-
+// SAME AS COUNCIL ONE. N IS WHICH MEMBER IS PRESSED FROM THE LEFT STARTING FORM 1. IF PRESIDENT IS PRESSED, N = 1 AND ALL THE CASES OF N=1 ARE EXECUTED
 function toggle(n){
     
     var popup = document.querySelector('.popup');
@@ -461,7 +384,7 @@ function toggle(n){
 
 
 
-
+// COUNCIL POPUP FUNCTION - N IS WHICH COUNCIL IS PRESSED FROM THE LEFT STARTING FORM 1. IF CULTURAL COUNCIL IS PRESSED, N = 1 AND ALL THE CASES OF N=1 ARE 
 function council_toggle(n){
     
     var popup_council = document.querySelector('.popup_council');
@@ -1094,7 +1017,7 @@ function council_toggle(n){
 
 
 
-// BACKGROUND CAROUSEL
+// BACKGROUND CAROUSEL - BASIC SHIT. WHY IS THIS HERE THOUGH!!
 
 var i=0;
 var backgroundImageList = ["./images/mainBackground/iiser4.jpeg", "./images/mainBackground/iiser2.jpeg", "./images/mainBackground/iiser1.png", "./images/mainBackground/iiser3.jpeg"];
@@ -1126,7 +1049,6 @@ function leftbg(){
 console.log(i);
 }
 
-// setTimeout(changebg, 2000);
 
 
 
@@ -1137,7 +1059,8 @@ console.log(i);
 
 
 
-// PRELOADER
+
+// PRELOADER - MAKES THE PAGE SLOW - NOT USING RN
 
 window.addEventListener("load", function(){
     var loader = document.querySelector('.spinner-wrapper');
