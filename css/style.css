@@ -1551,17 +1551,21 @@ transition: all 0.5s ease-in-out;
 .modal_container{
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.9);
+
   padding: 50px;
   /* position: relative; */
   width: 80%;
   height: 80vh;
   /* background: white; */
-  background-size: cover;
+  background-size: contain;
   display: flex;
   align-items: top;
   justify-content: space-around;
   transition: all 1s ease-in-out;
 }
+
+
+
 .modal_image{
   height: 40%;
   object-fit: cover;
