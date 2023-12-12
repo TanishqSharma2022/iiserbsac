@@ -345,7 +345,7 @@ function toggle(n){
             popupimage.src = "images/senate/senate_23_24/saisab.png";
             name.innerHTML = " Saisab Sadhu";
             position.innerHTML = "SDC Secretary";
-            content.innerHTML="I'm Saisab Sadhu, Secretary for the Student Development Council (SDC). Passion drives my work to enrich our student community. In my role, I find myself weaving together various responsibilities. I'm keen on fostering an environment where innovation, collaboration, and professional growth are at the forefront. Through my efforts, I aim to create a nurturing space where every student is equipped with the tools and opportunities to feel recognised and embark on a successful and fulfilling career path.";
+            content.innerHTML="I am Saisab Sadhu, Secretary for the Student Development Council (SDC). Fueled by my passion for enriching our student community, I weave various nuances into my responsibilities. I aim to foster an environment where innovation, collaboration, and professional growth take the lead. I intend to direct my efforts towards building a well-rounded student community with the tools and opportunities to advance in a thriving and fulfilling career path.";
                    
             
          sec_insta.setAttribute("href", "https://www.instagram.com/saisab_sadhu/");
@@ -355,10 +355,10 @@ function toggle(n){
             break;
         
         case 10:
-            popupimage.src = "./images/avatar.png";
+            popupimage.src = "images/senate/senate_23_24/adithyan.jpg";
             name.innerHTML = "Adithyan Cherusseri";
             position.innerHTML = "RC Secretary";
-            content.innerHTML="";
+            content.innerHTML="Third-year EES major who can be spotted wearing headphones all the time";
                    
             
             //sec_insta.setAttribute("href", "");
@@ -1037,7 +1037,7 @@ function council_toggle(n){
             club_head_email.innerHTML = "adithyan21@iiserb.ac.in ";
             club_head_no.innerHTML = "+91 85904 84969";
             club_head_name.innerHTML = "Adithyan Cherusseri";
-            club_head_image.src = "images/avatar.png";
+            club_head_image.src = "images/senate/senate_23_24/adithyan.jpg";
 
             // let newpicture = document.createElement('img');
             
