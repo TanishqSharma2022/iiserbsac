@@ -262,12 +262,22 @@ function toggle(n){
             name.innerHTML = "Debasmita Panda";
             position.innerHTML = "Acting-President";
             content.innerHTML="Meet me, the cool and quirky by heart ! As the SAC President, I'm not just about making a difference; I'm about adding color and joy to every corner. Think of me as a blend of all the best Friends episodes - relatable, hilarious, and always there for you. Fueled by sitcoms and a love for food, this artist and leader is the friend you've always wanted. Get ready for some fun and inspiration, campus life's never been this vibrant!";
+           
+                //sec_insta.setAttribute("href", "");
+         sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/debasmita-panda-5150441b4");
+         sec_mail.setAttribute("href", "mailto:@iiserb.ac.in");
+         sec_whatsapp.setAttribute("href", "https://wa.me/+916370291813");
             break;
         case 2:
             popupimage.src = "./images/avatar.png";
             name.innerHTML = "Not elected";
             position.innerHTML = "Vice President 2023-24";
             content.innerHTML="";
+           
+               sec_insta.setAttribute("href", "#");
+       sec_linkedin.setAttribute("href", "#");
+         sec_mail.setAttribute("href", "mailto:#");
+          sec_whatsapp.setAttribute("href", "#");
             break;
         case 3:
             popupimage.src = "images/senate/senate_23_24/Rohan.jpg";
@@ -276,10 +286,10 @@ function toggle(n){
             content.innerHTML="";
             
             
-             //sec_insta.setAttribute("href", "");
-         sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/mehra-rohan?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BRhpkHyZ2R%2B%2BB357mThtdMw%3D%3D");
+             sec_insta.setAttribute("href", "");
+         sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/mehra-rohan");
              sec_mail.setAttribute("href", "mailto:rohan21@iiserb.ac.in");
-             sec_whatsapp.setAttribute("href", "https://wa.me/8808398402");
+             sec_whatsapp.setAttribute("href", "https://wa.me/+918808398402");
             break;
         case 4:
             popupimage.src = "images/senate/senate_23_24/Suraj.jpg";
@@ -289,9 +299,9 @@ function toggle(n){
              
             
             sec_insta.setAttribute("href", "https://instagram.com/exceptional__surajchauhan?igshid=MzMyNGUyNmU2YQ==");
-         sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/suraj-chauhan-5a0664246?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bq787IolPSrmsZGI3sRd8jQ%3D%3D");
+         sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/suraj-chauhan-5a0664246");
          sec_mail.setAttribute("href", "mailto:surajc21@iiserb.ac.in ");
-         sec_whatsapp.setAttribute("href", "https://wa.me/8791528568");
+         sec_whatsapp.setAttribute("href", "https://wa.me/+918791528568");
             break;    
         case 5:
             popupimage.src = "./images/avatar.png";
@@ -300,10 +310,10 @@ function toggle(n){
             content.innerHTML="";
                  
             
-            //sec_insta.setAttribute("href", "");
-         sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/srutanik-bhaduri-3a9a691b9?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYoefVd8MTwSi9dFeGDGHNQ%3D%3D");
+            sec_insta.setAttribute("href", "");
+         sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/srutanik-bhaduri-3a9a691b9");
          sec_mail.setAttribute("href", "mailto:srutanik21@iiserb.ac.in ");
-         sec_whatsapp.setAttribute("href", "https://wa.me/8697396153");
+         sec_whatsapp.setAttribute("href", "https://wa.me/+918697396153");
             break;
         case 6:
             popupimage.src = "images/senate/senate_23_24/Omkar.jpg";
@@ -312,10 +322,10 @@ function toggle(n){
             content.innerHTML="3rd Year Undergraduate, EES Major Passionate Reader and an avid Traveller";
                    
             
-            //sec_insta.setAttribute("href", "");
-         sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/omkar-tidke-he-him-560036202?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BaZo4WsslQ4%2BEi58f5Nwq8Q%3D%3D");
+            sec_insta.setAttribute("href", "");
+         sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/omkar-tidke-he-him-560036202");
          sec_mail.setAttribute("href", "mailto:omkar21@iiserb.ac.in ");
-         sec_whatsapp.setAttribute("href", "https://wa.me/7020551982");
+         sec_whatsapp.setAttribute("href", "https://wa.me/+917020551982");
             break;                                    
         case 7:
             popupimage.src = "images/senate/senate_23_24/Debasmita.jpg";
@@ -324,10 +334,10 @@ function toggle(n){
             content.innerHTML="Meet me, the cool and quirky by heart ! As the FALC Secretary, I'm not just about making a difference; I'm about adding color and joy to every corner. Think of me as a blend of all the best Friends episodes - relatable, hilarious, and always there for you. Fueled by sitcoms and a love for food, this artist and leader is the friend you've always wanted. Get ready for some fun and inspiration, campus life's never been this vibrant!";
                    
             
-            //sec_insta.setAttribute("href", "");
+            sec_insta.setAttribute("href", "");
          sec_linkedin.setAttribute("href", "");
          sec_mail.setAttribute("href", "mailto:@iiserb.ac.in");
-         sec_whatsapp.setAttribute("href", "https://wa.me/");
+         sec_whatsapp.setAttribute("href", "https://wa.me/+916370291813");
             break;
         case 8:
             popupimage.src = "images/senate/senate_23_24/Ashim.jpg";
@@ -339,7 +349,7 @@ function toggle(n){
             sec_insta.setAttribute("href", "https://www.instagram.com/ash_h.im/");
          sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/ashim-dhor/");
          sec_mail.setAttribute("href", "mailto:ashim21@iiserb.ac.in");
-         sec_whatsapp.setAttribute("href", "https://wa.me/7086482909");
+         sec_whatsapp.setAttribute("href", "https://wa.me/+917086482909");
             break;
         case 9:
             popupimage.src = "images/senate/senate_23_24/saisab.png";
@@ -349,9 +359,9 @@ function toggle(n){
                    
             
          sec_insta.setAttribute("href", "https://www.instagram.com/saisab_sadhu/");
-         sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/saisab-sadhu?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BJgMfxSHdTWC0W7uO4PpBWQ%3D%3D");
+         sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/saisab-sadhu");
          sec_mail.setAttribute("href", "mailto:saisab21@iiserb.ac.in ");
-         sec_whatsapp.setAttribute("href", "https://wa.me/9933387874");
+         sec_whatsapp.setAttribute("href", "https://wa.me/+919933387874");
             break;
         
         case 10:
@@ -361,19 +371,20 @@ function toggle(n){
             content.innerHTML="Third-year EES major who can be spotted wearing headphones all the time";
                    
             
-            //sec_insta.setAttribute("href", "");
-         sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/adithyancherusseri?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BKj0o2NqAQHSjBooG3tlENQ%3D%3D");
+            sec_insta.setAttribute("href", "#");
+         sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/adithyancherusseri");
          sec_mail.setAttribute("href", "mailto:adithyan21@iiserb.ac.in ");
-         sec_whatsapp.setAttribute("href", "https://wa.me/8590484969");
+         sec_whatsapp.setAttribute("href", "https://wa.me/+918590484969");
             break;
-        
-        case 11:
-            popupimage.src = "./images/avatar.png";
-            name.innerHTML = "Not Elected";
-            position.innerHTML = "RC Secretary";
-            content.innerHTML="";
-            break;
-        }
+    
+    }
+        // case 11:
+        //     popupimage.src = "./images/avatar.png";
+        //     name.innerHTML = "Not Elected";
+        //     position.innerHTML = "RC Secretary";
+        //     content.innerHTML="";
+        //     break;
+        // }
 
 }
 
@@ -545,7 +556,7 @@ function council_toggle(n){
             gmail_handle.setAttribute("href", "mailto:cnc@iiserb.ac.in");
 
             club_head_email.innerHTML = "srutanik21@iiserb.ac.in  ";
-            club_head_no.innerHTML = "+91 86973 96153";
+            club_head_no.innerHTML = "+918697396153";
             club_head_name.innerHTML = "Srutanik Bhaduri";
             club_head_image.src = "images/avatar.png";
             
@@ -632,7 +643,7 @@ function council_toggle(n){
             gmail_handle.setAttribute("href", "mailto:falc@iiserb.ac.in");
 
             club_head_email.innerHTML = "debasmitap21@iiserb.ac.in";
-            club_head_no.innerHTML = "+91 6370 291 813";
+            club_head_no.innerHTML = "+91 6370291813";
             club_head_name.innerHTML = "Debasmita Panda";
             club_head_image.src = "images/senate/senate_23_24/Debasmita.jpg";
             break;
@@ -952,7 +963,7 @@ function council_toggle(n){
 
             boxes[6].style.display = "flex";
             boxes[6].querySelector("img").src = "images/clubs/E Cell.png";
-            boxes[6].querySelector("#club_name").innerHTML = "Entrepreneurship Cell (coming soon...) ";
+            boxes[6].querySelector("#club_name").innerHTML = "Entrepreneurship Cell";
             document.querySelector("#sqr7").setAttribute("href", "https://sites.google.com/view/sdc-iiserb/home");
             
             boxes[7].style.display = "none";
