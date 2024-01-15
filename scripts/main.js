@@ -304,10 +304,10 @@ function toggle(n){
          sec_whatsapp.setAttribute("href", "https://wa.me/+918791528568");
             break;    
         case 5:
-            popupimage.src = "./images/avatar.png";
+            popupimage.src = "images/senate/senate_23_24/srutanik.jpg";
             name.innerHTML = "Srutanik Bhaduri";
             position.innerHTML = "CNC Secretary";
-            content.innerHTML="";
+            content.innerHTML="Hey there! I'm Srutanik, a 3rd-year DSE major. I build cool stuff, code for fun, and find my peace in the tunes of music. Let's keep it simple and enjoy the journey together!";
                  
             
             sec_insta.setAttribute("href", "");
@@ -558,7 +558,7 @@ function council_toggle(n){
             club_head_email.innerHTML = "srutanik21@iiserb.ac.in  ";
             club_head_no.innerHTML = "+918697396153";
             club_head_name.innerHTML = "Srutanik Bhaduri";
-            club_head_image.src = "images/avatar.png";
+            club_head_image.src = "images/senate/senate_23_24/srutanik.jpg";
             
             // website handle
             weblink.setAttribute("href", "https://sites.google.com/iiserb.ac.in/cnc/cnc");
