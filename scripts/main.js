@@ -509,7 +509,7 @@ function council_toggle(n){
             content.innerHTML = "<ul><li>Provide financial resources and administrative support for Programming, Photography and Gaming Club.</li><li>Technical support in conducting student elections, and event conduction for other councils and clubs.</li><li>Host Armageddon: A 3 day gaming and techno fest with photowalks, programming competitions and E-Sports tournaments in 8 games. We release really cool merch that you can buy before the fest.</li></ul>";
             boxes[0].style.display = "flex";
 
-            boxes[0].querySelector("img").src = "./images/clubs/cyberheathens.png";
+            boxes[0].querySelector("img").src = "./images/clubs/coding.jpg";
             boxes[0].querySelector("#club_name").innerHTML = "CyberHeathens (Programming Club)";
             document.querySelector("#sqr1").setAttribute("href", "https://www.instagram.com/cnc_programming_division");
 
@@ -748,11 +748,11 @@ function council_toggle(n){
             document.querySelector("#sqr1").setAttribute("href", "https://www.instagram.com/humansofiiserb");
 
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
-            weblink.setAttribute("href", "https://cs2.iiserb.ac.in/activities/prayaas.php");
+          //  weblink.setAttribute("href", "https://cs2.iiserb.ac.in/activities/prayaas.php");
 
 
 
-            boxes[1].querySelector("img").src = "./images/clubs/humansofiiserb.jpg";
+            boxes[1].querySelector("img").src = "images/clubs/aws.png";
             boxes[1].querySelector("#club_name").innerHTML = "Animal Welfare Society";
             document.querySelector("#sqr2").setAttribute("href", "https://www.instagram.com/");
 
