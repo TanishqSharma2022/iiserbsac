@@ -921,7 +921,7 @@ function council_toggle(n){
             logo.src = "./images/sdc.png";
             content.innerHTML = "";
             boxes[0].style.display = "flex";
-            weblink.setAttribute("href", "https://sites.google.com/view/sdc-iiserb/home");
+            weblink.setAttribute("href", "sdc/index.html");
             boxes[0].querySelector("img").src = "images/clubs/Placements.png";
             boxes[0].querySelector("#club_name").innerHTML = "Placements and Internships";
             document.querySelector("#sqr1").setAttribute("href", "https://sites.google.com/view/sdc-iiserb/home");
