@@ -19,34 +19,37 @@
         @import url('https://fonts.googleapis.com/css2?family=Anton&family=PT+Sans&family=Passion+One:wght@400;700;900&display=swap');
 
         :root{
-            background-color: #1f6200;
+            background-color: #fbf0d0;
         }
         .page-wrapper {
-        display: flex;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        /* display: flex;
         flex-wrap: wrap;
-        align-content: flex-start;
+        align-content: flex-start; */
         justify-content: space-evenly;
-        padding-left: calc(5% - 16px);
-        padding-right: calc(5% - 16px);
+        padding-inline: calc(5% - 16px);
         width: inherit;
         /* padding: 0 5%; */
         }
         .profile-box {
-        background: #fafafa;/*#e6f2ff;*/
-        box-shadow: 0 2px 6px 0 rgba(47,83,151,0.10);
-        border-radius: 3px;
+        background: #fae9bd;/*#e6f2ff;*/
+
+        border-radius: 20px;
+        border: 0.1px solid #00000022;
         margin: 20px 16px;
         padding: 16px 16px 12px;
-        width: 250px;
+        /* width: 250px; */
+        color: black;
         max-width: calc(100% - 17px);
         text-align: center;
         transition: 300ms;
-        flex-grow: 1;
-        user-select:   none;
+        /* flex-grow: 1; */
+        user-select:  none;
         }
         .profile-box:hover {
-        /* box-shadow: 0 2px 6px 0 rgba(47,83,151,0.40); */
-        background-color: #eaeaea; /* #cce6ff;*/
+        box-shadow: 0 2px 6px 0 rgba(47,83,151,0.40);
+        background-color: #fae9bd55; /* #cce6ff;*/
         /*border-color: #1a8cff;*/
         box-shadow: 0 0 20px 9px rgba(0,0,0,0.03);
         transform: scale(1.03);
@@ -63,50 +66,60 @@
         font-size: 1.6em;
         margin-top: 20px;
         margin-bottom: 5px;
-        font-family: 'Raleway';
+        font-family: 'Poppins';
         }
 
         .rc {
         font-weight: 700;
-        color:#e0aa15;
+        color: black;
         font-size: clamp(2rem, 3vw, 5rem);
         margin-top: 20px;
         margin-bottom: 5px;
         text-align: center;
         font-family: 'Poppins';
-        text-shadow: 0px 0px 10px #002a55;
+        /* text-shadow: 0px 0px 10px #002a55; */
         
         }
         .page-wrapper h4 {
         transition: 500ms;
         font-weight: 300;
         font-size: 1.14em;
-        color: #055ab5;
+        color: black;
         margin-top: 12px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         /*cursor: pointer;*/
         }
    
+        @media screen and (max-width: 768px) {
+            .page-wrapper {
+                grid-template-columns: 1fr;
+            }
+            
+        }
 
     </style>
+
+<link rel="stylesheet" href="./css/style.css" />
+
 </head>
 <body>
     <div  class="navbar">
         <div class="content">
             <div class="name">
-                <a target="_blank" href="https://www.iiserb.ac.in"><img loading="lazy" class="desktop" src="./images/iiserbwhite.png" alt=""></a>
+                <a target="_blank" href="https://www.iiserb.ac.in"><img loading="lazy" class="desktop" src="./images/iiserbblack.png" alt=""></a>
                 <img loading="lazy" class="mobile" src="./images/removed_bg.png"   class="src">
             </div>
-            <ul class="list">
+            <ul class="list" >
                 <div class="icon cancel-btn">
                     <i class="fas fa-times"></i>
                 </div>
-                <li><a href="index.html">Home</a></li>
-                <li><a id="council_click scroll" href="#council_main">Councils</a></li>
-                <li><a id="scroll" href="#members">Members</a></li>
-                <li><a target="_blank" href="elections.html">Elections</a></li>
+                <li><a  style="color: #cb7139; font-weight: 500;"href="index.html">Home</a></li>
+                <li><a style="color: #cb7139; font-weight: 500;" id="council_click scroll" href="#council_main">Councils</a></li>
+                <li><a style="color: #cb7139; font-weight: 500;" id="scroll" href="#members">Members</a></li>
+                <li><a style="color: #cb7139; font-weight: 500;" target="_blank" href="elections.html">Elections</a></li>
 
-                <li><a target="_blank" href="fests.html">Fests</a></li>
-                <li><a id="aboutus_href" href="#footerlast">Contact</a></li>
+                <li><a style="color: #cb7139; font-weight: 500;" target="_blank" href="fests.html">Fests</a></li>
+                <li><a style="color: #cb7139; font-weight: 500;" id="aboutus_href" href="#footerlast">Contact</a></li>
             </ul>
             <div class="icon menu-btn">
                 <i class="fas fa-bars"></i>
@@ -116,7 +129,7 @@
    
    
 <h3 class="rc">Reprensentative Council</h3>
-        <div class="page-wrapper">
+        <div class="page-wrapper" style="margin-top: 50px;">
            
             <div class="profile-box">
               <img src="images\1.png" alt="profile pic">

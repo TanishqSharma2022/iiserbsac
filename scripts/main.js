@@ -621,6 +621,8 @@ function council_toggle(n){
             boxes[6].style.display = "flex";
             boxes[6].querySelector("img").src = "./images/clubs/poetry.jpg";
             boxes[6].querySelector("#club_name").innerHTML = "Poetry Club";
+            document.querySelector("#sqr7").setAttribute("href", "https://www.instagram.com/wordsmiths_workshop");
+
 
             boxes[7].style.display = "none";
             boxes[8].style.display = "none";
@@ -754,7 +756,7 @@ function council_toggle(n){
 
             boxes[1].querySelector("img").src = "images/clubs/aws.png";
             boxes[1].querySelector("#club_name").innerHTML = "Animal Welfare Society";
-            document.querySelector("#sqr2").setAttribute("href", "https://www.instagram.com/");
+            document.querySelector("#sqr2").setAttribute("href", "https://www.instagram.com/humansofiiserb");
 
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
 
@@ -803,7 +805,6 @@ function council_toggle(n){
             
             boxes[0].querySelector("img").src = "images/clubs/football.png";
             boxes[0].querySelector("#club_name").innerHTML = "Football Club ";
-            // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
             document.querySelector("#sqr1").setAttribute("href", "https://www.instagram.com/football_iiserb");
 
            
@@ -889,7 +890,7 @@ function council_toggle(n){
             boxes[13].style.display = "flex";
             boxes[13].querySelector("img").src = "images/clubs/lawntennis.png";
             boxes[13].querySelector("#club_name").innerHTML = "Lawn Tennis";
-           // document.querySelector("#sqr14").setAttribute("href", "https://www.instagram.com/gymkhana_iiserb");
+           document.querySelector("#sqr14").setAttribute("href", "https://www.instagram.com/sports_iiserb/");
 
            boxes[14].style.display = "flex";
            boxes[14].querySelector("img").src = "images/clubs/yoga.png";
@@ -924,26 +925,26 @@ function council_toggle(n){
             weblink.setAttribute("href", "sdc/index.html");
             boxes[0].querySelector("img").src = "images/clubs/Placements.png";
             boxes[0].querySelector("#club_name").innerHTML = "Placements and Internships";
-            document.querySelector("#sqr1").setAttribute("href", "https://sites.google.com/view/sdc-iiserb/home");
+            document.querySelector("#sqr1").setAttribute("href", "https://sdc-iiserb.notion.site/f3775c88beca41a59ed4e8afdf76e028?v=6de964c119f148cf9d5c580d82a431c8");
             
             
             
             
             boxes[1].querySelector("img").src = "images/clubs/Carma.png";
             boxes[1].querySelector("#club_name").innerHTML = "CarMa and Blogs ";
-            document.querySelector("#sqr2").setAttribute("href", "https://sites.google.com/view/sdc-iiserb/home");
+            document.querySelector("#sqr2").setAttribute("href", "https://students.iiserb.ac.in/sdc/carma/");
 
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
             boxes[2].style.display="flex";
             boxes[2].querySelector("img").src = "images/clubs/Orientations.png";
             boxes[2].querySelector("#club_name").innerHTML = "Orientations ";
-            document.querySelector("#sqr3").setAttribute("href", "https://sites.google.com/view/sdc-iiserb/home");
+            document.querySelector("#sqr3").setAttribute("href", "https://students.iiserb.ac.in/sdc/");
 
 
             boxes[3].style.display = "flex";
             boxes[3].querySelector("img").src = "images/clubs/Career Talk.png";
             boxes[3].querySelector("#club_name").innerHTML = "Career Talks ";
-            document.querySelector("#sqr4").setAttribute("href", "https://sites.google.com/view/sdc-iiserb/home");
+            document.querySelector("#sqr4").setAttribute("href", "https://students.iiserb.ac.in/sdc/");
 
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
 
@@ -951,20 +952,20 @@ function council_toggle(n){
             boxes[4].style.display = "flex";
             boxes[4].querySelector("img").src = "images/clubs/alumni.png";
             boxes[4].querySelector("#club_name").innerHTML = "Alumni Events";
-            document.querySelector("#sqr5").setAttribute("href", "https://sites.google.com/view/sdc-iiserb/home");
+            document.querySelector("#sqr5").setAttribute("href", "https://students.iiserb.ac.in/sdc/");
 
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
 
             boxes[5].style.display = "flex";
             boxes[5].querySelector("img").src = "images/clubs/outreach.png";
             boxes[5].querySelector("#club_name").innerHTML = "Institute Outreach ";
-            document.querySelector("#sqr6").setAttribute("href", "https://sites.google.com/view/sdc-iiserb/home");
+            document.querySelector("#sqr6").setAttribute("href", "https://students.iiserb.ac.in/sdc/");
 
 
             boxes[6].style.display = "flex";
             boxes[6].querySelector("img").src = "images/clubs/E Cell.png";
             boxes[6].querySelector("#club_name").innerHTML = "Entrepreneurship Cell";
-            document.querySelector("#sqr7").setAttribute("href", "https://sites.google.com/view/sdc-iiserb/home");
+            document.querySelector("#sqr7").setAttribute("href", "https://students.iiserb.ac.in/sdc/ecell/");
             
             boxes[7].style.display = "none";
             boxes[8].style.display = "none";
@@ -1008,18 +1009,18 @@ function council_toggle(n){
 
             boxes[1].querySelector("img").src = "images/2.png";
             boxes[1].querySelector("#club_name").innerHTML = "DRs";
-            document.querySelector("#sqr2").setAttribute("href", "Representativecouncil.html");
+            document.querySelector("#sqr2").setAttribute("href", "/Representativecouncil.html");
 
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
             boxes[2].style.display="flex";
             boxes[2].querySelector("img").src = "images/3.png";
             boxes[2].querySelector("#club_name").innerHTML = "MRs";
-            document.querySelector("#sqr3").setAttribute("href", "Representativecouncil.html");
+            document.querySelector("#sqr3").setAttribute("href", "/Representativecouncil.html");
 
             boxes[3].style.display = "flex";
             boxes[3].querySelector("img").src = "images/4.png";
             boxes[3].querySelector("#club_name").innerHTML = "HRs";
-            document.querySelector("#sqr4").setAttribute("href", "Representativecouncil.html");
+            document.querySelector("#sqr4").setAttribute("href", "/Representativecouncil.html");
             
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
 

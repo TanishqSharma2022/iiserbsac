@@ -773,6 +773,7 @@ li a:hover {
   align-items: center;
   font-size: clamp(10px, 1vw, 20px);
   /* border: 2px solid red; */
+  cursor: pointer;
 }
 .box h2{
   line-height: 30px;
