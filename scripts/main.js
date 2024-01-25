@@ -436,7 +436,7 @@ function council_toggle(n){
             what.innerHTML="WHAT THE COUNCIL DOES";
             club_under_us.innerHTML="CLUBS UNDER US";
             logo.src = "./images/cultural_council.png";
-            content.innerHTML = "<ul><li>Aim to promote as well as practice different cultural activities like dance, music, drama in the Institute throughout the year.</li><li>Coordinate and arrange participation of institute in the Inter IISER Cultural Meet – IICM. </li><li>Organize regular classes or learning sessions for various cultural aspects on the demand of the clubs or the students.</li>";
+            content.innerHTML = "<ul><li>Aims to promote as well as practice different cultural activities like dance, music, drama in the Institute throughout the year.</li><li>Coordinate and arrange participation of institute in the Inter IISER Cultural Meet – IICM. </li><li>Organize regular classes or learning sessions for various cultural aspects on the demand of the clubs or the students.</li>";
             // CLUB 1
             boxes[0].style.display = "flex";
             weblink.setAttribute("href", "https://www.youtube.com/channel/UCoc_DuFuUUcNlfKmdwY0nbQ");
@@ -664,10 +664,11 @@ function council_toggle(n){
 
             weblink.setAttribute("href", "https://in.linkedin.com/company/science-council-iiser-bhopal");
 
-
+            boxes[1].style.display="flex";
             boxes[1].querySelector("img").src = "./images/clubs/eco.png";
             boxes[1].querySelector("#club_name").innerHTML = "Economics Club";
             document.querySelector("#sqr2").setAttribute("href", "https://www.instagram.com/iiserb_econ_club");
+            
 
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
             boxes[2].style.display="flex";
@@ -924,26 +925,26 @@ function council_toggle(n){
             weblink.setAttribute("href", "sdc/index.html");
             boxes[0].querySelector("img").src = "images/clubs/Placements.png";
             boxes[0].querySelector("#club_name").innerHTML = "Placements and Internships";
-            document.querySelector("#sqr1").setAttribute("href", "https://sites.google.com/view/sdc-iiserb/home");
+            document.querySelector("#sqr1").setAttribute("href", "sdc/index.html");
             
             
             
             
             boxes[1].querySelector("img").src = "images/clubs/Carma.png";
             boxes[1].querySelector("#club_name").innerHTML = "CarMa and Blogs ";
-            document.querySelector("#sqr2").setAttribute("href", "https://sites.google.com/view/sdc-iiserb/home");
+            document.querySelector("#sqr2").setAttribute("href", "sdc/index.html");
 
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
             boxes[2].style.display="flex";
             boxes[2].querySelector("img").src = "images/clubs/Orientations.png";
             boxes[2].querySelector("#club_name").innerHTML = "Orientations ";
-            document.querySelector("#sqr3").setAttribute("href", "https://sites.google.com/view/sdc-iiserb/home");
+            document.querySelector("#sqr3").setAttribute("href", "sdc/index.html");
 
 
             boxes[3].style.display = "flex";
             boxes[3].querySelector("img").src = "images/clubs/Career Talk.png";
             boxes[3].querySelector("#club_name").innerHTML = "Career Talks ";
-            document.querySelector("#sqr4").setAttribute("href", "https://sites.google.com/view/sdc-iiserb/home");
+            document.querySelector("#sqr4").setAttribute("href", "sdc/index.html");
 
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
 
@@ -951,20 +952,20 @@ function council_toggle(n){
             boxes[4].style.display = "flex";
             boxes[4].querySelector("img").src = "images/clubs/alumni.png";
             boxes[4].querySelector("#club_name").innerHTML = "Alumni Events";
-            document.querySelector("#sqr5").setAttribute("href", "https://sites.google.com/view/sdc-iiserb/home");
+            document.querySelector("#sqr5").setAttribute("href", "sdc/index.html");
 
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
 
             boxes[5].style.display = "flex";
             boxes[5].querySelector("img").src = "images/clubs/outreach.png";
             boxes[5].querySelector("#club_name").innerHTML = "Institute Outreach ";
-            document.querySelector("#sqr6").setAttribute("href", "https://sites.google.com/view/sdc-iiserb/home");
+            document.querySelector("#sqr6").setAttribute("href", "sdc/index.html");
 
 
             boxes[6].style.display = "flex";
             boxes[6].querySelector("img").src = "images/clubs/E Cell.png";
             boxes[6].querySelector("#club_name").innerHTML = "Entrepreneurship Cell";
-            document.querySelector("#sqr7").setAttribute("href", "https://sites.google.com/view/sdc-iiserb/home");
+            document.querySelector("#sqr7").setAttribute("href", "sdc/ecell/index.html");
             
             boxes[7].style.display = "none";
             boxes[8].style.display = "none";
