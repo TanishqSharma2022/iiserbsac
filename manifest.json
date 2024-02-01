@@ -1,0 +1,15 @@
+{
+    "name": "IISER BHOPAL STUDENT ACTIVITY COUNCIL",
+    "short_name": "IISERB SAC",
+    "start_url": ".",
+    "background_color": "#fbf0d0",
+    "theme_color": "#fbf0d0",
+    "display": "standalone",
+    "icons":[
+    {
+        "src": "/images/SAC_Logo.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    }
+    ]
+}

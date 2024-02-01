@@ -288,6 +288,9 @@ ul.list li a:after {
   aspect-ratio: 16/9;
   position: relative;
   /* min-height: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: -8vh;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../images/mainBackground/iiser3.jpeg);
@@ -446,7 +449,6 @@ li a:hover {
 
 
 .title {
-
   width: 75%;
 
   /* height: 100%; */
