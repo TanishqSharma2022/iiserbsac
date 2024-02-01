@@ -42,29 +42,60 @@ body{
 .contain{
     position: relative;
     width: 100%;
-    height: 104vh;
-    max-height: 1080px;
     min-height: 500px;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    border: 1px solid black;
-    /* background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(./images/fest.jpg); */
-    background-size: cover;
     max-width: 100%;
-    top: -8vh;
+    /* top: -8vh; */
+    
 }
+.fest_header_container{
+    width: 70%;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.fest_header_container button{
+    border-radius: 20px;
+    background: linear-gradient(-90deg,#0564a4,#31c242);
+    color: white; 
+    font-family: 'Poppins';
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+
+.fest_header_container button:hover{
+    box-shadow: 0px 0px 10px black;
+    opacity: 0.8;
+    transition: all 0.5s ease;
+}
+
+.fest_header{
+    text-align: left;
+
+    font-family: 'Poppins';
+    font-style: italic;
+    color: white;
+}
+
 .contain_header{
-    text-align: center;
+    text-align: left;
     position: relative; 
     font-family: 'Poppins';
-    font-size: 5rem;
     letter-spacing: 1px;
     COLOR: WHITE;
-    font-weight: 800;
-    text-shadow: 0px 5px 20px black;
+    font-weight: 900;
+    text-shadow: 0px 0px 80px rgba(0, 0, 0, 0.16);
+    background: -webkit-linear-gradient(-90deg,#0564a4,#31c242);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }   
 
 #ii{
@@ -81,15 +112,13 @@ body{
     scroll-snap-type: y mandatory;
     width: 100%;
     background: linear-gradient(to bottom, #041724, #0b4151);
-    
-/* paddin-block: 60px; */
-    /* background: grey; */
+
     position: relative;
     top: 0;
     left: 0;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: -80px;
+    /* margin-top: -80px; */
 
 }
 
@@ -151,38 +180,36 @@ body{
 
 
 .fest_content{
-    width: 60%;
+    width: 75%;
     height: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 50px;
 
 }
 .fest_links{
-    width: 50%;
+    /* width: 50%; */
     display: flex;
-    height: 50px;
-    align-items: center;
-    justify-content: center;
+    /* height: 50px; */
+    /* border: 2px solid red; */
 
+    margin-top: 20px;
 }
 
-.fest_links i{
+.fest_links img, .fest_links i{
     margin: 0 20px;
     /* background: #eee; */
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     font-size: 2rem;
     display: grid;
     place-items: center;
-    color: #1bb1de;
     transition: all 0.2s ease-in-out;
-    filter: drop-shadow(0px 0px 10px black)
 }
 
-.fest_links i:hover{
+.fest_links i:hover, .fest_links img:hover{
     transform: scale(1.2);
 }
 
