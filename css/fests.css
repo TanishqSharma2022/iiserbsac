@@ -9,17 +9,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Notable:wght@400&display=swap');
 
+html {
+    scroll-behavior: smooth;
+  }
+
 :root {
     --navlist-color: #cb7139;
     /* --navlist-color: #6a6551; */
     /* --navlist-color: #6699cc; */
   
     --navbar-change-color: #111011;
-    --text: #0e0b01;
+    --text: white;
     --background: #0b4151;
     --primary: #1380b4;
     --secondary: #fae9bd;
     --accent: #d9a412;
+    --footer-background-color: #fae9bd;
+    --footer-scroll-top-color: #fae9bd;
+    --footer-text-color: #000000;
   }
 
 
@@ -48,7 +55,6 @@ body{
     align-items: center;
     margin: 0 auto;
     max-width: 100%;
-    /* top: -8vh; */
     
 }
 .fest_header_container{
@@ -59,6 +65,11 @@ body{
     align-items: flex-end;
     gap: 10px;
 }
+.glide__slide img{
+    object-fit: contain;
+    aspect-ratio: 1/1; 
+    width:100%;
+  }
 
 .fest_header_container button{
     border-radius: 20px;
@@ -97,7 +108,10 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }   
-
+.fest_navbar_header{
+    font-family: Poppins;
+    font-style: italic;
+}
 #ii{
     font-family: 'rock salt';
     font-size: 3rem;
@@ -111,7 +125,7 @@ body{
 .contain2{
     scroll-snap-type: y mandatory;
     width: 100%;
-    background: linear-gradient(to bottom, #041724, #0b4151);
+    /* background: linear-gradient(to bottom, #041724, #0b4151); */
 
     position: relative;
     top: 0;
@@ -137,6 +151,7 @@ body{
     padding-block: 100px;
     padding-inline: 50px;
     display: flex;
+    gap: 50px;
     justify-content: space-around;
     align-items: center;
     transition: all 0.5s ease;
@@ -196,13 +211,15 @@ body{
     /* border: 2px solid red; */
 
     margin-top: 20px;
+    gap: 20px;
 }
 
 .fest_links img, .fest_links i{
-    margin: 0 20px;
+    /* margin: 0 20px; */
     /* background: #eee; */
     height: 30px;
     width: 30px;
+    aspect-ratio: square;
     font-size: 2rem;
     display: grid;
     place-items: center;
@@ -344,6 +361,7 @@ body{
         width: 100%;
         flex-direction: column;
         padding: 0;
+        padding-top: 10px;
         height: auto;
         transform: scale(1) translateX(0px);
 
@@ -372,6 +390,9 @@ body{
 
     .fest_content h1{
         font-size: 2.2rem;
+    }
+    .fest_content h4{
+        margin-top: 30px;
     }
     .imageslider_wrapper{
         
