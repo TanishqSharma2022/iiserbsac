@@ -51,6 +51,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="fbf0d0" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
       .material-symbols-outlined {
@@ -99,9 +100,10 @@
 
     <!-- MAIN CONTENT -->
 
-    <div class="navbar">
-      <div class="content">
-        <div class="name">
+ 
+    <div class="navbar absolute top-0  flex justify-between items-center">
+      <div class="content  h-full flex justify-around gap-12 items-center w-full ">
+        <div class="name flex flex-row  gap-4 justify-center items-center">
           <a target="_blank" href="https://www.iiserb.ac.in">
             <img
               alt="IISERB LOGO"
@@ -112,21 +114,24 @@
 
             <img class="mobile" src="./images/removed_bg.png" class="src" />
           </a>
+          <h1 class="md:visible invisible fest_navbar_header  text-black font-bold text-xl text-left">SAC@<span class="header_iiserb">iiserb</span></h1>
+
         </div>
-        <ul class="list">
+        <ul class="list mt-4 ">
           <div class="icon cancel-btn">
             <i class="fas fa-times"></i>
           </div>
-          <li><a href="#home">Home</a></li>
+          <li><a href="/#home">Home</a></li>
           <li>
-            <a id="council_click scroll" href="#council_main">Councils</a>
+            <a id="council_click scroll" href="/#council_main">Councils</a>
           </li>
-          <li><a  href="elections.html">Elections</a></li>
-          <li><a  href="fests.html">Fests</a></li>
+          <li ><a  href="/elections.html" >Elections</a></li>
+          <li><a  href="/fests.html">Fests</a></li>
+
           <li><a id="aboutus_href" href="#footerlast">Contact</a></li>
           <li>  
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeA94NbQqS7NGlb5JjI6zWZjzJGn_L6g2NostRejwr8lQ2b5g/viewform" >
-            Feedback & Grievance Form
+            <img src="/images/icons/feedback.svg" alt="feedback">
           </a>
           </li>
 
@@ -137,6 +142,8 @@
         </div>
       </div>
     </div>
+  
+
 
     <div id="home" class="main">
       <div class="title">

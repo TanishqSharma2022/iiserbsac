@@ -10,7 +10,7 @@
     var i = 0;
 
   
-    var images = ['1.jpeg', '15.jpeg', '25.jpeg', '30.jpeg', '32.jpeg', '38.jpeg']
+    var images = ['1-min.jpeg', '15-min.jpeg', '25-min.jpeg', '30-min.jpeg', '32-min.jpeg', '38-min.jpeg']
     var container = document.querySelector("#fest_bg");
     
 

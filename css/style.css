@@ -3,12 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=PT+Sans:ital,wght@0,400;0,700&family=Passion+One:wght@400;700;900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lumanosimo&family=Pangolin&family=Rock+Salt&display=swap');
 
 html, body{
   overflow-x: hidden;
 }
 
-
+.header_iiserb{
+  font-family: 'Rock Salt';
+}
 :root {
   --navlist-color: #cb7139;
   /* --navlist-color: #6a6551; */
@@ -150,6 +153,7 @@ body {
   color: var(--accent);
   /* color: #cbb89d; */
   border: none;
+
 }
 
 .navbar.sticking li a:hover {
@@ -360,16 +364,10 @@ ul.list li a:after {
 }
 
 .name img.desktop {
-  width: 40%;
-  margin-left: 20px;
-  /* width: 100px; */
-  /* position: absolute; */
-  /* top: 50%; */
-  /* transform: translate(0%, -50%); */
-  /* left: 6%; */
-  /* background: red; */
-  /* filter: drop-shadow(0px 0px 5px black); */
-
+    /* width: 40px; */
+    height: 50px;
+    aspect-ratio: 1/1;
+    max-width: 100%;
 
 }
 

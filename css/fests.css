@@ -30,7 +30,12 @@ html {
   }
 
 
-
+  .navbar.sticking li a {
+    color: white;
+    /* color: #cbb89d; */
+    border: none;
+  
+  }
 *{
     box-sizing: border-box;
 }
@@ -110,7 +115,7 @@ body{
 }   
 .fest_navbar_header{
     font-family: Poppins;
-    font-style: italic;
+    margin-left: 10px;
 }
 #ii{
     font-family: 'rock salt';
