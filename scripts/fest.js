@@ -10,7 +10,7 @@
     var i = 0;
 
   
-    var images = ['1-min.jpeg', '15-min.jpeg', '25-min.jpeg', '30-min.jpeg', '32-min.jpeg', '38-min.jpeg']
+    var images = ['4.jpg', '3.jpg', '2.jpg', '6.jpg','1.jpg']
     var container = document.querySelector("#fest_bg");
     
 
@@ -19,7 +19,7 @@ setInterval(function(){
                 i = 0;
             }
 
-        container.style = `background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/singularity/gallery/${images[i]}'); transition: background 1s ease-in-out; background-size: cover;`;
+        container.style = `background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('./images/continuum/${images[i]}'); transition: background 1s ease-in-out; background-size: cover;`;
 
 
 

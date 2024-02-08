@@ -144,6 +144,7 @@ primaryHeader.before(scrollWatcher);
 
 const navObserver = new IntersectionObserver((entries) => {
     primaryHeader.classList.toggle('sticking', !entries[0].isIntersecting)
+    console.log("asdfasdf")
 }, {rootMargin: "200px 0px 0px 0px"});
 
 navObserver.observe(scrollWatcher);
@@ -266,7 +267,7 @@ function toggle(n){
             popupimage.src = "images/senate/senate_23_24/Debasmita.jpg";
             name.innerHTML = "Debasmita Panda";
             position.innerHTML = "Acting-President";
-            content.innerHTML="Meet me, the cool and quirky by heart ! As the SAC President, I'm not just about making a difference; I'm about adding color and joy to every corner. Think of me as a blend of all the best Friends episodes - relatable, hilarious, and always there for you. Fueled by sitcoms and a love for food, this artist and leader is the friend you've always wanted. Get ready for some fun and inspiration, campus life's never been this vibrant!";
+            content.innerHTML="Meet me, the cool and quirky by heart ! As the SAC President, I'm not just about making a difference; I'm about adding color and joy to every corner. Think of me as a blend of all the best Friends episodes - relatable, hilarious, and always there for you.";
            
                 //sec_insta.setAttribute("href", "");
          sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/debasmita-panda-5150441b4");
@@ -336,7 +337,7 @@ function toggle(n){
             popupimage.src = "images/senate/senate_23_24/Debasmita.jpg";
             name.innerHTML = "Debasmita Panda";
             position.innerHTML = "FALC Secretary";
-            content.innerHTML="Meet me, the cool and quirky by heart ! As the FALC Secretary, I'm not just about making a difference; I'm about adding color and joy to every corner. Think of me as a blend of all the best Friends episodes - relatable, hilarious, and always there for you. Fueled by sitcoms and a love for food, this artist and leader is the friend you've always wanted. Get ready for some fun and inspiration, campus life's never been this vibrant!";
+            content.innerHTML="Meet me, the cool and quirky by heart ! As the FALC Secretary, I'm not just about making a difference; I'm about adding color and joy to every corner. Think of me as a blend of all the best Friends episodes - relatable, hilarious, and always there for you.";
                    
             
             sec_insta.setAttribute("href", "");
@@ -348,7 +349,7 @@ function toggle(n){
             popupimage.src = "images/senate/senate_23_24/Ashim.jpg";
             name.innerHTML = "Ashim Dhor";
             position.innerHTML = "Sports Secretary";
-            content.innerHTML="Hey everyone, it's Ashim, your go-to Sports Maestro! I'm all about blending the unconventional with a touch of style, and I'm here to take our sports culture to new heights. Let's team up to redefine what excellence looks like in our arena. Drop by with your ideas, and let's sculpt a sports culture that's both classy and kickin'!Ready for a dash of class and a splash of adrenaline? Buckle up, folks!";
+            content.innerHTML="Hey everyone, it's Ashim, your go-to Sports Maestro! I'm all about blending the unconventional with a touch of style, and I'm here to take our sports culture to new heights. Let's team up to redefine what excellence looks like in our arena. Buckle up, folks!";
                    
             
             sec_insta.setAttribute("href", "https://www.instagram.com/ash_h.im/");
@@ -360,7 +361,7 @@ function toggle(n){
             popupimage.src = "images/senate/senate_23_24/saisab.png";
             name.innerHTML = " Saisab Sadhu";
             position.innerHTML = "SDC Secretary";
-            content.innerHTML="I am Saisab Sadhu, Secretary for the Student Development Council (SDC). Fueled by my passion for enriching our student community, I weave various nuances into my responsibilities. I aim to foster an environment where innovation, collaboration, and professional growth take the lead. I intend to direct my efforts towards building a well-rounded student community with the tools and opportunities to advance in a thriving and fulfilling career path.";
+            content.innerHTML="I am Saisab Sadhu, Secretary for the Student Development Council (SDC). Fueled by my passion for enriching our student community, I weave various nuances into my responsibilities. I aim to foster an environment where innovation, collaboration, and professional growth take the lead.";
                    
             
          sec_insta.setAttribute("href", "https://www.instagram.com/saisab_sadhu/");

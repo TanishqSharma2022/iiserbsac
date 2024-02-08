@@ -145,7 +145,7 @@ body {
   position: fixed;
   background: var(--background);
   /* background: hsl(0, 0, 1, 1); */
-  box-shadow: 0px 0px 5px 1px var(--text);
+  box-shadow: 0px 0px 15px 1px #000000;
   /* border: 1px solid red; */
 }
 
@@ -287,23 +287,18 @@ ul.list li a:after {
 .main4 {
   max-width: 100%;
   width: 100%;
-  /* padding: 30%; */
   height: 100vh;
-  aspect-ratio: 16/9;
   position: relative;
-  /* min-height: 100%; */
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: -8vh;
+  /* justify-content: center; */
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../images/mainBackground/iiser3.jpeg);
   background-size: cover;
-  overflow: hidden;
-  min-height: 500px;
+  /* overflow: hidden; */
+  min-height: 600px;
   max-height: 1080px;
   z-index: 99;
-  /* animation: slider 19s infinite ease; */
 }
 
 
@@ -322,20 +317,7 @@ ul.list li a:after {
   margin-left: 30px;
 }
 
-#btnRight {
-  top: 50%;
-  left: 100%;
-  transform: translate(-50%, -50%);
-  position: relative;
-  margin-left: -30px;
-}
 
-#btnLeft {
-  top: 50%;
-  left: 0%;
-  transform: translate(-50%, -50%);
-  margin-left: 30px;
-}
 
 .main button:hover {
   opacity: 0.9;
@@ -771,12 +753,16 @@ li a:hover {
   color: black;
   text-align: center;
   align-items: center;
-  font-size: clamp(10px, 1vw, 20px);
   /* border: 2px solid red; */
   cursor: pointer;
 }
 .box h2{
-  line-height: 30px;
+  margin-top: 10px;
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: clamp(10px, 1.5vw, 20px);
+
+  /* line-height: 30px; */
 }
 
 .box img {
@@ -979,7 +965,6 @@ h1 > img {
   /* justify-content: space-around; */
 }
 .box h3{
-  margin-top: -10px;
   padding-bottom: 10px;
 }
 
@@ -1408,8 +1393,7 @@ button.popup_close:hover {
   text-transform: uppercase;
   font-size: 3rem;
   font-weight: 800;
-  /* text-shadow: 0px 0px 13px black; */
-  /* text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.47); */
+
 }
 
 .popup_content h3 {
@@ -2252,11 +2236,10 @@ width: 95%;
     color: black;
     display: block;
     padding: 10px;
-    justify-content: center;
     /* background: red; */
     align-items: center;
     text-align: center;
-    top: 60%;
+    top: 40%;
   }
   .popup_content_bio{
     padding: 0px;
@@ -2274,6 +2257,7 @@ width: 95%;
     font-size: 30px;
     position: relative;
     color: var(--text);
+    line-height: 0;
 
     /* text-shadow: 1px 2px 10px black; */
 
@@ -2404,6 +2388,8 @@ width: 95%;
     margin: 0;
     padding: 0;
     height: 6vh;
+    position: absolute;
+    top:0;
     z-index: 999999;
 
   }
@@ -2425,6 +2411,7 @@ width: 95%;
     margin: 0;
     position: fixed;
     text-align: center;
+  
     top: 0%;
     left: -100%;
     display: flex;
@@ -2463,6 +2450,10 @@ width: 95%;
     font-weight: 500;
     font-size: 1.2rem;
   }
+svg.feedback g{
+  fill: #1c1d1e;
+
+}
   .navbar .list li:hover {
     border: 2px solid var(--navlist-color);
     color: var(--navlist-color);

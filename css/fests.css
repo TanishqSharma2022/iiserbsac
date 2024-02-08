@@ -18,11 +18,11 @@ html {
     /* --navlist-color: #6a6551; */
     /* --navlist-color: #6699cc; */
   
-    --navbar-change-color: #111011;
+    --navbar-change-color: white;
     --text: white;
-    --background: #0b4151;
+    --background: white;
     --primary: #1380b4;
-    --secondary: #fae9bd;
+    --secondary: #1380b4;
     --accent: #d9a412;
     --footer-background-color: #fae9bd;
     --footer-scroll-top-color: #fae9bd;
@@ -75,10 +75,31 @@ body{
     aspect-ratio: 1/1; 
     width:100%;
   }
+  .fest_header_container h1::after{
+    content: '';
+    height: 2px;
+    width: 0px;
+    bottom: -10px;
+    display: block;
+    position: absolute;
+    background: -webkit-linear-gradient(-90deg,#024069,#0696f6);
+    transform-origin: left;
+    animation: line 0.7s ease forwards;
+    animation-delay: 1s;
+  }
+  @keyframes line{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 100px;
+    }
+    
+  }
 
 .fest_header_container button{
     border-radius: 20px;
-    background: linear-gradient(-90deg,#0564a4,#31c242);
+    background: conic-gradient(from 90deg, #0696f6,#024069,#024069);
     color: white; 
     font-family: 'Poppins';
     font-weight: 600;
@@ -109,7 +130,7 @@ body{
     COLOR: WHITE;
     font-weight: 900;
     text-shadow: 0px 0px 80px rgba(0, 0, 0, 0.16);
-    background: -webkit-linear-gradient(-90deg,#0564a4,#31c242);
+    background: -webkit-linear-gradient(-90deg,#024069,#0696f6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }   
@@ -125,6 +146,11 @@ body{
     color:white;
     text-shadow: 0px 0px 15px black;
 
+}
+
+
+#nextsection img{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .contain2{
@@ -146,13 +172,12 @@ body{
     margin-bottom: 49px;
     width: 80%;
     height: 500px; 
-    /* border: 2px solid #eee; */
     background: linear-gradient(#1380b4, #0c3458);
 
     position: relative;
     top: 50px;
-    border-end-end-radius: 20px;
-    border-top-right-radius: 20px;
+    border-end-end-radius: 50px;
+    border-top-right-radius: 50px;
     padding-block: 100px;
     padding-inline: 50px;
     display: flex;
@@ -161,12 +186,14 @@ body{
     align-items: center;
     transition: all 0.5s ease;
     transform: scale(0.9) translateX(-100px);
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
 }
 .fest-left-card:hover{
     transform: scale(1) translateX(0px);
-    box-shadow: 0px 0px 10px black;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
 }
 
 .fest-right-card{
@@ -190,12 +217,15 @@ body{
    right: -20%;
    transition: all 0.5s ease;
    transform: scale(0.9) translateX(100px);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
 
 }
 .fest-right-card:hover{
     transform: scale(1) translateX(0px);
-    box-shadow: 0px 0px 10px black;
+    /* box-shadow: 0px 0px 10px black; */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
 }
 
 
@@ -275,8 +305,8 @@ body{
     text-transform: uppercase;
     font-weight: 800;
     font-size: 3.5rem;
-    color: #eee;
-    text-shadow: 5px 5px 10px #0c3458;
+    color: #e8f3fc;
+    text-shadow: 5px 0px 25px #0c3458;
     letter-spacing: 10px;
     /* text-shadow: 0px 0px 10px white; */
 
@@ -284,14 +314,16 @@ body{
 
 .fest_content h1:after{
     content: '';
-    height: 3px;
+    height: 2px;
     width: 100px;
     display: block;
     position: relative;
     left: 50%;
     margin-left: -50px;
-    background-color: #0c3458;
-    margin-top: 10px;
+    background-color: #e8f3fc;
+    margin-top: 5px;
+    border-radius: 24px;
+    box-shadow: 5px 5px 10px #0c3458;
 
 }
 
