@@ -9,21 +9,33 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Notable:wght@400&display=swap');
 
+html {
+    scroll-behavior: smooth;
+  }
+
 :root {
     --navlist-color: #cb7139;
     /* --navlist-color: #6a6551; */
     /* --navlist-color: #6699cc; */
   
-    --navbar-change-color: #111011;
-    --text: #0e0b01;
-    --background: #0b4151;
+    --navbar-change-color: white;
+    --text: white;
+    --background: white;
     --primary: #1380b4;
-    --secondary: #fae9bd;
+    --secondary: #1380b4;
     --accent: #d9a412;
+    --footer-background-color: #fae9bd;
+    --footer-scroll-top-color: #fae9bd;
+    --footer-text-color: #000000;
   }
 
 
-
+  .navbar.sticking li a {
+    color: white;
+    /* color: #cbb89d; */
+    border: none;
+  
+  }
 *{
     box-sizing: border-box;
 }
@@ -42,31 +54,90 @@ body{
 .contain{
     position: relative;
     width: 100%;
-    height: 104vh;
-    max-height: 1080px;
     min-height: 500px;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    border: 1px solid black;
-    /* background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(./images/fest.jpg); */
-    background-size: cover;
     max-width: 100%;
-    top: -8vh;
+    
 }
+.fest_header_container{
+    width: 70%;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: flex-end;
+    gap: 10px;
+}
+.glide__slide img{
+    object-fit: contain;
+    aspect-ratio: 1/1; 
+    width:100%;
+  }
+  .fest_header_container h1::after{
+    content: '';
+    height: 2px;
+    width: 0px;
+    bottom: -10px;
+    display: block;
+    position: absolute;
+    background: -webkit-linear-gradient(-90deg,#024069,#0696f6);
+    transform-origin: left;
+    animation: line 0.7s ease forwards;
+    animation-delay: 1s;
+  }
+  @keyframes line{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 100px;
+    }
+    
+  }
+
+.fest_header_container button{
+    border-radius: 20px;
+    background: conic-gradient(from 90deg, #0696f6,#024069,#024069);
+    color: white; 
+    font-family: 'Poppins';
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+
+.fest_header_container button:hover{
+    box-shadow: 0px 0px 10px black;
+    opacity: 0.8;
+    transition: all 0.5s ease;
+}
+
+.fest_header{
+    text-align: left;
+
+    font-family: 'Poppins';
+    font-style: italic;
+    color: white;
+}
+
 .contain_header{
-    text-align: center;
+    text-align: left;
     position: relative; 
     font-family: 'Poppins';
-    font-size: 5rem;
     letter-spacing: 1px;
     COLOR: WHITE;
-    font-weight: 800;
-    text-shadow: 0px 5px 20px black;
+    font-weight: 900;
+    text-shadow: 0px 0px 80px rgba(0, 0, 0, 0.16);
+    background: -webkit-linear-gradient(-90deg,#024069,#0696f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }   
-
+.fest_navbar_header{
+    font-family: Poppins;
+    margin-left: 10px;
+}
 #ii{
     font-family: 'rock salt';
     font-size: 3rem;
@@ -77,19 +148,22 @@ body{
 
 }
 
+
+#nextsection img{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
 .contain2{
     scroll-snap-type: y mandatory;
     width: 100%;
-    background: linear-gradient(to bottom, #041724, #0b4151);
-    
-/* paddin-block: 60px; */
-    /* background: grey; */
+    /* background: linear-gradient(to bottom, #041724, #0b4151); */
+
     position: relative;
     top: 0;
     left: 0;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: -80px;
+    /* margin-top: -80px; */
 
 }
 
@@ -98,26 +172,28 @@ body{
     margin-bottom: 49px;
     width: 80%;
     height: 500px; 
-    /* border: 2px solid #eee; */
     background: linear-gradient(#1380b4, #0c3458);
 
     position: relative;
     top: 50px;
-    border-end-end-radius: 20px;
-    border-top-right-radius: 20px;
+    border-end-end-radius: 50px;
+    border-top-right-radius: 50px;
     padding-block: 100px;
     padding-inline: 50px;
     display: flex;
+    gap: 50px;
     justify-content: space-around;
     align-items: center;
     transition: all 0.5s ease;
     transform: scale(0.9) translateX(-100px);
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
 }
 .fest-left-card:hover{
     transform: scale(1) translateX(0px);
-    box-shadow: 0px 0px 10px black;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
 }
 
 .fest-right-card{
@@ -141,48 +217,51 @@ body{
    right: -20%;
    transition: all 0.5s ease;
    transform: scale(0.9) translateX(100px);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
 
 }
 .fest-right-card:hover{
     transform: scale(1) translateX(0px);
-    box-shadow: 0px 0px 10px black;
+    /* box-shadow: 0px 0px 10px black; */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
 }
 
 
 .fest_content{
-    width: 60%;
+    width: 75%;
     height: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 50px;
 
 }
 .fest_links{
-    width: 50%;
+    /* width: 50%; */
     display: flex;
-    height: 50px;
-    align-items: center;
-    justify-content: center;
+    /* height: 50px; */
+    /* border: 2px solid red; */
 
+    margin-top: 20px;
+    gap: 20px;
 }
 
-.fest_links i{
-    margin: 0 20px;
+.fest_links img, .fest_links i{
+    /* margin: 0 20px; */
     /* background: #eee; */
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
+    aspect-ratio: square;
     font-size: 2rem;
     display: grid;
     place-items: center;
-    color: #1bb1de;
     transition: all 0.2s ease-in-out;
-    filter: drop-shadow(0px 0px 10px black)
 }
 
-.fest_links i:hover{
+.fest_links i:hover, .fest_links img:hover{
     transform: scale(1.2);
 }
 
@@ -226,8 +305,8 @@ body{
     text-transform: uppercase;
     font-weight: 800;
     font-size: 3.5rem;
-    color: #eee;
-    text-shadow: 5px 5px 10px #0c3458;
+    color: #e8f3fc;
+    text-shadow: 5px 0px 25px #0c3458;
     letter-spacing: 10px;
     /* text-shadow: 0px 0px 10px white; */
 
@@ -235,14 +314,16 @@ body{
 
 .fest_content h1:after{
     content: '';
-    height: 3px;
+    height: 2px;
     width: 100px;
     display: block;
     position: relative;
     left: 50%;
     margin-left: -50px;
-    background-color: #0c3458;
-    margin-top: 10px;
+    background-color: #e8f3fc;
+    margin-top: 5px;
+    border-radius: 24px;
+    box-shadow: 5px 5px 10px #0c3458;
 
 }
 
@@ -317,6 +398,7 @@ body{
         width: 100%;
         flex-direction: column;
         padding: 0;
+        padding-top: 10px;
         height: auto;
         transform: scale(1) translateX(0px);
 
@@ -345,6 +427,9 @@ body{
 
     .fest_content h1{
         font-size: 2.2rem;
+    }
+    .fest_content h4{
+        margin-top: 30px;
     }
     .imageslider_wrapper{
         

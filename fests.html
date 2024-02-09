@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="css\fests.css" />
     <link rel="stylesheet" href="css\style.css" />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://students.iiserb.ac.in" />
     <meta property="og:type" content="website" />
@@ -44,16 +44,16 @@
     <link rel="stylesheet" href="css/glide.theme.min.css" />
 
     <script src="https://unpkg.com/scrollreveal@4"></script>
-
+    <script src="/scripts/fest.js"></script>
     <script
       src="https://kit.fontawesome.com/eecc9ab967.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- <div>Icons made by <a target="_blank" href="https://www.freepik.com" title="Freepik">Freepik</a> from <a target="_blank" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a target="_blank" href="https://www.flaticon.com/authors/riajulislam" title="riajulislam">riajulislam</a> from <a target="_blank" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
     <style>
-      .contain {
-        background: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2)),
-          url(./images/fest.jpg);
+      .contain{
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('./images/continuum/6.jpg'); 
         background-size: cover;
       }
       .material-symbols-outlined {
@@ -64,6 +64,7 @@
         font-size: 20px;
         left: 48%;
         text-shadow: 1px 1px 10px black;
+        /* linear-gradient(-90deg,#0564a4,#31c242); */
       }
       .fa-angle-down {
         color: white;
@@ -71,48 +72,66 @@
     </style>
   </head>
 
-  <body>
+  <body >
     <div class="blurred"></div>
 
-    <div class="navbar">
-        <div class="content">
-          <div class="name">
-            <a target="_blank" href="https://www.iiserb.ac.in">
-              <img
-                alt="IISERB LOGO"
-                class="desktop"
-                src="./images/removed_bg.png"
-                alt=""
-              />
-  
-              <img class="mobile" src="./images/removed_bg.png" class="src" />
-            </a>
+
+
+    <div class="navbar absolute top-0  flex justify-between items-center">
+      <div class="content  h-full flex justify-around gap-12 items-center w-full ">
+        <div class="name flex gap-0  justify-center items-center">
+          <a target="_blank" href="https://www.iiserb.ac.in">
+            <img
+              alt="IISERB LOGO"
+              class="desktop"
+              src="./images/removed_bg.png"
+              alt=""
+            />
+
+            <img class="mobile" src="./images/removed_bg.png" class="src" />
+          </a>
+          <h1 class="md:visible invisible fest_navbar_header text-white text-xl text-left">Fests@<span class="header_iiserb">iiserb</span></h1>
+        </div>
+        <ul class="list mt-4 ">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
           </div>
-          <ul class="list">
-            <div class="icon cancel-btn">
-              <i class="fas fa-times"></i>
-            </div>
-            <li><a href="https://students.iiserb.ac.in">Home</a></li>
-            <li>
-              <a id="council_click scroll" href="https://students.iiserb.ac.in/#council_main">Councils</a>
-            </li>
-            <li><a id="scroll" href="https://students.iiserb.ac.in/#members">Members</a></li>
-            <li><a target="_blank" href="https://students.iiserb.ac.in/elections.html">Elections</a></li>
-            <li><a id="aboutus_href" href="https://students.iiserb.ac.in/contact.html">Contact</a></li>
-          </ul>
-  
-          <div class="icon menu-btn">
-            <i class="fas fa-bars"></i>
-          </div>
+          <li><a href="/#home">Home</a></li>
+          <li>
+            <a id="council_click scroll" href="/#council_main">Councils</a>
+          </li>
+          <li><a  href="/elections.html">Elections</a></li>
+          <li><a id="aboutus_href" href="#footerlast">Contact</a></li>
+          <li>  
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeA94NbQqS7NGlb5JjI6zWZjzJGn_L6g2NostRejwr8lQ2b5g/viewform" >
+            <img src="/images/icons/feedback.svg" alt="feedback">
+          </a>
+          </li>
+
+        </ul>
+
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
         </div>
       </div>
+    </div>
   
 
-    <div class="contain">
-      <a target="_blank" class="contain_header">
-        FESTS<a target="_blank" id="ii">&nbsp;@iiserb</a>
-      </a>
+    <div class="contain py-[200px] md:py-[250px]" style="transition: all 1s ease-in-out" id="fest_bg">
+      <div class="fest_header_container text-[15px] md:text-[20px]">
+      <h1 class="fest_header">Ongoing Fest</h1>
+        <a target="_blank" class="contain_header md:text-[80px] text-[40px]">
+          Continuum 2023
+        </a>
+        <div class="flex md:flex-row flex-col gap-2 md:gap-6 text-white font-sans">
+          <p><i style="color:#0696f6;" class="fa-solid fa-location-dot"></i>  Bhopal, India</p>
+          <p><i style="color:#0696f6;"  class="fa-regular fa-calendar-days"></i>  7th Feb - 10th Feb, 2024</p>
+        </div>
 
+        <a style="color: white;"  href="https://sites.google.com/view/maths-club-iiser-bhopal/continuum?authuser=0">
+          <button class="mt-12 md:p-4 md:px-6 p-3">About Us</button>
+        </a>
+    </div>
       <span class="material-symbols-outlined">
         <a href="#nextsection">
           <i class="fa-solid fa-angle-down"></i>
@@ -120,29 +139,165 @@
       </span>
     </div>
 
-    <div class="contain2" id="nextsection">
-      <div class="fest-left-card">
-        <div class="wrap-slider">
-          <div class="imageslider">
-            <div class="imageslider_wrapper">
-              <img src="images\Enthuzia\Enthuzia Logo.jpg" alt="" />
-              <img src="activities\enthuzia.png" alt="" />
-              <img src="images\Enthuzia\23f.jpg" alt="" />
-              <img src="images\Enthuzia\23.jpg" alt="" />
-              <img src="images\Enthuzia\18.jpeg" alt="" />
-              <img src="images\Enthuzia\20.jpeg" alt="" />
-            </div>
-          </div>
-          <div class="radio-container">
-            <button class="slider current-slide"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-          </div>
+    
+    <div id="nextsection" class="w-full py-24 bg-[#0564a4] flex flex-col gap-12 items-center justify-center ">
+      <div class="w-[80%] h-[80%] flex flex-col gap-12 items-left contain2header">
+      <h1 class="text-5xl  font-bold text-gray-200 drop-shadow-lg "> Upcoming Fests</h1>
+
+
+      <div class="w-full flex md:flex-row-reverse flex-col gap-2 md:gap-12 h-full ">
+      <div>
+  <h1 class="text-3xl font-bold  text-blue-400 drop-shadow-lg ">
+    Armagaeddon 2024
+  </h1>
+  <h3 class="text-lg text-blue-200 drop-shadow-lg italic">22-24 March</h3>
+  <p class="text-md md:text-lg mt-4 text-white">
+    Armageddon, the annual technology fest of IISER Bhopal, unleashes a thrilling battleground for gaming enthusiasts to showcase their skills. With a dynamic mix of competitive tournaments and casual gaming, the event creates an electrifying atmosphere on campus.
+  </p>
+  <div class="fest_links drop-shadow-lg ">
+    <a target="_blank" href="https://www.instagram.com/cnc_iiserb/"
+      >
+    <img src="/images/icons/instagram.png" alt="">
+    </a>
+    <a target="_blank" href="">
+      <i class="fa-solid fa-sm fa-globe text-white"></i>
+    </a>
+    <a
+      target="_blank"
+      href="https://in.linkedin.com/company/cnc-iiser-bhopal"
+      >
+    <img  src="/images/icons/linkedin.png" alt="">
+    </a>
+  </div>
+</div>
+<img src="/images/armageddon.jpg"  class="aspect-[16/9] object-cover h-[300px] " />
+</div>
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="w-[80%] h-[80%] flex flex-col gap-12 items-left contain2header">
+
+
+
+      <div class="w-full flex md:flex-row flex-col gap-2 md:gap-12 h-full mt-12">
+      <div>
+        <h1 class="text-3xl font-bold  text-blue-400 drop-shadow-lg ">
+          MUN 2024
+        </h1>
+        <h3 class="text-lg text-blue-200 drop-shadow-lg italic">30-31 March</h3>
+        <p class="text-md md:text-lg mt-4 text-white">
+          The Model United Nations (MUN) hosted at IISER Bhopal engaged students in diplomacy, fostering debate, and problem-solving on global issues. Participants assumed roles as delegates representing different countries, delving into intricate discussions to find resolutions. Through simulation, the event nurtured leadership, critical thinking, and diplomatic skills among attendees.
+        </p>
+        <div class="fest_links drop-shadow-lg ">
+          <a target="_blank" href="https://www.instagram.com/iiserb_mun"
+            >
+          <img src="/images/icons/instagram.png" alt="">
+          </a>
+          <a target="_blank" href="">
+            <i class="fa-solid fa-sm fa-globe text-white"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/sdc-iiserb/"
+            >
+          <img  src="/images/icons/linkedin.png" alt="">
+          </a>
         </div>
-        <div class="fest_content">
+      </div>
+      <img src="/images/mun/mun.png"  class="bg-black/80 aspect-[16/9] object-cover h-[300px] " />
+</div>
+
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+
+
+    <div class="contain2 bg-sky-950 py-24" id="nextsection">
+      <div class="w-full flex items-center justify-center">
+      <h1 class="text-6xl py-12  font-bold text-blue-300 drop-shadow-lg"> Other IISERB Fests</h1>
+    </div>
+      <div class="fest-right-card  flex items-center justify-between">
+        
+        <div
+        class="glide md:w-[50%] w-[90%] mt-4 md:mt-0"
+        style="
+          overflow-y: hidden;
+          transition: all 1s ease-in-out;
+          cursor:pointer;
+          display: flex; 
+          flex-direction: column;
+          gap: 50px;
+          
+
+        "
+      >
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <img
+                class="currentSlide aspect-square  object-contain"
+                id="image"
+
+                src="images/Enthuzia/Enthuzia Logo.jpg"
+                id="item-1"
+                alt="1"
+                data-title="SINGULARITY"
+                data-para="The annual science fest of IISER Bhopal. Singularity has expanded its entourage of influence, attracting college and school students alike to witness this extraordinary merry of science. Highlighting the promethean nuances of IISER as an institute meant to patronize, endow and give oxygen to scientific thinking, Singularity aims to promote out-of-the-box thinking and inculcate scientific ratiocination in the youth."
+                
+              />
+            </li>
+            <li class="glide__slide">
+              <img
+                src="images/Enthuzia/2.jpg"
+                style="object-fit: cover"
+                id="item-2"
+                alt="2"
+                data-title="Armagaeddon"
+                data-para="The annual e-gaming fest of IISER Bhopal. The Computing and Networking Council (CNC) promotes e-gaming and organises the Intra IISER e-gaming event, Armageddon."
+              />
+            </li>
+            <li class="glide__slide">
+              <img 
+              src="images/Enthuzia/3.jpg" 
+              id="item-3" 
+              alt="3" 
+              data-title="ANL" 
+              data-para="Arts and Letters is the major fest conducted by the Fine Arts and Literary Council.
+              "/>
+            </li>
+            <li class="glide__slide">
+              <img 
+              src="images/Enthuzia/4.jpg" 
+              id="item-3" 
+              alt="3" 
+              data-title="ANL" 
+              data-para="Arts and Letters is the major fest conducted by the Fine Arts and Literary Council.
+              "/>
+            </li>
+          </ul>
+        </div>
+        <div class="glide__bullets"  style="margin-top: 100px;" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+
+      </div>
+      </div>
+        <div class="fest_content ">
           <h1>ENTHUZIA</h1>
           <h4>
             Enthuzia is the annual socio-cultural fest conducted by the Indian
@@ -150,52 +305,84 @@
             prominent fest organised in Central India. The prime focus of the
             fest is to guarantee enjoyment & learning opportunities through fun,
             exciting activities. The fest is a 3-day celebration of arts,
-            culture & coming together of diverse communities. Exciting events &
-            entertaining talent displays make Enthuzia a truly reveling
-            experience for all attending audiences.
+            culture & coming together of diverse communities. 
           </h4>
           <div class="fest_links">
             <a target="_blank" href="https://www.instagram.com/enthuzia"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-            <a target="_blank" href=""><i class="fa-solid fa-globe"></i></a>
-            <a target="_blank" href="https://www.facebook.com/Enthuzia/"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
+              >
+            <img src="/images/icons/instagram.png" alt="">
+            </a>
+            <a target="_blank" href="">
+              <i class="fa-solid fa-globe text-white"></i>
+            </a>
             <a
               target="_blank"
               href="https://www.linkedin.com/company/enthuzia-iiser-bhopal"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
+              >
+            <img  src="/images/icons/linkedin.png" alt="">
+            </a>
           </div>
         </div>
       </div>
 
-      <div class="fest-right-card">
-        <div class="wrap-slider">
-          <div class="imageslider">
-            <div class="imageslider_wrapper">
+      <!-- <div class="fest-right-card">
+        <div
+        class="glide glide2 md:w-[50%] w-[90%] mt-4 md:mt-0"
+        style="
+          overflow-y: hidden;
+          transition: all 1s ease-in-out;
+          cursor:pointer;
+          display: flex; 
+          flex-direction: column;
+          gap: 50px;
+          
+
+        "
+      >
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
               <img
-                src="images\singularity\sing.png"
-                alt=""
+                class="currentSlide aspect-square  object-contain"
+                id="image"
+
+                src="images/singularity/sing.png"
+                id="item-11"
+                alt="1"
+                data-title="SINGULARITY"
+                data-para="The annual science fest of IISER Bhopal. Singularity has expanded its entourage of influence, attracting college and school students alike to witness this extraordinary merry of science. Highlighting the promethean nuances of IISER as an institute meant to patronize, endow and give oxygen to scientific thinking, Singularity aims to promote out-of-the-box thinking and inculcate scientific ratiocination in the youth."
+                
               />
-              <img src="activities\singularity.png" alt="" />
-              <img src="images\BOX_COUNCIL_LOGOS\science.png" alt="" />
-              <img src="images\singularity\20.jpeg" alt="" />
-              <img src="images/singularity/21.png" alt="" />
-              <img src="images\singularity\22.jpeg" alt="" />
-             
-            </div>
-          </div>
-          <div class="radio-container">
-            <button class="slider current-slide"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-          </div>
+            </li>
+            <li class="glide__slide">
+              <img
+                src="images/Enthuzia/20.jpeg"
+                style="object-fit: cover"
+                id="item-12"
+                alt="2"
+                data-title="Armagaeddon"
+                data-para="The annual e-gaming fest of IISER Bhopal. The Computing and Networking Council (CNC) promotes e-gaming and organises the Intra IISER e-gaming event, Armageddon."
+              />
+            </li>
+            <li class="glide__slide">
+              <img 
+              src="images/Enthuzia/23.jpg" 
+              id="item-13" 
+              alt="3" 
+              data-title="ANL" 
+              data-para="Arts and Letters is the major fest conducted by the Fine Arts and Literary Council.
+              "/>
+            </li>
+    
+          </ul>
         </div>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+
+      </div>
+      </div>
         <div class="fest_content">
           <h1>SINGULARITY</h1>
           <h4>
@@ -224,29 +411,96 @@
             ></a>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="fest-left-card">
-        <div class="wrap-slider">
-          <div class="imageslider">
-            <div class="imageslider_wrapper">
-              <img src="images\mun.png" alt="" />
-              <img src="images\MUN\1.jpeg" alt="" />
-              <img src="images\MUN\2.jpeg" alt="" />
-              <img src="images\MUN\3.jpg" alt="" />
-              <img src="images\MUN\2.jpeg" alt="" />
-              <img src="images\MUN\5.jpeg" alt="" />
-            </div>
-          </div>
-          <div class="radio-container">
-            <button class="slider current-slide"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-          </div>
+   
+        <div
+        class="glide  md:w-[50%] w-[90%] mt-4 md:mt-0"
+        style="
+          overflow-y: hidden;
+          transition: all 1s ease-in-out;
+          cursor:pointer;
+          display: flex; 
+          flex-direction: column;
+          gap: 50px;
+          
+
+        "
+      >
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <img
+                class="currentSlide   object-contain  bg-black"
+                id="image"
+
+                src="images/mun/mun.png"
+                id="item-1"
+                alt="1"
+                data-title="MUN"
+                data-para="The annual science fest of IISER Bhopal. Singularity has expanded its entourage of influence, attracting college and school students alike to witness this extraordinary merry of science. Highlighting the promethean nuances of IISER as an institute meant to patronize, endow and give oxygen to scientific thinking, Singularity aims to promote out-of-the-box thinking and inculcate scientific ratiocination in the youth."
+                
+              />
+            </li>
+            <li class="glide__slide">
+              <img
+                src="images/mun/1.webp"
+                style="object-fit: cover"
+                id="item-2"
+                alt="2"
+                data-title="mun"
+                data-para="The annual e-gaming fest of IISER Bhopal. The Computing and Networking Council (CNC) promotes e-gaming and organises the Intra IISER e-gaming event, Armageddon."
+              />
+            </li>
+            <li class="glide__slide">
+              <img 
+              src="images/mun/2.webp" 
+              id="item-3" 
+              alt="3" 
+              data-title="MUN" 
+              data-para="Arts and Letters is the major fest conducted by the Fine Arts and Literary Council.
+              "/>
+            </li>
+            <li class="glide__slide">
+              <img 
+              src="images/mun/3.webp" 
+              id="item-3" 
+              alt="3" 
+              data-title="MUN" 
+              data-para="Arts and Letters is the major fest conducted by the Fine Arts and Literary Council.
+              "/>
+            </li>
+            <li class="glide__slide">
+              <img 
+              src="images/mun/4.webp" 
+              id="item-3" 
+              alt="3" 
+              data-title="MUN" 
+              data-para="Arts and Letters is the major fest conducted by the Fine Arts and Literary Council.
+              "/>
+            </li>
+            <li class="glide__slide">
+              <img 
+              src="images/mun/5.webp" 
+              id="item-3" 
+              alt="3" 
+              data-title="MUN" 
+              data-para="Arts and Letters is the major fest conducted by the Fine Arts and Literary Council.
+              "/>
+            </li>
+          </ul>
         </div>
+        <div class="glide__bullets"  style="margin-top: 100px;" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+          <button class="glide__bullet" data-glide-dir="=3"></button>
+          <button class="glide__bullet" data-glide-dir="=4s"></button>
+
+
+      </div>
+      </div>
         <div class="fest_content">
           <h1>MUN</h1>
           <h4>
@@ -258,40 +512,79 @@
             on the Organisation's vast agenda.
           </h4>
           <div class="fest_links">
-            <a target="_blank" href="https://www.instagram.com/iiserb_mun/"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-            <a target="_blank" href=""><i class="fa-solid fa-globe"></i></a>
-            <a target="_blank" href="https://www.facebook.com/IISERBMUN/"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-            <a target="_blank" href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://www.instagram.com/iiserb_mun/?hl=en"
+              >
+            <img src="/images/icons/instagram.png" alt="">
+            </a>
+            <a target="_blank" href="">
+              <i class="fa-solid fa-globe text-white"></i>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/company/student-development-council/"
+              >
+            <img  src="/images/icons/linkedin.png" alt="">
+            </a>
           </div>
         </div>
       </div>
 
       <div class="fest-right-card">
-        <div class="wrap-slider">
-          <div class="imageslider">
-            <div class="imageslider_wrapper">
-              <img src="images\iism\IISM.png" alt="" />
-              <img src="images\iism\team.jpeg" alt="" />
-              <img src="images\clubs\basketball.png" alt="" />
-              <img src="images\clubs\cricket.png" alt="" />
-             <img src="images\clubs\lawntennis.png" alt="" />
-              <img src="images\clubs\kabbadi.png" alt="" />
-              
-            </div>
-          </div>
-          <div class="radio-container">
-            <button class="slider current-slide"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-          </div>
+        <div
+        class="glide md:w-[50%] w-[90%] mt-4 md:mt-0"
+        style="
+          overflow-y: hidden;
+          transition: all 1s ease-in-out;
+          cursor:pointer;
+          display: flex; 
+          flex-direction: column;
+          gap: 50px;
+          
+
+        "
+      >
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <img
+                class="currentSlide   object-contain  "
+                id="image"
+
+                src="images/iism/iism.jpeg"
+                id="item-1"
+                alt="1"
+                data-title="iism"
+                data-para="The annual science fest of IISER Bhopal. Singularity has expanded its entourage of influence, attracting college and school students alike to witness this extraordinary merry of science. Highlighting the promethean nuances of IISER as an institute meant to patronize, endow and give oxygen to scientific thinking, Singularity aims to promote out-of-the-box thinking and inculcate scientific ratiocination in the youth."
+                
+              />
+            </li>
+            <li class="glide__slide">
+              <img
+                src="images/iism/5.jpg"
+                id="item-2"
+                alt="2"
+                data-title="iism"
+                data-para="The annual e-gaming fest of IISER Bhopal. The Computing and Networking Council (CNC) promotes e-gaming and organises the Intra IISER e-gaming event, Armageddon."
+              />
+            </li>
+            <li class="glide__slide">
+              <img
+                src="images/iism/iism1.jpg"
+                id="item-2"
+                alt="2"
+                data-title="iism"
+                data-para="The annual e-gaming fest of IISER Bhopal. The Computing and Networking Council (CNC) promotes e-gaming and organises the Intra IISER e-gaming event, Armageddon."
+              />
+            </li>
+
+          </ul>
         </div>
+        <div class="glide__bullets"  style="margin-top: 100px;" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+
+      </div>
+      </div>
         <div class="fest_content">
           <h1>IISM</h1>
           <h4>
@@ -306,36 +599,73 @@
             with carrom being the latest addition.
           </h4>
           <div class="fest_links">
-            <a target="_blank" href=""
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-            <a target="_blank" href=""><i class="fa-solid fa-globe"></i></a>
-            <a target="_blank" href=""><i class="fa-brands fa-facebook"></i></a>
-            <a target="_blank" href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://www.instagram.com/interiisersportsmeet/"
+              >
+            <img src="/images/icons/instagram.png" alt="">
+            </a>
+            <a target="_blank" href="">
+              <i class="fa-solid fa-globe text-white"></i>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/sports-council-606b54299/?originalSubdomain=in"
+              >
+            <img  src="/images/icons/linkedin.png" alt="">
+            </a>
           </div>
         </div>
       </div>
       <div class="fest-left-card">
-        <div class="wrap-slider">
-          <div class="imageslider">
-            <div class="imageslider_wrapper">
-              <img src="images\IICM\IICM23.jpeg" alt="" />
-              <img src="images\IICM\team.jpg" alt="" />
-              <img src="activities\iicm.jpg" alt="" />
-             <img src="activities\iicm2.jpg" alt="" />
-              <img src="activities\iicm3.jpg" alt="" />
-              <img src="images\IICM\5.jpeg" alt="" />
-            </div>
-          </div>
-          <div class="radio-container">
-            <button class="slider current-slide"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-          </div>
+
+        <div
+        class="glide md:w-[50%] w-[90%] mt-4 md:mt-0"
+        style="
+          overflow-y: hidden;
+          transition: all 1s ease-in-out;
+          cursor:pointer;
+          display: flex; 
+          flex-direction: column;
+          gap: 50px;
+          
+
+        "
+      >
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <img
+                class="currentSlide   object-contain  bg-white"
+                id="image"
+
+                src="images/iicm.svg"
+                id="item-1"
+                alt="1"
+                data-title="MUN"
+                data-para="The annual science fest of IISER Bhopal. Singularity has expanded its entourage of influence, attracting college and school students alike to witness this extraordinary merry of science. Highlighting the promethean nuances of IISER as an institute meant to patronize, endow and give oxygen to scientific thinking, Singularity aims to promote out-of-the-box thinking and inculcate scientific ratiocination in the youth."
+                
+              />
+            </li>
+            <li class="glide__slide">
+              <img
+                src="images/IICM/team.jpg"
+                style="object-fit: contain"
+                id="item-2"
+                alt="2"
+                data-title="iicm"
+                data-para="The annual e-gaming fest of IISER Bhopal. The Computing and Networking Council (CNC) promotes e-gaming and organises the Intra IISER e-gaming event, Armageddon."
+              />
+            </li>
+          
+          </ul>
         </div>
+        <div class="glide__bullets"  style="margin-top: 100px;" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+
+      </div>
+      </div>
+
         <div class="fest_content">
           <h1>IICM</h1>
           <h4>
@@ -345,38 +675,101 @@
             dance, theatre, filmmaking, literature, and photography take place
             spread over a span of three days.
           </h4>
-          <div class="fest_links">
-            <a target="_blank" href=""
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-            <a target="_blank" href=""><i class="fa-solid fa-globe"></i></a>
-            <a target="_blank" href=""><i class="fa-brands fa-facebook"></i></a>
-            <a target="_blank" href=""><i class="fa-brands fa-linkedin"></i></a>
+           <div class="fest_links">
+            <a target="_blank" href="https://www.instagram.com/enthuzia"
+              >
+            <img src="/images/icons/instagram.png" alt="">
+            </a>
+            <a target="_blank" href="">
+              <i class="fa-solid fa-globe text-white"></i>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/company/enthuzia-iiser-bhopal"
+              >
+            <img  src="/images/icons/linkedin.png" alt="">
+            </a>
           </div>
         </div>
       </div>
 
       <div class="fest-right-card">
-        <div class="wrap-slider">
-          <div class="imageslider">
-            <div class="imageslider_wrapper">
-              <img src="images\anl\anl.png" alt="" />
-              <img src="./images/anl/anl1.jpg" alt="" />
-              <img src="./images/anl/anl2.jpg" alt="" />
-              <img src="./images/anl/anl3.jpg" alt="" />
-              <img src="./images/anl/anl4.jpg" alt="" />
-              <img src="./images/anl/anl5.jpg" alt="" />
-            </div>
-          </div>
-          <div class="radio-container">
-            <button class="slider current-slide"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-          </div>
+        <div
+        class="glide md:w-[50%] w-[90%] mt-4 md:mt-0"
+        style="
+          overflow-y: hidden;
+          transition: all 1s ease-in-out;
+          cursor:pointer;
+          display: flex; 
+          flex-direction: column;
+          gap: 50px;
+          
+
+        "
+      >
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <img
+                class="currentSlide   object-contain  "
+                id="image"
+
+                src="images/anl/anl.png"
+                id="item-1"
+                alt="1"
+                data-title="iism"
+                data-para="The annual science fest of IISER Bhopal. Singularity has expanded its entourage of influence, attracting college and school students alike to witness this extraordinary merry of science. Highlighting the promethean nuances of IISER as an institute meant to patronize, endow and give oxygen to scientific thinking, Singularity aims to promote out-of-the-box thinking and inculcate scientific ratiocination in the youth."
+                
+              />
+            </li>
+            <li class="glide__slide">
+              <img
+                src="images/anl/anl1.jpg"
+                id="item-2"
+                alt="2"
+                data-title="iism"
+                data-para="The annual e-gaming fest of IISER Bhopal. The Computing and Networking Council (CNC) promotes e-gaming and organises the Intra IISER e-gaming event, Armageddon."
+              />
+            </li>
+            <li class="glide__slide">
+              <img
+                src="images/anl/anl2.jpg"
+                id="item-2"
+                alt="2"
+                data-title="iism"
+                data-para="The annual e-gaming fest of IISER Bhopal. The Computing and Networking Council (CNC) promotes e-gaming and organises the Intra IISER e-gaming event, Armageddon."
+              />
+            </li>
+            <li class="glide__slide">
+              <img
+                src="images/anl/anl3.jpg"
+                id="item-2"
+                alt="2"
+                data-title="iism"
+                data-para="The annual e-gaming fest of IISER Bhopal. The Computing and Networking Council (CNC) promotes e-gaming and organises the Intra IISER e-gaming event, Armageddon."
+              />
+            </li>
+            <li class="glide__slide">
+              <img
+                src="images/anl/anl4.jpg"
+                id="item-2"
+                alt="2"
+                data-title="iism"
+                data-para="The annual e-gaming fest of IISER Bhopal. The Computing and Networking Council (CNC) promotes e-gaming and organises the Intra IISER e-gaming event, Armageddon."
+              />
+            </li>
+
+          </ul>
         </div>
+        <div class="glide__bullets"  style="margin-top: 100px;" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+          <button class="glide__bullet" data-glide-dir="=3"></button>
+
+
+      </div>
+      </div>
         <div class="fest_content">
           <h1>A&L</h1>
           <h4>
@@ -384,75 +777,47 @@
             Literary Council.
           </h4>
           <div class="fest_links">
-            <a target="_blank" href=""
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-            <a target="_blank" href=""><i class="fa-solid fa-globe"></i></a>
-            <a target="_blank" href=""><i class="fa-brands fa-facebook"></i></a>
-            <a target="_blank" href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://www.instagram.com/falc_iiserb"
+              >
+            <img src="/images/icons/instagram.png" alt="">
+            </a>
+            <a target="_blank" href="">
+              <i class="fa-solid fa-globe text-white"></i>
+            </a>
+            <a
+              target="_blank"
+              >
+            <img  src="/images/icons/linkedin.png" alt="">
+            </a>
           </div>
         </div>
       </div>
 
       <div class="fest-left-card">
-        <div class="wrap-slider">
-          <div class="imageslider">
-            <div class="imageslider_wrapper">
-              <img src="./images/Armageddon _23 Logo Blue.png" alt="" />
-              <img src="activities\Armagedon.png" alt="" />
-              <!-- <img src="images\Sports Council Log.png" alt="" />
-              <img src="./images/Enthuzia Logo.jpg" alt="" />
-              <img src="./images/Enthuzia Logo.jpg" alt="" /> -->
-            </div>
-          </div>
-          <div class="radio-container">
-            <button class="slider current-slide"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-          </div>
-        </div>
+
+
         <div class="fest_content">
-          <h1>Armagaeddon</h1>
+          <h1>Luminaire</h1>
           <h4>
-            The annual e-gaming fest of IISER Bhopal. The Computing and
-            Networking Council (CNC) promotes e-gaming and organises the Intra
-            IISER e-gaming event, Armageddon.
+            Luminaire, the film festival of IISER Bhopal, illuminates the campus with a cinematic celebration, showcasing a diverse range of creative storytelling. As a platform for aspiring filmmakers, Luminare provides a stage to share narratives that captivate and inspire. The festival not only fosters a love for filmmaking within the IISER community but also encourages exploration of the visual arts. With screenings, discussions, and awards, Luminare stands as a testament to the vibrant intersection of academia and cinematic expression at IISER Bhopal.
           </h4>
-          <div class="fest_links">
-            <a target="_blank" href=""
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-            <a target="_blank" href=""><i class="fa-solid fa-globe"></i></a>
-            <a target="_blank" href=""><i class="fa-brands fa-facebook"></i></a>
-            <a target="_blank" href=""><i class="fa-brands fa-linkedin"></i></a>
+         <div class="fest_links">
+            <a target="_blank" href="https://www.instagram.com/movieclub_iiserb/"
+              >
+            <img src="/images/icons/instagram.png" alt="">
+            </a>
+            <a target="_blank" href="">
+              <i class="fa-solid fa-globe text-white"></i>
+            </a>
+            
           </div>
         </div>
       </div>
 
       <div class="fest-right-card">
-        <div class="wrap-slider">
-          <div class="imageslider">
-            <div class="imageslider_wrapper">
-              <img src="images\Sports Council Log.png" alt="" />
-              <img src="images\clubs\basketball.png" alt="" />
-              <img src="images\clubs\cricket.png" alt="" />
-             <img src="images\clubs\lawntennis.png" alt="" />
-              <img src="images\clubs\kabbadi.png" alt="" />
-              <img src="activities\kabaddi.jpg" alt="" />
-            </div>
-          </div>
-          <div class="radio-container">
-            <button class="slider current-slide"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-            <button class="slider"></button>
-          </div>
-        </div>
+
+
+
         <div class="fest_content">
           <h1>Sangharsh</h1>
           <h4>
@@ -468,20 +833,22 @@
             represent the institute in the IISM.
           </h4>
           <div class="fest_links">
-            <a target="_blank" href=""
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-            <a target="_blank" href=""><i class="fa-solid fa-globe"></i></a>
-            <a target="_blank" href=""><i class="fa-brands fa-facebook"></i></a>
-            <a target="_blank" href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://www.instagram.com/movieclub_iiserb/?hl=en"
+              >
+            <img src="/images/icons/instagram.png" alt="">
+            </a>
+            <a target="_blank" href="">
+              <i class="fa-solid fa-globe text-white"></i>
+            </a>
+         
           </div>
         </div>
       </div>
     </div>
 
-    <div class="footerlast">
+    <div id="footerlast" class="footerlast ">
       <!--  Footer -->
-      <footer class="footer">
+      <footer class="footer bg-sky-900">
         <div class="inner-footer">
           <!--  for contact us info -->
           <div class="footer-items">
@@ -670,7 +1037,7 @@
                 >
               </li>
             </ul>
-            <div class="scroll-top-button" onclick="scrollTopAnimated(500)">
+            <div class="scroll-top-button bg-sky-900" onclick="scrollTopAnimated(500)">
               Scroll to top<i
                 class="fa fa-long-arrow-up"
                 aria-hidden="true"
@@ -680,7 +1047,7 @@
           </div>
         </div>
         <!--   Footer Bottom start  -->
-        <div class="footer-bottom">
+        <div class="footer-bottom bg-sky-950">
           <span
             style="
               color: #dadada;
@@ -728,20 +1095,20 @@
     <script src="./scripts/common.js"></script>
 
     <script>
-      // ScrollReveal({
-      //     reset: false,
-      //     distance: '60px',
-      //     duration: 2000,
-      //     // delay: 400
-      // });
-      //     ScrollReveal().reveal('.contain_header', {delay: 200, origin: 'left'});
-      //     ScrollReveal().reveal('#ii', {delay: 200, origin: 'right'});
+      ScrollReveal({
+          reset: false,
+          distance: '60px',
+          duration: 2000,
+          // delay: 400
+      });
+          ScrollReveal().reveal('.fest_header_container', {delay: 400, origin: 'bottom'});
+          ScrollReveal().reveal('#ii', {delay: 200, origin: 'right'});
+          ScrollReveal().reveal('.contain2header', {delay: 100, origin: 'right', reset: false});
 
-      //     ScrollReveal().reveal('.fest-left-card', {delay: 200, origin: 'left'});
-      //     ScrollReveal().reveal('.fest-right-card', {delay: 200, origin: 'right'});
+          ScrollReveal().reveal('.fest-left-card', {delay: 200, origin: 'left'});
+          ScrollReveal().reveal('.fest-right-card', {delay: 200, origin: 'right'});
 
-      // ScrollReveal().reveal('.box', {delay: 0, origin: 'left', reset: false});
-      // ScrollReveal().reveal('.navbar', {delay: 200, origin:'top'});
+      ScrollReveal().reveal('.navbar', {delay: 200, origin:'top'});
 
       var root_css = document.querySelector(":root");
     //   var n = getComputedStyle(root_css).getPropertyValue("--navlist-color");
@@ -749,60 +1116,42 @@
       root_css.style.setProperty("--background", "#1380b4");
       root_css.style.setProperty("--primary", "#0b4151");
 
-      root_css.style.setProperty("--text", "#000000");
-      root_css.style.setProperty("--accent", "#000000");
+      root_css.style.setProperty("--text", "#ffffff");
+      root_css.style.setProperty("--accent", "#ffffff");
       root_css.style.setProperty("--footer-background-color", "#0b4151" )
       root_css.style.setProperty("--footer-scroll-top-color", "#0b4151")
       root_css.style.setProperty("--footer-text-color", "#ffffff")
 
 
 
-      // MENU BAR ON MOBILE VIEWS
-
-    //   const menu = document.querySelector(".list");
-    //   const menuBtn = document.querySelector(".menu-btn");
-    //   const cancelBtn = document.querySelector(".cancel-btn");
-
-    //   menuBtn.onclick = () => {
-    //     menu.classList.add("active");
-    //     menuBtn.classList.add("hide");
-    //     document.querySelector(".blurred").classList.add("blur");
-    //     document.querySelector("body").classList.add("active");
-    //     document.querySelector(".navbar").style.zIndex = 99999;
-    //   };
-
-    //   cancelBtn.onclick = () => {
-    //     menu.classList.remove("active");
-    //     menuBtn.classList.remove("hide");
-    //     document.querySelector(".blurred").classList.remove("blur");
-    //     document.querySelector("body").classList.remove("active");
-    //     document.querySelector(".navbar").style.zIndex = 999;
-    //   };
-    //   document.querySelector(".blurred").onclick = () => {
-    //     menu.classList.remove("active");
-    //     menuBtn.classList.remove("hide");
-    //     document.querySelector(".blurred").classList.remove("blur");
-    //     document.querySelector("body").classList.remove("active");
-    //     document.querySelector(".navbar").style.zIndex = 999;
-    //   };
-
-    //   const primaryHeader = document.querySelector(".navbar");
-    //   const scrollWatcher = document.createElement("div");
-
-    //   scrollWatcher.setAttribute("data-scroll-watcher", "");
-    //   primaryHeader.before(scrollWatcher);
-
-    //   const navObserver = new IntersectionObserver(
-    //     (entries) => {
-    //       primaryHeader.classList.toggle(
-    //         "sticking",
-    //         !entries[0].isIntersecting
-    //       );
-    //     },
-    //     { rootMargin: "200px 0px 0px 0px" }
-    //   );
-
-    //   navObserver.observe(scrollWatcher);
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      const configuration = {
+        type: "carousel",
+        perView: 1,
+        autoplay: 3000,
+        hoverpause: true,
+        focusAt: "center",
+        breakpoints: {
+          600: {
+            perView: 1,
+          },
+        },
+      };
+      
+      var sliders = document.querySelectorAll('.glide');
+
+for (var i = 0; i < sliders.length; i++) {
+  var glide = new Glide(sliders[i], configuration,{
+    gap: 15,
+  });
+  
+  glide.mount();
+}
+
+
+    </script>
+
   </body>
 </html>

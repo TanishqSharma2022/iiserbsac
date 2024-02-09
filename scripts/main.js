@@ -3,6 +3,11 @@
 
 
 
+
+
+
+
+
 const btnScrollToTop = document.querySelector(".scrollup");
 const arrowup = btnScrollToTop.querySelector("i");
 window.addEventListener('scroll', e => {
@@ -139,6 +144,7 @@ primaryHeader.before(scrollWatcher);
 
 const navObserver = new IntersectionObserver((entries) => {
     primaryHeader.classList.toggle('sticking', !entries[0].isIntersecting)
+    console.log("asdfasdf")
 }, {rootMargin: "200px 0px 0px 0px"});
 
 navObserver.observe(scrollWatcher);
@@ -261,7 +267,7 @@ function toggle(n){
             popupimage.src = "images/senate/senate_23_24/Debasmita.jpg";
             name.innerHTML = "Debasmita Panda";
             position.innerHTML = "Acting-President";
-            content.innerHTML="Meet me, the cool and quirky by heart ! As the SAC President, I'm not just about making a difference; I'm about adding color and joy to every corner. Think of me as a blend of all the best Friends episodes - relatable, hilarious, and always there for you. Fueled by sitcoms and a love for food, this artist and leader is the friend you've always wanted. Get ready for some fun and inspiration, campus life's never been this vibrant!";
+            content.innerHTML="Meet me, the cool and quirky by heart ! As the SAC President, I'm not just about making a difference; I'm about adding color and joy to every corner. Think of me as a blend of all the best Friends episodes - relatable, hilarious, and always there for you.";
            
                 //sec_insta.setAttribute("href", "");
          sec_linkedin.setAttribute("href", "https://www.linkedin.com/in/debasmita-panda-5150441b4");
@@ -331,7 +337,7 @@ function toggle(n){
             popupimage.src = "images/senate/senate_23_24/Debasmita.jpg";
             name.innerHTML = "Debasmita Panda";
             position.innerHTML = "FALC Secretary";
-            content.innerHTML="Meet me, the cool and quirky by heart ! As the FALC Secretary, I'm not just about making a difference; I'm about adding color and joy to every corner. Think of me as a blend of all the best Friends episodes - relatable, hilarious, and always there for you. Fueled by sitcoms and a love for food, this artist and leader is the friend you've always wanted. Get ready for some fun and inspiration, campus life's never been this vibrant!";
+            content.innerHTML="Meet me, the cool and quirky by heart ! As the FALC Secretary, I'm not just about making a difference; I'm about adding color and joy to every corner. Think of me as a blend of all the best Friends episodes - relatable, hilarious, and always there for you.";
                    
             
             sec_insta.setAttribute("href", "");
@@ -343,7 +349,7 @@ function toggle(n){
             popupimage.src = "images/senate/senate_23_24/Ashim.jpg";
             name.innerHTML = "Ashim Dhor";
             position.innerHTML = "Sports Secretary";
-            content.innerHTML="Hey everyone, it's Ashim, your go-to Sports Maestro! I'm all about blending the unconventional with a touch of style, and I'm here to take our sports culture to new heights. Let's team up to redefine what excellence looks like in our arena. Drop by with your ideas, and let's sculpt a sports culture that's both classy and kickin'!Ready for a dash of class and a splash of adrenaline? Buckle up, folks!";
+            content.innerHTML="Hey everyone, it's Ashim, your go-to Sports Maestro! I'm all about blending the unconventional with a touch of style, and I'm here to take our sports culture to new heights. Let's team up to redefine what excellence looks like in our arena. Buckle up, folks!";
                    
             
             sec_insta.setAttribute("href", "https://www.instagram.com/ash_h.im/");
@@ -355,7 +361,7 @@ function toggle(n){
             popupimage.src = "images/senate/senate_23_24/saisab.png";
             name.innerHTML = " Saisab Sadhu";
             position.innerHTML = "SDC Secretary";
-            content.innerHTML="I am Saisab Sadhu, Secretary for the Student Development Council (SDC). Fueled by my passion for enriching our student community, I weave various nuances into my responsibilities. I aim to foster an environment where innovation, collaboration, and professional growth take the lead. I intend to direct my efforts towards building a well-rounded student community with the tools and opportunities to advance in a thriving and fulfilling career path.";
+            content.innerHTML="I am Saisab Sadhu, Secretary for the Student Development Council (SDC). Fueled by my passion for enriching our student community, I weave various nuances into my responsibilities. I aim to foster an environment where innovation, collaboration, and professional growth take the lead.";
                    
             
          sec_insta.setAttribute("href", "https://www.instagram.com/saisab_sadhu/");
@@ -621,6 +627,8 @@ function council_toggle(n){
             boxes[6].style.display = "flex";
             boxes[6].querySelector("img").src = "./images/clubs/poetry.jpg";
             boxes[6].querySelector("#club_name").innerHTML = "Poetry Club";
+            document.querySelector("#sqr7").setAttribute("href", "https://www.instagram.com/wordsmiths_workshop");
+
 
             boxes[7].style.display = "none";
             boxes[8].style.display = "none";
@@ -755,7 +763,7 @@ function council_toggle(n){
 
             boxes[1].querySelector("img").src = "images/clubs/aws.png";
             boxes[1].querySelector("#club_name").innerHTML = "Animal Welfare Society";
-            document.querySelector("#sqr2").setAttribute("href", "https://www.instagram.com/");
+            document.querySelector("#sqr2").setAttribute("href", "https://www.instagram.com/humansofiiserb");
 
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
 
@@ -804,7 +812,6 @@ function council_toggle(n){
             
             boxes[0].querySelector("img").src = "images/clubs/football.png";
             boxes[0].querySelector("#club_name").innerHTML = "Football Club ";
-            // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
             document.querySelector("#sqr1").setAttribute("href", "https://www.instagram.com/football_iiserb");
 
            
@@ -890,7 +897,7 @@ function council_toggle(n){
             boxes[13].style.display = "flex";
             boxes[13].querySelector("img").src = "images/clubs/lawntennis.png";
             boxes[13].querySelector("#club_name").innerHTML = "Lawn Tennis";
-           // document.querySelector("#sqr14").setAttribute("href", "https://www.instagram.com/gymkhana_iiserb");
+           document.querySelector("#sqr14").setAttribute("href", "https://www.instagram.com/sports_iiserb/");
 
            boxes[14].style.display = "flex";
            boxes[14].querySelector("img").src = "images/clubs/yoga.png";
@@ -925,25 +932,32 @@ function council_toggle(n){
             weblink.setAttribute("href", "sdc/index.html");
             boxes[0].querySelector("img").src = "images/clubs/Placements.png";
             boxes[0].querySelector("#club_name").innerHTML = "Placements and Internships";
+
             document.querySelector("#sqr1").setAttribute("href", "sdc/index.html");
+
             
             
             
             
             boxes[1].querySelector("img").src = "images/clubs/Carma.png";
             boxes[1].querySelector("#club_name").innerHTML = "CarMa and Blogs ";
+
             document.querySelector("#sqr2").setAttribute("href", "sdc/index.html");
+
 
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
             boxes[2].style.display="flex";
             boxes[2].querySelector("img").src = "images/clubs/Orientations.png";
             boxes[2].querySelector("#club_name").innerHTML = "Orientations ";
+
             document.querySelector("#sqr3").setAttribute("href", "sdc/index.html");
+
 
 
             boxes[3].style.display = "flex";
             boxes[3].querySelector("img").src = "images/clubs/Career Talk.png";
             boxes[3].querySelector("#club_name").innerHTML = "Career Talks ";
+
             document.querySelector("#sqr4").setAttribute("href", "sdc/index.html");
 
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
@@ -952,20 +966,26 @@ function council_toggle(n){
             boxes[4].style.display = "flex";
             boxes[4].querySelector("img").src = "images/clubs/alumni.png";
             boxes[4].querySelector("#club_name").innerHTML = "Alumni Events";
+
             document.querySelector("#sqr5").setAttribute("href", "sdc/index.html");
+
 
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
 
             boxes[5].style.display = "flex";
             boxes[5].querySelector("img").src = "images/clubs/outreach.png";
             boxes[5].querySelector("#club_name").innerHTML = "Institute Outreach ";
+
             document.querySelector("#sqr6").setAttribute("href", "sdc/index.html");
+
 
 
             boxes[6].style.display = "flex";
             boxes[6].querySelector("img").src = "images/clubs/E Cell.png";
             boxes[6].querySelector("#club_name").innerHTML = "Entrepreneurship Cell";
+
             document.querySelector("#sqr7").setAttribute("href", "sdc/ecell/index.html");
+
             
             boxes[7].style.display = "none";
             boxes[8].style.display = "none";
@@ -1009,18 +1029,18 @@ function council_toggle(n){
 
             boxes[1].querySelector("img").src = "images/2.png";
             boxes[1].querySelector("#club_name").innerHTML = "DRs";
-            document.querySelector("#sqr2").setAttribute("href", "Representativecouncil.html");
+            document.querySelector("#sqr2").setAttribute("href", "/Representativecouncil.html");
 
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
             boxes[2].style.display="flex";
             boxes[2].querySelector("img").src = "images/3.png";
             boxes[2].querySelector("#club_name").innerHTML = "MRs";
-            document.querySelector("#sqr3").setAttribute("href", "Representativecouncil.html");
+            document.querySelector("#sqr3").setAttribute("href", "/Representativecouncil.html");
 
             boxes[3].style.display = "flex";
             boxes[3].querySelector("img").src = "images/4.png";
             boxes[3].querySelector("#club_name").innerHTML = "HRs";
-            document.querySelector("#sqr4").setAttribute("href", "Representativecouncil.html");
+            document.querySelector("#sqr4").setAttribute("href", "/Representativecouncil.html");
             
             // boxes[0].querySelector("#member_name").innerHTML = "Chinmayee Goswami `20 <br> Animesh Patra `20";
 
