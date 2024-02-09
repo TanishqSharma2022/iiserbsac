@@ -1024,20 +1024,14 @@ h1 > img {
   /* width: 20%; */
   height: 105px;
   margin: 0 auto;
-  /* background: url('./images/cultural_council.png'); */
   background-size: contain;
   box-shadow: 1px 1px 10px black;
   background: white;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  /* mix-blend-mode: multiply; */
-  /* top: 3%; */
 }
 
 .council_container {
   width: 100%;
-  /* background: red; */
   height: 80%;
   position: relative;
   margin: 0 auto;
@@ -1048,7 +1042,7 @@ h1 > img {
   width: 70%;
   height: 100%;
   /* padding: 10px; */
-  overflow-y: scroll;
+  overflow-y: auto;
   /* background: brown; */
 }
 .content p{

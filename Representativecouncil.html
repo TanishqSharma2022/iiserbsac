@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css\style.css">
     <script src="https://kit.fontawesome.com/eecc9ab967.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/riajulislam" title="riajulislam">riajulislam</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
     <style>
@@ -128,6 +129,14 @@
    
    
 <h3 class="rc">Reprensentative Council</h3>
+<div class="w-full flex items-center justify-center py-6">
+            <div
+            id="viewer"
+            class="constitution_image"
+            style="width: 400px; height: 450px"
+            >
+        </div>
+        </div>
         <div class="page-wrapper" style="margin-top: 50px;">
            
             <div class="profile-box">
@@ -284,7 +293,18 @@
                 </div>
             </footer>
         </div>
-    
+        <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
+        <script>
+          const config = { 
+            documentId: '1efcb175-8c3f-4277-bb0d-6c370a4d7a35',
+            darkMode: true, 
+            token: '' //add your server side generated security token or change your document permission to public
+          };
+          CloudPDF(config, document.getElementById('viewer')).then((instance) => {
+            
+          });
+        </script>
+        
         <script src="./scripts/main.js"></script>
 
 </body>
