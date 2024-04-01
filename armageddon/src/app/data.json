@@ -1,0 +1,722 @@
+{
+    "events"  : [
+        {
+            "eventId" : 1,
+            "eventName" : "ArmaCode",
+            "eventDesc" : "After several successful coding hackathons, the coding club of IISERB returns with another thrilling and this time an even bigger hackathon, an inter-college coding competition to be held across 2 days. Brace yourself for challenging problems and the opportunity to showcase your programming prowess in this two-day codathon.",
+            "eventImage" : "https://arma-data.pages.dev/images/events/armacode%20.jpg",
+            "regDeadline" : "2024-03-24T12:12:34+00:00",
+            "eventDate" : "2024-03-24",
+            "starttime": "11:00 AM",
+            "endtime": "1:00 PM",
+            "venue" : "LHC Atrium",
+            "regLink" : "https://forms.gle/FTDjPgyJ6a4EMo16A",
+            "rulebook" : "https://drive.google.com/drive/folders/1pGvsiPNF9NFl4gcKDLLmSUy7R1b-mCG_",
+            "type" : "competition",
+            "isFeatured" : true
+        }, 
+        {
+            "eventId" : 2,
+            "eventName" : "Tech Expo",
+            "eventDesc" : "Tech Expo - the ultimate gathering for innovators, entrepreneurs, and tech enthusiasts alike! It involves a vibrant ecosystem of cutting-edge startups, captivating tech pitches, engaging tech stalls and insightful talks by tech entrepreneurs . Whether you're looking to network, explore groundbreaking innovations, or showcase your own tech venture, Tech Expo is your platform to conquer",
+            "eventImage" : "https://arma-data.pages.dev/images/events/techExpo.png",
+            "regDeadline" : "2023-03-24T12:12:34+00:00",
+            "eventDate" : "2024-03-24T12:12:34+00:00",
+            "starttime": "12:00 PM",
+            "endtime": "7:00PM",
+            "venue" : "LHC Atrium",
+            "regLink" : "/#",
+            "rulebook" : "/#",
+            "type" : "featured",
+            "isFeatured" : true
+        },
+
+        {
+            "eventId" : 7,
+            "eventName" : "Tech Quiz",
+            "eventDesc" : "Scavenge your techie Brains to compete against each other for a mind-boggling Tech-Quiz in collaboration with IISERB’s very own Quizzing Club IBQC. Be a part of this rewarding challenge filled with fun, excitement and IQ.",
+            "eventImage" : "https://arma-data.pages.dev/images/events/techQuiz.png",
+            "regDeadline" : "2024-03-25T12:12:34+00:00",
+            "eventDate" : "2024-03-23T12:12:34+00:00",
+            "starttime": "9:00 PM",
+            "endtime": "12:00AM",
+            "venue" : "LHC Atrium",
+            "regLink" : "/#",
+            "rulebook" : "/#",
+            "type" : "competition",
+            "isFeatured" : false
+        },
+
+        {
+            "eventId" : 3,
+            "eventName" : "Arma Fair",
+            "eventDesc" : "Experience the ultimate fusion of technology and entertainment at Arma Fair! This pre-event extravaganza promises a captivating blend of tech displays, retro games showcases, and arcade gaming excitement that will leave you wanting more.",
+            "eventImage" : "https://arma-data.pages.dev/images/events/armaFair.png",
+            "regDeadline" : "2024-01-01T12:12:34+00:00",
+            "eventDate" : "2024-03-24T12:12:34+00:00",
+            "venue" : "LHC Lawn",
+            "regLink" : "/#",
+            "rulebook" : "/#",
+            "type" : "featured",
+            "isFeatured" : false
+        },
+        {
+            "eventId" : 4,
+            "eventName" : "Arduino Workshop",
+            "eventDesc" : "Join us for an exciting Arduino workshop at our tech fest! Learn to harness the power of this versatile microcontroller platform to bring your electronic projects to life. Discover the basics of Arduino programming, explore hardware interfacing, and dive into hands-on projects designed to ignite your imagination. Whether you're a beginner or an enthusiast, this workshop is your gateway to the world of electronics and innovation.",
+            "eventImage" : "https://arma-data.pages.dev/images/events/Arduino.png",
+            "regDeadline" : "2023-03-23T12:12:34+00:00",
+            "eventDate" : "2024-03-23T12:12:34+00:00",
+            "starttime": "11:00AM",
+            "endtime":"2:00PM",
+            "venue" : "Studio Air",
+            "regLink" : "/#",
+            "rulebook" : "/#",
+            "type": "workshop",
+            "isFeatured" : false
+        },
+
+        {
+            "eventId" : 8,
+            "eventName" : "Guest Lecture",
+            "eventDesc" : "Join us for a captivating Guest lecture at our tech fest! Participants will get a chance to engage with industry leaders, innovators, and experts as they share valuable insights on the latest trends and technologies shaping our world.",
+            "eventImage" : "https://arma-data.pages.dev/images/events/talk.jpg",
+            "regDeadline" : "2024-01-01T12:12:34+00:00",
+            "eventDate" : "2024-03-23T12:12:34+00:00",
+            "starttime": "2:00PM",
+            "endtime": "4:00PM",
+            "venue" : "L-5 LHC",
+            "regLink" : "/#",
+            "rulebook" : "false",
+            "type" : "talk",
+            "isFeatured" : true
+        },
+        {
+            "eventId" : 9,
+            "eventName" : "EnigmART",
+            "eventDesc" : "Welcome to The AI Art Recreation Challenge! Your Task? Simply guess the prompts that inspired these remarkable artworks and recreate them using your own artistic flair!",
+            "eventImage" : "https://arma-data.pages.dev/images/events/enigmArt.png",
+            "regDeadline" : "2024-03-23T12:12:34+00:00",
+            "eventDate" : "2023-03-23T12:12:34+00:00",
+            "venue" : "online",
+            "regLink" : "https://docs.google.com/forms/d/e/1FAIpQLSfG_jdNrclXB0yz6zxwuvIlm0ajMkVba50gHyKCmkfyPr7PRQ/viewform",
+            "rulebook" : "/#",
+            "type" : "competition",
+            "isFeatured" : false
+        },
+        {
+            "eventId" : 10,
+            "eventName" : "Infernal Fiction",
+            "eventDesc" : "Infernal Fiction, a story-writing competition which fuses brain and bot, where your inner Kalidasa meets cutting-edge AI tools to create spell-bounding tales, filled with imagination and wonder.",
+            "eventImage" : "https://arma-data.pages.dev/images/events/infernalFiction.png",
+            "regDeadline" : "2023-03-23T12:12:34+00:00",
+            "eventDate" : "2023-03-23T12:12:34+00:00",
+            "venue" : "online",
+            "regLink" : "https://docs.google.com/forms/d/e/1FAIpQLScCBszVEm4qjQ2f0V4y4nWy1LkMhuTgzHjm-kveX5bwa4mRfA/viewform",
+            "rulebook" : "/#",
+            "type" : "competition",
+            "isFeatured" : false
+        },
+        {
+            "eventId" : 11,
+            "eventName" : "Code Clash",
+            "eventDesc" : "Code, Conquer, and Claim Victory! Join our Intra-College Coding Clash where 2 coders battle it out byte by byte in a 1 vs 1 to reign supreme in the realm of competitive programming!",
+            "eventImage" : "https://arma-data.pages.dev/images/events/codeClash.png",
+            "regDeadline" : "2023-03-22T12:12:34+00:00",
+            "eventDate" : "2024-03-22T12:12:34+00:00",
+            "starttime": "8:00PM",
+            "endtime": "12:00AM",
+            "venue" : "LHC Lawn",
+            "regLink" : "https://docs.google.com/document/d/1OEaQ9Z1MhjJ4uXYyk8E9Uj1Rbjbm7PkZJEn1aMFAbEA/",
+            "rulebook" : "https://docs.google.com/forms/d/e/1FAIpQLSeHy2noj0c4yRK8n-rbSBeP-xL9jplalhIRqwhqNHKZJgAFTw/viewform",
+            "type" : "competition",
+            "isFeatured" : false
+        },
+        {
+            "eventId" : 12,
+            "eventName" : "Typing Frenzy",
+            "eventDesc" : "Fingers poised, minds focused, let the keys tap out our symphony of speed.",
+            "eventImage" : "https://arma-data.pages.dev/images/events/typingFrenzy.png",
+            "regDeadline" : "2023-03-21T1:12:34+00:00",
+            "eventDate" : "2024-03-21T12:12:34+00:00",
+            "starttime": "6:00PM",
+            "endtime": "8:00PM",
+            "venue" : "LHC Atrium",
+            "regLink" : "https://docs.google.com/forms/d/e/1FAIpQLSfgKhPTd49W0_m3dtncMfpju9hrrOTVwcudTxS_UhTSYwjHqg/viewform",
+            "rulebook" : "/#",
+            "type" : "competition",
+            "isFeatured" : false
+        },  
+        
+        {
+            "eventId" : 13,
+            "eventName" : "Photography Workshop",
+            "eventDesc" : "capture the beauty of Bhopal though the lens.",
+            "eventImage" : "https://arma-data.pages.dev/images/events/PhotoWorkshop.png",
+            "regDeadline" : "2023-03-23T12:12:34+00:00",
+            "eventDate" : "2024-03-23T12:12:34+00:00",
+            "starttime": "4:00 PM",
+            "endtime": "6:00 PM",
+            "venue" : "TBD",
+            "regLink" : "/#",
+            "rulebook" : "/#",
+            "type" : "workshop",
+            "isFeatured" : false
+        },
+        {
+            "eventId" : 14,
+            "eventName" : "Valorant",
+            "eventDesc" : "Step into the world of tactical supremacy with Valorant! Join us at our gaming event and experience the ultimate fusion of strategy and skill. Coordinate with your team, outmaneuver your opponents, and secure victory in heart-pounding rounds. With its blend of precise gunplay and strategic gameplay, Valorant offers an unparalleled competitive experience. Are you ready to prove your valor and dominate the battlefield? Join us and embark on an exhilarating journey to become a legend in Valorant!",
+            "eventImage" : "https://arma-data.pages.dev/images/events/gaming/valo.png",
+            "regDeadline" : "2024-03-25T12:12:34+00:00",
+            "eventDate" : "2024-03-23T12:12:34+00:00",
+            "starttime": "5:00 PM",
+            "endtime": "8:00 PM",
+            "venue" : "TBD",
+            "regLink" : "https://forms.gle/3ZV9rhXM8tPgUvEM8",
+            "rulebook" : "/#",
+            "type" : "gaming",
+            "isFeatured" : false
+        },
+        {
+            "eventId" : 13,
+            "eventName" : "BattleGrounds Mobile India",
+            "eventDesc" : "Join us for an electrifying gaming experience at our upcoming event! Dive into the action-packed world of BGMI (Battlegrounds Mobile India), where strategy meets adrenaline-fueled battles. Engage in thrilling multiplayer showdowns, strategize with your squad, and dominate the battlefield. Are you ready to showcase your skills and emerge as the ultimate champion in this intense battle royale game? Don't miss out on the chance to claim victory and win exciting prizes!",
+            "eventImage" : "https://arma-data.pages.dev/images/events/gaming/bgmi.jpg",
+            "regDeadline" : "2024-03-25T12:12:34+00:00",
+            "eventDate" : "2024-03-23T12:12:34+00:00",
+            "starttime": "5:00 PM",
+            "endtime": "8:00 PM",
+            "venue" : "TBD",
+            "regLink" : "https://forms.gle/wKd74ZCu134bhaxK8",
+            "rulebook" : "https://docs.google.com/document/d/1DY9BzR8817dElGEIV3H8c6azuER2dvGJ2TuAnO-emYU/",
+            "type" : "gaming",
+            "isFeatured" : false
+        },
+        
+        {
+            "eventId" : 13,
+            "eventName" : "Call of Duty: Mobile",
+            "eventDesc" : "Gear up for an epic showdown in COD Mobile! Join us at our gaming event and experience the thrill of intense combat, breathtaking graphics, and adrenaline-pumping action. Engage in fast-paced multiplayer battles across iconic maps, customize your loadout with powerful weapons, and unleash havoc on your opponents.  So, rally your squad, sharpen your skills, and prepare to dominate the battlefield. Are you ready to answer the call of duty? Join us and show the world what you're made of!",
+            "eventImage" : "https://arma-data.pages.dev/images/events/gaming/cod.png",
+            "regDeadline" : "2024-03-25T12:12:34+00:00",
+            "eventDate" : "2024-03-23T12:12:34+00:00",
+            "starttime": "5:00 PM",
+            "endtime": "8:00 PM",
+            "venue" : "TBD",
+            "regLink" : "https://forms.gle/qxSLS7MAQZudmMtZ9",
+            "rulebook" : "https://docs.google.com/document/d/1wqIEx5RefKnfHAsuZjCpGVVR0fj4sh2U70qVHlLsxxY/",
+            "type" : "gaming",
+            "isFeatured" : false
+        },
+        {
+            "eventId" : 13,
+            "eventName" : "Rocket League Side Swipe",
+            "eventDesc" : "Get ready to rev your engines and unleash chaos on the track with Rocket League: Side Swipe! Join us at our gaming event for a thrilling experience that takes the high-flying, car-soccer action of Rocket League to your fingertips. With intuitive controls and addictive gameplay, Rocket League: Side Swipe offers endless fun for players of all skill levels. So, grab your mobile device, jump into the driver's seat, and prepare for an adrenaline-fueled showdown unlike any other. Are you ready to swipe your way to victory? Join us and prove yourself on the virtual pitch!",
+            "eventImage" : "https://arma-data.pages.dev/images/events/gaming/rl.png",
+            "regDeadline" : "2024-03-25T12:12:34+00:00",
+            "eventDate" : "2024-03-23T12:12:34+00:00",
+            "starttime": "5:00 PM",
+            "endtime": "8:00 PM",
+            "venue" : "TBD",
+            "regLink" : "https://forms.gle/Mv75tDFuaEUCgwLq6",
+            "rulebook" : "https://docs.google.com/document/d/17GYUm5qH5g2oByG8Aysz-LpU55KFrHBkqgiXPpXrj-g",
+            "type" : "gaming",
+            "isFeatured" : false
+        },
+        {
+            "eventId" : 13,
+            "eventName" : "Minecraft 1v1",
+            "eventDesc" : "Prepare for an exhilarating Minecraft showdown! Join us for intense 1v1 battles where creativity meets competition. Engage in strategic building, resource management, and combat to outsmart and outplay your opponent. Show off your Minecraft mastery as you navigate through dynamic landscapes and unleash your imagination in this ultimate test of skill. Are you ready to build, brawl, and emerge victorious? Join us now and let the games begin!",
+            "eventImage" : "https://arma-data.pages.dev/images/events/gaming/minecraft.png",
+            "regDeadline" : "2024-03-25T12:12:34+00:00",
+            "eventDate" : "2024-03-23T12:12:34+00:00",
+            "starttime": "5:00 PM",
+            "endtime": "8:00 PM",
+            "venue" : "TBD",
+            "regLink" : "https://forms.gle/T7A8Yd8CXWZ1mFa46",
+            "rulebook" : "https://docs.google.com/document/d/1sHhU7lT5FmyDReOki0AjwOj-lZSDzZwV2mwZRHgKX80/",
+            "type" : "gaming",
+            "isFeatured" : false
+        },
+        {
+            "eventId" : 13,
+            "eventName" : "FIFA",
+            "eventDesc" : "Get ready to hit the pitch and experience the thrill of FIFA! Join us for an action-packed gaming event where you'll take on opponents in the world's most popular football simulation. Command your favorite teams, execute precision passes, and score breathtaking goals as you compete for glory on the virtual field. With realistic gameplay and stunning visuals, FIFA offers an immersive football experience like no other. Are you ready to showcase your skills, compete against the best, and claim victory? Join us now and let the games begin!",
+            "eventImage" : "https://arma-data.pages.dev/images/events/gaming/fifa.png",
+            "regDeadline" : "2024-03-25T12:12:34+00:00",
+            "eventDate" : "2024-03-23T12:12:34+00:00",
+            "starttime": "5:00 PM",
+            "endtime": "8:00 PM",
+            "venue" : "TBD",
+            "regLink" : "https://forms.gle/Nw2DWmVk936hmg419",
+            "rulebook" : "https://docs.google.com/document/d/1May1FYmCKLWuduoB85aD-dhevK--qe03fw5JhWFvU_k/edit",
+            "type" : "gaming",
+            "isFeatured" : false
+        },
+        {
+            "eventId" : 13,
+            "eventName" : "Pro Evolution Soccer",
+            "eventDesc" : "Experience the excitement of football like never before with PES (Pro Evolution Soccer)! Join us for thrilling matches where precision and strategy are paramount. Take control of your favorite teams, showcase your dribbling skills, and score breathtaking goals in stunning detail. With realistic gameplay and immersive graphics, PES delivers an unparalleled football experience. Are you ready to take on the challenge, compete against top players, and become a legend on the pitch? Join us now and kick off the ultimate football showdown!",
+            "eventImage" : "https://arma-data.pages.dev/images/events/gaming/pes.jpg",
+            "regDeadline" : "2024-03-25T12:12:34+00:00",
+            "eventDate" : "2024-03-23T12:12:34+00:00",
+            "starttime": "5:00 PM",
+            "endtime": "8:00 PM",
+            "venue" : "TBD",
+            "regLink" : "https://forms.gle/Bik9v54dQm2ebuQaA",
+            "rulebook" : "/#",
+            "type" : "gaming",
+            "isFeatured" : false
+        },
+        {
+            "eventId" : 13,
+            "eventName" : "Tekken",
+            "eventDesc" : "Enter the arena of martial arts mastery with Tekken! Join us for heart-pounding battles where every move counts. Choose your fighter, unleash devastating combos, and rise to the top in this iconic fighting game. With a diverse roster of characters and intense gameplay, Tekken offers an adrenaline-fueled experience like no other. Are you ready to test your skills, outmaneuver your opponents, and claim victory in epic one-on-one combat? Join us now and show the world what you're made of!",
+            "eventImage" : "https://arma-data.pages.dev/images/events/gaming/tekken.png",
+            "regDeadline" : "2024-03-25T12:12:34+00:00",
+            "eventDate" : "2024-03-23T12:12:34+00:00",
+            "starttime": "5:00 PM",
+            "endtime": "8:00 PM",
+            "venue" : "TBD",
+            "regLink" : "https://forms.gle/RGtmFzkW5uXASJSJ8",
+            "rulebook" : "https://docs.google.com/document/d/19r7ahYNIXljgzaKA0nJI88z9Ml_RJPHsafQFwnjsKHk/edit?usp=sharing",
+            "type" : "gaming",
+            "isFeatured" : false
+        }, 
+        {
+            "eventId" : 13,
+            "eventName" : "Clash Royale",
+            "eventDesc" : "Enter the arena of Clash Royale and prepare for epic battles! Join us for fast-paced strategic duels where every decision counts. Build your deck, deploy your troops, and outsmart your opponents in real-time battles. With a variety of cards and tactics at your disposal, Clash Royale offers endless possibilities for victory. Are you ready to clash with players from around the world, climb the ranks, and become the ultimate champion? Join us now and prove your skills in the arena!",
+            "eventImage" : "https://arma-data.pages.dev/images/events/gaming/clash.png",
+            "regDeadline" : "2024-03-25T12:12:34+00:00",
+            "eventDate" : "2024-03-23T12:12:34+00:00",
+            "starttime": "5:00 PM",
+            "endtime": "8:00 PM",
+            "venue" : "TBD",
+            "regLink" : "https://forms.gle/qoZ7PEdpszTQo4h9A",
+            "rulebook" : "https://docs.google.com/document/d/1LhcuhRmn_SggfRC8OfFMIoLUq_iuyzLBZFt4oiInjjs/",
+            "type" : "gaming",
+            "isFeatured" : false
+        },
+        {
+            "eventId" : 13,
+            "eventName" : "Nebula Cloud Talk",
+            "eventDesc" : "A talk on Nebula clouds",
+            "eventImage" : "https://arma-data.pages.dev/images/events/nebula.png",
+            "regDeadline" : "2024-01-01T12:12:34+00:00",
+            "eventDate" : "2024-03-23T12:12:34+00:00",
+            "starttime": "6:00 PM",
+            "endtime": "7:00 PM",
+            "venue" : "TBD",
+            "regLink" : "/#",
+            "rulebook" : "/#",
+            "type" : "workshop",
+            "isFeatured" : false
+        }
+       
+       
+    ],
+    "sponsors" : [
+        {
+            "sponsorName" : "Wadhwani",
+            "href" : "https://wadhwanifoundation.org/",
+            "sponsorImg" : "https://arma-data.pages.dev/images/sponsors/wadhwani.png",
+            "type": "outreach"
+
+            
+        },
+        {
+            "sponsorName" : "Nebula Cloud",
+            "type": "tech",
+            "href" : "https://nebulacloud.ai/",
+            "sponsorImg" : "https://arma-data.pages.dev/images/sponsors/nebula.png"
+            
+        },
+        {
+            "sponsorName" : "Forgewell",
+            "type": "tech",
+            "href" : "https://www.forgewellcorp.com/",
+            "sponsorImg" : "https://arma-data.pages.dev/images/sponsors/forgewell.png"
+            
+        },
+        {
+            "sponsorName" : "Jaffa",
+            "type":"food",
+            "href" : "https://www.instagram.com/jaffashawarma/?hl=en",
+            "sponsorImg" : "https://arma-data.pages.dev/images/sponsors/jaffa.png"
+            
+        },
+        {
+            "sponsorName" : "Mau's Cafe",
+            "type":"food",
+            "href" : "/",
+            "sponsorImg" : "https://arma-data.pages.dev/images/sponsors/maus.png"
+            
+        },
+        {
+            "sponsorName" : "ChaapWala",
+            "type":"food",
+            "href" : "/",
+            "sponsorImg" : "https://arma-data.pages.dev/images/sponsors/chaap.png"
+            
+        },
+        {
+            "sponsorName" : "The Pancakes & Waffles",
+            "type" : "food",
+            "href" : "/",
+            "sponsorImg" : "https://arma-data.pages.dev/images/sponsors/pancakes.jpg"
+        }
+        
+    ],
+
+    "team" : [
+      
+        {
+            "id" : 4,
+            "name" : "Srutanik Bhaduri",
+            "pic" :"https://arma-data.pages.dev/images/team/srutanik.png",
+            "linkedin": "https://www.linkedin.com/in/srutanik-bhaduri-3a9a691b9/",
+            "insta": "",
+            "desc": "I know the tech",
+            "desig": "Convener"
+        },
+        {
+            "id": 4,
+            "name": "Shailesh Kachhi ",
+            "pic": "https://arma-data.pages.dev/images/team/IMG_20240314_223851%20-%20Shailesh%20Kachhi%2022290.jpg",
+            "linkedin": "https://www.linkedin.com/in/shailesh-kachhi-681a041a2",
+            "insta": "https://instagram.com/shailesh&576",
+            "desc": ".",
+            "desig": "Co-Convener"
+        },
+        {
+            "id": 5,
+            "name": "Akshat Gudesar ",
+            "pic": "https://arma-data.pages.dev/images/team/IMG20211231160447%20-%20Akshat%20Gudesar%2021023.jpg",
+            "linkedin": "No LinkedIn ",
+            "insta": "@akshatgudesar",
+            "desc": "40 year Old in a 20 year Old's Body",
+            "desig": "Co-Convener"
+        },
+        {
+            "id": 6,
+            "name": "Avik Hawlader",
+            "pic": "https://arma-data.pages.dev/images/team/34C58AF9-5F5F-47A4-8837-268D2948C820%20-%20Armageddon%20Fest.jpeg",
+            "linkedin": "https://www.linkedin.com/in/avik-hawlader-45965a15b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+            "insta": "https://www.instagram.com/1avik0?igsh=eDI0d20xZzdiMXN6",
+            "desc": "I know the business",
+            "desig": "Vigilance"
+        },
+        
+            {
+                "id": 1,
+                "name": "Arpan Jain",
+                "pic": "https://arma-data.pages.dev/images/team/Screenshot_2024-03-12-21-13-24-724-edit_com.instagram.android%20-%20Arpan%20Jain%2022056.jpg",
+                "linkedin": "https://www.linkedin.com/in/arpan-jain-iiserb",
+                "insta": "https://www.instagram.com/jr_arpan?igsh=MWFxMTNjMWxocDc1dg==",
+                "desc": "Tech is life and life is Tech",
+                "desig": "Organizing Committee"
+            },
+            {
+                "id": 2,
+                "name": "Hemant Meena",
+                "pic": "https://arma-data.pages.dev/images/team/DSC07160%20-%20Hemant%20Meena%2021124.JPG",
+                "linkedin": "https://www.linkedin.com/in/hemant-meena-2a5540270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+                "insta": "https://www.instagram.com/hemant._meena_?igsh=MTV3YTJqOG5hNGhieA==",
+                "desc": "Sarcastic ",
+                "desig": "Organizing Committee"
+            },
+            {
+                "id": 3,
+                "name": "Shubham Mohanty",
+                "pic": "https://arma-data.pages.dev/images/team/PXL_20231227_090142395.PORTRAIT~2%20-%20Shubham%20Mohanty%2023319.jpg",
+                "linkedin": "https://in.linkedin.com/in/shubham-mohanty-83723b237",
+                "insta": "https://www.instagram.com/beteloper?igsh=MTVqNnIxcGt3MXZ4Mw==",
+                "desc": "Master of procrastination, shortcut is [Ctrl+P]",
+                "desig": "Organizing Committee"
+            },
+            {
+                "id": 4,
+                "name": "Anoushka Pawan ",
+                "pic": "https://arma-data.pages.dev/images/team/IMG-20230526-WA0090%20-%20Anoushka%20Pawan%2022045.jpg",
+                "linkedin": "https://www.linkedin.com/in/anoushka-pawan-b304831b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+                "insta": "https://www.instagram.com/anoushkapawan?igsh=MXZwMTA0dWYydDQ2Ng==",
+                "desc": "Margarita makes me sway :)",
+                "desig": "Organizing Committee"
+            },
+            {
+                "id": 5,
+                "name": "Yash Choudhary",
+                "pic": "https://arma-data.pages.dev/images/team/IMG-20240313-WA0005%20-%20Yash%20Choudhary%2022379.jpg",
+                "linkedin": "https://in.linkedin.com/in/yashchoudharybsn",
+                "insta": "https://www.instagram.com/yash.awesome/",
+                "desc": "You had me at hello.",
+                "desig": "Organizing Committee"
+            },
+            {
+                "id": 6,
+                "name": "Divya Sharma",
+                "pic": "https://arma-data.pages.dev/images/team/WhatsApp%20Image%202024-03-13%20at%2017.54.53_b5438f4f%20-%20Divya%20Sharma%2023111.jpg",
+                "linkedin": "https://www.linkedin.com/in/divya-sharma-285894258/",
+                "insta": "https://www.instagram.com/divyasharma_5505/",
+                "desc": "Honesty, I dont even know...",
+                "desig": "The Techies"
+            },
+            {
+                "id": 7,
+                "name": "Ayushman Saha",
+                "pic": "https://arma-data.pages.dev/images/team/arma%20-%20Ayushman%20Saha%2023078.jpg",
+                "linkedin": "https://www.linkedin.com/in/ayushman-saha/",
+                "insta": "https://www.instagram.com/_ayushman_saha_/",
+                "desc": "I'm not lazy, I'm in energy-saving mode.",
+                "desig": "The Techies"
+            },
+            {
+                "id" : 3,
+                "name" : "Deepanshu",
+                "pic" :"https://arma-data.pages.dev/images/team/deepanshu.png",
+                "linkedin": "https://www.linkedin.com/in/d33panshuraj/",
+                "insta": "https://instagram.com/d33panshuraj",
+                "desc": "Why am i doing this ?",
+                "desig": "The Techies"
+            },
+            {
+                "id": 8,
+                "name": "Ananya Kushwaha ",
+                "pic": "https://arma-data.pages.dev/images/team/IMG_7740%20-%20Ananya%20Kushwaha%2022038.jpeg",
+                "linkedin": "NA",
+                "insta": "https://www.instagram.com/mostly.ananyaa?igsh=eGtpcjkyendxajJz",
+                "desc": "I'm like a human pink highlighter, adding a pop of fun to every page of life.",
+                "desig": "Organizing Committee"
+            },
+            {
+                "id": 9,
+                "name": "Varsha Meena ",
+                "pic": "https://arma-data.pages.dev/images/team/InShot_20240314_000116336%20-%20Varsha%20Meena%2022360.jpg",
+                "linkedin": "https://www.linkedin.com/in/varsha-meena-2214a8271?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+                "insta": "https://www.instagram.com/mee_varsha_25?igsh=MW11dHFzOWQxaXRteQ==",
+                "desc": "\"I'm a walking paradox: simple yet endlessly complex.\"",
+                "desig": "Organizing Committee"
+            },
+            {
+                "id": 10,
+                "name": "Raavee",
+                "pic": "https://arma-data.pages.dev/images/team/p%20-%20Raavee%20Tripathi%2023253.png",
+                "linkedin": "https://www.linkedin.com/in/raavee-tripathi-b30365259/",
+                "insta": "https://www.instagram.com/raavee.tripathi/",
+                "desc": "Eat pasta, run fasta",
+                "desig": "Organizing Committee"
+            },
+            {
+                "id": 11,
+                "name": "Gyanaranjan Samal ",
+                "pic": "https://arma-data.pages.dev/images/team/Screenshot_20240314-162512~2%20-%20Gyanaranjan%20Samal%2023125.png",
+                "linkedin": "https://www.linkedin.com/in/gyanaranjan-samal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+                "insta": "https://www.instagram.com/gyan.samal.22?igsh=Zjh1ZWpndzBoNGZn",
+                "desc": "I am good at Mario, that's why I'm here.",
+                "desig": "Organizing Committee"
+            },
+            {
+                "id": 12,
+                "name": "Shlok Mehndiratta",
+                "pic": "https://arma-data.pages.dev/images/team/photo%20-%20Shlok%20Mehndiratta%2023309.jpg",
+                "linkedin": "https://www.linkedin.com/in/shlok-mehndiratta-b7a08b233/",
+                "insta": "https://www.instagram.com/shlok._.mehndiratta/",
+                "desc": "I love sleep because it's like a time machine to breakfast.",
+                "desig": "Organizing Committee"
+            },
+            {
+                "id": 14,
+                "name": "Swapnil Anand ",
+                "pic": "https://arma-data.pages.dev/images/team/MYImage%20-%20Swapnil%20Anand%2021285.jpg",
+                "linkedin": "https://www.linkedin.com/in/swapnil-anand-9b5575291/",
+                "insta": "NA",
+                "desc": "Passionate and Enthusiastic ",
+                "desig": "Organizing Committee"
+            },
+            {
+                "id": 15,
+                "name": "Nirman Jaiswal ",
+                "pic": "https://arma-data.pages.dev/images/team/20240207_164632%20-%20Nirman%20Jaiswal%2022223.jpg",
+                "linkedin": "https://www.linkedin.com/in/nirman-jaiswal-08456a258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+                "insta": "https://www.instagram.com/nirman.jaiswal?igsh=MWc2ZTY4cmtha3E5Nw==",
+                "desc": "(Serious)Trying to chill amidst tenacity\n\n(Casual)Happy,  Unbothered, Focussed, Glowing",
+                "desig": "Organizing Committee"
+            },
+            {
+                "id": 16,
+                "name": "Sharmad Kalpande ",
+                "pic": "https://arma-data.pages.dev/images/team/IMG_20240315_193621%20-%20Kalpande%20Sharmad%20Shyamkumar%2022166.jpg",
+                "linkedin": "https://www.linkedin.com/in/sharmad-kalpande-161a99256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+                "insta": "https://www.instagram.com/sharmadkalpande?igsh=MWEybG9oYXFxa2Q5Yg==",
+                "desc": "Debugging my life",
+                "desig": "Organizing Committee"
+            },
+            {
+                "id": 17,
+                "name": "Anuj Wani",
+                "pic": "https://arma-data.pages.dev/images/team/Anuj%20pic%20with%20tilak%20-%20Wani%20Anuj%20Shriniwas%2023379.jpg",
+                "linkedin": "www.linkedin.com/in/anuj-wani05",
+                "insta": "idonthaveinsta.com",
+                "desc": "Parampara, Pratishtha, Anushasan and Gangsta's Paradise that's all about me!",
+                "desig": "Organizing Committee"
+            },
+            {
+                "id": 18,
+                "name": "PRIYA HEMBRAM",
+                "pic": "https://arma-data.pages.dev/images/team/IMG-20240203-WA0728%20-%20Priya%20Hembram%2022249.jpg",
+                "linkedin": "N/A",
+                "insta": "https://www.instagram.com/__priya.hembram__?igsh=ZzJqcXo2bHlhdXBw",
+                "desc": "A weirdo but I'm real though",
+                "desig": "Organizing Committee"
+            },
+            {
+                "id": 21,
+                "name": "Harshit Agnihotri",
+                "pic": "https://arma-data.pages.dev/images/team/IMG-20240316-WA0043%20-%20Harshit%20Agnihotri%2023129.jpg",
+                "linkedin": "https://www.linkedin.com/in/harshit-agnihotri-3192652a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+                "insta": "https://www.instagram.com/_hrxit?igsh=Ym5jd2F5dGRvZDB4",
+                "desc": "If i can, I do. If I can't, I supervise.",
+                "desig": "Organizing Committee"
+            },
+            {
+                "id": 22,
+                "name": "Shreejiit Panda",
+                "pic": "https://arma-data.pages.dev/images/team/IMG_0676%20-%20Shreejiit%20Panda%2022300.jpeg",
+                "linkedin": "Not there",
+                "insta": "https://www.instagram.com/_shreeshh__?igsh=MTJyNWRoNWF4dmRoZA%3D%3D&utm_source=qr",
+                "desc": "Yeh you knew me all along.",
+                "desig": "Organizing Committee"
+            },
+            {
+                "id": 23,
+                "name": "R Tharun",
+                "pic": "https://arma-data.pages.dev/images/team/IMG_3960%20-%20Ramavath%20Tharun%2021219.jpeg",
+                "linkedin": "www.linkedin.com/in/ramavath-tharun-493496263",
+                "insta": "https://www.instagram.com/rtharun19?igsh=Z2N5ZmZtdWk0N3g0",
+                "desc": "None",
+                "desig": "Organizing Committee"
+            }
+        ],
+
+        "schedule" :
+        [
+            {
+                "day": "Day 1",
+                "date": "22 March",
+                "events": [
+                    {
+                        "title": "Opening Cermony",
+                        "startTime": "7:00PM",
+                        "endTime": "8:00PM",
+                        "venue": "L5"
+                    },
+                    {
+                        "title": "Code Clash",
+                        "startTime": "8:00PM",
+                        "endTime": "12:00AM",
+                        "venue": "LHC Lawn"
+                    }
+                ]
+            },
+            {
+                "day": "Day 2",
+                "date": "23 March",
+                "events": [
+                    {
+                        "title": "Arduino Workshop",
+                        "startTime": "11:00AM",
+                        "endTime": "2:00PM",
+                        "venue": "Studio Air"
+                    },
+                    {
+                        "title": "Guest Lecture",
+                        "startTime": "2:00PM",
+                        "endTime": "4:00PM",
+                        "venue": "L5"
+                    },
+                    {
+                        "title": "Photography Workshop [Astro Tutorial]",
+                        "startTime": "4:00PM",
+                        "endTime": "6:00PM",
+                        "venue": "Studio Air"
+                    },
+                    {
+                        "title": "Nebula Cloud Talk",
+                        "startTime": "6:00PM",
+                        "endTime": "7:00PM",
+                        "venue": "online"
+                    },
+                    {
+                        "title": "Tech Quiz",
+                        "startTime": "9:00 PM",
+                        "endTime": "12:00AM",
+                        "venue": "L1/L4"
+                    },
+                    {
+                        "title": "Light Painting",
+                        "startTime": "9:00PM",
+                        "endTime": "12:00AM",
+                        "venue": "Skywalk"
+                    },
+                
+                    {
+                        "title": "Gaming Quarter Finals",
+                        "startTime": "9:00PM",
+                        "endTime": "12:00AM",
+                        "venue": "LHC Lawn"
+                    },
+                    {
+                        "title": "Gaming Semi Finals",
+                        "startTime": "9:00PM",
+                        "endTime": "12:00AM",
+                        "venue": "LHC Lawn"
+                    }
+                ]
+            },
+            {
+                "day": "Day 3",
+                "date": "24 March",
+                "events": [
+                    {
+                        "title": "Photography Workshop",
+                        "startTime": "3:00 PM",
+                        "endTime": "6:00 PM",
+                        "venue": "Studio Air"
+                    },
+                    {
+                        "title": "Tech Expo",
+                        "startTime": "5:00 PM",
+                        "endTime": "8:00PM",
+                        "venue": "LHC Atrium"
+                    },
+                    {
+                        "title": "Uttarang Concert",
+                        "startTime": "7:00PM",
+                        "endTime": "8:00PM",
+                        "venue": "LHC Lawn"
+                    },
+                    {
+                        "title": "Arma Fair",
+                        "startTime": "7:00 PM",
+                        "endTime":"12:00AM",
+                        "venue": "LHC Lawn"
+                    },
+
+                    {
+                        "title": "Finals Gaming",
+                        "startTime":"9:00PM",
+                        "endTime":"12:00AM",
+                        "venue": "LHC Lawn"
+                    }
+                   
+                ]
+            }
+        ]
+        
+        
+
+
+    
+}
