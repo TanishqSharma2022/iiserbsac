@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+ background-color: black;
+ 
+ 
+
+}
+
+div::-webkit-scrollbar{
+    display: none;
+}
+
+:root::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+#stickyScroll::-webkit-scrollbar {
+    display: none;
+}
