@@ -82,7 +82,7 @@ body{
     bottom: -10px;
     display: block;
     position: absolute;
-    background: -webkit-linear-gradient(-90deg,#024069,#0696f6);
+    background: -webkit-linear-gradient(-90deg,#024069,#9e06f6);
     transform-origin: left;
     animation: line 0.7s ease forwards;
     animation-delay: 1s;
@@ -99,7 +99,7 @@ body{
 
 .fest_header_container button{
     border-radius: 20px;
-    background: conic-gradient(from 90deg, #0696f6,#024069,#024069);
+    background: conic-gradient(from 90deg, #9e06f6,#450269,#5e0283);
     color: white; 
     font-family: 'Poppins';
     font-weight: 600;
@@ -130,7 +130,7 @@ body{
     COLOR: WHITE;
     font-weight: 900;
     text-shadow: 0px 0px 80px rgba(0, 0, 0, 0.16);
-    background: -webkit-linear-gradient(-90deg,#024069,#0696f6);
+    background: -webkit-linear-gradient(-90deg,#44016b,#9e06f6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }   
