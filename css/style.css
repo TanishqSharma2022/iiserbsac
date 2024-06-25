@@ -1399,38 +1399,10 @@ button.popup_close:hover {
   line-height: 30px;
 }
 
-/* }
-.fa-instagram{
-    background: #f09433; 
-background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-  border-radius: 50px;
-}
 
- */
-/* 
-.main3 {
-  align-content: center;
-  margin: 20px;
-}
 
-.content-block {
-  z-index: -1;
-  position: relative;
-  top: -100%;
-  /* opacity: 0; */
-/* transition: all 0.3s ease-in-out; */
-/* } */
-/* #culture { */
-/* transition: all 0.7s; */
-/* z-index: 99; */
-/* } */
-/* .bar { */
-/* padding: 50px; */
-/* background: black; */
-/* }  */
+
+
 
 h2 {
   line-height: 25px;
@@ -1561,6 +1533,7 @@ transition: all 0.5s ease-in-out;
   text-align: center;
   padding-bottom: 10px;
 }
+
 
 
 @media only screen and (max-width: 972px) {
@@ -1696,57 +1669,69 @@ transition: all 0.5s ease-in-out;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.pyramid {
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  height: 180px;
-  -webkit-clip-path: polygon(50% 0, 100% 100%, 0 100%);
-  clip-path: polygon(50% 0, 100% 100%, 0 100%);
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+.gptContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem; 
+  padding: 12rem;
+  
 }
 
-.pyramid__section {
-  flex: 1 1 100%;
-  background-color: rgb(93, 17, 174);
-  margin-bottom: 2px;
+
+.gptContainer div h1{
+  font-weight: 800;
+  text-align: left;
+  font-size: 2rem;
+
+}
+.gptContainer div p{
+  text-align: left;
+  font-size: 1rem;
+  margin-top: 20px;
+  font-family: 'Inter'
+
 }
 
-.pyramid__section:nth-of-type(even) {
-  background-color: lightgray;
+
+
+.gptContainer video{
+  filter: drop-shadow(0px 0px 20px #8e8a8a);
+  
+  border-radius: 8px;
 }
 
-.pyramid__section:hover {
-  background-color: rgb(56, 0, 147);
-} */
+.gptContainer button{ 
+  margin-top: 30px; 
+  padding-inline: 15px;
+  padding-block: 8px;
+  background: var(--accent);
+  color: black;
+  font-weight: 600;
+  border-radius: 9px;
+  font-family: "Inter";
+  transition: all 0.5s ease;
+}
+.gptContainer button:hover{
+  filter: brightness(80%)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* FOOTER CSS */
 :root {
@@ -2106,6 +2091,16 @@ transition: all 0.5s ease-in-out;
 
  
 @media only screen and (max-width: 972px) {
+
+
+
+  .gptContainer{
+    grid-template-columns: 1fr;
+    padding: 10px;
+    
+  }
+
+
   .consti_blob{
     left: -10vh;
   }
